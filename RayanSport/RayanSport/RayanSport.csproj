@@ -59,6 +59,12 @@
     <Compile Include="View\Form_CheckIn.Designer.cs">
       <DependentUpon>Form_CheckIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\TrainOption.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="View\Form_ShowMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_ShowMember.Designer.cs">
+      <DependentUpon>Form_ShowMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UC_CheckIn.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,6 +95,9 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="View\Form_CheckIn.resx">
       <DependentUpon>Form_CheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
@@ -96,6 +111,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Form_ShowMember.resx">
+      <DependentUpon>Form_ShowMember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UC_CheckIn.resx">
       <DependentUpon>UC_CheckIn.cs</DependentUpon>
     </EmbeddedResource>

@@ -92,6 +92,54 @@
     <Compile Include="View\UC_CheckIn.Designer.cs">
       <DependentUpon>UC_CheckIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UC_CheckInLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_CheckInLog.Designer.cs">
+      <DependentUpon>UC_CheckInLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_CheckIn_Info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_CheckIn_Info.Designer.cs">
+      <DependentUpon>UC_CheckIn_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_Home.Designer.cs">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_Log.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_Log.Designer.cs">
+      <DependentUpon>UC_Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_ShowAllContract.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_ShowAllContract.Designer.cs">
+      <DependentUpon>UC_ShowAllContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_ShowAllMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_ShowAllMember.Designer.cs">
+      <DependentUpon>UC_ShowAllMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_ShowMember_ContractInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_ShowMember_ContractInfo.Designer.cs">
+      <DependentUpon>UC_ShowMember_ContractInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_ShowMember_MemberInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_ShowMember_MemberInfo.Designer.cs">
+      <DependentUpon>UC_ShowMember_MemberInfo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="View\Form_CheckIn.resx">
       <DependentUpon>Form_CheckIn.cs</DependentUpon>

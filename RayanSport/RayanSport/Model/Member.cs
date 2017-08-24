@@ -12,6 +12,7 @@ namespace RayanSport
         public String member_name { get; set; }
         public String member_nationalCode { get; set; }
         public String member_tel { get; set; }
+        //public Byte member_image { get; set; }
         public String member_gender { get; set; }
         public String member_blood { get; set; }
         public String member_sick { get; set; }

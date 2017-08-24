@@ -8,15 +8,17 @@ namespace RayanSport
 {
     class Plan
     {
-        public Plan(int plan_memberId, string plan_detail, string plan_date)
+        public Plan(int plan_memberId, string plan_description, string plan_date , string plan_coach)
         {
             this.plan_memberId = plan_memberId;
-            this.plan_detail = plan_detail;
+            this.plan_description = plan_description;
             this.plan_date = plan_date;
+            this.plan_coach = plan_coach;
         }
 
         public int plan_memberId { get; set; }
-        public String plan_detail { get; set; }
+        public String plan_description { get; set; }
         public String plan_date { get; set; }
+        public String  plan_coach{ get; set; }
     }
 }

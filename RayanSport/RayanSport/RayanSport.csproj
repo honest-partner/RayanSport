@@ -61,6 +61,9 @@
     <Compile Include="Model\BuffetSell.cs" />
     <Compile Include="Model\CheckIn.cs" />
     <Compile Include="Model\Coach.cs" />
+    <Compile Include="rayan_sportDataSet.cs">
+      <DependentUpon>rayan_sportDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="rayan_sportDataSet.Designer.cs">
       <DependentUpon>rayan_sportDataSet.xsd</DependentUpon>
       <DesignTime>True</DesignTime>
@@ -214,6 +217,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\basketball-jersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_image1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

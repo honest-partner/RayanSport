@@ -117,26 +117,26 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::RayanSport.Properties.Resources.rayanSport_Logo_1_;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(238, 244);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            //this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
+            //this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            //this.pictureBox1.Image = global::RayanSport.Properties.Resources.rayanSport_Logo_1_;
+            //this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            //this.pictureBox1.Name = "pictureBox1";
+            //this.pictureBox1.Size = new System.Drawing.Size(238, 244);
+            //this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            //this.pictureBox1.TabIndex = 2;
+            //this.pictureBox1.TabStop = false;
+            //this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::RayanSport.Properties.Resources.basketball_jersey;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            //this.pictureBox2.Image = global::RayanSport.Properties.Resources.basketball_jersey;
+            //this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            //this.pictureBox2.Name = "pictureBox2";
+            //this.pictureBox2.Size = new System.Drawing.Size(60, 50);
+            //this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            //this.pictureBox2.TabIndex = 0;
+            //this.pictureBox2.TabStop = false;
             // 
             // Form_Main
             // 

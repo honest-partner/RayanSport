@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using RayanSport.View;
 namespace RayanSport
 {
     static class Program
@@ -16,7 +16,7 @@ namespace RayanSport
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Main());
+            Application.Run(new Form_Login());
         }
     }
 }

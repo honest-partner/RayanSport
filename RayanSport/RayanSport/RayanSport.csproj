@@ -61,11 +61,6 @@
     <Compile Include="Model\BuffetSell.cs" />
     <Compile Include="Model\CheckIn.cs" />
     <Compile Include="Model\Coach.cs" />
-    <Compile Include="rayan_sportDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rayan_sportDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="View\Form_CheckIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,17 +191,6 @@
     <Folder Include="Controller\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="rayan_sportDataSet.xsc">
-      <DependentUpon>rayan_sportDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="rayan_sportDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>rayan_sportDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="rayan_sportDataSet.xss">
-      <DependentUpon>rayan_sportDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Resources\rayanSport_Logo[1].png" />
   </ItemGroup>
   <ItemGroup>

@@ -992,6 +992,8 @@ namespace RayanSport {
             
             private global::System.Data.DataColumn columnbuffetLog_price;
             
+            private global::System.Data.DataColumn columnbuffetLog_memberId;
+            
             private global::System.Data.DataColumn columnbuffetLog_description;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1061,6 +1063,14 @@ namespace RayanSport {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn buffetLog_memberIdColumn {
+                get {
+                    return this.columnbuffetLog_memberId;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn buffetLog_descriptionColumn {
                 get {
                     return this.columnbuffetLog_description;
@@ -1104,13 +1114,14 @@ namespace RayanSport {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public buffetLogRow AddbuffetLogRow(string buffetLog_username, string buffetLog_memberName, string buffetLog_dateTime, long buffetLog_price, string buffetLog_description) {
+            public buffetLogRow AddbuffetLogRow(string buffetLog_username, string buffetLog_memberName, string buffetLog_dateTime, long buffetLog_price, int buffetLog_memberId, string buffetLog_description) {
                 buffetLogRow rowbuffetLogRow = ((buffetLogRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         buffetLog_username,
                         buffetLog_memberName,
                         buffetLog_dateTime,
                         buffetLog_price,
+                        buffetLog_memberId,
                         buffetLog_description};
                 rowbuffetLogRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowbuffetLogRow);
@@ -1138,6 +1149,7 @@ namespace RayanSport {
                 this.columnbuffetLog_memberName = base.Columns["buffetLog_memberName"];
                 this.columnbuffetLog_dateTime = base.Columns["buffetLog_dateTime"];
                 this.columnbuffetLog_price = base.Columns["buffetLog_price"];
+                this.columnbuffetLog_memberId = base.Columns["buffetLog_memberId"];
                 this.columnbuffetLog_description = base.Columns["buffetLog_description"];
             }
             
@@ -1152,6 +1164,8 @@ namespace RayanSport {
                 base.Columns.Add(this.columnbuffetLog_dateTime);
                 this.columnbuffetLog_price = new global::System.Data.DataColumn("buffetLog_price", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnbuffetLog_price);
+                this.columnbuffetLog_memberId = new global::System.Data.DataColumn("buffetLog_memberId", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnbuffetLog_memberId);
                 this.columnbuffetLog_description = new global::System.Data.DataColumn("buffetLog_description", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnbuffetLog_description);
                 this.columnbuffetLog_username.AllowDBNull = false;
@@ -1161,6 +1175,7 @@ namespace RayanSport {
                 this.columnbuffetLog_dateTime.AllowDBNull = false;
                 this.columnbuffetLog_dateTime.MaxLength = 50;
                 this.columnbuffetLog_price.AllowDBNull = false;
+                this.columnbuffetLog_memberId.AllowDBNull = false;
                 this.columnbuffetLog_description.MaxLength = 2147483647;
             }
             
@@ -1299,8 +1314,6 @@ namespace RayanSport {
             
             private global::System.Data.DataColumn columnbuffetSell_date;
             
-            private global::System.Data.DataColumn columnbuffetSell_billDetail;
-            
             private global::System.Data.DataColumn columnbuffetSell_billPrice;
             
             private global::System.Data.DataColumn columnbuffetSell_membershipId;
@@ -1355,14 +1368,6 @@ namespace RayanSport {
             public global::System.Data.DataColumn buffetSell_dateColumn {
                 get {
                     return this.columnbuffetSell_date;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn buffetSell_billDetailColumn {
-                get {
-                    return this.columnbuffetSell_billDetail;
                 }
             }
             
@@ -1435,12 +1440,11 @@ namespace RayanSport {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public buffetSellRow AddbuffetSellRow(string buffetSell_date, string buffetSell_billDetail, long buffetSell_billPrice, int buffetSell_membershipId, string buffetSell_paymentCondition, string buffetSell_description) {
+            public buffetSellRow AddbuffetSellRow(string buffetSell_date, long buffetSell_billPrice, long buffetSell_membershipId, string buffetSell_paymentCondition, string buffetSell_description) {
                 buffetSellRow rowbuffetSellRow = ((buffetSellRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         buffetSell_date,
-                        buffetSell_billDetail,
                         buffetSell_billPrice,
                         buffetSell_membershipId,
                         buffetSell_paymentCondition,
@@ -1476,7 +1480,6 @@ namespace RayanSport {
             internal void InitVars() {
                 this.columnbuffetSell_id = base.Columns["buffetSell_id"];
                 this.columnbuffetSell_date = base.Columns["buffetSell_date"];
-                this.columnbuffetSell_billDetail = base.Columns["buffetSell_billDetail"];
                 this.columnbuffetSell_billPrice = base.Columns["buffetSell_billPrice"];
                 this.columnbuffetSell_membershipId = base.Columns["buffetSell_membershipId"];
                 this.columnbuffetSell_paymentCondition = base.Columns["buffetSell_paymentCondition"];
@@ -1490,11 +1493,9 @@ namespace RayanSport {
                 base.Columns.Add(this.columnbuffetSell_id);
                 this.columnbuffetSell_date = new global::System.Data.DataColumn("buffetSell_date", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnbuffetSell_date);
-                this.columnbuffetSell_billDetail = new global::System.Data.DataColumn("buffetSell_billDetail", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnbuffetSell_billDetail);
                 this.columnbuffetSell_billPrice = new global::System.Data.DataColumn("buffetSell_billPrice", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnbuffetSell_billPrice);
-                this.columnbuffetSell_membershipId = new global::System.Data.DataColumn("buffetSell_membershipId", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnbuffetSell_membershipId = new global::System.Data.DataColumn("buffetSell_membershipId", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnbuffetSell_membershipId);
                 this.columnbuffetSell_paymentCondition = new global::System.Data.DataColumn("buffetSell_paymentCondition", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnbuffetSell_paymentCondition);
@@ -1510,8 +1511,6 @@ namespace RayanSport {
                 this.columnbuffetSell_id.Unique = true;
                 this.columnbuffetSell_date.AllowDBNull = false;
                 this.columnbuffetSell_date.MaxLength = 50;
-                this.columnbuffetSell_billDetail.AllowDBNull = false;
-                this.columnbuffetSell_billDetail.MaxLength = 2147483647;
                 this.columnbuffetSell_billPrice.AllowDBNull = false;
                 this.columnbuffetSell_paymentCondition.AllowDBNull = false;
                 this.columnbuffetSell_paymentCondition.MaxLength = 50;
@@ -3647,7 +3646,7 @@ namespace RayanSport {
             
             private global::System.Data.DataColumn columnplan_memberId;
             
-            private global::System.Data.DataColumn columnplan_detail;
+            private global::System.Data.DataColumn columnplan_description;
             
             private global::System.Data.DataColumn columnplan_date;
             
@@ -3696,9 +3695,9 @@ namespace RayanSport {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn plan_detailColumn {
+            public global::System.Data.DataColumn plan_descriptionColumn {
                 get {
-                    return this.columnplan_detail;
+                    return this.columnplan_description;
                 }
             }
             
@@ -3755,11 +3754,11 @@ namespace RayanSport {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public planRow AddplanRow(memberRow parentmemberRowByFK_plan_member, string plan_detail, string plan_date, string plan_coach) {
+            public planRow AddplanRow(memberRow parentmemberRowByFK_plan_member, string plan_description, string plan_date, string plan_coach) {
                 planRow rowplanRow = ((planRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        plan_detail,
+                        plan_description,
                         plan_date,
                         plan_coach};
                 if ((parentmemberRowByFK_plan_member != null)) {
@@ -3788,7 +3787,7 @@ namespace RayanSport {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnplan_memberId = base.Columns["plan_memberId"];
-                this.columnplan_detail = base.Columns["plan_detail"];
+                this.columnplan_description = base.Columns["plan_description"];
                 this.columnplan_date = base.Columns["plan_date"];
                 this.columnplan_coach = base.Columns["plan_coach"];
             }
@@ -3798,15 +3797,15 @@ namespace RayanSport {
             private void InitClass() {
                 this.columnplan_memberId = new global::System.Data.DataColumn("plan_memberId", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnplan_memberId);
-                this.columnplan_detail = new global::System.Data.DataColumn("plan_detail", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnplan_detail);
+                this.columnplan_description = new global::System.Data.DataColumn("plan_description", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnplan_description);
                 this.columnplan_date = new global::System.Data.DataColumn("plan_date", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnplan_date);
                 this.columnplan_coach = new global::System.Data.DataColumn("plan_coach", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnplan_coach);
                 this.columnplan_memberId.AllowDBNull = false;
-                this.columnplan_detail.AllowDBNull = false;
-                this.columnplan_detail.MaxLength = 2147483647;
+                this.columnplan_description.AllowDBNull = false;
+                this.columnplan_description.MaxLength = 2147483647;
                 this.columnplan_date.AllowDBNull = false;
                 this.columnplan_date.MaxLength = 50;
                 this.columnplan_coach.MaxLength = 50;
@@ -5061,6 +5060,17 @@ namespace RayanSport {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int buffetLog_memberId {
+                get {
+                    return ((int)(this[this.tablebuffetLog.buffetLog_memberIdColumn]));
+                }
+                set {
+                    this[this.tablebuffetLog.buffetLog_memberIdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string buffetLog_description {
                 get {
                     try {
@@ -5126,17 +5136,6 @@ namespace RayanSport {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string buffetSell_billDetail {
-                get {
-                    return ((string)(this[this.tablebuffetSell.buffetSell_billDetailColumn]));
-                }
-                set {
-                    this[this.tablebuffetSell.buffetSell_billDetailColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public long buffetSell_billPrice {
                 get {
                     return ((long)(this[this.tablebuffetSell.buffetSell_billPriceColumn]));
@@ -5148,10 +5147,10 @@ namespace RayanSport {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int buffetSell_membershipId {
+            public long buffetSell_membershipId {
                 get {
                     try {
-                        return ((int)(this[this.tablebuffetSell.buffetSell_membershipIdColumn]));
+                        return ((long)(this[this.tablebuffetSell.buffetSell_membershipIdColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'buffetSell_membershipId\' in table \'buffetSell\' is DBNull.", e);
@@ -5987,12 +5986,12 @@ namespace RayanSport {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string plan_detail {
+            public string plan_description {
                 get {
-                    return ((string)(this[this.tableplan.plan_detailColumn]));
+                    return ((string)(this[this.tableplan.plan_descriptionColumn]));
                 }
                 set {
-                    this[this.tableplan.plan_detailColumn] = value;
+                    this[this.tableplan.plan_descriptionColumn] = value;
                 }
             }
             
@@ -7140,16 +7139,18 @@ namespace RayanSport.rayan_sportDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("buffetLog_memberName", "buffetLog_memberName");
             tableMapping.ColumnMappings.Add("buffetLog_dateTime", "buffetLog_dateTime");
             tableMapping.ColumnMappings.Add("buffetLog_price", "buffetLog_price");
+            tableMapping.ColumnMappings.Add("buffetLog_memberId", "buffetLog_memberId");
             tableMapping.ColumnMappings.Add("buffetLog_description", "buffetLog_description");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[buffetLog] ([buffetLog_username], [buffetLog_memberName], [buffetLog_dateTime], [buffetLog_price], [buffetLog_description]) VALUES (@buffetLog_username, @buffetLog_memberName, @buffetLog_dateTime, @buffetLog_price, @buffetLog_description)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[buffetLog] ([buffetLog_username], [buffetLog_memberName], [buffetLog_dateTime], [buffetLog_price], [buffetLog_memberId], [buffetLog_description]) VALUES (@buffetLog_username, @buffetLog_memberName, @buffetLog_dateTime, @buffetLog_price, @buffetLog_memberId, @buffetLog_description)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetLog_username", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetLog_username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetLog_memberName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetLog_memberName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetLog_dateTime", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetLog_dateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetLog_price", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetLog_price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetLog_memberId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetLog_memberId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetLog_description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetLog_description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -7167,7 +7168,7 @@ namespace RayanSport.rayan_sportDataSetTableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT buffetLog_username, buffetLog_memberName, buffetLog_dateTime, buffetLog_pr" +
-                "ice, buffetLog_description FROM dbo.buffetLog";
+                "ice, buffetLog_memberId, buffetLog_description FROM dbo.buffetLog";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7228,7 +7229,7 @@ namespace RayanSport.rayan_sportDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string buffetLog_username, string buffetLog_memberName, string buffetLog_dateTime, long buffetLog_price, string buffetLog_description) {
+        public virtual int Insert(string buffetLog_username, string buffetLog_memberName, string buffetLog_dateTime, long buffetLog_price, int buffetLog_memberId, string buffetLog_description) {
             if ((buffetLog_username == null)) {
                 throw new global::System.ArgumentNullException("buffetLog_username");
             }
@@ -7248,11 +7249,12 @@ namespace RayanSport.rayan_sportDataSetTableAdapters {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(buffetLog_dateTime));
             }
             this.Adapter.InsertCommand.Parameters[3].Value = ((long)(buffetLog_price));
+            this.Adapter.InsertCommand.Parameters[4].Value = ((int)(buffetLog_memberId));
             if ((buffetLog_description == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(buffetLog_description));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(buffetLog_description));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -7394,7 +7396,6 @@ namespace RayanSport.rayan_sportDataSetTableAdapters {
             tableMapping.DataSetTable = "buffetSell";
             tableMapping.ColumnMappings.Add("buffetSell_id", "buffetSell_id");
             tableMapping.ColumnMappings.Add("buffetSell_date", "buffetSell_date");
-            tableMapping.ColumnMappings.Add("buffetSell_billDetail", "buffetSell_billDetail");
             tableMapping.ColumnMappings.Add("buffetSell_billPrice", "buffetSell_billPrice");
             tableMapping.ColumnMappings.Add("buffetSell_membershipId", "buffetSell_membershipId");
             tableMapping.ColumnMappings.Add("buffetSell_paymentCondition", "buffetSell_paymentCondition");
@@ -7408,35 +7409,33 @@ namespace RayanSport.rayan_sportDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_buffetSell_date", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_buffetSell_billPrice", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_billPrice", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_buffetSell_membershipId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_membershipId", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_buffetSell_membershipId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_membershipId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_buffetSell_membershipId", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_membershipId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_buffetSell_paymentCondition", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_paymentCondition", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[buffetSell] ([buffetSell_date], [buffetSell_billDetail], [buffetSell_billPrice], [buffetSell_membershipId], [buffetSell_paymentCondition], [buffetSell_description]) VALUES (@buffetSell_date, @buffetSell_billDetail, @buffetSell_billPrice, @buffetSell_membershipId, @buffetSell_paymentCondition, @buffetSell_description);
-SELECT buffetSell_id, buffetSell_date, buffetSell_billDetail, buffetSell_billPrice, buffetSell_membershipId, buffetSell_paymentCondition, buffetSell_description FROM buffetSell WHERE (buffetSell_id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[buffetSell] ([buffetSell_date], [buffetSell_billPrice], [buffetSell_membershipId], [buffetSell_paymentCondition], [buffetSell_description]) VALUES (@buffetSell_date, @buffetSell_billPrice, @buffetSell_membershipId, @buffetSell_paymentCondition, @buffetSell_description);
+SELECT buffetSell_id, buffetSell_date, buffetSell_billPrice, buffetSell_membershipId, buffetSell_paymentCondition, buffetSell_description FROM buffetSell WHERE (buffetSell_id = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_date", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_billDetail", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_billDetail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_billPrice", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_billPrice", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_membershipId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_membershipId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_membershipId", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_membershipId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_paymentCondition", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_paymentCondition", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[buffetSell] SET [buffetSell_date] = @buffetSell_date, [buffetSell_billDetail] = @buffetSell_billDetail, [buffetSell_billPrice] = @buffetSell_billPrice, [buffetSell_membershipId] = @buffetSell_membershipId, [buffetSell_paymentCondition] = @buffetSell_paymentCondition, [buffetSell_description] = @buffetSell_description WHERE (([buffetSell_id] = @Original_buffetSell_id) AND ([buffetSell_date] = @Original_buffetSell_date) AND ([buffetSell_billPrice] = @Original_buffetSell_billPrice) AND ((@IsNull_buffetSell_membershipId = 1 AND [buffetSell_membershipId] IS NULL) OR ([buffetSell_membershipId] = @Original_buffetSell_membershipId)) AND ([buffetSell_paymentCondition] = @Original_buffetSell_paymentCondition));
-SELECT buffetSell_id, buffetSell_date, buffetSell_billDetail, buffetSell_billPrice, buffetSell_membershipId, buffetSell_paymentCondition, buffetSell_description FROM buffetSell WHERE (buffetSell_id = @buffetSell_id)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[buffetSell] SET [buffetSell_date] = @buffetSell_date, [buffetSell_billPrice] = @buffetSell_billPrice, [buffetSell_membershipId] = @buffetSell_membershipId, [buffetSell_paymentCondition] = @buffetSell_paymentCondition, [buffetSell_description] = @buffetSell_description WHERE (([buffetSell_id] = @Original_buffetSell_id) AND ([buffetSell_date] = @Original_buffetSell_date) AND ([buffetSell_billPrice] = @Original_buffetSell_billPrice) AND ((@IsNull_buffetSell_membershipId = 1 AND [buffetSell_membershipId] IS NULL) OR ([buffetSell_membershipId] = @Original_buffetSell_membershipId)) AND ([buffetSell_paymentCondition] = @Original_buffetSell_paymentCondition));
+SELECT buffetSell_id, buffetSell_date, buffetSell_billPrice, buffetSell_membershipId, buffetSell_paymentCondition, buffetSell_description FROM buffetSell WHERE (buffetSell_id = @buffetSell_id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_date", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_billDetail", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_billDetail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_billPrice", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_billPrice", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_membershipId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_membershipId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_membershipId", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_membershipId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_paymentCondition", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_paymentCondition", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_buffetSell_id", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_buffetSell_date", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_buffetSell_billPrice", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_billPrice", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_buffetSell_membershipId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_membershipId", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_buffetSell_membershipId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_membershipId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_buffetSell_membershipId", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_membershipId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_buffetSell_paymentCondition", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_paymentCondition", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@buffetSell_id", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "buffetSell_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -7454,9 +7453,8 @@ SELECT buffetSell_id, buffetSell_date, buffetSell_billDetail, buffetSell_billPri
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT buffetSell_id, buffetSell_date, buffetSell_billDetail, buffetSell_billPric" +
-                "e, buffetSell_membershipId, buffetSell_paymentCondition, buffetSell_description " +
-                "FROM dbo.buffetSell";
+            this._commandCollection[0].CommandText = "SELECT buffetSell_id, buffetSell_date, buffetSell_billPrice, buffetSell_membershi" +
+                "pId, buffetSell_paymentCondition, buffetSell_description FROM dbo.buffetSell";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7517,7 +7515,7 @@ SELECT buffetSell_id, buffetSell_date, buffetSell_billDetail, buffetSell_billPri
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(long Original_buffetSell_id, string Original_buffetSell_date, long Original_buffetSell_billPrice, global::System.Nullable<int> Original_buffetSell_membershipId, string Original_buffetSell_paymentCondition) {
+        public virtual int Delete(long Original_buffetSell_id, string Original_buffetSell_date, long Original_buffetSell_billPrice, global::System.Nullable<long> Original_buffetSell_membershipId, string Original_buffetSell_paymentCondition) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((long)(Original_buffetSell_id));
             if ((Original_buffetSell_date == null)) {
                 throw new global::System.ArgumentNullException("Original_buffetSell_date");
@@ -7528,7 +7526,7 @@ SELECT buffetSell_id, buffetSell_date, buffetSell_billDetail, buffetSell_billPri
             this.Adapter.DeleteCommand.Parameters[2].Value = ((long)(Original_buffetSell_billPrice));
             if ((Original_buffetSell_membershipId.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_buffetSell_membershipId.Value));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((long)(Original_buffetSell_membershipId.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
@@ -7560,37 +7558,31 @@ SELECT buffetSell_id, buffetSell_date, buffetSell_billDetail, buffetSell_billPri
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string buffetSell_date, string buffetSell_billDetail, long buffetSell_billPrice, global::System.Nullable<int> buffetSell_membershipId, string buffetSell_paymentCondition, string buffetSell_description) {
+        public virtual int Insert(string buffetSell_date, long buffetSell_billPrice, global::System.Nullable<long> buffetSell_membershipId, string buffetSell_paymentCondition, string buffetSell_description) {
             if ((buffetSell_date == null)) {
                 throw new global::System.ArgumentNullException("buffetSell_date");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(buffetSell_date));
             }
-            if ((buffetSell_billDetail == null)) {
-                throw new global::System.ArgumentNullException("buffetSell_billDetail");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(buffetSell_billDetail));
-            }
-            this.Adapter.InsertCommand.Parameters[2].Value = ((long)(buffetSell_billPrice));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((long)(buffetSell_billPrice));
             if ((buffetSell_membershipId.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((int)(buffetSell_membershipId.Value));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((long)(buffetSell_membershipId.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             if ((buffetSell_paymentCondition == null)) {
                 throw new global::System.ArgumentNullException("buffetSell_paymentCondition");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(buffetSell_paymentCondition));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(buffetSell_paymentCondition));
             }
             if ((buffetSell_description == null)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(buffetSell_description));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(buffetSell_description));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -7612,61 +7604,55 @@ SELECT buffetSell_id, buffetSell_date, buffetSell_billDetail, buffetSell_billPri
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string buffetSell_date, string buffetSell_billDetail, long buffetSell_billPrice, global::System.Nullable<int> buffetSell_membershipId, string buffetSell_paymentCondition, string buffetSell_description, long Original_buffetSell_id, string Original_buffetSell_date, long Original_buffetSell_billPrice, global::System.Nullable<int> Original_buffetSell_membershipId, string Original_buffetSell_paymentCondition, long buffetSell_id) {
+        public virtual int Update(string buffetSell_date, long buffetSell_billPrice, global::System.Nullable<long> buffetSell_membershipId, string buffetSell_paymentCondition, string buffetSell_description, long Original_buffetSell_id, string Original_buffetSell_date, long Original_buffetSell_billPrice, global::System.Nullable<long> Original_buffetSell_membershipId, string Original_buffetSell_paymentCondition, long buffetSell_id) {
             if ((buffetSell_date == null)) {
                 throw new global::System.ArgumentNullException("buffetSell_date");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(buffetSell_date));
             }
-            if ((buffetSell_billDetail == null)) {
-                throw new global::System.ArgumentNullException("buffetSell_billDetail");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(buffetSell_billDetail));
-            }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((long)(buffetSell_billPrice));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((long)(buffetSell_billPrice));
             if ((buffetSell_membershipId.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(buffetSell_membershipId.Value));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((long)(buffetSell_membershipId.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             if ((buffetSell_paymentCondition == null)) {
                 throw new global::System.ArgumentNullException("buffetSell_paymentCondition");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(buffetSell_paymentCondition));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(buffetSell_paymentCondition));
             }
             if ((buffetSell_description == null)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(buffetSell_description));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(buffetSell_description));
             }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((long)(Original_buffetSell_id));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((long)(Original_buffetSell_id));
             if ((Original_buffetSell_date == null)) {
                 throw new global::System.ArgumentNullException("Original_buffetSell_date");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_buffetSell_date));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_buffetSell_date));
             }
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((long)(Original_buffetSell_billPrice));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((long)(Original_buffetSell_billPrice));
             if ((Original_buffetSell_membershipId.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_buffetSell_membershipId.Value));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((long)(Original_buffetSell_membershipId.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             if ((Original_buffetSell_paymentCondition == null)) {
                 throw new global::System.ArgumentNullException("Original_buffetSell_paymentCondition");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_buffetSell_paymentCondition));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_buffetSell_paymentCondition));
             }
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((long)(buffetSell_id));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((long)(buffetSell_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7687,8 +7673,8 @@ SELECT buffetSell_id, buffetSell_date, buffetSell_billDetail, buffetSell_billPri
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string buffetSell_date, string buffetSell_billDetail, long buffetSell_billPrice, global::System.Nullable<int> buffetSell_membershipId, string buffetSell_paymentCondition, string buffetSell_description, long Original_buffetSell_id, string Original_buffetSell_date, long Original_buffetSell_billPrice, global::System.Nullable<int> Original_buffetSell_membershipId, string Original_buffetSell_paymentCondition) {
-            return this.Update(buffetSell_date, buffetSell_billDetail, buffetSell_billPrice, buffetSell_membershipId, buffetSell_paymentCondition, buffetSell_description, Original_buffetSell_id, Original_buffetSell_date, Original_buffetSell_billPrice, Original_buffetSell_membershipId, Original_buffetSell_paymentCondition, Original_buffetSell_id);
+        public virtual int Update(string buffetSell_date, long buffetSell_billPrice, global::System.Nullable<long> buffetSell_membershipId, string buffetSell_paymentCondition, string buffetSell_description, long Original_buffetSell_id, string Original_buffetSell_date, long Original_buffetSell_billPrice, global::System.Nullable<long> Original_buffetSell_membershipId, string Original_buffetSell_paymentCondition) {
+            return this.Update(buffetSell_date, buffetSell_billPrice, buffetSell_membershipId, buffetSell_paymentCondition, buffetSell_description, Original_buffetSell_id, Original_buffetSell_date, Original_buffetSell_billPrice, Original_buffetSell_membershipId, Original_buffetSell_paymentCondition, Original_buffetSell_id);
         }
     }
     
@@ -10154,17 +10140,17 @@ SELECT membership_id, membership_memberId, membership_memberName, membership_sta
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "plan";
             tableMapping.ColumnMappings.Add("plan_memberId", "plan_memberId");
-            tableMapping.ColumnMappings.Add("plan_detail", "plan_detail");
+            tableMapping.ColumnMappings.Add("plan_description", "plan_description");
             tableMapping.ColumnMappings.Add("plan_date", "plan_date");
             tableMapping.ColumnMappings.Add("plan_coach", "plan_coach");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[plan] ([plan_memberId], [plan_detail], [plan_date], [plan_coac" +
-                "h]) VALUES (@plan_memberId, @plan_detail, @plan_date, @plan_coach)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[plan] ([plan_memberId], [plan_description], [plan_date], [plan" +
+                "_coach]) VALUES (@plan_memberId, @plan_description, @plan_date, @plan_coach)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@plan_memberId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "plan_memberId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@plan_detail", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "plan_detail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@plan_description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "plan_description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@plan_date", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "plan_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@plan_coach", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "plan_coach", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -10182,7 +10168,7 @@ SELECT membership_id, membership_memberId, membership_memberName, membership_sta
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT plan_memberId, plan_detail, plan_date, plan_coach FROM dbo.[plan]";
+            this._commandCollection[0].CommandText = "SELECT plan_memberId, plan_description, plan_date, plan_coach FROM dbo.[plan]";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -10243,13 +10229,13 @@ SELECT membership_id, membership_memberId, membership_memberName, membership_sta
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int plan_memberId, string plan_detail, string plan_date, string plan_coach) {
+        public virtual int Insert(int plan_memberId, string plan_description, string plan_date, string plan_coach) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(plan_memberId));
-            if ((plan_detail == null)) {
-                throw new global::System.ArgumentNullException("plan_detail");
+            if ((plan_description == null)) {
+                throw new global::System.ArgumentNullException("plan_description");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(plan_detail));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(plan_description));
             }
             if ((plan_date == null)) {
                 throw new global::System.ArgumentNullException("plan_date");

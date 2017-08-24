@@ -8,7 +8,7 @@ namespace RayanSport
 {
     class Membership
     {
-        public Membership(long membership_id, int membership_memberId, string membership_memberName, string membership_startDate, string membership_endDate, string membership_type, int membership_remainingSession, long membership_receiptNumber, string membership_paymentType, long membership_price, long membership_payment, string membership_description)
+        public Membership(long membership_id, int membership_memberId, string membership_memberName, string membership_startDate, string membership_endDate, string membership_type, int membership_remainingSession, long membership_receiptNumber, string membership_paymentType, long membership_price, long membership_payment, string membership_description , string membership_status)
         {
             this.membership_id = membership_id;
             this.membership_memberId = membership_memberId;
@@ -22,6 +22,7 @@ namespace RayanSport
             this.membership_price = membership_price;
             this.membership_payment = membership_payment;
             this.membership_description = membership_description;
+            this.membership_status = membership_status;
         }
 
         /*public bool isExpired()
@@ -41,6 +42,7 @@ namespace RayanSport
         public long membership_price { get; set; }
         public long membership_payment { get; set; }
         public string membership_description { get; set; }
-        
+        public String membership_status{ get; set; }
+
     }
 }

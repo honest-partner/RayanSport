@@ -10,7 +10,7 @@ namespace RayanSport
     {
         
 
-        public int memberCheckIn_membershipId { get; set; }
+        public long memberCheckIn_membershipId { get; set; }
         public String memberCheckIn_date { get; set; }
         public int memberCheckIn_commode { get; set; }
         public Member_CheckIn(int memberCheckIn_membershipId, string memberCheckIn_date, int memberCheckIn_commode)

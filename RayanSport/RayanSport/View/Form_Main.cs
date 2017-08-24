@@ -16,5 +16,11 @@ namespace RayanSport
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            string context = "نام کاربری یا رمز عبور اشتباه است";
+            Alert alert = new Alert(context, "darkred", 5);
+        }
     }
 }

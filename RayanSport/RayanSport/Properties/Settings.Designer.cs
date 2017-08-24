@@ -26,7 +26,8 @@ namespace RayanSport.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=169.254.92.252;Initial Catalog=rayan_sport;User ID=test")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source= 169.254.92.252;Initial Catalog=rayan_sport;User id=test;Password=Hos" +
+            "einNima1234;")]
         public string rayan_sportConnectionString {
             get {
                 return ((string)(this["rayan_sportConnectionString"]));

@@ -90,9 +90,13 @@ namespace RayanSport.View
 
         private void txb_UcCheckInInfoMemberId_TextChanged(object sender, EventArgs e)
         {
-            /*rayan_sportDataSet.membershipDataTable dataTable = new rayan_sportDataSet.membershipDataTable();
+            //BookDBDataSet.UsersDataTable dataTable2 = new BookDBDataSet.UsersDataTable();
+            //BookDBDataSetTableAdapters.UsersTableAdapter adapter2 = new BookDBDataSetTableAdapters.UsersTableAdapter();
+            //int rows1 = adapter2.Fill(dataTable2);
+            rayan_sportDataSet.membershipDataTable dataTable = new rayan_sportDataSet.membershipDataTable();
             rayan_sportDataSetTableAdapters.membershipTableAdapter adapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
-            int rows =adapter.FillByCheckMemberIsExist(dataTable, Convert.ToInt64(txb_UcCheckInInfoMemberId.Text));
+            int rows = adapter.FillBySelectMembersWithStatusAndId(dataTable,Convert.ToInt32(txb_UcCheckInInfoMemberId.Text),"فعال");
+            //int rows =adapter.FillBySelectMembersWithStatusAndId(dataTable, Convert.ToInt32(txb_UcCheckInInfoMemberId.Text),"منقضی");
             if (rows == 1)
             {
                 txb_UcCheckInInfoMemberName.Text = dataTable[0].membership_memberName;
@@ -102,9 +106,10 @@ namespace RayanSport.View
                 //txb_UcCheckInInfoMemberDes.Text = dataTable[0].
             }
             else {
-                MessageBox.Show("نام کاربری و یا رمز عبور وارد شده صحیح نمیباشد");
                 ClearTexts();
-            }*/
+            }
+            
+            }
         }
     }
-}
+

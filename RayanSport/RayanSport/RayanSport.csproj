@@ -62,9 +62,9 @@
     <Compile Include="Model\CheckIn.cs" />
     <Compile Include="Model\Coach.cs" />
     <Compile Include="rayan_sportDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>rayan_sportDataSet.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="View\Form_CheckIn.cs">
       <SubType>Form</SubType>
@@ -179,6 +179,9 @@
     <EmbeddedResource Include="View\UC_CheckIn.resx">
       <DependentUpon>UC_CheckIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_CheckIn_Info.resx">
+      <DependentUpon>UC_CheckIn_Info.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -200,9 +203,9 @@
       <DependentUpon>rayan_sportDataSet.xsd</DependentUpon>
     </None>
     <None Include="rayan_sportDataSet.xsd">
+      <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>rayan_sportDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </None>
     <None Include="rayan_sportDataSet.xss">
       <DependentUpon>rayan_sportDataSet.xsd</DependentUpon>

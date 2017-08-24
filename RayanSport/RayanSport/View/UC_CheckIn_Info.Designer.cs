@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_CheckIn_Info));
             this.pbx_UcCheckInInfoMemberPicture = new System.Windows.Forms.PictureBox();
             this.txb_UcCheckInInfoMemberId = new System.Windows.Forms.TextBox();
             this.txb_UcCheckInInfoCommodeNum = new System.Windows.Forms.TextBox();
@@ -52,7 +51,6 @@
             // 
             // pbx_UcCheckInInfoMemberPicture
             // 
-            this.pbx_UcCheckInInfoMemberPicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbx_UcCheckInInfoMemberPicture.BackgroundImage")));
             this.pbx_UcCheckInInfoMemberPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbx_UcCheckInInfoMemberPicture.Location = new System.Drawing.Point(38, 32);
             this.pbx_UcCheckInInfoMemberPicture.Name = "pbx_UcCheckInInfoMemberPicture";
@@ -63,7 +61,7 @@
             // txb_UcCheckInInfoMemberId
             // 
             this.txb_UcCheckInInfoMemberId.Font = new System.Drawing.Font("B Yekan+", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_UcCheckInInfoMemberId.Location = new System.Drawing.Point(378, 32);
+            this.txb_UcCheckInInfoMemberId.Location = new System.Drawing.Point(378, 31);
             this.txb_UcCheckInInfoMemberId.Name = "txb_UcCheckInInfoMemberId";
             this.txb_UcCheckInInfoMemberId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txb_UcCheckInInfoMemberId.Size = new System.Drawing.Size(262, 40);

@@ -155,6 +155,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.BackgroundImage = global::RayanSport.Properties.Resources.loginFinal1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 400);
             this.Controls.Add(this.lbl_loginRayan);
             this.Controls.Add(this.pnl_loginPassword);

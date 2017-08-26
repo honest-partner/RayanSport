@@ -33,24 +33,25 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnl_MainMenuOption = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.labelX5 = new DevComponents.DotNetBar.LabelX();
-            this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.labelX7 = new DevComponents.DotNetBar.LabelX();
-            this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.tlp_mainMainLayout.SuspendLayout();
             this.tlp_mainMenuLayout.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -65,7 +66,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlp_mainMainLayout
@@ -75,7 +76,7 @@
             this.tlp_mainMainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlp_mainMainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
             this.tlp_mainMainLayout.Controls.Add(this.tlp_mainMenuLayout, 1, 0);
-            this.tlp_mainMainLayout.Controls.Add(this.pictureBox2, 0, 0);
+            this.tlp_mainMainLayout.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tlp_mainMainLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlp_mainMainLayout.Location = new System.Drawing.Point(0, 0);
             this.tlp_mainMainLayout.Name = "tlp_mainMainLayout";
@@ -161,117 +162,16 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(230, 451);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // labelX1
+            // pictureBox10
             // 
-            // 
-            // 
-            // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX1.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
-            this.labelX1.Location = new System.Drawing.Point(4, 4);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(154, 49);
-            this.labelX1.TabIndex = 0;
-            this.labelX1.Text = "خــــانه";
-            this.labelX1.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // labelX2
-            // 
-            // 
-            // 
-            // 
-            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX2.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
-            this.labelX2.Location = new System.Drawing.Point(4, 60);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(154, 49);
-            this.labelX2.TabIndex = 2;
-            this.labelX2.Text = "ورزشکاران";
-            this.labelX2.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // labelX3
-            // 
-            // 
-            // 
-            // 
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX3.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
-            this.labelX3.Location = new System.Drawing.Point(4, 116);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(154, 49);
-            this.labelX3.TabIndex = 4;
-            this.labelX3.Text = "قــراردادها";
-            this.labelX3.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // labelX4
-            // 
-            // 
-            // 
-            // 
-            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX4.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
-            this.labelX4.Location = new System.Drawing.Point(4, 172);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(154, 49);
-            this.labelX4.TabIndex = 6;
-            this.labelX4.Text = "بوفــــــه";
-            this.labelX4.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // labelX5
-            // 
-            // 
-            // 
-            // 
-            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX5.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
-            this.labelX5.Location = new System.Drawing.Point(4, 228);
-            this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(154, 49);
-            this.labelX5.TabIndex = 8;
-            this.labelX5.Text = "کاربران";
-            this.labelX5.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // labelX6
-            // 
-            // 
-            // 
-            // 
-            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX6.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
-            this.labelX6.Location = new System.Drawing.Point(4, 284);
-            this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(154, 49);
-            this.labelX6.TabIndex = 10;
-            this.labelX6.Text = "تنظیـمات";
-            this.labelX6.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // labelX7
-            // 
-            // 
-            // 
-            // 
-            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX7.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
-            this.labelX7.Location = new System.Drawing.Point(4, 340);
-            this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(154, 49);
-            this.labelX7.TabIndex = 12;
-            this.labelX7.Text = "درباره ما";
-            this.labelX7.TextAlignment = System.Drawing.StringAlignment.Far;
+            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox10.Image = global::RayanSport.Properties.Resources.basketball_jersey;
+            this.pictureBox10.Location = new System.Drawing.Point(163, 396);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(63, 51);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 15;
+            this.pictureBox10.TabStop = false;
             // 
             // labelX8
             // 
@@ -284,93 +184,194 @@
             this.labelX8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
             this.labelX8.Location = new System.Drawing.Point(4, 396);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(154, 53);
+            this.labelX8.Size = new System.Drawing.Size(152, 51);
             this.labelX8.TabIndex = 14;
             this.labelX8.Text = "خروج";
             this.labelX8.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Image = global::RayanSport.Properties.Resources.basketball_jersey;
-            this.pictureBox10.Location = new System.Drawing.Point(165, 396);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(63, 53);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 15;
-            this.pictureBox10.TabStop = false;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox9.Image = global::RayanSport.Properties.Resources.basketball_jersey;
-            this.pictureBox9.Location = new System.Drawing.Point(165, 340);
+            this.pictureBox9.Location = new System.Drawing.Point(163, 340);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(63, 49);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 13;
             this.pictureBox9.TabStop = false;
             // 
+            // labelX7
+            // 
+            // 
+            // 
+            // 
+            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelX7.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelX7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
+            this.labelX7.Location = new System.Drawing.Point(4, 340);
+            this.labelX7.Name = "labelX7";
+            this.labelX7.Size = new System.Drawing.Size(152, 49);
+            this.labelX7.TabIndex = 12;
+            this.labelX7.Text = "درباره ما";
+            this.labelX7.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox8.Image = global::RayanSport.Properties.Resources.basketball_jersey;
-            this.pictureBox8.Location = new System.Drawing.Point(165, 284);
+            this.pictureBox8.Location = new System.Drawing.Point(163, 284);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(63, 49);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 11;
             this.pictureBox8.TabStop = false;
             // 
+            // labelX6
+            // 
+            // 
+            // 
+            // 
+            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelX6.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelX6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
+            this.labelX6.Location = new System.Drawing.Point(4, 284);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(152, 49);
+            this.labelX6.TabIndex = 10;
+            this.labelX6.Text = "تنظیـمات";
+            this.labelX6.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
             // pictureBox7
             // 
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox7.Image = global::RayanSport.Properties.Resources.basketball_jersey;
-            this.pictureBox7.Location = new System.Drawing.Point(165, 228);
+            this.pictureBox7.Location = new System.Drawing.Point(163, 228);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(63, 49);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 9;
             this.pictureBox7.TabStop = false;
             // 
+            // labelX5
+            // 
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelX5.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelX5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
+            this.labelX5.Location = new System.Drawing.Point(4, 228);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(152, 49);
+            this.labelX5.TabIndex = 8;
+            this.labelX5.Text = "کاربران";
+            this.labelX5.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Image = global::RayanSport.Properties.Resources.juice;
-            this.pictureBox6.Location = new System.Drawing.Point(165, 172);
+            this.pictureBox6.Location = new System.Drawing.Point(163, 172);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(63, 49);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 7;
             this.pictureBox6.TabStop = false;
             // 
+            // labelX4
+            // 
+            // 
+            // 
+            // 
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelX4.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelX4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
+            this.labelX4.Location = new System.Drawing.Point(4, 172);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(152, 49);
+            this.labelX4.TabIndex = 6;
+            this.labelX4.Text = "بوفــــــه";
+            this.labelX4.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = global::RayanSport.Properties.Resources.basketball_jersey;
-            this.pictureBox5.Location = new System.Drawing.Point(165, 116);
+            this.pictureBox5.Location = new System.Drawing.Point(163, 116);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(63, 49);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
             // 
+            // labelX3
+            // 
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelX3.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelX3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
+            this.labelX3.Location = new System.Drawing.Point(4, 116);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(152, 49);
+            this.labelX3.TabIndex = 4;
+            this.labelX3.Text = "قــراردادها";
+            this.labelX3.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Image = global::RayanSport.Properties.Resources.basketball_jersey;
-            this.pictureBox4.Location = new System.Drawing.Point(165, 60);
+            this.pictureBox4.Location = new System.Drawing.Point(163, 60);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(63, 49);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
+            // labelX2
+            // 
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelX2.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelX2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
+            this.labelX2.Location = new System.Drawing.Point(4, 60);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(152, 49);
+            this.labelX2.TabIndex = 2;
+            this.labelX2.Text = "ورزشکاران";
+            this.labelX2.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
+            // labelX1
+            // 
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelX1.Font = new System.Drawing.Font("B Yekan+", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelX1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(94)))));
+            this.labelX1.Location = new System.Drawing.Point(4, 4);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(152, 49);
+            this.labelX1.TabIndex = 0;
+            this.labelX1.Text = "خــــانه";
+            this.labelX1.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = global::RayanSport.Properties.Resources.basketball_jersey;
-            this.pictureBox3.Location = new System.Drawing.Point(165, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(163, 4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(63, 49);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -390,14 +391,38 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // tableLayoutPanel3
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Controls.Add(this.panelEx1, 0, 1);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(750, 715);
+            this.tableLayoutPanel3.TabIndex = 3;
+            // 
+            // panelEx1
+            // 
+            this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx1.Location = new System.Drawing.Point(3, 646);
+            this.panelEx1.Name = "panelEx1";
+            this.panelEx1.Size = new System.Drawing.Size(647, 66);
+            this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx1.Style.GradientAngle = 90;
+            this.panelEx1.TabIndex = 0;
+            this.panelEx1.Text = "panelEx1";
             // 
             // Form_Main
             // 
@@ -423,7 +448,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -434,7 +459,6 @@
         private System.Windows.Forms.TableLayoutPanel tlp_mainMenuLayout;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnl_MainMenuOption;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private DevComponents.DotNetBar.LabelX labelX1;
@@ -453,5 +477,7 @@
         private DevComponents.DotNetBar.LabelX labelX3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private DevComponents.DotNetBar.LabelX labelX2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private DevComponents.DotNetBar.PanelEx panelEx1;
     }
 }

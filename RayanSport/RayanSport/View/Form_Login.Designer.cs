@@ -72,7 +72,7 @@
             this.txb_loginUsername.BackColor = System.Drawing.Color.Transparent;
             this.txb_loginUsername.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_loginUsername.ForeColor = System.Drawing.Color.Gray;
-            this.txb_loginUsername.Location = new System.Drawing.Point(255, 195);
+            this.txb_loginUsername.Location = new System.Drawing.Point(255, 222);
             this.txb_loginUsername.MaxLength = 15;
             this.txb_loginUsername.Name = "txb_loginUsername";
             this.txb_loginUsername.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -89,7 +89,7 @@
             this.txb_loginPassword.BackColor = System.Drawing.Color.Transparent;
             this.txb_loginPassword.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_loginPassword.ForeColor = System.Drawing.Color.Gray;
-            this.txb_loginPassword.Location = new System.Drawing.Point(255, 234);
+            this.txb_loginPassword.Location = new System.Drawing.Point(255, 258);
             this.txb_loginPassword.MaxLength = 15;
             this.txb_loginPassword.Name = "txb_loginPassword";
             this.txb_loginPassword.Size = new System.Drawing.Size(285, 30);
@@ -105,7 +105,7 @@
             this.btn_login.BackColor = System.Drawing.Color.Green;
             this.btn_login.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(255, 277);
+            this.btn_login.Location = new System.Drawing.Point(255, 301);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(285, 30);
             this.btn_login.TabIndex = 4;
@@ -119,7 +119,7 @@
             this.pnl_loginUsername.BackColor = System.Drawing.Color.Transparent;
             this.pnl_loginUsername.BackgroundImage = global::RayanSport.Properties.Resources.user__3_;
             this.pnl_loginUsername.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pnl_loginUsername.Location = new System.Drawing.Point(509, 198);
+            this.pnl_loginUsername.Location = new System.Drawing.Point(509, 225);
             this.pnl_loginUsername.Name = "pnl_loginUsername";
             this.pnl_loginUsername.Size = new System.Drawing.Size(25, 25);
             this.pnl_loginUsername.TabIndex = 5;
@@ -130,7 +130,7 @@
             this.pnl_loginPassword.BackColor = System.Drawing.Color.Transparent;
             this.pnl_loginPassword.BackgroundImage = global::RayanSport.Properties.Resources.lock__1_;
             this.pnl_loginPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pnl_loginPassword.Location = new System.Drawing.Point(509, 237);
+            this.pnl_loginPassword.Location = new System.Drawing.Point(509, 261);
             this.pnl_loginPassword.Name = "pnl_loginPassword";
             this.pnl_loginPassword.Size = new System.Drawing.Size(25, 25);
             this.pnl_loginPassword.TabIndex = 6;

@@ -56,7 +56,7 @@
             this.txb_UcCheckInInfoMemberId.Name = "txb_UcCheckInInfoMemberId";
             this.txb_UcCheckInInfoMemberId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txb_UcCheckInInfoMemberId.Size = new System.Drawing.Size(262, 40);
-            this.txb_UcCheckInInfoMemberId.TabIndex = 1;
+            this.txb_UcCheckInInfoMemberId.TabIndex = 0;
             this.txb_UcCheckInInfoMemberId.TextChanged += new System.EventHandler(this.txb_UcCheckInInfoMemberId_TextChanged);
             this.txb_UcCheckInInfoMemberId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcCheckInMemberId_KeyPress);
             // 
@@ -68,6 +68,8 @@
             this.txb_UcCheckInInfoCommodeNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txb_UcCheckInInfoCommodeNum.Size = new System.Drawing.Size(262, 40);
             this.txb_UcCheckInInfoCommodeNum.TabIndex = 1;
+            this.txb_UcCheckInInfoCommodeNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txb_UcCheckInMemberId_KeyDown);
+            this.txb_UcCheckInInfoCommodeNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcCheckInMemberId_KeyPress);
             // 
             // txb_UcCheckInInfoMemberName
             // 
@@ -206,7 +208,7 @@
             this.btn_UcCheckInInfoMemberCheck.Location = new System.Drawing.Point(38, 420);
             this.btn_UcCheckInInfoMemberCheck.Name = "btn_UcCheckInInfoMemberCheck";
             this.btn_UcCheckInInfoMemberCheck.Size = new System.Drawing.Size(166, 62);
-            this.btn_UcCheckInInfoMemberCheck.TabIndex = 4;
+            this.btn_UcCheckInInfoMemberCheck.TabIndex = 2;
             this.btn_UcCheckInInfoMemberCheck.Text = "تایید";
             this.btn_UcCheckInInfoMemberCheck.UseVisualStyleBackColor = true;
             this.btn_UcCheckInInfoMemberCheck.Click += new System.EventHandler(this.btn_UcCheckInInfoMemberCheck_Click);
@@ -218,7 +220,7 @@
             this.llb_UcCheckInInfoShowMemberDetail.Location = new System.Drawing.Point(748, 435);
             this.llb_UcCheckInInfoShowMemberDetail.Name = "llb_UcCheckInInfoShowMemberDetail";
             this.llb_UcCheckInInfoShowMemberDetail.Size = new System.Drawing.Size(141, 34);
-            this.llb_UcCheckInInfoShowMemberDetail.TabIndex = 5;
+            this.llb_UcCheckInInfoShowMemberDetail.TabIndex = 4;
             this.llb_UcCheckInInfoShowMemberDetail.TabStop = true;
             this.llb_UcCheckInInfoShowMemberDetail.Text = "نمایش جزئیات";
             // 

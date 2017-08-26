@@ -7,13 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace RayanSport.View
 {
     public partial class UC_CheckIn_Info : UserControl
     {
+        long membershipId;
+        String memberGender;
+        String memberName;
         //id for people that are not member but they came gym
-        int not_member_id;
+        int member_id;
+        int remainingSession;
         public UC_CheckIn_Info()
         {
             InitializeComponent();
@@ -36,37 +41,10 @@ namespace RayanSport.View
             
             //check if enter key is entered
             if (e.KeyCode == Keys.Enter) {
-                
-                
+                enterMember();
             }
         }
-        //check id is corect.if corect is it memeber or not
-        private void CheckId(String member_id)
-        {
-            int member_id_int;
-            bool access = Int32.TryParse(member_id, out member_id_int);
-            if (!access)
-            {
-                MessageBox.Show("لطفا کد عضویت را بصورت صحیح وارد کنید");
-            }
-            else {
-                if (member_id_int == not_member_id)
-                    NotMemberEntered();
-                else
-                    CheckMember();
-            }
-            
-        }
-        //do task if entered id is member or not
-        private void CheckMember()
-        {
-            
-        }
-        //do task if entered id is for not memebers
-        private void NotMemberEntered()
-        {
-            
-        }
+        
 
         private void txb_UcCheckInInfoMemberClear_Click(object sender, EventArgs e)
         {
@@ -79,37 +57,96 @@ namespace RayanSport.View
             foreach (var txt in this.Controls)
             {
                 if (txt is TextBox)
+                    if(!txt.ToString().Equals(txb_UcCheckInInfoMemberId.ToString()))
                     ((TextBox)txt).Clear();
+                txb_UcCheckInInfoMemberShipType.BackColor = SystemColors.Window;
+                txb_UcCheckInInfoMemberRemainingSession.BackColor = SystemColors.Window;
+                txb_UcCheckInInfoMembershipEndDate.BackColor = SystemColors.Window;
+                btn_UcCheckInInfoMemberCheck.Enabled = true;
             }
         }
 
         private void btn_UcCheckInInfoMemberCheck_Click(object sender, EventArgs e)
         {
+            enterMember();
             
+        }
+
+        private void enterMember()
+        {
+            int? commode;
+            if (txb_UcCheckInInfoCommodeNum.Text.Equals(""))
+            {
+                commode = null;
+            }
+            else
+            {
+                commode = Convert.ToInt32(txb_UcCheckInInfoCommodeNum.Text);
+            }
+            rayan_sportDataSet.memberCheckInDataTable memberCheckInDataTable = new rayan_sportDataSet.memberCheckInDataTable();
+            rayan_sportDataSetTableAdapters.memberCheckInTableAdapter memberCheckInTableAdapter = new rayan_sportDataSetTableAdapters.memberCheckInTableAdapter();
+            DateTime d = DateTime.Now;
+            PersianCalendar pc = new PersianCalendar();
+            String date = string.Format("{0}/{1}/{2}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));
+
+            memberCheckInTableAdapter.Insert(membershipId, date, commode);
+            MessageBox.Show(memberGender+" "+memberName+" "+"وارد شد.");
+            ClearTexts();
+            txb_UcCheckInInfoMemberId.Clear();
+            rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
+            rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
+            tableAdapter.IncreaseRemainingSession(remainingSession-1,member_id,membershipId);
         }
 
         private void txb_UcCheckInInfoMemberId_TextChanged(object sender, EventArgs e)
         {
-            //BookDBDataSet.UsersDataTable dataTable2 = new BookDBDataSet.UsersDataTable();
-            //BookDBDataSetTableAdapters.UsersTableAdapter adapter2 = new BookDBDataSetTableAdapters.UsersTableAdapter();
-            //int rows1 = adapter2.Fill(dataTable2);
-            rayan_sportDataSet.membershipDataTable dataTable = new rayan_sportDataSet.membershipDataTable();
-            rayan_sportDataSetTableAdapters.membershipTableAdapter adapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
-            int rows = adapter.FillBySelectMembersWithStatusAndId(dataTable,Convert.ToInt32(txb_UcCheckInInfoMemberId.Text),"فعال");
-            //int rows =adapter.FillBySelectMembersWithStatusAndId(dataTable, Convert.ToInt32(txb_UcCheckInInfoMemberId.Text),"منقضی");
-            if (rows == 1)
+            if (!txb_UcCheckInInfoMemberId.Text.Equals(""))
             {
-                txb_UcCheckInInfoMemberName.Text = dataTable[0].membership_memberName;
-                txb_UcCheckInInfoMemberShipType.Text = dataTable[0].membership_type;
-                txb_UcCheckInInfoMemberRemainingSession.Text = dataTable[0].membership_remainingSession + "";
-                txb_UcCheckInInfoMembershipEndDate.Text = dataTable[0].membership_endDate;
-                //txb_UcCheckInInfoMemberDes.Text = dataTable[0].
-            }
-            else {
-                ClearTexts();
-            }
-            
+                rayan_sportDataSet.memberDataTable memberDataTable = new rayan_sportDataSet.memberDataTable();
+                rayan_sportDataSetTableAdapters.memberTableAdapter membertableAdapter = new rayan_sportDataSetTableAdapters.memberTableAdapter();
+                int rows = membertableAdapter.FillBySelectByMemberId(memberDataTable, Convert.ToInt32(txb_UcCheckInInfoMemberId.Text));
+                
+                if (rows == 1)
+                {
+                    txb_UcCheckInInfoMemberName.Text = memberDataTable[0].member_name;
+                    member_id = memberDataTable[0].member_id;
+                    memberGender = memberDataTable[0].member_gender;
+                    memberName = memberDataTable[0].member_name;
+                    rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
+                    rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
+                    int rows1 = membershipTableAdapter.FillBySelectMembersWithStatusAndId(membershipDataTable, Convert.ToInt32(txb_UcCheckInInfoMemberId.Text), "فعال");
+                    if (rows1 == 1)
+                    {
+                        if (membershipDataTable[0].membership_remainingSession > 0)
+                        {
+                            membershipId = membershipDataTable[0].membership_id;
+                            remainingSession = membershipDataTable[0].membership_remainingSession;
+                            txb_UcCheckInInfoMemberShipType.Text = membershipDataTable[0].membership_type;
+                            txb_UcCheckInInfoMemberRemainingSession.Text = membershipDataTable[0].membership_remainingSession + "";
+                            txb_UcCheckInInfoMembershipEndDate.Text = membershipDataTable[0].membership_endDate;
+                        }
+                        else
+                        {
+                            txb_UcCheckInInfoMemberShipType.Text = "قرار داد فعال وجود ندارد";
+                            txb_UcCheckInInfoMemberRemainingSession.Text = "قرار داد فعال وجود ندارد";
+                            txb_UcCheckInInfoMembershipEndDate.Text = "قرار داد فعال وجود ندارد";
+                            txb_UcCheckInInfoMemberShipType.BackColor = Color.Red;
+                            txb_UcCheckInInfoMemberRemainingSession.BackColor = Color.Red;
+                            txb_UcCheckInInfoMembershipEndDate.BackColor = Color.Red;
+                            btn_UcCheckInInfoMemberCheck.Enabled = false;
+                        }
+                    }
+                    else
+                    {
+                        ClearTexts();
+                    }
+                }
+                else {
+                    ClearTexts();
+                }
+
             }
         }
     }
+}
 

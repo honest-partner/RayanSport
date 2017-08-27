@@ -133,16 +133,16 @@
             this.tableLayoutPanel3.Controls.Add(this.txb_UcShowMemberMemberInfoMemberSick, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.lbl_UcShowMemberMemberInfoMemberName, 5, 1);
             this.tableLayoutPanel3.Controls.Add(this.lbl_UcShowMemberMemberInfoMemberId, 5, 0);
-            this.tableLayoutPanel3.Controls.Add(this.txb_UcShowMemberMemberInfoMemberId, 4, 0);
             this.tableLayoutPanel3.Controls.Add(this.txb_UcShowMemberMemberInfoMemberName, 4, 1);
             this.tableLayoutPanel3.Controls.Add(this.txb_UcShowMemberMemberInfoMemberNationalCode, 4, 3);
             this.tableLayoutPanel3.Controls.Add(this.lbl_UcShowMemberMemberInfoMemberNationalCode, 5, 3);
             this.tableLayoutPanel3.Controls.Add(this.lbl_UcShowMemberMemberInfoMemberGender, 5, 2);
-            this.tableLayoutPanel3.Controls.Add(this.cmb_UcShowMemberMemberInfoMemberGender, 4, 2);
             this.tableLayoutPanel3.Controls.Add(this.cmb_UcShowMemberMemberInfoMemberBlood, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.btn_UcShowMemberMemberInfoAddMember, 5, 5);
             this.tableLayoutPanel3.Controls.Add(this.btn_UcShowMemberMemberInfoChangeMember, 4, 5);
             this.tableLayoutPanel3.Controls.Add(this.btn_UcShowMemberMemberInfoDeleteMember, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.txb_UcShowMemberMemberInfoMemberId, 4, 0);
+            this.tableLayoutPanel3.Controls.Add(this.cmb_UcShowMemberMemberInfoMemberGender, 4, 2);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(153, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -394,6 +394,7 @@
             this.btn_UcShowMemberMemberInfoChangeMember.TabIndex = 18;
             this.btn_UcShowMemberMemberInfoChangeMember.Text = "ذخیره تغییرات";
             this.btn_UcShowMemberMemberInfoChangeMember.UseVisualStyleBackColor = false;
+            this.btn_UcShowMemberMemberInfoChangeMember.Click += new System.EventHandler(this.btn_UcShowMemberMemberInfoChangeMember_Click);
             // 
             // btn_UcShowMemberMemberInfoDeleteMember
             // 
@@ -407,6 +408,7 @@
             this.btn_UcShowMemberMemberInfoDeleteMember.TabIndex = 16;
             this.btn_UcShowMemberMemberInfoDeleteMember.Text = "حذف ورزشکار";
             this.btn_UcShowMemberMemberInfoDeleteMember.UseVisualStyleBackColor = false;
+            this.btn_UcShowMemberMemberInfoDeleteMember.Click += new System.EventHandler(this.btn_UcShowMemberMemberInfoDeleteMember_Click);
             // 
             // UC_ShowMember_MemberInfo
             // 

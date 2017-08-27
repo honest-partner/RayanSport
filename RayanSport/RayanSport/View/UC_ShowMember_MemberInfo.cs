@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Drawing.Imaging;
+using System.IO;
 
 namespace RayanSport.View
 {
@@ -18,7 +19,7 @@ namespace RayanSport.View
 
         #region constructors
 
-        public UC_ShowMember_MemberInfo(Member member2,bool formIsOpen)
+        public UC_ShowMember_MemberInfo(Member member2, bool formIsOpen)
         {
             if (!formIsOpen)
             {
@@ -102,11 +103,16 @@ namespace RayanSport.View
 
         private void btn_UcShowMemberMemberInfoAddMember_Click(object sender, EventArgs e)
         {
-            if (txb_UcShowMemberMemberInfoMemberName.Text == "" || cmb_UcShowMemberMemberInfoMemberGender.Text == "")
+            if (txb_UcShowMemberMemberInfoMemberName.Text == "")
             {
-                Alert alert = new Alert("فیلد های ستاره دار را وارد کنید", "darkred");
+                Alert alert = new Alert("نام و نام خانوادگی ورزشکار را وارد کنید", "darkred");
                 txb_UcShowMemberMemberInfoMemberName.BackColor = Color.MistyRose;
+            }
+            else if (cmb_UcShowMemberMemberInfoMemberGender.Text == "")
+            {
+                Alert alert = new Alert("جنسیت ورزشکار را وارد کنید", "darkred");
                 cmb_UcShowMemberMemberInfoMemberGender.BackColor = Color.MistyRose;
+
             }
             else
             {
@@ -129,7 +135,7 @@ namespace RayanSport.View
                     path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\member_image\";
                     pbx_UcShowMemberMemberInfoMemberPicture.Image.Save(path + txb_UcShowMemberMemberInfoMemberId.Text + ".Jpeg", ImageFormat.Jpeg);
 
-                    Alert alert = new Alert("ورزشکار جدید با کد عضویت " + txb_UcShowMemberMemberInfoMemberId.Text + " افزوده شد", "bluegray");
+                    Alert alert = new Alert("ورزشکار جدید با کد عضویت " + txb_UcShowMemberMemberInfoMemberId.Text + " افزوده شد", "green");
                 }
                 catch (Exception)
                 {
@@ -137,7 +143,77 @@ namespace RayanSport.View
                 }
             }
         }
+    
+
+        private void btn_UcShowMemberMemberInfoChangeMember_Click(object sender, EventArgs e)
+        {
+            if (txb_UcShowMemberMemberInfoMemberName.Text == "")
+            {
+                Alert alert = new Alert("نام و نام خانوادگی ورزشکار را وارد کنید", "darkred");
+                txb_UcShowMemberMemberInfoMemberName.BackColor = Color.MistyRose;
+            }
+            else if (cmb_UcShowMemberMemberInfoMemberGender.Text == "")
+            {
+                Alert alert = new Alert("جنسیت ورزشکار را وارد کنید", "darkred");
+                cmb_UcShowMemberMemberInfoMemberGender.BackColor = Color.MistyRose;
+
+            }
+            else
+            {
+                try
+                {
+                    rayan_sportDataSetTableAdapters.memberTableAdapter memberTableAdapter = new rayan_sportDataSetTableAdapters.memberTableAdapter();
+                    rayan_sportDataSetTableAdapters.logTableAdapter logTableAdapter = new rayan_sportDataSetTableAdapters.logTableAdapter();
+
+                    memberTableAdapter.UpdateQuery(txb_UcShowMemberMemberInfoMemberName.Text, txb_UcShowMemberMemberInfoMemberNationalCode.Text,
+                            txb_UcShowMemberMemberInfoMemberTel.Text, cmb_UcShowMemberMemberInfoMemberGender.Text, cmb_UcShowMemberMemberInfoMemberBlood.Text,
+                            txb_UcShowMemberMemberInfoMemberSick.Text, txb_UcShowMemberMemberInfoMemberAddress.Text,int.Parse(txb_UcShowMemberMemberInfoMemberId.Text));
+
+                    logTableAdapter.Insert("تغییر ورزشکار با نام " + txb_UcShowMemberMemberInfoMemberName.Text + "", "member", "admin", DateTime.Now.ToShortDateString(), DateTime.Now.ToShortTimeString());
+
+                    string path;
+                    path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\member_image\";
+                    pbx_UcShowMemberMemberInfoMemberPicture.Image.Save(path + txb_UcShowMemberMemberInfoMemberId.Text + ".Jpeg", ImageFormat.Jpeg);
+
+                    Alert alert = new Alert("اطلاعات ورزشکار با کد عضویت " + txb_UcShowMemberMemberInfoMemberId.Text + " تغییر یافت", "green");
+                }
+                catch (Exception)
+                {
+                    Alert alert = new Alert("خطا در افزودن ورزشکار", "darkred");
+                }
+            }
+        }
+
+        private void btn_UcShowMemberMemberInfoDeleteMember_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                rayan_sportDataSetTableAdapters.memberTableAdapter memberTableAdapter = new rayan_sportDataSetTableAdapters.memberTableAdapter();
+                rayan_sportDataSetTableAdapters.logTableAdapter logTableAdapter = new rayan_sportDataSetTableAdapters.logTableAdapter();
+
+                memberTableAdapter.DeleteQuery(int.Parse(txb_UcShowMemberMemberInfoMemberId.Text));
+
+                logTableAdapter.Insert("حذف ورزشکار با نام " + member.member_name + "", "member", "admin", DateTime.Now.ToShortDateString(), DateTime.Now.ToShortTimeString());
+
+                string path;
+                path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\member_image\";
+                if (File.Exists(path+txb_UcShowMemberMemberInfoMemberId.Text+".Jpeg"))
+                {
+                    File.GetAccessControl(path + txb_UcShowMemberMemberInfoMemberId.Text + ".Jpeg");
+                    File.Delete(path + txb_UcShowMemberMemberInfoMemberId.Text + ".Jpeg");
+                }
+
+                Alert alert = new Alert("اطلاعات ورزشکار با کد عضویت " + txb_UcShowMemberMemberInfoMemberId.Text + "حذف شد", "green");
+            }
+            catch (Exception ee)
+            {
+                MessageBox.Show(ee.Message);
+                Alert alert = new Alert("خطا در افزودن ورزشکار", "darkred");
+            }
+        }
+
         #endregion
+
 
     }
 }

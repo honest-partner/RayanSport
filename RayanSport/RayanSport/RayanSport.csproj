@@ -191,6 +191,9 @@
     <EmbeddedResource Include="View\UC_CheckIn_Info.resx">
       <DependentUpon>UC_CheckIn_Info.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_ShowMember_MemberInfo.resx">
+      <DependentUpon>UC_ShowMember_MemberInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -293,6 +296,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

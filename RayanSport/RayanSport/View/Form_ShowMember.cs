@@ -12,9 +12,10 @@ namespace RayanSport.View
 {
     public partial class Form_ShowMember : Form
     {
-        public Form_ShowMember()
+       
+        public Form_ShowMember(Member member)
         {
-            InitializeComponent();
+            InitializeComponent(member,true);
         }
     }
 }

@@ -31,10 +31,7 @@ namespace RayanSport.View
 
         }
 
-        private void btn_UcCheckInMemberCheck_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void txb_UcCheckInMemberId_KeyDown(object sender, KeyEventArgs e)
         {
@@ -62,7 +59,7 @@ namespace RayanSport.View
                 txb_UcCheckInInfoMemberShipType.BackColor = SystemColors.Window;
                 txb_UcCheckInInfoMemberRemainingSession.BackColor = SystemColors.Window;
                 txb_UcCheckInInfoMembershipEndDate.BackColor = SystemColors.Window;
-                btn_UcCheckInInfoMemberCheck.Enabled = true;
+                btn_UcCheckInInfoMemberCheck.Enabled = false;
             }
         }
 
@@ -74,28 +71,34 @@ namespace RayanSport.View
 
         private void enterMember()
         {
-            int? commode;
-            if (txb_UcCheckInInfoCommodeNum.Text.Equals(""))
-            {
-                commode = null;
+            if (txb_UcCheckInInfoMemberId.Text.Equals("")) {
+                MessageBox.Show("کد عضویت ورزشکار را وارد نمایید");
+                txb_UcCheckInInfoMemberId.Focus();
             }
-            else
-            {
-                commode = Convert.ToInt32(txb_UcCheckInInfoCommodeNum.Text);
-            }
-            rayan_sportDataSet.memberCheckInDataTable memberCheckInDataTable = new rayan_sportDataSet.memberCheckInDataTable();
-            rayan_sportDataSetTableAdapters.memberCheckInTableAdapter memberCheckInTableAdapter = new rayan_sportDataSetTableAdapters.memberCheckInTableAdapter();
-            DateTime d = DateTime.Now;
-            PersianCalendar pc = new PersianCalendar();
-            String date = string.Format("{0}/{1}/{2}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));
+            else{
+                int? commode;
+                if (txb_UcCheckInInfoCommodeNum.Text.Equals(""))
+                {
+                    commode = null;
+                }
+                else
+                {
+                    commode = Convert.ToInt32(txb_UcCheckInInfoCommodeNum.Text);
+                }
+                rayan_sportDataSet.memberCheckInDataTable memberCheckInDataTable = new rayan_sportDataSet.memberCheckInDataTable();
+                rayan_sportDataSetTableAdapters.memberCheckInTableAdapter memberCheckInTableAdapter = new rayan_sportDataSetTableAdapters.memberCheckInTableAdapter();
+                DateTime d = DateTime.Now;
+                PersianCalendar pc = new PersianCalendar();
+                String date = string.Format("{0}/{1}/{2}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));
 
-            memberCheckInTableAdapter.Insert(membershipId, date, commode);
-            MessageBox.Show(memberGender+" "+memberName+" "+"وارد شد.");
-            ClearTexts();
-            txb_UcCheckInInfoMemberId.Clear();
-            rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
-            rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
-            tableAdapter.IncreaseRemainingSession(remainingSession-1,member_id,membershipId);
+                memberCheckInTableAdapter.Insert(membershipId, date, commode);
+                MessageBox.Show(memberGender + " " + memberName + " " + "وارد شد.");
+                ClearTexts();
+                txb_UcCheckInInfoMemberId.Clear();
+                rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
+                rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
+                tableAdapter.IncreaseRemainingSession(remainingSession - 1, member_id, membershipId);
+            }
         }
 
         private void txb_UcCheckInInfoMemberId_TextChanged(object sender, EventArgs e)
@@ -115,6 +118,7 @@ namespace RayanSport.View
                     rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
                     rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
                     int rows1 = membershipTableAdapter.FillBySelectMembersWithStatusAndId(membershipDataTable, Convert.ToInt32(txb_UcCheckInInfoMemberId.Text), "فعال");
+
                     if (rows1 == 1)
                     {
                         if (membershipDataTable[0].membership_remainingSession > 0)
@@ -124,21 +128,30 @@ namespace RayanSport.View
                             txb_UcCheckInInfoMemberShipType.Text = membershipDataTable[0].membership_type;
                             txb_UcCheckInInfoMemberRemainingSession.Text = membershipDataTable[0].membership_remainingSession + "";
                             txb_UcCheckInInfoMembershipEndDate.Text = membershipDataTable[0].membership_endDate;
+                            btn_UcCheckInInfoMemberCheck.Enabled = true;
                         }
                         else
                         {
                             txb_UcCheckInInfoMemberShipType.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMemberRemainingSession.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMembershipEndDate.Text = "قرار داد فعال وجود ندارد";
-                            txb_UcCheckInInfoMemberShipType.BackColor = Color.Red;
-                            txb_UcCheckInInfoMemberRemainingSession.BackColor = Color.Red;
-                            txb_UcCheckInInfoMembershipEndDate.BackColor = Color.Red;
+                            txb_UcCheckInInfoMemberShipType.BackColor = Color.LightSalmon;
+                            txb_UcCheckInInfoMemberRemainingSession.BackColor = Color.LightSalmon;
+                            txb_UcCheckInInfoMembershipEndDate.BackColor = Color.LightSalmon;
                             btn_UcCheckInInfoMemberCheck.Enabled = false;
                         }
+
                     }
                     else
                     {
-                        ClearTexts();
+                        txb_UcCheckInInfoMemberShipType.Text = "قرار داد فعال وجود ندارد";
+                            txb_UcCheckInInfoMemberRemainingSession.Text = "قرار داد فعال وجود ندارد";
+                            txb_UcCheckInInfoMembershipEndDate.Text = "قرار داد فعال وجود ندارد";
+                            txb_UcCheckInInfoMemberShipType.BackColor = Color.LightSalmon;
+                            txb_UcCheckInInfoMemberRemainingSession.BackColor = Color.LightSalmon;
+                            txb_UcCheckInInfoMembershipEndDate.BackColor = Color.LightSalmon;
+                            btn_UcCheckInInfoMemberCheck.Enabled = false;
+
                     }
                 }
                 else {
@@ -149,4 +162,3 @@ namespace RayanSport.View
         }
     }
 }
-

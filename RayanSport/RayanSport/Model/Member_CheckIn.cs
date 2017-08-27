@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayanSport
 {
-    class Member_CheckIn
+    public class Member_CheckIn
     {
         
 
@@ -18,6 +18,11 @@ namespace RayanSport
             this.memberCheckIn_membershipId = memberCheckIn_membershipId;
             this.memberCheckIn_date = memberCheckIn_date;
             this.memberCheckIn_commode = memberCheckIn_commode;
+        }
+        public Member_CheckIn() { }
+        public String toString() {
+            return String.Format("memberCheckIn_membershipId:{0},memberCheckIn_date:{1},memberCheckIn_commode:{2}"
+                , memberCheckIn_membershipId, memberCheckIn_date, memberCheckIn_commode);
         }
     }
 }

@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.uC_ShowMember_ContractInfo1 = new RayanSport.View.UC_ShowMember_ContractInfo(new Member(100,"", "", "", "", "", "", "",0));
             this.SuspendLayout();
+            // 
+            // uC_ShowMember_ContractInfo1
+            // 
+            this.uC_ShowMember_ContractInfo1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_ShowMember_ContractInfo1.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uC_ShowMember_ContractInfo1.Location = new System.Drawing.Point(0, 0);
+            this.uC_ShowMember_ContractInfo1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.uC_ShowMember_ContractInfo1.Name = "uC_ShowMember_ContractInfo1";
+            this.uC_ShowMember_ContractInfo1.Size = new System.Drawing.Size(1374, 721);
+            this.uC_ShowMember_ContractInfo1.TabIndex = 0;
             // 
             // Form_ShowMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.ClientSize = new System.Drawing.Size(1374, 721);
+            this.Controls.Add(this.uC_ShowMember_ContractInfo1);
             this.DoubleBuffered = true;
             this.Name = "Form_ShowMember";
             this.Text = "Form_ShowMember";
@@ -43,5 +55,7 @@
         }
 
         #endregion
+
+        private UC_ShowMember_ContractInfo uC_ShowMember_ContractInfo1;
     }
 }

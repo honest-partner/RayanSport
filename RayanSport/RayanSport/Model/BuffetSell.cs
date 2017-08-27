@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayanSport
 {
-    class BuffetSell
+    public class BuffetSell
     {
         public BuffetSell(long buffetSell_Id, string buffetSell_date, string buffetSell_description, long buffetSell_billPrice, int buffetSell_memberId, string buffetSell_paymentCondition)
         {
@@ -19,6 +19,7 @@ namespace RayanSport
             
         }
 
+        public BuffetSell() { }
         public long buffetSell_Id { get; set; }
         public String buffetSell_date { get; set; }
         public String buffetSell_description { get; set; }
@@ -26,6 +27,9 @@ namespace RayanSport
         public long buffetSell_memberId { get; set; }
         public String buffetSell_paymentCondition { get; set; }
         //public int buffetSell_description { get; set; }
-
+        public String toString() {
+            return (String.Format("buffetSell_Id:{0},buffetSell_date:{1},buffetSell_description:{2},buffetSell_billPrice:{3},buffetSell_membershipId:{4},buffetSell_paymentCondition:{5}"
+                , buffetSell_Id,buffetSell_date,buffetSell_description,buffetSell_billPrice,buffetSell_membershipId,buffetSell_paymentCondition));
+        }
     }
 }

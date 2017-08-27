@@ -29,7 +29,7 @@ namespace RayanSport
         //public int buffetSell_description { get; set; }
         public String toString() {
             return (String.Format("buffetSell_Id:{0},buffetSell_date:{1},buffetSell_description:{2},buffetSell_billPrice:{3},buffetSell_membershipId:{4},buffetSell_paymentCondition:{5}"
-                , buffetSell_Id,buffetSell_date,buffetSell_description,buffetSell_billPrice,buffetSell_membershipId,buffetSell_paymentCondition));
+                , buffetSell_Id,buffetSell_date,buffetSell_description,buffetSell_billPrice,buffetSell_memberId,buffetSell_paymentCondition));
         }
     }
 }

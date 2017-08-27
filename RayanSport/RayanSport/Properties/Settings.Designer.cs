@@ -33,5 +33,131 @@ namespace RayanSport.Properties {
                 return ((string)(this["rayan_sportConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("255, 196, 0")]
+        public global::System.Drawing.Color DarkYellow {
+            get {
+                return ((global::System.Drawing.Color)(this["DarkYellow"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("255, 215, 64")]
+        public global::System.Drawing.Color MediumYellow {
+            get {
+                return ((global::System.Drawing.Color)(this["MediumYellow"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("255, 238, 88")]
+        public global::System.Drawing.Color LightYellow {
+            get {
+                return ((global::System.Drawing.Color)(this["LightYellow"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("38, 50, 56")]
+        public global::System.Drawing.Color VeryDarkBlueGrey {
+            get {
+                return ((global::System.Drawing.Color)(this["VeryDarkBlueGrey"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("55, 71, 79")]
+        public global::System.Drawing.Color DarkBlueGrey {
+            get {
+                return ((global::System.Drawing.Color)(this["DarkBlueGrey"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("120, 144, 156")]
+        public global::System.Drawing.Color MediumBlueGrey {
+            get {
+                return ((global::System.Drawing.Color)(this["MediumBlueGrey"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("207, 216, 220")]
+        public global::System.Drawing.Color LightBlueGrey {
+            get {
+                return ((global::System.Drawing.Color)(this["LightBlueGrey"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("250, 250, 250")]
+        public global::System.Drawing.Color LightGrey {
+            get {
+                return ((global::System.Drawing.Color)(this["LightGrey"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("224, 224, 224")]
+        public global::System.Drawing.Color MediumGrey {
+            get {
+                return ((global::System.Drawing.Color)(this["MediumGrey"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("158, 158, 158")]
+        public global::System.Drawing.Color DarkGrey {
+            get {
+                return ((global::System.Drawing.Color)(this["DarkGrey"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("41, 182, 246")]
+        public global::System.Drawing.Color Blue {
+            get {
+                return ((global::System.Drawing.Color)(this["Blue"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("76, 175, 80")]
+        public global::System.Drawing.Color Green {
+            get {
+                return ((global::System.Drawing.Color)(this["Green"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("126, 87, 194")]
+        public global::System.Drawing.Color Purple {
+            get {
+                return ((global::System.Drawing.Color)(this["Purple"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("244, 67, 54")]
+        public global::System.Drawing.Color Red {
+            get {
+                return ((global::System.Drawing.Color)(this["Red"]));
+            }
+        }
     }
 }

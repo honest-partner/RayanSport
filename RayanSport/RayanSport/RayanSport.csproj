@@ -286,9 +286,40 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\users.png" />
+    <None Include="Resources\team.png" />
+    <None Include="Resources\strength.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\orange-juice.png" />
+    <None Include="Resources\team%281%29.png" />
+    <None Include="Resources\settings%281%291.png" />
+    <None Include="Resources\settings%281%29.png" />
+    <None Include="Resources\users%281%29.png" />
+    <None Include="Resources\strength%281%29.png" />
+    <None Include="Resources\orange-juice%281%29.png" />
     <None Include="Resources\juice.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\home-building-outline-symbol.png" />
+    <None Include="Resources\home-interface-button-symbol.png" />
+    <None Include="Resources\home-interface-button-symbol1.png" />
+    <None Include="Resources\entering-password.png" />
+    <None Include="Resources\dumbbell-training.png" />
+    <None Include="Resources\dumbbell-training1.png" />
+    <None Include="Resources\dumbbell-training2.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\file%281%29.png" />
+    <None Include="Resources\home-button%281%29.png" />
+    <None Include="Resources\entering-password%282%29.png" />
+    <None Include="Resources\exit%281%29.png" />
+    <None Include="Resources\checklist%281%29.png" />
+    <None Include="Resources\home-button%281%291.png" />
+    <None Include="Resources\home-button.png" />
+    <None Include="Resources\checklist.png" />
+    <None Include="Resources\entering-password%281%29.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\file%281%291.png" />
+    <None Include="Resources\home-button1.png" />
     <Content Include="Resources\Logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

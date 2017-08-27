@@ -20,5 +20,8 @@ namespace RayanSport
             this.checkIn_date = checkIn_date;
             this.checkIn_commode = checkIn_commode;
         }
+        public String toString() {
+            return (String.Format("checkIn_cost:{0},checkIn_date:{1},checkIn_commode:{2}", checkIn_cost, checkIn_date, checkIn_commode));
+        }
     }
 }

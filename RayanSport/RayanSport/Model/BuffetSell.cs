@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayanSport
 {
-    class BuffetSell
+    public class BuffetSell
     {
         public BuffetSell(long buffetSell_Id, string buffetSell_date, string buffetSell_description, long buffetSell_billPrice, int buffetSell_membershipId, string buffetSell_paymentCondition)
         {
@@ -19,6 +19,7 @@ namespace RayanSport
             
         }
 
+        public BuffetSell() { }
         public long buffetSell_Id { get; set; }
         public String buffetSell_date { get; set; }
         public String buffetSell_description { get; set; }

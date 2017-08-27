@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayanSport
 {
-    class Plan
+    public class Plan
     {
         public Plan(int plan_memberId, string plan_description, string plan_date , string plan_coach)
         {
@@ -15,6 +15,7 @@ namespace RayanSport
             this.plan_date = plan_date;
             this.plan_coach = plan_coach;
         }
+        public Plan() { }
 
         public int plan_memberId { get; set; }
         public String plan_description { get; set; }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pbx_UcCheckInInfoMemberPicture = new System.Windows.Forms.PictureBox();
             this.txb_UcCheckInInfoMemberId = new System.Windows.Forms.TextBox();
             this.txb_UcCheckInInfoCommodeNum = new System.Windows.Forms.TextBox();
             this.txb_UcCheckInInfoMemberName = new System.Windows.Forms.TextBox();
@@ -42,12 +43,21 @@
             this.lbl_UcCheckInInfoMemberRemainingSession = new System.Windows.Forms.Label();
             this.lbl_UcCheckInInfoMembershipEndDate = new System.Windows.Forms.Label();
             this.lbl_UcCheckInInfoMemberDes = new System.Windows.Forms.Label();
-            this.txb_UcCheckInInfoMemberClear = new System.Windows.Forms.Button();
+            this.btn_UcCheckInInfoMemberClear = new System.Windows.Forms.Button();
             this.btn_UcCheckInInfoMemberCheck = new System.Windows.Forms.Button();
             this.llb_UcCheckInInfoShowMemberDetail = new System.Windows.Forms.LinkLabel();
-            this.pbx_UcCheckInInfoMemberPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_UcCheckInInfoMemberPicture)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pbx_UcCheckInInfoMemberPicture
+            // 
+            this.pbx_UcCheckInInfoMemberPicture.BackgroundImage = global::RayanSport.Properties.Resources.no_image;
+            this.pbx_UcCheckInInfoMemberPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbx_UcCheckInInfoMemberPicture.Location = new System.Drawing.Point(38, 32);
+            this.pbx_UcCheckInInfoMemberPicture.Name = "pbx_UcCheckInInfoMemberPicture";
+            this.pbx_UcCheckInInfoMemberPicture.Size = new System.Drawing.Size(223, 260);
+            this.pbx_UcCheckInInfoMemberPicture.TabIndex = 0;
+            this.pbx_UcCheckInInfoMemberPicture.TabStop = false;
             // 
             // txb_UcCheckInInfoMemberId
             // 
@@ -56,7 +66,7 @@
             this.txb_UcCheckInInfoMemberId.Name = "txb_UcCheckInInfoMemberId";
             this.txb_UcCheckInInfoMemberId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txb_UcCheckInInfoMemberId.Size = new System.Drawing.Size(262, 40);
-            this.txb_UcCheckInInfoMemberId.TabIndex = 1;
+            this.txb_UcCheckInInfoMemberId.TabIndex = 0;
             this.txb_UcCheckInInfoMemberId.TextChanged += new System.EventHandler(this.txb_UcCheckInInfoMemberId_TextChanged);
             this.txb_UcCheckInInfoMemberId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcCheckInMemberId_KeyPress);
             // 
@@ -68,6 +78,8 @@
             this.txb_UcCheckInInfoCommodeNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txb_UcCheckInInfoCommodeNum.Size = new System.Drawing.Size(262, 40);
             this.txb_UcCheckInInfoCommodeNum.TabIndex = 1;
+            this.txb_UcCheckInInfoCommodeNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txb_UcCheckInMemberId_KeyDown);
+            this.txb_UcCheckInInfoCommodeNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcCheckInMemberId_KeyPress);
             // 
             // txb_UcCheckInInfoMemberName
             // 
@@ -189,16 +201,16 @@
             this.lbl_UcCheckInInfoMemberDes.TabIndex = 2;
             this.lbl_UcCheckInInfoMemberDes.Text = "توضیحات";
             // 
-            // txb_UcCheckInInfoMemberClear
+            // btn_UcCheckInInfoMemberClear
             // 
-            this.txb_UcCheckInInfoMemberClear.Font = new System.Drawing.Font("B Yekan+", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_UcCheckInInfoMemberClear.Location = new System.Drawing.Point(210, 420);
-            this.txb_UcCheckInInfoMemberClear.Name = "txb_UcCheckInInfoMemberClear";
-            this.txb_UcCheckInInfoMemberClear.Size = new System.Drawing.Size(166, 62);
-            this.txb_UcCheckInInfoMemberClear.TabIndex = 3;
-            this.txb_UcCheckInInfoMemberClear.Text = "پاک کردن";
-            this.txb_UcCheckInInfoMemberClear.UseVisualStyleBackColor = true;
-            this.txb_UcCheckInInfoMemberClear.Click += new System.EventHandler(this.txb_UcCheckInInfoMemberClear_Click);
+            this.btn_UcCheckInInfoMemberClear.Font = new System.Drawing.Font("B Yekan+", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_UcCheckInInfoMemberClear.Location = new System.Drawing.Point(38, 352);
+            this.btn_UcCheckInInfoMemberClear.Name = "btn_UcCheckInInfoMemberClear";
+            this.btn_UcCheckInInfoMemberClear.Size = new System.Drawing.Size(166, 62);
+            this.btn_UcCheckInInfoMemberClear.TabIndex = 3;
+            this.btn_UcCheckInInfoMemberClear.Text = "پاک کردن";
+            this.btn_UcCheckInInfoMemberClear.UseVisualStyleBackColor = true;
+            this.btn_UcCheckInInfoMemberClear.Click += new System.EventHandler(this.txb_UcCheckInInfoMemberClear_Click);
             // 
             // btn_UcCheckInInfoMemberCheck
             // 
@@ -206,7 +218,7 @@
             this.btn_UcCheckInInfoMemberCheck.Location = new System.Drawing.Point(38, 420);
             this.btn_UcCheckInInfoMemberCheck.Name = "btn_UcCheckInInfoMemberCheck";
             this.btn_UcCheckInInfoMemberCheck.Size = new System.Drawing.Size(166, 62);
-            this.btn_UcCheckInInfoMemberCheck.TabIndex = 4;
+            this.btn_UcCheckInInfoMemberCheck.TabIndex = 2;
             this.btn_UcCheckInInfoMemberCheck.Text = "تایید";
             this.btn_UcCheckInInfoMemberCheck.UseVisualStyleBackColor = true;
             this.btn_UcCheckInInfoMemberCheck.Click += new System.EventHandler(this.btn_UcCheckInInfoMemberCheck_Click);
@@ -218,28 +230,17 @@
             this.llb_UcCheckInInfoShowMemberDetail.Location = new System.Drawing.Point(748, 435);
             this.llb_UcCheckInInfoShowMemberDetail.Name = "llb_UcCheckInInfoShowMemberDetail";
             this.llb_UcCheckInInfoShowMemberDetail.Size = new System.Drawing.Size(141, 34);
-            this.llb_UcCheckInInfoShowMemberDetail.TabIndex = 5;
+            this.llb_UcCheckInInfoShowMemberDetail.TabIndex = 4;
             this.llb_UcCheckInInfoShowMemberDetail.TabStop = true;
             this.llb_UcCheckInInfoShowMemberDetail.Text = "نمایش جزئیات";
             // 
-            // pbx_UcCheckInInfoMemberPicture
-            // 
-            this.pbx_UcCheckInInfoMemberPicture.BackgroundImage = global::RayanSport.Properties.Resources.no_image;
-            this.pbx_UcCheckInInfoMemberPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbx_UcCheckInInfoMemberPicture.Location = new System.Drawing.Point(38, 32);
-            this.pbx_UcCheckInInfoMemberPicture.Name = "pbx_UcCheckInInfoMemberPicture";
-            this.pbx_UcCheckInInfoMemberPicture.Size = new System.Drawing.Size(223, 260);
-            this.pbx_UcCheckInInfoMemberPicture.TabIndex = 0;
-            this.pbx_UcCheckInInfoMemberPicture.TabStop = false;
-            // 
             // UC_CheckIn_Info
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.llb_UcCheckInInfoShowMemberDetail);
             this.Controls.Add(this.btn_UcCheckInInfoMemberCheck);
-            this.Controls.Add(this.txb_UcCheckInInfoMemberClear);
+            this.Controls.Add(this.btn_UcCheckInInfoMemberClear);
             this.Controls.Add(this.lbl_UcCheckInInfoMemberDes);
             this.Controls.Add(this.lbl_UcCheckInInfoMembershipEndDate);
             this.Controls.Add(this.lbl_UcCheckInInfoMemberRemainingSession);
@@ -256,7 +257,7 @@
             this.Controls.Add(this.txb_UcCheckInInfoMemberId);
             this.Controls.Add(this.pbx_UcCheckInInfoMemberPicture);
             this.Name = "UC_CheckIn_Info";
-            this.Size = new System.Drawing.Size(910, 507);
+            this.Size = new System.Drawing.Size(920, 507);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_UcCheckInInfoMemberPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -280,7 +281,7 @@
         private System.Windows.Forms.Label lbl_UcCheckInInfoMemberRemainingSession;
         private System.Windows.Forms.Label lbl_UcCheckInInfoMembershipEndDate;
         private System.Windows.Forms.Label lbl_UcCheckInInfoMemberDes;
-        private System.Windows.Forms.Button txb_UcCheckInInfoMemberClear;
+        private System.Windows.Forms.Button btn_UcCheckInInfoMemberClear;
         private System.Windows.Forms.Button btn_UcCheckInInfoMemberCheck;
         private System.Windows.Forms.LinkLabel llb_UcCheckInInfoShowMemberDetail;
     }

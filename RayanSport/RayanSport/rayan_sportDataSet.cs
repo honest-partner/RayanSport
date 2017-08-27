@@ -4,6 +4,9 @@
 
     partial class rayan_sportDataSet
     {
+        partial class membershipDataTable
+        {
+        }
     }
 }
 

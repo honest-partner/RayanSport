@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayanSport
 {
-    class Membership
+    public class Membership
     {
         public Membership(long membership_id, int membership_memberId, string membership_memberName, string membership_startDate, string membership_endDate, string membership_type, int membership_remainingSession, long membership_receiptNumber, string membership_paymentType, long membership_price, long membership_payment, string membership_description , string membership_status)
         {
@@ -29,7 +29,7 @@ namespace RayanSport
         {
             
         }*/
-
+        public Membership() { }
         public long membership_id { get; set; }
         public int membership_memberId { get; set; }
         public String membership_memberName { get; set; }

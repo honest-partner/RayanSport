@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayanSport
 {
-    class Log
+    public class Log
     {
         public long log_id { get; set; }
         public String log_description { get; set; }
@@ -14,6 +14,7 @@ namespace RayanSport
         public String log_username { get; set; }
         public String log_date { get; set; }
         public String log_time { get; set; }
+        public Log() { }
         public Log(long log_id, string log_description, string log_targetTable, string log_username, string log_date, string log_time)
         {
             this.log_id = log_id;

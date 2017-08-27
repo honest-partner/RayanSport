@@ -12,9 +12,13 @@ namespace RayanSport.View
 {
     public partial class UC_ShowMember_ContractInfo : UserControl
     {
+        Member member;
         public UC_ShowMember_ContractInfo()
         {
             InitializeComponent();
+        }
+        public UC_ShowMember_ContractInfo(Member member) {
+
         }
     }
 }

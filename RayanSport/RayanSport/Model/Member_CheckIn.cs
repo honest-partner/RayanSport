@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayanSport
 {
-    class Member_CheckIn
+    public class Member_CheckIn
     {
         
 
@@ -19,5 +19,6 @@ namespace RayanSport
             this.memberCheckIn_date = memberCheckIn_date;
             this.memberCheckIn_commode = memberCheckIn_commode;
         }
+        public Member_CheckIn() { }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayanSport
 {
-    class Member
+    public class Member
     {
         public int member_id { get; set; }
         public String member_name { get; set; }
@@ -30,7 +30,7 @@ namespace RayanSport
             this.member_address = member_address;
             this.member_charge = member_charge;
         }
-
+        public Member() { }
        
     }
 }

@@ -20,5 +20,9 @@ namespace RayanSport
             this.memberCheckIn_commode = memberCheckIn_commode;
         }
         public Member_CheckIn() { }
+        public String toString() {
+            return String.Format("memberCheckIn_membershipId:{0},memberCheckIn_date:{1},memberCheckIn_commode:{2}"
+                , memberCheckIn_membershipId, memberCheckIn_date, memberCheckIn_commode);
+        }
     }
 }

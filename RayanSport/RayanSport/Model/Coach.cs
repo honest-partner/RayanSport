@@ -14,5 +14,8 @@ namespace RayanSport
         }
         public Coach() { }
         public String coach_name { get; set; }
+        public String toString() {
+            return (String.Format("coach_name:{0}",coach_name));
+        }
     }
 }

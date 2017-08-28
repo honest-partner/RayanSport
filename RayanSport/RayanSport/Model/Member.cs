@@ -31,6 +31,9 @@ namespace RayanSport
             this.member_charge = member_charge;
         }
         public Member() { }
-       
+        public String toString() {
+            return String.Format("member_id:{0},member_name:{1},member_nationalCode:{2},member_tel:{3},member_gender:{4},member_blood:{5},member_sick:{6},member_address:{7},member_charge:{8}"
+                , member_id, member_name, member_nationalCode, member_tel, member_gender, member_blood, member_sick, member_address, member_charge);
+        }
     }
 }

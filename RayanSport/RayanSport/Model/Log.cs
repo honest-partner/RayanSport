@@ -24,5 +24,8 @@ namespace RayanSport
             this.log_date = log_date;
             this.log_time = log_time;
         }
+        public String toString() {
+            return String.Format("log_id:{0},log_description:{1},log_targetTable:{2},log_username:{3},log_date:{4},log_time:{5}", log_id,log_description,log_targetTable, log_username, log_date, log_time);
+        }
     }
 }

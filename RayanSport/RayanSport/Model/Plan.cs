@@ -21,5 +21,8 @@ namespace RayanSport
         public String plan_description { get; set; }
         public String plan_date { get; set; }
         public String  plan_coach{ get; set; }
+        public String toString() {
+            return String.Format("plan_memberId:{0},plan_description:{1},plan_date:{2},plan_coach:{3}", plan_memberId, plan_description, plan_date, plan_coach);
+        }
     }
 }

@@ -26,6 +26,10 @@ namespace RayanSport
         }
         public BuffetLog() {
         }
+        public String toString() {
+            return (String.Format("buffetLog_userName:{0},buffetLog_memberId:{1},buffetLog_memberName:{2},buffetLog_dateTime:{3},buffetLog_price:{4},buffetLog_description{5}"
+                ,buffetLog_userName,buffetLog_memberId,buffetLog_memberName,buffetLog_dateTime,buffetLog_price,buffetLog_description));
+        }
 
     }
 }

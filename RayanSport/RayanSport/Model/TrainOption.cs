@@ -20,5 +20,8 @@ namespace RayanSport
             this.trainOption_price = trainOption_price;
             this.trainOption_Id = trainOption_Id;
         }
+        public String toString() {
+            return String.Format("trainOption_name:{0},trainOption_price:{1},trainOption_Id:{2}", trainOption_name, trainOption_price, trainOption_Id);
+        }
     }
 }

@@ -24,5 +24,9 @@ namespace RayanSport
             this.user_isAdmin = user_isAdmin;
             this.user_gender = user_gender;
         }
+        public String toString() {
+            return String.Format("user_username:{0},user_password:{1},user_name:{2},user_isAdmin:{3},user_gender{4}",
+                user_username, user_password, user_name, user_isAdmin, user_gender);
+        }
     }
 }

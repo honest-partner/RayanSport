@@ -44,7 +44,7 @@
     </Reference>
     <Reference Include="DateTimeSelector, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DateTimeSelector.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\DateTimeSelector.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -210,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_CheckIn_Info.resx">
       <DependentUpon>UC_CheckIn_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_ShowMember_ContractInfo.resx">
+      <DependentUpon>UC_ShowMember_ContractInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_ShowMember_MemberInfo.resx">
       <DependentUpon>UC_ShowMember_MemberInfo.cs</DependentUpon>

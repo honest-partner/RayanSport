@@ -46,7 +46,6 @@ namespace RayanSport.View
         private void txb_UcCheckInInfoMemberClear_Click(object sender, EventArgs e)
         {
             ClearTexts();
-            
         }
 
         private void ClearTexts()

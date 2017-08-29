@@ -30,6 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgv_UcShowMemberContractInfoContracts = new System.Windows.Forms.DataGridView();
+            this.membership_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershipstatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershipstartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershipendDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershiptypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershipremainingSessionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershipreceiptNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershippaymentTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershippriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershippaymentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershipdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershipBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rayan_sportDataSet = new RayanSport.rayan_sportDataSet();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_UcShowMemberContractInfoAddContract = new System.Windows.Forms.Button();
             this.btn_UcShowMemberContractInfoExpireContract = new System.Windows.Forms.Button();
@@ -39,6 +52,7 @@
             this.lbl_UcShowMemberContractInfoDes = new System.Windows.Forms.Label();
             this.cmb_UcShowMemberContractInfoExpireContractPaymentType = new System.Windows.Forms.ComboBox();
             this.lbl_UcShowMemberContractInfoExpireContractPrice = new System.Windows.Forms.Label();
+            this.btn_UcShowMemberContractInfoClear = new System.Windows.Forms.Button();
             this.lbl_UcShowMemberContractInfoExpireContractType = new System.Windows.Forms.Label();
             this.cmb_UcShowMemberContractInfoContractType = new System.Windows.Forms.ComboBox();
             this.txb_UcShowMemberContractInfoExpireContractPrice = new System.Windows.Forms.TextBox();
@@ -55,27 +69,13 @@
             this.txb_UcShowMemberContractInfoEndDate = new System.Windows.Forms.TextBox();
             this.txb_UcShowMemberContractInfoDes = new System.Windows.Forms.TextBox();
             this.btn_UcShowMemberContractInfoSave = new System.Windows.Forms.Button();
-            this.btn_UcShowMemberContractInfoClear = new System.Windows.Forms.Button();
-            this.membershipBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rayan_sportDataSet = new RayanSport.rayan_sportDataSet();
             this.membershipTableAdapter = new RayanSport.rayan_sportDataSetTableAdapters.membershipTableAdapter();
-            this.membership_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.membershipstatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.membershipstartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.membershipendDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.membershiptypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.membershipremainingSessionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.membershipreceiptNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.membershippaymentTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.membershippriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.membershippaymentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.membershipdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowMemberContractInfoContracts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_UcShowMemberContractInfoContracts
@@ -110,6 +110,115 @@
             this.dgv_UcShowMemberContractInfoContracts.Size = new System.Drawing.Size(1360, 238);
             this.dgv_UcShowMemberContractInfoContracts.TabIndex = 0;
             this.dgv_UcShowMemberContractInfoContracts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_UcShowMemberContractInfoContracts_CellClick);
+            // 
+            // membership_id
+            // 
+            this.membership_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.membership_id.DataPropertyName = "membership_id";
+            this.membership_id.HeaderText = "شماره";
+            this.membership_id.Name = "membership_id";
+            this.membership_id.ReadOnly = true;
+            this.membership_id.Width = 85;
+            // 
+            // membershipstatusDataGridViewTextBoxColumn
+            // 
+            this.membershipstatusDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.membershipstatusDataGridViewTextBoxColumn.DataPropertyName = "membership_status";
+            this.membershipstatusDataGridViewTextBoxColumn.HeaderText = "وضعیت";
+            this.membershipstatusDataGridViewTextBoxColumn.Name = "membershipstatusDataGridViewTextBoxColumn";
+            this.membershipstatusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.membershipstatusDataGridViewTextBoxColumn.Width = 97;
+            // 
+            // membershipstartDateDataGridViewTextBoxColumn
+            // 
+            this.membershipstartDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.membershipstartDateDataGridViewTextBoxColumn.DataPropertyName = "membership_startDate";
+            this.membershipstartDateDataGridViewTextBoxColumn.HeaderText = "تاریخ شروع";
+            this.membershipstartDateDataGridViewTextBoxColumn.Name = "membershipstartDateDataGridViewTextBoxColumn";
+            this.membershipstartDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.membershipstartDateDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // membershipendDateDataGridViewTextBoxColumn
+            // 
+            this.membershipendDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.membershipendDateDataGridViewTextBoxColumn.DataPropertyName = "membership_endDate";
+            this.membershipendDateDataGridViewTextBoxColumn.HeaderText = "تاریخ اتمام";
+            this.membershipendDateDataGridViewTextBoxColumn.Name = "membershipendDateDataGridViewTextBoxColumn";
+            this.membershipendDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.membershipendDateDataGridViewTextBoxColumn.Width = 122;
+            // 
+            // membershiptypeDataGridViewTextBoxColumn
+            // 
+            this.membershiptypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            this.membershiptypeDataGridViewTextBoxColumn.DataPropertyName = "membership_type";
+            this.membershiptypeDataGridViewTextBoxColumn.HeaderText = "نوع";
+            this.membershiptypeDataGridViewTextBoxColumn.Name = "membershiptypeDataGridViewTextBoxColumn";
+            this.membershiptypeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.membershiptypeDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // membershipremainingSessionDataGridViewTextBoxColumn
+            // 
+            this.membershipremainingSessionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.membershipremainingSessionDataGridViewTextBoxColumn.DataPropertyName = "membership_remainingSession";
+            this.membershipremainingSessionDataGridViewTextBoxColumn.HeaderText = "جلسات باقی مانده";
+            this.membershipremainingSessionDataGridViewTextBoxColumn.Name = "membershipremainingSessionDataGridViewTextBoxColumn";
+            this.membershipremainingSessionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.membershipremainingSessionDataGridViewTextBoxColumn.Width = 178;
+            // 
+            // membershipreceiptNumberDataGridViewTextBoxColumn
+            // 
+            this.membershipreceiptNumberDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            this.membershipreceiptNumberDataGridViewTextBoxColumn.DataPropertyName = "membership_receiptNumber";
+            this.membershipreceiptNumberDataGridViewTextBoxColumn.HeaderText = "شماره پیگیری";
+            this.membershipreceiptNumberDataGridViewTextBoxColumn.Name = "membershipreceiptNumberDataGridViewTextBoxColumn";
+            this.membershipreceiptNumberDataGridViewTextBoxColumn.ReadOnly = true;
+            this.membershipreceiptNumberDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // membershippaymentTypeDataGridViewTextBoxColumn
+            // 
+            this.membershippaymentTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.membershippaymentTypeDataGridViewTextBoxColumn.DataPropertyName = "membership_paymentType";
+            this.membershippaymentTypeDataGridViewTextBoxColumn.HeaderText = "نوع پرداخت";
+            this.membershippaymentTypeDataGridViewTextBoxColumn.Name = "membershippaymentTypeDataGridViewTextBoxColumn";
+            this.membershippaymentTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.membershippaymentTypeDataGridViewTextBoxColumn.Width = 128;
+            // 
+            // membershippriceDataGridViewTextBoxColumn
+            // 
+            this.membershippriceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.membershippriceDataGridViewTextBoxColumn.DataPropertyName = "membership_price";
+            this.membershippriceDataGridViewTextBoxColumn.HeaderText = "قیمت";
+            this.membershippriceDataGridViewTextBoxColumn.Name = "membershippriceDataGridViewTextBoxColumn";
+            this.membershippriceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.membershippriceDataGridViewTextBoxColumn.Width = 83;
+            // 
+            // membershippaymentDataGridViewTextBoxColumn
+            // 
+            this.membershippaymentDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.membershippaymentDataGridViewTextBoxColumn.DataPropertyName = "membership_payment";
+            this.membershippaymentDataGridViewTextBoxColumn.HeaderText = "پرداختی";
+            this.membershippaymentDataGridViewTextBoxColumn.Name = "membershippaymentDataGridViewTextBoxColumn";
+            this.membershippaymentDataGridViewTextBoxColumn.ReadOnly = true;
+            this.membershippaymentDataGridViewTextBoxColumn.Width = 101;
+            // 
+            // membershipdescriptionDataGridViewTextBoxColumn
+            // 
+            this.membershipdescriptionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            this.membershipdescriptionDataGridViewTextBoxColumn.DataPropertyName = "membership_description";
+            this.membershipdescriptionDataGridViewTextBoxColumn.HeaderText = "توضیحات";
+            this.membershipdescriptionDataGridViewTextBoxColumn.Name = "membershipdescriptionDataGridViewTextBoxColumn";
+            this.membershipdescriptionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.membershipdescriptionDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // membershipBindingSource
+            // 
+            this.membershipBindingSource.DataMember = "membership";
+            this.membershipBindingSource.DataSource = this.rayan_sportDataSet;
+            // 
+            // rayan_sportDataSet
+            // 
+            this.rayan_sportDataSet.DataSetName = "rayan_sportDataSet";
+            this.rayan_sportDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tableLayoutPanel1
             // 
@@ -257,6 +366,17 @@
             this.lbl_UcShowMemberContractInfoExpireContractPrice.TabIndex = 2;
             this.lbl_UcShowMemberContractInfoExpireContractPrice.Text = "مبلغ قرارداد";
             this.lbl_UcShowMemberContractInfoExpireContractPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btn_UcShowMemberContractInfoClear
+            // 
+            this.btn_UcShowMemberContractInfoClear.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowMemberContractInfoClear.Location = new System.Drawing.Point(913, 234);
+            this.btn_UcShowMemberContractInfoClear.Name = "btn_UcShowMemberContractInfoClear";
+            this.btn_UcShowMemberContractInfoClear.Size = new System.Drawing.Size(244, 71);
+            this.btn_UcShowMemberContractInfoClear.TabIndex = 3;
+            this.btn_UcShowMemberContractInfoClear.Text = "پاک کردن";
+            this.btn_UcShowMemberContractInfoClear.UseVisualStyleBackColor = true;
+            this.btn_UcShowMemberContractInfoClear.Click += new System.EventHandler(this.btn_UcShowMemberContractInfoClear_Click);
             // 
             // lbl_UcShowMemberContractInfoExpireContractType
             // 
@@ -421,129 +541,9 @@
             this.btn_UcShowMemberContractInfoSave.UseVisualStyleBackColor = true;
             this.btn_UcShowMemberContractInfoSave.Click += new System.EventHandler(this.btn_UcShowMemberContractInfoSave_Click);
             // 
-            // btn_UcShowMemberContractInfoClear
-            // 
-            this.btn_UcShowMemberContractInfoClear.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_UcShowMemberContractInfoClear.Location = new System.Drawing.Point(913, 234);
-            this.btn_UcShowMemberContractInfoClear.Name = "btn_UcShowMemberContractInfoClear";
-            this.btn_UcShowMemberContractInfoClear.Size = new System.Drawing.Size(244, 71);
-            this.btn_UcShowMemberContractInfoClear.TabIndex = 3;
-            this.btn_UcShowMemberContractInfoClear.Text = "پاک کردن";
-            this.btn_UcShowMemberContractInfoClear.UseVisualStyleBackColor = true;
-            this.btn_UcShowMemberContractInfoClear.Click += new System.EventHandler(this.btn_UcShowMemberContractInfoClear_Click);
-            // 
-            // membershipBindingSource
-            // 
-            this.membershipBindingSource.DataMember = "membership";
-            this.membershipBindingSource.DataSource = this.rayan_sportDataSet;
-            // 
-            // rayan_sportDataSet
-            // 
-            this.rayan_sportDataSet.DataSetName = "rayan_sportDataSet";
-            this.rayan_sportDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // membershipTableAdapter
             // 
             this.membershipTableAdapter.ClearBeforeFill = true;
-            // 
-            // membership_id
-            // 
-            this.membership_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.membership_id.DataPropertyName = "membership_id";
-            this.membership_id.HeaderText = "شماره";
-            this.membership_id.Name = "membership_id";
-            this.membership_id.ReadOnly = true;
-            this.membership_id.Width = 85;
-            // 
-            // membershipstatusDataGridViewTextBoxColumn
-            // 
-            this.membershipstatusDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.membershipstatusDataGridViewTextBoxColumn.DataPropertyName = "membership_status";
-            this.membershipstatusDataGridViewTextBoxColumn.HeaderText = "وضعیت";
-            this.membershipstatusDataGridViewTextBoxColumn.Name = "membershipstatusDataGridViewTextBoxColumn";
-            this.membershipstatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershipstatusDataGridViewTextBoxColumn.Width = 97;
-            // 
-            // membershipstartDateDataGridViewTextBoxColumn
-            // 
-            this.membershipstartDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.membershipstartDateDataGridViewTextBoxColumn.DataPropertyName = "membership_startDate";
-            this.membershipstartDateDataGridViewTextBoxColumn.HeaderText = "تاریخ شروع";
-            this.membershipstartDateDataGridViewTextBoxColumn.Name = "membershipstartDateDataGridViewTextBoxColumn";
-            this.membershipstartDateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershipstartDateDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // membershipendDateDataGridViewTextBoxColumn
-            // 
-            this.membershipendDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.membershipendDateDataGridViewTextBoxColumn.DataPropertyName = "membership_endDate";
-            this.membershipendDateDataGridViewTextBoxColumn.HeaderText = "تاریخ اتمام";
-            this.membershipendDateDataGridViewTextBoxColumn.Name = "membershipendDateDataGridViewTextBoxColumn";
-            this.membershipendDateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershipendDateDataGridViewTextBoxColumn.Width = 122;
-            // 
-            // membershiptypeDataGridViewTextBoxColumn
-            // 
-            this.membershiptypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            this.membershiptypeDataGridViewTextBoxColumn.DataPropertyName = "membership_type";
-            this.membershiptypeDataGridViewTextBoxColumn.HeaderText = "نوع";
-            this.membershiptypeDataGridViewTextBoxColumn.Name = "membershiptypeDataGridViewTextBoxColumn";
-            this.membershiptypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershiptypeDataGridViewTextBoxColumn.Width = 5;
-            // 
-            // membershipremainingSessionDataGridViewTextBoxColumn
-            // 
-            this.membershipremainingSessionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.membershipremainingSessionDataGridViewTextBoxColumn.DataPropertyName = "membership_remainingSession";
-            this.membershipremainingSessionDataGridViewTextBoxColumn.HeaderText = "جلسات باقی مانده";
-            this.membershipremainingSessionDataGridViewTextBoxColumn.Name = "membershipremainingSessionDataGridViewTextBoxColumn";
-            this.membershipremainingSessionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershipremainingSessionDataGridViewTextBoxColumn.Width = 178;
-            // 
-            // membershipreceiptNumberDataGridViewTextBoxColumn
-            // 
-            this.membershipreceiptNumberDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            this.membershipreceiptNumberDataGridViewTextBoxColumn.DataPropertyName = "membership_receiptNumber";
-            this.membershipreceiptNumberDataGridViewTextBoxColumn.HeaderText = "شماره پیگیری";
-            this.membershipreceiptNumberDataGridViewTextBoxColumn.Name = "membershipreceiptNumberDataGridViewTextBoxColumn";
-            this.membershipreceiptNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershipreceiptNumberDataGridViewTextBoxColumn.Width = 5;
-            // 
-            // membershippaymentTypeDataGridViewTextBoxColumn
-            // 
-            this.membershippaymentTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.membershippaymentTypeDataGridViewTextBoxColumn.DataPropertyName = "membership_paymentType";
-            this.membershippaymentTypeDataGridViewTextBoxColumn.HeaderText = "نوع پرداخت";
-            this.membershippaymentTypeDataGridViewTextBoxColumn.Name = "membershippaymentTypeDataGridViewTextBoxColumn";
-            this.membershippaymentTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershippaymentTypeDataGridViewTextBoxColumn.Width = 118;
-            // 
-            // membershippriceDataGridViewTextBoxColumn
-            // 
-            this.membershippriceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.membershippriceDataGridViewTextBoxColumn.DataPropertyName = "membership_price";
-            this.membershippriceDataGridViewTextBoxColumn.HeaderText = "قیمت";
-            this.membershippriceDataGridViewTextBoxColumn.Name = "membershippriceDataGridViewTextBoxColumn";
-            this.membershippriceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershippriceDataGridViewTextBoxColumn.Width = 83;
-            // 
-            // membershippaymentDataGridViewTextBoxColumn
-            // 
-            this.membershippaymentDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.membershippaymentDataGridViewTextBoxColumn.DataPropertyName = "membership_payment";
-            this.membershippaymentDataGridViewTextBoxColumn.HeaderText = "پرداختی";
-            this.membershippaymentDataGridViewTextBoxColumn.Name = "membershippaymentDataGridViewTextBoxColumn";
-            this.membershippaymentDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershippaymentDataGridViewTextBoxColumn.Width = 101;
-            // 
-            // membershipdescriptionDataGridViewTextBoxColumn
-            // 
-            this.membershipdescriptionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            this.membershipdescriptionDataGridViewTextBoxColumn.DataPropertyName = "membership_description";
-            this.membershipdescriptionDataGridViewTextBoxColumn.HeaderText = "توضیحات";
-            this.membershipdescriptionDataGridViewTextBoxColumn.Name = "membershipdescriptionDataGridViewTextBoxColumn";
-            this.membershipdescriptionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershipdescriptionDataGridViewTextBoxColumn.Width = 5;
             // 
             // UC_ShowMember_ContractInfo
             // 
@@ -555,12 +555,12 @@
             this.Size = new System.Drawing.Size(1370, 626);
             this.Load += new System.EventHandler(this.UC_ShowMember_ContractInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowMemberContractInfoContracts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

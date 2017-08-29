@@ -73,6 +73,56 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap AC_Modern__135_135px_ {
+            get {
+                object obj = ResourceManager.GetObject("AC-Modern (135-135px)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap AC_Novelty__123_173px_ {
+            get {
+                object obj = ResourceManager.GetObject("AC-Novelty (123-173px)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap AC_Square__135_135px_ {
+            get {
+                object obj = ResourceManager.GetObject("AC-Square (135-135px)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap AC_System__135_135px_ {
+            get {
+                object obj = ResourceManager.GetObject("AC-System (135-135px)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap AC_Trad__135_135px_ {
+            get {
+                object obj = ResourceManager.GetObject("AC-Trad (135-135px)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap basketball_jersey {
             get {
                 object obj = ResourceManager.GetObject("basketball-jersey", resourceCulture);

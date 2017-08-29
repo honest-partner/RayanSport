@@ -22,5 +22,10 @@ namespace RayanSport
             string context = "نام کاربری یا رمز عبور اشتباه است";
             Alert alert = new Alert(context, "darkred", 5);
         }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+         
+        }
     }
 }

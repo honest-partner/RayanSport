@@ -32,16 +32,39 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevComponents.DotNetBar2, Version=12.9.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="AnalogClock, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AnalogClock.dll</HintPath>
+    </Reference>
+    <Reference Include="BehComponents, Version=2.2.0.0, Culture=neutral, PublicKeyToken=a36ced8ede3e7af7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BehComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="DateTimeSelector, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DateTimeSelector.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="GHNet, Version=2009.6.4.0, Culture=neutral, PublicKeyToken=a9ea815332e8d0a1" />
+    <Reference Include="GHNet.Win, Version=2009.6.4.0, Culture=neutral, PublicKeyToken=a9ea815332e8d0a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GHNet.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ShDateTimePicker, Version=1.0.3233.32972, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ShDateTimePicker.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +75,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.WinControls, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="TelerikCommon, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
@@ -107,23 +131,29 @@
     <Compile Include="View\Form_ShowMember.Designer.cs">
       <DependentUpon>Form_ShowMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UC_CheckIn.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="View\UC_CheckIn.Designer.cs">
       <DependentUpon>UC_CheckIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\UC_CheckInLog.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\UC_CheckInLog.Designer.cs">
-      <DependentUpon>UC_CheckInLog.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\UC_CheckIn_Info.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="View\UC_CheckIn_Info.Designer.cs">
       <DependentUpon>UC_CheckIn_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_ChekingLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_ChekingLog.Designer.cs">
+      <DependentUpon>UC_ChekingLog.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UC_Home.cs">
       <SubType>UserControl</SubType>
@@ -137,11 +167,11 @@
     <Compile Include="View\UC_Log.Designer.cs">
       <DependentUpon>UC_Log.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\UC_ShowAllContract.cs">
+    <Compile Include="View\UC_ShowAllContractcs.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\UC_ShowAllContract.Designer.cs">
-      <DependentUpon>UC_ShowAllContract.cs</DependentUpon>
+    <Compile Include="View\UC_ShowAllContractcs.Designer.cs">
+      <DependentUpon>UC_ShowAllContractcs.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UC_ShowAllMember.cs">
       <SubType>UserControl</SubType>
@@ -185,11 +215,23 @@
     <EmbeddedResource Include="View\Form_ShowMember.resx">
       <DependentUpon>Form_ShowMember.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UC_CheckIn.resx">
       <DependentUpon>UC_CheckIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_CheckIn_Info.resx">
       <DependentUpon>UC_CheckIn_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_ChekingLog.resx">
+      <DependentUpon>UC_ChekingLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Home.resx">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_ShowAllContractcs.resx">
+      <DependentUpon>UC_ShowAllContractcs.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -289,6 +331,11 @@
     <None Include="Resources\juice.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\AC-System %28135-135px%29.png" />
+    <None Include="Resources\AC-Novelty %28123-173px%29.png" />
+    <None Include="Resources\AC-Modern %28135-135px%29.png" />
+    <None Include="Resources\AC-Square %28135-135px%29.png" />
+    <None Include="Resources\AC-Trad %28135-135px%29.png" />
     <Content Include="Resources\Logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

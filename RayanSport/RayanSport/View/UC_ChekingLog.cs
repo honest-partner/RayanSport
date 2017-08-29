@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RayanSport.View
 {
-    public partial class UC_ShowAllContract : UserControl
+    public partial class UC_ChekingLog : UserControl
     {
-        public UC_ShowAllContract()
+        public UC_ChekingLog()
         {
             InitializeComponent();
         }

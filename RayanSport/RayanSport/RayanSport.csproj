@@ -90,7 +90,9 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="View\Alert.cs" />
+    <Compile Include="View\Alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\Alert.Designer.cs" />
     <Compile Include="View\Form_CheckIn.cs">
       <SubType>Form</SubType>

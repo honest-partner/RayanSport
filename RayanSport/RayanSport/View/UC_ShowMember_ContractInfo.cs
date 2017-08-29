@@ -256,6 +256,7 @@ namespace RayanSport.View
             }
         }
 
+
         private void dgv_UcShowMemberContractInfoContracts_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             currnet_membership_id = Convert.ToInt64(dgv_UcShowMemberContractInfoContracts.Rows[e.RowIndex].Cells["membership_id"].Value.ToString());

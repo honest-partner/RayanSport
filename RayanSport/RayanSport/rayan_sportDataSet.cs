@@ -10,9 +10,12 @@
     }
 }
 
-namespace RayanSport.rayan_sportDataSetTableAdapters {
-    
-    
+namespace RayanSport.rayan_sportDataSetTableAdapters
+{
+    partial class memberTableAdapter
+    {
+    }
+
     public partial class membershipTableAdapter {
     }
 }

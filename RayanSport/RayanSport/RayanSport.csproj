@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BehComponents">
-      <HintPath>..\..\..\ErtebatBaSanat\ProposalReportingSystem\ProposalReportingSystem\bin\Debug\BehComponents.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\BehComponents.dll</HintPath>
     </Reference>
     <Reference Include="BPersianCalender, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>

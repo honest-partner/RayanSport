@@ -60,6 +60,13 @@
             this.lbl_mainMember = new DevComponents.DotNetBar.LabelX();
             this.lbl_mainHome = new DevComponents.DotNetBar.LabelX();
             this.lbl_mainEntrance = new DevComponents.DotNetBar.LabelX();
+            this.lin_mainExit = new DevComponents.DotNetBar.Controls.Line();
+            this.line1 = new DevComponents.DotNetBar.Controls.Line();
+            this.tlp_mainHeader = new System.Windows.Forms.TableLayoutPanel();
+            this.gpb_mainHeader = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_mainHeaderText = new DevComponents.DotNetBar.LabelX();
+            this.tmr_mainClock = new System.Windows.Forms.Timer(this.components);
             this.pbx_mainHomeIcon = new System.Windows.Forms.PictureBox();
             this.pbx_mainEntranceIcon = new System.Windows.Forms.PictureBox();
             this.pbx_mainMemberIcon = new System.Windows.Forms.PictureBox();
@@ -69,29 +76,24 @@
             this.pbx_mainSettingIcon = new System.Windows.Forms.PictureBox();
             this.pbx_mainAboutIcon = new System.Windows.Forms.PictureBox();
             this.pbx_mainExitIcon = new System.Windows.Forms.PictureBox();
-            this.lin_mainExit = new DevComponents.DotNetBar.Controls.Line();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.line1 = new DevComponents.DotNetBar.Controls.Line();
-            this.tlp_mainHeader = new System.Windows.Forms.TableLayoutPanel();
-            this.gpb_mainHeader = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pbx_mainHeaderIcon = new System.Windows.Forms.PictureBox();
-            this.lbl_mainHeaderText = new DevComponents.DotNetBar.LabelX();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.gpb_mainFooter = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_mainDate = new DevComponents.DotNetBar.LabelX();
-            this.lbl_mainClock = new DevComponents.DotNetBar.LabelX();
-            this.lbl_mainTimeOfDay = new DevComponents.DotNetBar.LabelX();
             this.line2 = new DevComponents.DotNetBar.Controls.Line();
-            this.tmr_mainClock = new System.Windows.Forms.Timer(this.components);
-            this.uC_CheckInLog1 = new RayanSport.View.UC_CheckInLog();
+            this.lbl_mainTimeOfDay = new DevComponents.DotNetBar.LabelX();
+            this.lbl_mainClock = new DevComponents.DotNetBar.LabelX();
+            this.lbl_mainDate = new DevComponents.DotNetBar.LabelX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tlp_mainMainLayout.SuspendLayout();
             this.tlp_mainMenuLayout.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnl_MainMenuOption.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tlp_mainHeader.SuspendLayout();
+            this.gpb_mainHeader.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainHomeIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainEntranceIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainMemberIcon)).BeginInit();
@@ -102,13 +104,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainAboutIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainExitIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tlp_mainHeader.SuspendLayout();
-            this.gpb_mainHeader.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainHeaderIcon)).BeginInit();
-            this.tableLayoutPanel4.SuspendLayout();
             this.gpb_mainFooter.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlp_mainMainLayout
@@ -124,7 +122,7 @@
             this.tlp_mainMainLayout.Name = "tlp_mainMainLayout";
             this.tlp_mainMainLayout.RowCount = 1;
             this.tlp_mainMainLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_mainMainLayout.Size = new System.Drawing.Size(1051, 733);
+            this.tlp_mainMainLayout.Size = new System.Drawing.Size(1051, 736);
             this.tlp_mainMainLayout.TabIndex = 0;
             // 
             // tlp_mainMenuLayout
@@ -140,7 +138,7 @@
             this.tlp_mainMenuLayout.RowCount = 1;
             this.tlp_mainMenuLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlp_mainMenuLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlp_mainMenuLayout.Size = new System.Drawing.Size(205, 727);
+            this.tlp_mainMenuLayout.Size = new System.Drawing.Size(205, 730);
             this.tlp_mainMenuLayout.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -157,7 +155,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(195, 717);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(195, 720);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // pnl_MainMenuOption
@@ -165,9 +163,9 @@
             this.pnl_MainMenuOption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.pnl_MainMenuOption.Controls.Add(this.tableLayoutPanel2);
             this.pnl_MainMenuOption.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_MainMenuOption.Location = new System.Drawing.Point(3, 203);
+            this.pnl_MainMenuOption.Location = new System.Drawing.Point(3, 204);
             this.pnl_MainMenuOption.Name = "pnl_MainMenuOption";
-            this.pnl_MainMenuOption.Size = new System.Drawing.Size(189, 511);
+            this.pnl_MainMenuOption.Size = new System.Drawing.Size(189, 513);
             this.pnl_MainMenuOption.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -233,7 +231,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.9174314F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.19368F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.9174314F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(189, 511);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(189, 513);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // lin_mainExitIcon
@@ -242,7 +240,7 @@
             this.lin_mainExitIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.lin_mainExitIcon.Location = new System.Drawing.Point(135, 503);
             this.lin_mainExitIcon.Name = "lin_mainExitIcon";
-            this.lin_mainExitIcon.Size = new System.Drawing.Size(51, 5);
+            this.lin_mainExitIcon.Size = new System.Drawing.Size(51, 7);
             this.lin_mainExitIcon.TabIndex = 39;
             this.lin_mainExitIcon.Text = "line19";
             this.lin_mainExitIcon.Thickness = 2;
@@ -634,6 +632,133 @@
             this.lbl_mainEntrance.MouseEnter += new System.EventHandler(this.lbl_mainEntrance_MouseEnter);
             this.lbl_mainEntrance.MouseLeave += new System.EventHandler(this.lbl_mainEntrance_MouseLeave);
             // 
+            // lin_mainExit
+            // 
+            this.lin_mainExit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lin_mainExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.lin_mainExit.Location = new System.Drawing.Point(3, 503);
+            this.lin_mainExit.Name = "lin_mainExit";
+            this.lin_mainExit.Size = new System.Drawing.Size(126, 7);
+            this.lin_mainExit.TabIndex = 38;
+            this.lin_mainExit.Text = "line18";
+            this.lin_mainExit.Thickness = 2;
+            // 
+            // line1
+            // 
+            this.line1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.line1.EndLineCap = DevComponents.DotNetBar.Controls.eLineEndType.Diamond;
+            this.line1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.line1.Location = new System.Drawing.Point(3, 197);
+            this.line1.Name = "line1";
+            this.line1.Size = new System.Drawing.Size(189, 1);
+            this.line1.StartLineCap = DevComponents.DotNetBar.Controls.eLineEndType.Diamond;
+            this.line1.TabIndex = 2;
+            this.line1.Text = "line1";
+            this.line1.Thickness = 5;
+            // 
+            // tlp_mainHeader
+            // 
+            this.tlp_mainHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tlp_mainHeader.ColumnCount = 3;
+            this.tlp_mainHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tlp_mainHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96F));
+            this.tlp_mainHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tlp_mainHeader.Controls.Add(this.gpb_mainHeader, 1, 0);
+            this.tlp_mainHeader.Controls.Add(this.tableLayoutPanel4, 1, 2);
+            this.tlp_mainHeader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlp_mainHeader.Location = new System.Drawing.Point(3, 3);
+            this.tlp_mainHeader.Name = "tlp_mainHeader";
+            this.tlp_mainHeader.RowCount = 3;
+            this.tlp_mainHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlp_mainHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84F));
+            this.tlp_mainHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlp_mainHeader.Size = new System.Drawing.Size(834, 730);
+            this.tlp_mainHeader.TabIndex = 3;
+            // 
+            // gpb_mainHeader
+            // 
+            this.gpb_mainHeader.BackColor = System.Drawing.Color.Transparent;
+            this.gpb_mainHeader.CanvasColor = System.Drawing.Color.Transparent;
+            this.gpb_mainHeader.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.gpb_mainHeader.Controls.Add(this.tableLayoutPanel3);
+            this.gpb_mainHeader.DisabledBackColor = System.Drawing.Color.Empty;
+            this.gpb_mainHeader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gpb_mainHeader.Location = new System.Drawing.Point(19, 3);
+            this.gpb_mainHeader.Name = "gpb_mainHeader";
+            this.gpb_mainHeader.Size = new System.Drawing.Size(794, 67);
+            // 
+            // 
+            // 
+            this.gpb_mainHeader.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.gpb_mainHeader.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.gpb_mainHeader.Style.BackColorGradientAngle = 90;
+            this.gpb_mainHeader.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.gpb_mainHeader.Style.BorderBottomWidth = 4;
+            this.gpb_mainHeader.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.gpb_mainHeader.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.gpb_mainHeader.Style.BorderLeftWidth = 4;
+            this.gpb_mainHeader.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.gpb_mainHeader.Style.BorderRightWidth = 4;
+            this.gpb_mainHeader.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.gpb_mainHeader.Style.BorderTopWidth = 4;
+            this.gpb_mainHeader.Style.CornerDiameter = 1;
+            this.gpb_mainHeader.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.gpb_mainHeader.Style.CornerTypeBottomLeft = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.gpb_mainHeader.Style.CornerTypeBottomRight = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.gpb_mainHeader.Style.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.gpb_mainHeader.Style.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.gpb_mainHeader.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.gpb_mainHeader.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.gpb_mainHeader.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.gpb_mainHeader.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.gpb_mainHeader.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.gpb_mainHeader.TabIndex = 1;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 4;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36F));
+            this.tableLayoutPanel3.Controls.Add(this.pbx_mainHeaderIcon, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lbl_mainHeaderText, 1, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(786, 59);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // lbl_mainHeaderText
+            // 
+            // 
+            // 
+            // 
+            this.lbl_mainHeaderText.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lbl_mainHeaderText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_mainHeaderText.Font = new System.Drawing.Font("B Bardiya", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainHeaderText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lbl_mainHeaderText.Location = new System.Drawing.Point(285, 3);
+            this.lbl_mainHeaderText.Name = "lbl_mainHeaderText";
+            this.lbl_mainHeaderText.Size = new System.Drawing.Size(151, 53);
+            this.lbl_mainHeaderText.TabIndex = 1;
+            this.lbl_mainHeaderText.Text = "خـــــانه";
+            this.lbl_mainHeaderText.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // tmr_mainClock
+            // 
+            this.tmr_mainClock.Enabled = true;
+            this.tmr_mainClock.Interval = 1000;
+            this.tmr_mainClock.Tick += new System.EventHandler(this.tmr_mainClock_Tick);
+            // 
             // pbx_mainHomeIcon
             // 
             this.pbx_mainHomeIcon.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -768,122 +893,16 @@
             this.pbx_mainExitIcon.MouseEnter += new System.EventHandler(this.pbx_mainExitIcon_MouseEnter);
             this.pbx_mainExitIcon.MouseLeave += new System.EventHandler(this.pbx_mainExitIcon_MouseLeave);
             // 
-            // lin_mainExit
-            // 
-            this.lin_mainExit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lin_mainExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.lin_mainExit.Location = new System.Drawing.Point(3, 503);
-            this.lin_mainExit.Name = "lin_mainExit";
-            this.lin_mainExit.Size = new System.Drawing.Size(126, 5);
-            this.lin_mainExit.TabIndex = 38;
-            this.lin_mainExit.Text = "line18";
-            this.lin_mainExit.Thickness = 2;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::RayanSport.Properties.Resources.businessman;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 187);
+            this.pictureBox1.Size = new System.Drawing.Size(189, 188);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // line1
-            // 
-            this.line1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.line1.EndLineCap = DevComponents.DotNetBar.Controls.eLineEndType.Diamond;
-            this.line1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.line1.Location = new System.Drawing.Point(3, 196);
-            this.line1.Name = "line1";
-            this.line1.Size = new System.Drawing.Size(189, 1);
-            this.line1.StartLineCap = DevComponents.DotNetBar.Controls.eLineEndType.Diamond;
-            this.line1.TabIndex = 2;
-            this.line1.Text = "line1";
-            this.line1.Thickness = 5;
-            // 
-            // tlp_mainHeader
-            // 
-            this.tlp_mainHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tlp_mainHeader.ColumnCount = 3;
-            this.tlp_mainHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tlp_mainHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96F));
-            this.tlp_mainHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tlp_mainHeader.Controls.Add(this.gpb_mainHeader, 1, 0);
-            this.tlp_mainHeader.Controls.Add(this.tableLayoutPanel4, 1, 2);
-            this.tlp_mainHeader.Controls.Add(this.uC_CheckInLog1, 1, 1);
-            this.tlp_mainHeader.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlp_mainHeader.Location = new System.Drawing.Point(3, 3);
-            this.tlp_mainHeader.Name = "tlp_mainHeader";
-            this.tlp_mainHeader.RowCount = 3;
-            this.tlp_mainHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tlp_mainHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84F));
-            this.tlp_mainHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tlp_mainHeader.Size = new System.Drawing.Size(834, 727);
-            this.tlp_mainHeader.TabIndex = 3;
-            // 
-            // gpb_mainHeader
-            // 
-            this.gpb_mainHeader.BackColor = System.Drawing.Color.Transparent;
-            this.gpb_mainHeader.CanvasColor = System.Drawing.Color.Transparent;
-            this.gpb_mainHeader.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.gpb_mainHeader.Controls.Add(this.tableLayoutPanel3);
-            this.gpb_mainHeader.DisabledBackColor = System.Drawing.Color.Empty;
-            this.gpb_mainHeader.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gpb_mainHeader.Location = new System.Drawing.Point(19, 3);
-            this.gpb_mainHeader.Name = "gpb_mainHeader";
-            this.gpb_mainHeader.Size = new System.Drawing.Size(794, 66);
-            // 
-            // 
-            // 
-            this.gpb_mainHeader.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.gpb_mainHeader.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.gpb_mainHeader.Style.BackColorGradientAngle = 90;
-            this.gpb_mainHeader.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.gpb_mainHeader.Style.BorderBottomWidth = 4;
-            this.gpb_mainHeader.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
-            this.gpb_mainHeader.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.gpb_mainHeader.Style.BorderLeftWidth = 4;
-            this.gpb_mainHeader.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.gpb_mainHeader.Style.BorderRightWidth = 4;
-            this.gpb_mainHeader.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.gpb_mainHeader.Style.BorderTopWidth = 4;
-            this.gpb_mainHeader.Style.CornerDiameter = 1;
-            this.gpb_mainHeader.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.gpb_mainHeader.Style.CornerTypeBottomLeft = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.gpb_mainHeader.Style.CornerTypeBottomRight = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.gpb_mainHeader.Style.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.gpb_mainHeader.Style.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.gpb_mainHeader.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.gpb_mainHeader.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.gpb_mainHeader.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.gpb_mainHeader.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.gpb_mainHeader.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.gpb_mainHeader.TabIndex = 1;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 4;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36F));
-            this.tableLayoutPanel3.Controls.Add(this.pbx_mainHeaderIcon, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.lbl_mainHeaderText, 1, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(786, 58);
-            this.tableLayoutPanel3.TabIndex = 0;
             // 
             // pbx_mainHeaderIcon
             // 
@@ -892,57 +911,10 @@
             this.pbx_mainHeaderIcon.InitialImage = null;
             this.pbx_mainHeaderIcon.Location = new System.Drawing.Point(442, 3);
             this.pbx_mainHeaderIcon.Name = "pbx_mainHeaderIcon";
-            this.pbx_mainHeaderIcon.Size = new System.Drawing.Size(56, 52);
+            this.pbx_mainHeaderIcon.Size = new System.Drawing.Size(56, 53);
             this.pbx_mainHeaderIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbx_mainHeaderIcon.TabIndex = 0;
             this.pbx_mainHeaderIcon.TabStop = false;
-            // 
-            // lbl_mainHeaderText
-            // 
-            // 
-            // 
-            // 
-            this.lbl_mainHeaderText.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lbl_mainHeaderText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainHeaderText.Font = new System.Drawing.Font("B Bardiya", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_mainHeaderText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
-            this.lbl_mainHeaderText.Location = new System.Drawing.Point(285, 3);
-            this.lbl_mainHeaderText.Name = "lbl_mainHeaderText";
-            this.lbl_mainHeaderText.Size = new System.Drawing.Size(151, 52);
-            this.lbl_mainHeaderText.TabIndex = 1;
-            this.lbl_mainHeaderText.Text = "خـــــانه";
-            this.lbl_mainHeaderText.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel4.Controls.Add(this.labelX1, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.gpb_mainFooter, 1, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(19, 685);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(794, 39);
-            this.tableLayoutPanel4.TabIndex = 3;
-            // 
-            // labelX1
-            // 
-            // 
-            // 
-            // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX1.Font = new System.Drawing.Font("B Nazanin", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX1.Location = new System.Drawing.Point(3, 3);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(232, 33);
-            this.labelX1.TabIndex = 3;
-            this.labelX1.Text = "1396/6/6";
-            this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // gpb_mainFooter
             // 
@@ -954,7 +926,7 @@
             this.gpb_mainFooter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gpb_mainFooter.Location = new System.Drawing.Point(241, 3);
             this.gpb_mainFooter.Name = "gpb_mainFooter";
-            this.gpb_mainFooter.Size = new System.Drawing.Size(311, 33);
+            this.gpb_mainFooter.Size = new System.Drawing.Size(311, 32);
             // 
             // 
             // 
@@ -992,47 +964,23 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.263158F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.57895F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.57895F));
-            this.tableLayoutPanel5.Controls.Add(this.lbl_mainDate, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lbl_mainClock, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lbl_mainTimeOfDay, 3, 0);
-            this.tableLayoutPanel5.Controls.Add(this.line2, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(307, 29);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(307, 28);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
-            // lbl_mainDate
+            // line2
             // 
-            // 
-            // 
-            // 
-            this.lbl_mainDate.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lbl_mainDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainDate.Font = new System.Drawing.Font("B Nazanin", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_mainDate.Location = new System.Drawing.Point(3, 3);
-            this.lbl_mainDate.Name = "lbl_mainDate";
-            this.lbl_mainDate.Size = new System.Drawing.Size(90, 23);
-            this.lbl_mainDate.TabIndex = 2;
-            this.lbl_mainDate.Text = "1396/6/6";
-            this.lbl_mainDate.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // lbl_mainClock
-            // 
-            // 
-            // 
-            // 
-            this.lbl_mainClock.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lbl_mainClock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainClock.Font = new System.Drawing.Font("B Nazanin", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_mainClock.Location = new System.Drawing.Point(115, 3);
-            this.lbl_mainClock.Name = "lbl_mainClock";
-            this.lbl_mainClock.Size = new System.Drawing.Size(90, 23);
-            this.lbl_mainClock.TabIndex = 0;
-            this.lbl_mainClock.Text = "11:11:11";
-            this.lbl_mainClock.TextAlignment = System.Drawing.StringAlignment.Far;
+            this.line2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.line2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.line2.Location = new System.Drawing.Point(99, 3);
+            this.line2.Name = "line2";
+            this.line2.Size = new System.Drawing.Size(10, 22);
+            this.line2.TabIndex = 3;
+            this.line2.VerticalLine = true;
             // 
             // lbl_mainTimeOfDay
             // 
@@ -1044,42 +992,76 @@
             this.lbl_mainTimeOfDay.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainTimeOfDay.Location = new System.Drawing.Point(211, 3);
             this.lbl_mainTimeOfDay.Name = "lbl_mainTimeOfDay";
-            this.lbl_mainTimeOfDay.Size = new System.Drawing.Size(93, 23);
+            this.lbl_mainTimeOfDay.Size = new System.Drawing.Size(93, 22);
             this.lbl_mainTimeOfDay.TabIndex = 1;
-            this.lbl_mainTimeOfDay.Text = "بـعد از ظهر";
             this.lbl_mainTimeOfDay.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // line2
+            // lbl_mainClock
             // 
-            this.line2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.line2.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.line2.Location = new System.Drawing.Point(99, 3);
-            this.line2.Name = "line2";
-            this.line2.Size = new System.Drawing.Size(10, 23);
-            this.line2.TabIndex = 3;
-            this.line2.Text = "line2";
-            this.line2.VerticalLine = true;
             // 
-            // tmr_mainClock
             // 
-            this.tmr_mainClock.Enabled = true;
-            this.tmr_mainClock.Interval = 1000;
-            this.tmr_mainClock.Tick += new System.EventHandler(this.tmr_mainClock_Tick);
             // 
-            // uC_CheckInLog1
+            this.lbl_mainClock.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lbl_mainClock.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_mainClock.Font = new System.Drawing.Font("B Nazanin", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainClock.Location = new System.Drawing.Point(115, 3);
+            this.lbl_mainClock.Name = "lbl_mainClock";
+            this.lbl_mainClock.Size = new System.Drawing.Size(90, 22);
+            this.lbl_mainClock.TabIndex = 0;
+            this.lbl_mainClock.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
-            this.uC_CheckInLog1.Location = new System.Drawing.Point(19, 75);
-            this.uC_CheckInLog1.Name = "uC_CheckInLog1";
-            this.uC_CheckInLog1.Size = new System.Drawing.Size(778, 604);
-            this.uC_CheckInLog1.TabIndex = 4;
+            // lbl_mainDate
+            // 
+            // 
+            // 
+            // 
+            this.lbl_mainDate.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lbl_mainDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_mainDate.Font = new System.Drawing.Font("B Nazanin", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainDate.Location = new System.Drawing.Point(3, 3);
+            this.lbl_mainDate.Name = "lbl_mainDate";
+            this.lbl_mainDate.Size = new System.Drawing.Size(90, 22);
+            this.lbl_mainDate.TabIndex = 2;
+            this.lbl_mainDate.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // labelX1
+            // 
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelX1.Font = new System.Drawing.Font("B Nazanin", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelX1.Location = new System.Drawing.Point(3, 3);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(232, 32);
+            this.labelX1.TabIndex = 3;
+            this.labelX1.Text = "1396/6/6";
+            this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel4.Controls.Add(this.labelX1, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.gpb_mainFooter, 1, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(19, 689);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(794, 38);
+            this.tableLayoutPanel4.TabIndex = 3;
             // 
             // Form_Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1051, 733);
+            this.ClientSize = new System.Drawing.Size(1051, 736);
             this.Controls.Add(this.tlp_mainMainLayout);
             this.DoubleBuffered = true;
-            this.MinimumSize = new System.Drawing.Size(1024, 726);
+            this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "Form_Main";
             this.Text = "Form_Main";
             this.tlp_mainMainLayout.ResumeLayout(false);
@@ -1087,6 +1069,9 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.pnl_MainMenuOption.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tlp_mainHeader.ResumeLayout(false);
+            this.gpb_mainHeader.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainHomeIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainEntranceIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainMemberIcon)).EndInit();
@@ -1097,13 +1082,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainAboutIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainExitIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tlp_mainHeader.ResumeLayout(false);
-            this.gpb_mainHeader.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainHeaderIcon)).EndInit();
-            this.tableLayoutPanel4.ResumeLayout(false);
             this.gpb_mainFooter.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1135,7 +1116,6 @@
         private System.Windows.Forms.PictureBox pbx_mainExitIcon;
         private DevComponents.DotNetBar.LabelX lbl_mainExit;
         private DevComponents.DotNetBar.Controls.GroupPanel gpb_mainHeader;
-        private DevComponents.DotNetBar.Controls.GroupPanel gpb_mainFooter;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.PictureBox pbx_mainHeaderIcon;
         private DevComponents.DotNetBar.LabelX lbl_mainHeaderText;
@@ -1159,14 +1139,14 @@
         private DevComponents.DotNetBar.Controls.Line lin_mainHomeIcon;
         private DevComponents.DotNetBar.Controls.Line lin_mainExitIcon;
         private DevComponents.DotNetBar.Controls.Line lin_mainExit;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private DevComponents.DotNetBar.LabelX lbl_mainClock;
         private System.Windows.Forms.Timer tmr_mainClock;
-        private DevComponents.DotNetBar.LabelX lbl_mainTimeOfDay;
-        private DevComponents.DotNetBar.LabelX lbl_mainDate;
-        private DevComponents.DotNetBar.Controls.Line line2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private DevComponents.DotNetBar.LabelX labelX1;
-        private View.UC_CheckInLog uC_CheckInLog1;
+        private DevComponents.DotNetBar.Controls.GroupPanel gpb_mainFooter;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private DevComponents.DotNetBar.Controls.Line line2;
+        private DevComponents.DotNetBar.LabelX lbl_mainTimeOfDay;
+        private DevComponents.DotNetBar.LabelX lbl_mainClock;
+        private DevComponents.DotNetBar.LabelX lbl_mainDate;
     }
 }

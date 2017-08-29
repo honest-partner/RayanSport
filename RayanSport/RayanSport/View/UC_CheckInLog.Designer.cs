@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn17 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn18 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition9 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn19 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn20 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition10 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn4 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.gpb_UcChekInLogNotMember = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.dgv_UcCheckInLogShowNotMember = new Telerik.WinControls.UI.RadGridView();
             this.checkInBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rayan_sportDataSet = new RayanSport.rayan_sportDataSet();
             this.gpb_UcCheckInLogSeenMember = new DevComponents.DotNetBar.Controls.GroupPanel();
@@ -59,13 +60,14 @@
             this.memberCheckInBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.memberCheckInTableAdapter = new RayanSport.rayan_sportDataSetTableAdapters.memberCheckInTableAdapter();
             this.checkInTableAdapter = new RayanSport.rayan_sportDataSetTableAdapters.checkInTableAdapter();
-            this.dgv_UcCheckInLogShowNotMember = new Telerik.WinControls.UI.RadGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.gpb_UcChekInLogNotMember.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowNotMember)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowNotMember.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkInBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).BeginInit();
             this.gpb_UcCheckInLogSeenMember.SuspendLayout();
@@ -76,8 +78,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowMember)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowMember.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberCheckInBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowNotMember)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowNotMember.MasterTemplate)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -195,8 +195,56 @@
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(719, 212);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(719, 208);
             this.tableLayoutPanel5.TabIndex = 1;
+            // 
+            // dgv_UcCheckInLogShowNotMember
+            // 
+            this.dgv_UcCheckInLogShowNotMember.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_UcCheckInLogShowNotMember.Location = new System.Drawing.Point(3, 3);
+            // 
+            // 
+            // 
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowAddNewRow = false;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowColumnChooser = false;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowColumnHeaderContextMenu = false;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowColumnReorder = false;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowDeleteRow = false;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowEditRow = false;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+            gridViewDecimalColumn1.DataType = typeof(long);
+            gridViewDecimalColumn1.FieldName = "checkIn_cost";
+            gridViewDecimalColumn1.HeaderText = "هزینه";
+            gridViewDecimalColumn1.IsAutoGenerated = true;
+            gridViewDecimalColumn1.Name = "checkIn_cost";
+            gridViewDecimalColumn1.Width = 238;
+            gridViewTextBoxColumn1.FieldName = "checkIn_date";
+            gridViewTextBoxColumn1.HeaderText = "تاریخ";
+            gridViewTextBoxColumn1.IsAutoGenerated = true;
+            gridViewTextBoxColumn1.Name = "checkIn_date";
+            gridViewTextBoxColumn1.Width = 238;
+            gridViewDecimalColumn2.DataType = typeof(int);
+            gridViewDecimalColumn2.FieldName = "checkIn_commode";
+            gridViewDecimalColumn2.HeaderText = "شماره کمد";
+            gridViewDecimalColumn2.IsAutoGenerated = true;
+            gridViewDecimalColumn2.Name = "checkIn_commode";
+            gridViewDecimalColumn2.Width = 238;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewDecimalColumn1,
+            gridViewTextBoxColumn1,
+            gridViewDecimalColumn2});
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.DataSource = this.checkInBindingSource;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.EnableGrouping = false;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.EnablePaging = true;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.PageSize = 5;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.ShowRowHeaderColumn = false;
+            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.dgv_UcCheckInLogShowNotMember.Name = "dgv_UcCheckInLogShowNotMember";
+            this.dgv_UcCheckInLogShowNotMember.ReadOnly = true;
+            this.dgv_UcCheckInLogShowNotMember.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dgv_UcCheckInLogShowNotMember.Size = new System.Drawing.Size(713, 202);
+            this.dgv_UcCheckInLogShowNotMember.TabIndex = 0;
+            this.dgv_UcCheckInLogShowNotMember.Text = "radGridView1";
             // 
             // checkInBindingSource
             // 
@@ -267,7 +315,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.5F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(719, 334);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(719, 330);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -289,7 +337,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(713, 111);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(713, 110);
             this.tableLayoutPanel6.TabIndex = 3;
             // 
             // tableLayoutPanel8
@@ -303,15 +351,15 @@
             this.tableLayoutPanel8.RowCount = 2;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(207, 55);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(207, 54);
             this.tableLayoutPanel8.TabIndex = 3;
             // 
             // dts_UcCheckInLogDateFrom
             // 
             this.dts_UcCheckInLogDateFrom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dts_UcCheckInLogDateFrom.Location = new System.Drawing.Point(3, 14);
+            this.dts_UcCheckInLogDateFrom.Location = new System.Drawing.Point(3, 13);
             this.dts_UcCheckInLogDateFrom.Name = "dts_UcCheckInLogDateFrom";
-            this.dts_UcCheckInLogDateFrom.Size = new System.Drawing.Size(201, 23);
+            this.dts_UcCheckInLogDateFrom.Size = new System.Drawing.Size(201, 27);
             this.dts_UcCheckInLogDateFrom.TabIndex = 1;
             this.dts_UcCheckInLogDateFrom.UsePersianFormat = true;
             this.dts_UcCheckInLogDateFrom.ValueChanged += new System.EventHandler(this.dts_UcCheckInLogDateFrom_ValueChanged);
@@ -324,7 +372,7 @@
             this.lbl_UcCheckInLogDateFrom.Location = new System.Drawing.Point(571, 0);
             this.lbl_UcCheckInLogDateFrom.Name = "lbl_UcCheckInLogDateFrom";
             this.lbl_UcCheckInLogDateFrom.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_UcCheckInLogDateFrom.Size = new System.Drawing.Size(139, 61);
+            this.lbl_UcCheckInLogDateFrom.Size = new System.Drawing.Size(139, 60);
             this.lbl_UcCheckInLogDateFrom.TabIndex = 0;
             this.lbl_UcCheckInLogDateFrom.Text = "   از تاریخ:";
             this.lbl_UcCheckInLogDateFrom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -337,7 +385,7 @@
             this.lbl_UcCheckInLogDateUntil.Location = new System.Drawing.Point(216, 0);
             this.lbl_UcCheckInLogDateUntil.Name = "lbl_UcCheckInLogDateUntil";
             this.lbl_UcCheckInLogDateUntil.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_UcCheckInLogDateUntil.Size = new System.Drawing.Size(136, 61);
+            this.lbl_UcCheckInLogDateUntil.Size = new System.Drawing.Size(136, 60);
             this.lbl_UcCheckInLogDateUntil.TabIndex = 1;
             this.lbl_UcCheckInLogDateUntil.Text = "    تا تاریخ:";
             this.lbl_UcCheckInLogDateUntil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -353,15 +401,15 @@
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(207, 55);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(207, 54);
             this.tableLayoutPanel7.TabIndex = 2;
             // 
             // dts_UcCheckInLogDateUntil
             // 
             this.dts_UcCheckInLogDateUntil.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dts_UcCheckInLogDateUntil.Location = new System.Drawing.Point(3, 14);
+            this.dts_UcCheckInLogDateUntil.Location = new System.Drawing.Point(3, 13);
             this.dts_UcCheckInLogDateUntil.Name = "dts_UcCheckInLogDateUntil";
-            this.dts_UcCheckInLogDateUntil.Size = new System.Drawing.Size(201, 23);
+            this.dts_UcCheckInLogDateUntil.Size = new System.Drawing.Size(201, 27);
             this.dts_UcCheckInLogDateUntil.TabIndex = 1;
             this.dts_UcCheckInLogDateUntil.UsePersianFormat = true;
             this.dts_UcCheckInLogDateUntil.ValueChanged += new System.EventHandler(this.dts_UcCheckInLogDateUntil_ValueChanged);
@@ -372,7 +420,7 @@
             this.btn_UcCheckInLogSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_UcCheckInLogSearch.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_UcCheckInLogSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_UcCheckInLogSearch.Location = new System.Drawing.Point(3, 69);
+            this.btn_UcCheckInLogSearch.Location = new System.Drawing.Point(3, 68);
             this.btn_UcCheckInLogSearch.Name = "btn_UcCheckInLogSearch";
             this.btn_UcCheckInLogSearch.Size = new System.Drawing.Size(207, 39);
             this.btn_UcCheckInLogSearch.TabIndex = 4;
@@ -383,7 +431,7 @@
             // dgv_UcCheckInLogShowMember
             // 
             this.dgv_UcCheckInLogShowMember.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_UcCheckInLogShowMember.Location = new System.Drawing.Point(3, 120);
+            this.dgv_UcCheckInLogShowMember.Location = new System.Drawing.Point(3, 119);
             // 
             // 
             // 
@@ -394,36 +442,36 @@
             this.dgv_UcCheckInLogShowMember.MasterTemplate.AllowDeleteRow = false;
             this.dgv_UcCheckInLogShowMember.MasterTemplate.AllowEditRow = false;
             this.dgv_UcCheckInLogShowMember.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewDecimalColumn17.DataType = typeof(long);
-            gridViewDecimalColumn17.FieldName = "memberCheckIn_membershipId";
-            gridViewDecimalColumn17.HeaderText = "شماره قرارداد";
-            gridViewDecimalColumn17.IsAutoGenerated = true;
-            gridViewDecimalColumn17.Name = "memberCheckIn_membershipId";
-            gridViewDecimalColumn17.Width = 231;
-            gridViewTextBoxColumn9.FieldName = "memberCheckIn_date";
-            gridViewTextBoxColumn9.HeaderText = "تاریخ";
-            gridViewTextBoxColumn9.IsAutoGenerated = true;
-            gridViewTextBoxColumn9.Name = "memberCheckIn_date";
-            gridViewTextBoxColumn9.Width = 231;
-            gridViewDecimalColumn18.DataType = typeof(int);
-            gridViewDecimalColumn18.FieldName = "memberCheckIn_commode";
-            gridViewDecimalColumn18.HeaderText = "شماره کمد";
-            gridViewDecimalColumn18.IsAutoGenerated = true;
-            gridViewDecimalColumn18.Name = "memberCheckIn_commode";
-            gridViewDecimalColumn18.Width = 232;
+            gridViewDecimalColumn3.DataType = typeof(long);
+            gridViewDecimalColumn3.FieldName = "memberCheckIn_membershipId";
+            gridViewDecimalColumn3.HeaderText = "شماره قرارداد";
+            gridViewDecimalColumn3.IsAutoGenerated = true;
+            gridViewDecimalColumn3.Name = "memberCheckIn_membershipId";
+            gridViewDecimalColumn3.Width = 231;
+            gridViewTextBoxColumn2.FieldName = "memberCheckIn_date";
+            gridViewTextBoxColumn2.HeaderText = "تاریخ";
+            gridViewTextBoxColumn2.IsAutoGenerated = true;
+            gridViewTextBoxColumn2.Name = "memberCheckIn_date";
+            gridViewTextBoxColumn2.Width = 231;
+            gridViewDecimalColumn4.DataType = typeof(int);
+            gridViewDecimalColumn4.FieldName = "memberCheckIn_commode";
+            gridViewDecimalColumn4.HeaderText = "شماره کمد";
+            gridViewDecimalColumn4.IsAutoGenerated = true;
+            gridViewDecimalColumn4.Name = "memberCheckIn_commode";
+            gridViewDecimalColumn4.Width = 232;
             this.dgv_UcCheckInLogShowMember.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn17,
-            gridViewTextBoxColumn9,
-            gridViewDecimalColumn18});
+            gridViewDecimalColumn3,
+            gridViewTextBoxColumn2,
+            gridViewDecimalColumn4});
             this.dgv_UcCheckInLogShowMember.MasterTemplate.DataSource = this.memberCheckInBindingSource;
             this.dgv_UcCheckInLogShowMember.MasterTemplate.EnableGrouping = false;
             this.dgv_UcCheckInLogShowMember.MasterTemplate.EnablePaging = true;
             this.dgv_UcCheckInLogShowMember.MasterTemplate.PageSize = 5;
-            this.dgv_UcCheckInLogShowMember.MasterTemplate.ViewDefinition = tableViewDefinition9;
+            this.dgv_UcCheckInLogShowMember.MasterTemplate.ViewDefinition = tableViewDefinition2;
             this.dgv_UcCheckInLogShowMember.Name = "dgv_UcCheckInLogShowMember";
             this.dgv_UcCheckInLogShowMember.ReadOnly = true;
             this.dgv_UcCheckInLogShowMember.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dgv_UcCheckInLogShowMember.Size = new System.Drawing.Size(713, 190);
+            this.dgv_UcCheckInLogShowMember.Size = new System.Drawing.Size(713, 187);
             this.dgv_UcCheckInLogShowMember.TabIndex = 4;
             this.dgv_UcCheckInLogShowMember.Text = "radGridView1";
             // 
@@ -440,54 +488,6 @@
             // 
             this.checkInTableAdapter.ClearBeforeFill = true;
             // 
-            // dgv_UcCheckInLogShowNotMember
-            // 
-            this.dgv_UcCheckInLogShowNotMember.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_UcCheckInLogShowNotMember.Location = new System.Drawing.Point(3, 3);
-            // 
-            // 
-            // 
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowAddNewRow = false;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowColumnChooser = false;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowColumnHeaderContextMenu = false;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowColumnReorder = false;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowDeleteRow = false;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AllowEditRow = false;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewDecimalColumn19.DataType = typeof(long);
-            gridViewDecimalColumn19.FieldName = "checkIn_cost";
-            gridViewDecimalColumn19.HeaderText = "هزینه";
-            gridViewDecimalColumn19.IsAutoGenerated = true;
-            gridViewDecimalColumn19.Name = "checkIn_cost";
-            gridViewDecimalColumn19.Width = 238;
-            gridViewTextBoxColumn10.FieldName = "checkIn_date";
-            gridViewTextBoxColumn10.HeaderText = "تاریخ";
-            gridViewTextBoxColumn10.IsAutoGenerated = true;
-            gridViewTextBoxColumn10.Name = "checkIn_date";
-            gridViewTextBoxColumn10.Width = 238;
-            gridViewDecimalColumn20.DataType = typeof(int);
-            gridViewDecimalColumn20.FieldName = "checkIn_commode";
-            gridViewDecimalColumn20.HeaderText = "شماره کمد";
-            gridViewDecimalColumn20.IsAutoGenerated = true;
-            gridViewDecimalColumn20.Name = "checkIn_commode";
-            gridViewDecimalColumn20.Width = 238;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn19,
-            gridViewTextBoxColumn10,
-            gridViewDecimalColumn20});
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.DataSource = this.checkInBindingSource;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.EnableGrouping = false;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.EnablePaging = true;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.PageSize = 5;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.ShowRowHeaderColumn = false;
-            this.dgv_UcCheckInLogShowNotMember.MasterTemplate.ViewDefinition = tableViewDefinition10;
-            this.dgv_UcCheckInLogShowNotMember.Name = "dgv_UcCheckInLogShowNotMember";
-            this.dgv_UcCheckInLogShowNotMember.ReadOnly = true;
-            this.dgv_UcCheckInLogShowNotMember.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dgv_UcCheckInLogShowNotMember.Size = new System.Drawing.Size(713, 206);
-            this.dgv_UcCheckInLogShowNotMember.TabIndex = 0;
-            this.dgv_UcCheckInLogShowNotMember.Text = "radGridView1";
-            // 
             // UC_CheckInLog
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -501,6 +501,8 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.gpb_UcChekInLogNotMember.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowNotMember.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowNotMember)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkInBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).EndInit();
             this.gpb_UcCheckInLogSeenMember.ResumeLayout(false);
@@ -514,8 +516,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowMember.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowMember)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberCheckInBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowNotMember.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcCheckInLogShowNotMember)).EndInit();
             this.ResumeLayout(false);
 
         }

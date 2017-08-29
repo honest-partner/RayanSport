@@ -15,6 +15,9 @@ namespace RayanSport.View
         public Form_CheckIn()
         {
             InitializeComponent();
+            
         }
+
+       
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayanSport
 {
-    class BuffetLog
+    public class BuffetLog
     {
       
         public String buffetLog_userName { get; set; }
@@ -23,6 +23,12 @@ namespace RayanSport
             this.buffetLog_dateTime = buffetLog_dateTime;
             this.buffetLog_price = buffetLog_price;
             this.buffetLog_description = buffetLog_description;
+        }
+        public BuffetLog() {
+        }
+        public String toString() {
+            return (String.Format("buffetLog_userName:{0},buffetLog_memberId:{1},buffetLog_memberName:{2},buffetLog_dateTime:{3},buffetLog_price:{4},buffetLog_description{5}"
+                ,buffetLog_userName,buffetLog_memberId,buffetLog_memberName,buffetLog_dateTime,buffetLog_price,buffetLog_description));
         }
 
     }

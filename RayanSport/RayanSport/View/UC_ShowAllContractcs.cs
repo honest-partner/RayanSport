@@ -120,6 +120,7 @@ namespace RayanSport.View
             }
 
 
+
             Name = "";
             if (endDate1 != "" && endDate2 != "" && Name == "")
             {

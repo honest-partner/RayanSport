@@ -34,6 +34,7 @@ namespace RayanSport.View
             lbl_UcHomeAllMember.Text = numMember.ToString();
 
 
+
            String todeyDate1 = getDateShamsi(DateTime.Now.ToString("M/d/yyyy"));
            
             rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter2 = new rayan_sportDataSetTableAdapters.membershipTableAdapter();

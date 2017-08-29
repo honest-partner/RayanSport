@@ -224,6 +224,9 @@
     <EmbeddedResource Include="View\UC_ShowAllContractcs.resx">
       <DependentUpon>UC_ShowAllContractcs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_ShowMember_ContractInfo.resx">
+      <DependentUpon>UC_ShowMember_ContractInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayanSport
 {
-    class Membership
+    public class Membership
     {
         public Membership(long membership_id, int membership_memberId, string membership_memberName, string membership_startDate, string membership_endDate, string membership_type, int membership_remainingSession, long membership_receiptNumber, string membership_paymentType, long membership_price, long membership_payment, string membership_description , string membership_status)
         {
@@ -29,7 +29,7 @@ namespace RayanSport
         {
             
         }*/
-
+        public Membership() { }
         public long membership_id { get; set; }
         public int membership_memberId { get; set; }
         public String membership_memberName { get; set; }
@@ -43,6 +43,11 @@ namespace RayanSport
         public long membership_payment { get; set; }
         public string membership_description { get; set; }
         public String membership_status{ get; set; }
+        public String toString() {
+            return String.Format("membership_id:{0},membership_memberId:{1},membership_memberName:{2},membership_startDate:{3},membership_endDate:{4},membership_type:{5} ,membership_remainingSession:{6},membership_receiptNumber:{7},membership_paymentType:{8},membership_price:{9},membership_payment:{10},membership_description:{11},membership_status:{12} "
+                , membership_id, membership_memberId, membership_memberName, membership_startDate, membership_endDate, membership_type, membership_remainingSession, membership_receiptNumber, membership_paymentType, membership_price,membership_payment, membership_description, membership_status);
+
+        }
 
     }
 }

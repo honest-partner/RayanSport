@@ -28,20 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.uC_ShowMember_MemberInfo1 = new RayanSport.View.UC_ShowMember_MemberInfo();
             this.SuspendLayout();
+            // 
+            // uC_ShowMember_MemberInfo1
+            // 
+            this.uC_ShowMember_MemberInfo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.uC_ShowMember_MemberInfo1.Location = new System.Drawing.Point(12, 12);
+            this.uC_ShowMember_MemberInfo1.Name = "uC_ShowMember_MemberInfo1";
+            this.uC_ShowMember_MemberInfo1.Size = new System.Drawing.Size(1005, 326);
+            this.uC_ShowMember_MemberInfo1.TabIndex = 0;
             // 
             // Form_ShowMember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 721);
-            this.DoubleBuffered = true;
+            this.ClientSize = new System.Drawing.Size(1029, 492);
+            this.Controls.Add(this.uC_ShowMember_MemberInfo1);
             this.Name = "Form_ShowMember";
-            this.Text = "Form_ShowMember";
             this.ResumeLayout(false);
 
         }
 
-        #endregion
+        private UC_ShowMember_MemberInfo uC_ShowMember_MemberInfo1;
     }
+
+    #endregion
+
 }

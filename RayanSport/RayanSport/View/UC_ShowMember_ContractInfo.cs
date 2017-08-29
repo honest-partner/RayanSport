@@ -14,30 +14,45 @@ namespace RayanSport.View
     public partial class UC_ShowMember_ContractInfo : UserControl
     {
         long currnet_membership_id;
-        Member member;
+        
         List<TrainOption> train_list;
         public UC_ShowMember_ContractInfo() {
             InitializeComponent();
         }
-        public Member Member { get; set; }
+        public Member member { get; set; }
         
 
         rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
         rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
         private void UC_ShowMember_ContractInfo_Load(object sender, EventArgs e)
         {
+            setData();
+            
+        }
+        public void setData() {
             rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
             rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
-            tableAdapter.FillBySelectById(membershipDataTable,100);
-            dgv_UcShowMemberContractInfoContracts.DataSource=membershipDataTable;
+            tableAdapter.FillBySelectById(membershipDataTable, member.member_id);
+            dgv_UcShowMemberContractInfoContracts.DataSource = membershipDataTable;
             btn_UcShowMemberContractInfoDeleteContract.Enabled = false;
             btn_UcShowMemberContractInfoDeleteContract.BackColor = Properties.Settings.Default.MediumGrey;
             btn_UcShowMemberContractInfoExpireContract.Enabled = false;
+            btn_UcShowMemberContractInfoExpireContract.BackColor = Properties.Settings.Default.MediumGrey;
             btn_UcShowMemberContractInfoAddContract.Enabled = true;
-            tableLayoutPanel3.Enabled = false;
-            
-        }
+            btn_UcShowMemberContractInfoAddContract.BackColor = Properties.Settings.Default.Blue;
+            foreach (var txb in tableLayoutPanel3.Controls)
+            {
+                if (txb is TextBox)
+                    (txb as TextBox).Clear();
+                if (txb is ComboBox)
+                    (txb as ComboBox).Text = "";
+            }
+            dts_UcShowMemberContractInfoStartDate.ResetText();
 
+            tableLayoutPanel3.Enabled = false;
+            btn_UcShowMemberContractInfoSave.BackColor = Properties.Settings.Default.MediumGrey; 
+            btn_UcShowMemberContractInfoClear.BackColor = Properties.Settings.Default.MediumGrey; 
+        }
         
 
         private void dgv_UcShowMemberContractInfoContracts_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -50,9 +65,14 @@ namespace RayanSport.View
         private void btn_UcShowMemberContractInfoAddContract_Click(object sender, EventArgs e)
         {
             btn_UcShowMemberContractInfoDeleteContract.Enabled = false;
+            btn_UcShowMemberContractInfoDeleteContract.BackColor = Properties.Settings.Default.MediumGrey;
             btn_UcShowMemberContractInfoExpireContract.Enabled = false;
+            btn_UcShowMemberContractInfoExpireContract.BackColor = Properties.Settings.Default.MediumGrey;
             tableLayoutPanel3.Enabled = true;
+            btn_UcShowMemberContractInfoSave.BackColor = Properties.Settings.Default.Blue;
+            btn_UcShowMemberContractInfoClear.BackColor = Properties.Settings.Default.Blue;
             txb_UcShowMemberContractInfoRemainingSession.Enabled = false;
+            
             train_list = new List<TrainOption>();
             List<String> train_names = new List<string>();
             rayan_sportDataSet.trainOptionDataTable trainOptionDataTable = new rayan_sportDataSet.trainOptionDataTable();
@@ -183,9 +203,12 @@ namespace RayanSport.View
 
         private void btn_UcShowMemberContractInfoClear_Click(object sender, EventArgs e)
         {
-            btn_UcShowMemberContractInfoDeleteContract.Enabled = true;
-            btn_UcShowMemberContractInfoExpireContract.Enabled = true;
+            btn_UcShowMemberContractInfoDeleteContract.Enabled = false;
+            btn_UcShowMemberContractInfoDeleteContract.BackColor = Properties.Settings.Default.MediumGrey;
+            btn_UcShowMemberContractInfoExpireContract.Enabled = false;
+            btn_UcShowMemberContractInfoExpireContract.BackColor = Properties.Settings.Default.MediumGrey;
             btn_UcShowMemberContractInfoAddContract.Enabled = true;
+            btn_UcShowMemberContractInfoAddContract.BackColor = Properties.Settings.Default.Blue;
             foreach (var txb in tableLayoutPanel3.Controls)
             {
                 if (txb is TextBox)
@@ -196,6 +219,8 @@ namespace RayanSport.View
             dts_UcShowMemberContractInfoStartDate.ResetText();
             
             tableLayoutPanel3.Enabled = false;
+            btn_UcShowMemberContractInfoClear.BackColor = Properties.Settings.Default.MediumGrey;
+            btn_UcShowMemberContractInfoSave.BackColor = Properties.Settings.Default.MediumGrey;
         }
 
         private void btn_UcShowMemberContractInfoSave_Click(object sender, EventArgs e)
@@ -214,9 +239,9 @@ namespace RayanSport.View
                         reciptnum = null;
                     else
                         reciptnum = Convert.ToInt64(txb_UcShowMemberContractInfoReciptNum.Text);
-                    rayan_sportDataSet.membershipDataTable memberShipDataTable = new rayan_sportDataSet.membershipDataTable();
-                    rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
-                    int sucsses = membershipTableAdapter.Insert(member.member_id, member.member_name, startDate, txb_UcShowMemberContractInfoEndDate.Text, cmb_UcShowMemberContractInfoContractType.Text, Convert.ToInt32(txb_UcShowMemberContractInfoRemainingSession.Text),
+                        rayan_sportDataSet.membershipDataTable memberShipDataTable = new rayan_sportDataSet.membershipDataTable();
+                        rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
+                        int sucsses = membershipTableAdapter.Insert(member.member_id, member.member_name, startDate, txb_UcShowMemberContractInfoEndDate.Text, cmb_UcShowMemberContractInfoContractType.Text, Convert.ToInt32(txb_UcShowMemberContractInfoRemainingSession.Text),
                         reciptnum, cmb_UcShowMemberContractInfoExpireContractPaymentType.Text, Convert.ToInt64(txb_UcShowMemberContractInfoExpireContractPrice.Text),
                         Convert.ToInt64(txb_UcShowMemberContractInfoPayment.Text), txb_UcShowMemberContractInfoDes.Text, "فعال"
                         );
@@ -227,7 +252,6 @@ namespace RayanSport.View
                     }
                 }
                 catch (Exception ex) {
-                    //MessageBox.Show("تاریخ شروع قرارداد را وارد نمایید");
                     MessageBox.Show(ex.Message);
                     return;
                 }
@@ -242,7 +266,7 @@ namespace RayanSport.View
         {
             rayan_sportDataSet.membershipDataTable membershipDatatable = new rayan_sportDataSet.membershipDataTable();
             rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
-           membershipTableAdapter.FillBySelectById(membershipDatatable,member.member_id);
+            membershipTableAdapter.FillBySelectById(membershipDatatable,member.member_id);
             dgv_UcShowMemberContractInfoContracts.DataSource = membershipDatatable;
         }
 
@@ -261,8 +285,11 @@ namespace RayanSport.View
         {
             currnet_membership_id = Convert.ToInt64(dgv_UcShowMemberContractInfoContracts.Rows[e.RowIndex].Cells["membership_id"].Value.ToString());
             btn_UcShowMemberContractInfoDeleteContract.Enabled = true;
+            btn_UcShowMemberContractInfoDeleteContract.BackColor = Properties.Settings.Default.Blue;
             btn_UcShowMemberContractInfoExpireContract.Enabled = true;
+            btn_UcShowMemberContractInfoExpireContract.BackColor = Properties.Settings.Default.Blue;
             btn_UcShowMemberContractInfoAddContract.Enabled = true;
+            btn_UcShowMemberContractInfoAddContract.BackColor = Properties.Settings.Default.Blue;
             foreach (var txb in tableLayoutPanel3.Controls)
             {
                 if (txb is TextBox)
@@ -272,6 +299,8 @@ namespace RayanSport.View
             }
             dts_UcShowMemberContractInfoStartDate.ResetText();
             tableLayoutPanel3.Enabled = false;
+            
+
         }
     }
 }

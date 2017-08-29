@@ -118,7 +118,7 @@
             this.membership_id.HeaderText = "شماره";
             this.membership_id.Name = "membership_id";
             this.membership_id.ReadOnly = true;
-            this.membership_id.Width = 71;
+            this.membership_id.Width = 85;
             // 
             // membershipstatusDataGridViewTextBoxColumn
             // 
@@ -127,7 +127,7 @@
             this.membershipstatusDataGridViewTextBoxColumn.HeaderText = "وضعیت";
             this.membershipstatusDataGridViewTextBoxColumn.Name = "membershipstatusDataGridViewTextBoxColumn";
             this.membershipstatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershipstatusDataGridViewTextBoxColumn.Width = 79;
+            this.membershipstatusDataGridViewTextBoxColumn.Width = 97;
             // 
             // membershipstartDateDataGridViewTextBoxColumn
             // 
@@ -136,7 +136,7 @@
             this.membershipstartDateDataGridViewTextBoxColumn.HeaderText = "تاریخ شروع";
             this.membershipstartDateDataGridViewTextBoxColumn.Name = "membershipstartDateDataGridViewTextBoxColumn";
             this.membershipstartDateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershipstartDateDataGridViewTextBoxColumn.Width = 101;
+            this.membershipstartDateDataGridViewTextBoxColumn.Width = 125;
             // 
             // membershipendDateDataGridViewTextBoxColumn
             // 
@@ -145,7 +145,7 @@
             this.membershipendDateDataGridViewTextBoxColumn.HeaderText = "تاریخ اتمام";
             this.membershipendDateDataGridViewTextBoxColumn.Name = "membershipendDateDataGridViewTextBoxColumn";
             this.membershipendDateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershipendDateDataGridViewTextBoxColumn.Width = 98;
+            this.membershipendDateDataGridViewTextBoxColumn.Width = 122;
             // 
             // membershiptypeDataGridViewTextBoxColumn
             // 
@@ -163,7 +163,7 @@
             this.membershipremainingSessionDataGridViewTextBoxColumn.HeaderText = "جلسات باقی مانده";
             this.membershipremainingSessionDataGridViewTextBoxColumn.Name = "membershipremainingSessionDataGridViewTextBoxColumn";
             this.membershipremainingSessionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershipremainingSessionDataGridViewTextBoxColumn.Width = 142;
+            this.membershipremainingSessionDataGridViewTextBoxColumn.Width = 178;
             // 
             // membershipreceiptNumberDataGridViewTextBoxColumn
             // 
@@ -181,7 +181,7 @@
             this.membershippaymentTypeDataGridViewTextBoxColumn.HeaderText = "نوع پرداخت";
             this.membershippaymentTypeDataGridViewTextBoxColumn.Name = "membershippaymentTypeDataGridViewTextBoxColumn";
             this.membershippaymentTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershippaymentTypeDataGridViewTextBoxColumn.Width = 102;
+            this.membershippaymentTypeDataGridViewTextBoxColumn.Width = 128;
             // 
             // membershippriceDataGridViewTextBoxColumn
             // 
@@ -190,7 +190,7 @@
             this.membershippriceDataGridViewTextBoxColumn.HeaderText = "قیمت";
             this.membershippriceDataGridViewTextBoxColumn.Name = "membershippriceDataGridViewTextBoxColumn";
             this.membershippriceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershippriceDataGridViewTextBoxColumn.Width = 67;
+            this.membershippriceDataGridViewTextBoxColumn.Width = 83;
             // 
             // membershippaymentDataGridViewTextBoxColumn
             // 
@@ -199,7 +199,7 @@
             this.membershippaymentDataGridViewTextBoxColumn.HeaderText = "پرداختی";
             this.membershippaymentDataGridViewTextBoxColumn.Name = "membershippaymentDataGridViewTextBoxColumn";
             this.membershippaymentDataGridViewTextBoxColumn.ReadOnly = true;
-            this.membershippaymentDataGridViewTextBoxColumn.Width = 83;
+            this.membershippaymentDataGridViewTextBoxColumn.Width = 101;
             // 
             // membershipdescriptionDataGridViewTextBoxColumn
             // 
@@ -242,6 +242,9 @@
             // btn_UcShowMemberContractInfoAddContract
             // 
             this.btn_UcShowMemberContractInfoAddContract.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowMemberContractInfoAddContract.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_UcShowMemberContractInfoAddContract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberContractInfoAddContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcShowMemberContractInfoAddContract.Location = new System.Drawing.Point(1216, 3);
             this.btn_UcShowMemberContractInfoAddContract.Name = "btn_UcShowMemberContractInfoAddContract";
             this.btn_UcShowMemberContractInfoAddContract.Size = new System.Drawing.Size(145, 50);
@@ -254,6 +257,9 @@
             // 
             this.btn_UcShowMemberContractInfoExpireContract.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_UcShowMemberContractInfoExpireContract.Enabled = false;
+            this.btn_UcShowMemberContractInfoExpireContract.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_UcShowMemberContractInfoExpireContract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberContractInfoExpireContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcShowMemberContractInfoExpireContract.Location = new System.Drawing.Point(1065, 3);
             this.btn_UcShowMemberContractInfoExpireContract.Name = "btn_UcShowMemberContractInfoExpireContract";
             this.btn_UcShowMemberContractInfoExpireContract.Size = new System.Drawing.Size(145, 50);
@@ -266,6 +272,9 @@
             // 
             this.btn_UcShowMemberContractInfoDeleteContract.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_UcShowMemberContractInfoDeleteContract.Enabled = false;
+            this.btn_UcShowMemberContractInfoDeleteContract.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_UcShowMemberContractInfoDeleteContract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberContractInfoDeleteContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcShowMemberContractInfoDeleteContract.Location = new System.Drawing.Point(914, 3);
             this.btn_UcShowMemberContractInfoDeleteContract.Name = "btn_UcShowMemberContractInfoDeleteContract";
             this.btn_UcShowMemberContractInfoDeleteContract.Size = new System.Drawing.Size(145, 50);
@@ -352,7 +361,7 @@
             "کارت"});
             this.cmb_UcShowMemberContractInfoExpireContractPaymentType.Location = new System.Drawing.Point(3, 3);
             this.cmb_UcShowMemberContractInfoExpireContractPaymentType.Name = "cmb_UcShowMemberContractInfoExpireContractPaymentType";
-            this.cmb_UcShowMemberContractInfoExpireContractPaymentType.Size = new System.Drawing.Size(246, 31);
+            this.cmb_UcShowMemberContractInfoExpireContractPaymentType.Size = new System.Drawing.Size(246, 36);
             this.cmb_UcShowMemberContractInfoExpireContractPaymentType.TabIndex = 11;
             this.cmb_UcShowMemberContractInfoExpireContractPaymentType.SelectedIndexChanged += new System.EventHandler(this.cmb_UcShowMemberContractInfoExpireContractPaymentType_SelectedIndexChanged);
             // 
@@ -370,6 +379,9 @@
             // btn_UcShowMemberContractInfoClear
             // 
             this.btn_UcShowMemberContractInfoClear.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowMemberContractInfoClear.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_UcShowMemberContractInfoClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberContractInfoClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcShowMemberContractInfoClear.Location = new System.Drawing.Point(913, 234);
             this.btn_UcShowMemberContractInfoClear.Name = "btn_UcShowMemberContractInfoClear";
             this.btn_UcShowMemberContractInfoClear.Size = new System.Drawing.Size(244, 71);
@@ -395,7 +407,7 @@
             this.cmb_UcShowMemberContractInfoContractType.FormattingEnabled = true;
             this.cmb_UcShowMemberContractInfoContractType.Location = new System.Drawing.Point(913, 3);
             this.cmb_UcShowMemberContractInfoContractType.Name = "cmb_UcShowMemberContractInfoContractType";
-            this.cmb_UcShowMemberContractInfoContractType.Size = new System.Drawing.Size(244, 31);
+            this.cmb_UcShowMemberContractInfoContractType.Size = new System.Drawing.Size(244, 36);
             this.cmb_UcShowMemberContractInfoContractType.TabIndex = 1;
             this.cmb_UcShowMemberContractInfoContractType.SelectedValueChanged += new System.EventHandler(this.cmb_UcShowMemberContractInfoContractType_SelectedValueChanged);
             // 
@@ -404,7 +416,7 @@
             this.txb_UcShowMemberContractInfoExpireContractPrice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txb_UcShowMemberContractInfoExpireContractPrice.Location = new System.Drawing.Point(459, 3);
             this.txb_UcShowMemberContractInfoExpireContractPrice.Name = "txb_UcShowMemberContractInfoExpireContractPrice";
-            this.txb_UcShowMemberContractInfoExpireContractPrice.Size = new System.Drawing.Size(244, 30);
+            this.txb_UcShowMemberContractInfoExpireContractPrice.Size = new System.Drawing.Size(244, 36);
             this.txb_UcShowMemberContractInfoExpireContractPrice.TabIndex = 3;
             this.txb_UcShowMemberContractInfoExpireContractPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcShowMemberContractInfoExpireContractPrice_KeyPress);
             // 
@@ -435,7 +447,7 @@
             this.txb_UcShowMemberContractInfoPayment.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txb_UcShowMemberContractInfoPayment.Location = new System.Drawing.Point(913, 80);
             this.txb_UcShowMemberContractInfoPayment.Name = "txb_UcShowMemberContractInfoPayment";
-            this.txb_UcShowMemberContractInfoPayment.Size = new System.Drawing.Size(244, 30);
+            this.txb_UcShowMemberContractInfoPayment.Size = new System.Drawing.Size(244, 36);
             this.txb_UcShowMemberContractInfoPayment.TabIndex = 7;
             this.txb_UcShowMemberContractInfoPayment.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcShowMemberContractInfoExpireContractPrice_KeyPress);
             // 
@@ -455,7 +467,7 @@
             this.txb_UcShowMemberContractInfoReciptNum.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txb_UcShowMemberContractInfoReciptNum.Location = new System.Drawing.Point(459, 80);
             this.txb_UcShowMemberContractInfoReciptNum.Name = "txb_UcShowMemberContractInfoReciptNum";
-            this.txb_UcShowMemberContractInfoReciptNum.Size = new System.Drawing.Size(244, 30);
+            this.txb_UcShowMemberContractInfoReciptNum.Size = new System.Drawing.Size(244, 36);
             this.txb_UcShowMemberContractInfoReciptNum.TabIndex = 12;
             this.txb_UcShowMemberContractInfoReciptNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcShowMemberContractInfoExpireContractPrice_KeyPress);
             // 
@@ -475,7 +487,7 @@
             this.txb_UcShowMemberContractInfoRemainingSession.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txb_UcShowMemberContractInfoRemainingSession.Location = new System.Drawing.Point(3, 80);
             this.txb_UcShowMemberContractInfoRemainingSession.Name = "txb_UcShowMemberContractInfoRemainingSession";
-            this.txb_UcShowMemberContractInfoRemainingSession.Size = new System.Drawing.Size(246, 30);
+            this.txb_UcShowMemberContractInfoRemainingSession.Size = new System.Drawing.Size(246, 36);
             this.txb_UcShowMemberContractInfoRemainingSession.TabIndex = 14;
             this.txb_UcShowMemberContractInfoRemainingSession.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcShowMemberContractInfoExpireContractPrice_KeyPress);
             // 
@@ -496,7 +508,7 @@
             this.dts_UcShowMemberContractInfoStartDate.Location = new System.Drawing.Point(913, 157);
             this.dts_UcShowMemberContractInfoStartDate.Name = "dts_UcShowMemberContractInfoStartDate";
             this.dts_UcShowMemberContractInfoStartDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dts_UcShowMemberContractInfoStartDate.Size = new System.Drawing.Size(244, 31);
+            this.dts_UcShowMemberContractInfoStartDate.Size = new System.Drawing.Size(244, 37);
             this.dts_UcShowMemberContractInfoStartDate.TabIndex = 16;
             this.dts_UcShowMemberContractInfoStartDate.UsePersianFormat = true;
             this.dts_UcShowMemberContractInfoStartDate.ValueChanged += new System.EventHandler(this.dts_UcShowMemberContractInfoStartDate_ValueChanged);
@@ -518,7 +530,7 @@
             this.txb_UcShowMemberContractInfoEndDate.Enabled = false;
             this.txb_UcShowMemberContractInfoEndDate.Location = new System.Drawing.Point(459, 157);
             this.txb_UcShowMemberContractInfoEndDate.Name = "txb_UcShowMemberContractInfoEndDate";
-            this.txb_UcShowMemberContractInfoEndDate.Size = new System.Drawing.Size(244, 30);
+            this.txb_UcShowMemberContractInfoEndDate.Size = new System.Drawing.Size(244, 36);
             this.txb_UcShowMemberContractInfoEndDate.TabIndex = 18;
             // 
             // txb_UcShowMemberContractInfoDes
@@ -533,6 +545,9 @@
             // btn_UcShowMemberContractInfoSave
             // 
             this.btn_UcShowMemberContractInfoSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowMemberContractInfoSave.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_UcShowMemberContractInfoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberContractInfoSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcShowMemberContractInfoSave.Location = new System.Drawing.Point(1163, 234);
             this.btn_UcShowMemberContractInfoSave.Name = "btn_UcShowMemberContractInfoSave";
             this.btn_UcShowMemberContractInfoSave.Size = new System.Drawing.Size(198, 71);

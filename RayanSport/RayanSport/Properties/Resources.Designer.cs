@@ -73,9 +73,39 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap aboutGrey {
+            get {
+                object obj = ResourceManager.GetObject("aboutGrey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap aboutYellow {
+            get {
+                object obj = ResourceManager.GetObject("aboutYellow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap basketball_jersey {
             get {
                 object obj = ResourceManager.GetObject("basketball-jersey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap businessman {
+            get {
+                object obj = ResourceManager.GetObject("businessman", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +133,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap checklist {
+        public static System.Drawing.Bitmap checklistGrey {
             get {
-                object obj = ResourceManager.GetObject("checklist", resourceCulture);
+                object obj = ResourceManager.GetObject("checklistGrey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +143,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap checklistGrey {
+        public static System.Drawing.Bitmap checklistYellow {
             get {
-                object obj = ResourceManager.GetObject("checklistGrey", resourceCulture);
+                object obj = ResourceManager.GetObject("checklistYellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +213,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap exit {
+        public static System.Drawing.Bitmap exitGrey {
             get {
-                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                object obj = ResourceManager.GetObject("exitGrey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +223,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap exit_1_ {
+        public static System.Drawing.Bitmap exitYellow {
             get {
-                object obj = ResourceManager.GetObject("exit(1)", resourceCulture);
+                object obj = ResourceManager.GetObject("exitYellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +233,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap file {
+        public static System.Drawing.Bitmap FileGrey {
             get {
-                object obj = ResourceManager.GetObject("file", resourceCulture);
+                object obj = ResourceManager.GetObject("FileGrey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,19 +243,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap file_1_ {
+        public static System.Drawing.Bitmap FileYellow {
             get {
-                object obj = ResourceManager.GetObject("file(1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap file_1_1 {
-            get {
-                object obj = ResourceManager.GetObject("file(1)1", resourceCulture);
+                object obj = ResourceManager.GetObject("FileYellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +263,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap home_button {
+        public static System.Drawing.Bitmap homeGrey {
             get {
-                object obj = ResourceManager.GetObject("home-button", resourceCulture);
+                object obj = ResourceManager.GetObject("homeGrey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +273,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap home_button_1_ {
+        public static System.Drawing.Bitmap homeYellow {
             get {
-                object obj = ResourceManager.GetObject("home-button(1)", resourceCulture);
+                object obj = ResourceManager.GetObject("homeYellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +283,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap home_button_1_1 {
+        public static System.Drawing.Bitmap juiceGrey {
             get {
-                object obj = ResourceManager.GetObject("home-button(1)1", resourceCulture);
+                object obj = ResourceManager.GetObject("juiceGrey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,29 +293,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap home_button1 {
+        public static System.Drawing.Bitmap juiceYellow {
             get {
-                object obj = ResourceManager.GetObject("home-button1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap home_interface_button_symbol {
-            get {
-                object obj = ResourceManager.GetObject("home-interface-button-symbol", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap juice {
-            get {
-                object obj = ResourceManager.GetObject("juice", resourceCulture);
+                object obj = ResourceManager.GetObject("juiceYellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,26 +443,6 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap orange_juice {
-            get {
-                object obj = ResourceManager.GetObject("orange-juice", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap orange_juice_1_ {
-            get {
-                object obj = ResourceManager.GetObject("orange-juice(1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap rayanSportLogo {
             get {
                 object obj = ResourceManager.GetObject("rayanSportLogo", resourceCulture);
@@ -473,9 +453,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap settings {
+        public static System.Drawing.Bitmap settingGrey {
             get {
-                object obj = ResourceManager.GetObject("settings", resourceCulture);
+                object obj = ResourceManager.GetObject("settingGrey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -483,9 +463,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap settings_1_ {
+        public static System.Drawing.Bitmap settingYellow {
             get {
-                object obj = ResourceManager.GetObject("settings(1)", resourceCulture);
+                object obj = ResourceManager.GetObject("settingYellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -493,9 +473,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap settings_1_1 {
+        public static System.Drawing.Bitmap strongGrey {
             get {
-                object obj = ResourceManager.GetObject("settings(1)1", resourceCulture);
+                object obj = ResourceManager.GetObject("strongGrey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -503,39 +483,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap strength {
+        public static System.Drawing.Bitmap strongYellow {
             get {
-                object obj = ResourceManager.GetObject("strength", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap strength_1_ {
-            get {
-                object obj = ResourceManager.GetObject("strength(1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap team {
-            get {
-                object obj = ResourceManager.GetObject("team", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap team_1_ {
-            get {
-                object obj = ResourceManager.GetObject("team(1)", resourceCulture);
+                object obj = ResourceManager.GetObject("strongYellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -603,9 +553,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap users {
+        public static System.Drawing.Bitmap userGrey {
             get {
-                object obj = ResourceManager.GetObject("users", resourceCulture);
+                object obj = ResourceManager.GetObject("userGrey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -613,9 +563,9 @@ namespace RayanSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap users_1_ {
+        public static System.Drawing.Bitmap userYellow {
             get {
-                object obj = ResourceManager.GetObject("users(1)", resourceCulture);
+                object obj = ResourceManager.GetObject("userYellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

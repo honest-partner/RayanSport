@@ -289,9 +289,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\userGrey.png" />
+    <None Include="Resources\WhiteStrong.png" />
+    <None Include="Resources\strength.png" />
+    <None Include="Resources\yellowStrong.png" />
+    <None Include="Resources\YellowStrong.bmp" />
     <None Include="Resources\users.png" />
     <None Include="Resources\team.png" />
-    <None Include="Resources\strength.png" />
     <None Include="Resources\settings.png" />
     <None Include="Resources\orange-juice.png" />
     <None Include="Resources\team%281%29.png" />
@@ -323,6 +327,7 @@
     <None Include="Resources\exit.png" />
     <None Include="Resources\file%281%291.png" />
     <None Include="Resources\home-button1.png" />
+    <None Include="Resources\businessman.png" />
     <Content Include="Resources\Logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

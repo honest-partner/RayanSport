@@ -43,7 +43,7 @@
     </Reference>
     <Reference Include="BPersianCalender, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\BPersianCalender.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\BPersianCalender.dll</HintPath>
     </Reference>
     <Reference Include="DateTimeSelector, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

@@ -1068,9 +1068,10 @@
             // 
             // uC_CheckInLog1
             // 
+            this.uC_CheckInLog1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_CheckInLog1.Location = new System.Drawing.Point(19, 75);
             this.uC_CheckInLog1.Name = "uC_CheckInLog1";
-            this.uC_CheckInLog1.Size = new System.Drawing.Size(778, 604);
+            this.uC_CheckInLog1.Size = new System.Drawing.Size(794, 604);
             this.uC_CheckInLog1.TabIndex = 4;
             // 
             // Form_Main

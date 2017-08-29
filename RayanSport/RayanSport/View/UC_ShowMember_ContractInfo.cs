@@ -26,13 +26,13 @@ namespace RayanSport.View
         rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
         private void UC_ShowMember_ContractInfo_Load(object sender, EventArgs e)
         {
-            setData();
+            setData(member);
             
         }
-        public void setData() {
+        public void setData(Member input_member) {
             rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
             rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
-            tableAdapter.FillBySelectById(membershipDataTable, member.member_id);
+            tableAdapter.FillBySelectById(membershipDataTable, input_member.member_id);
             dgv_UcShowMemberContractInfoContracts.DataSource = membershipDataTable;
             btn_UcShowMemberContractInfoDeleteContract.Enabled = false;
             btn_UcShowMemberContractInfoDeleteContract.BackColor = Properties.Settings.Default.MediumGrey;

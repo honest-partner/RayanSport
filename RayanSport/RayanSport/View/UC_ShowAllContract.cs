@@ -11,7 +11,7 @@ using System.Globalization;
 
 namespace RayanSport.View
 {
-    public partial class UC_ShowAllContractcs : UserControl
+    public partial class UC_ShowAllContract : UserControl
     {
         public int WhoIsIt;
         public String endDate1;
@@ -20,7 +20,7 @@ namespace RayanSport.View
         public String todeyDate;
 
     
-        public UC_ShowAllContractcs()
+        public UC_ShowAllContract()
         {
             InitializeComponent();
            // dts_UcShowAllContractDateSelectorFrom.Value = DateTime.Now;

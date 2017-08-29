@@ -1,6 +1,6 @@
 ﻿namespace RayanSport.View
 {
-    partial class UC_ShowAllContractcs
+    partial class UC_ShowAllContract
     {
         /// <summary> 
         /// Required designer variable.

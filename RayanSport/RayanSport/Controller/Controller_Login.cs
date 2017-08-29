@@ -12,6 +12,7 @@ namespace RayanSport.Controller
 {
     class Controller_Login
     {
+
         #region focus in and out
         public void textFocusIn(Telerik.WinControls.UI.RadTextBoxControl textBox, string text)
         {

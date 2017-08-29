@@ -1,4 +1,5 @@
-﻿namespace RayanSport.View
+﻿
+namespace RayanSport.View
 {
     partial class UC_ShowAllMember
     {
@@ -29,6 +30,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+           
             Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
@@ -317,6 +319,7 @@
             // 
             // txb_UcShowAllMemberMemberId
             // 
+
             this.txb_UcShowAllMemberMemberId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txb_UcShowAllMemberMemberId.Location = new System.Drawing.Point(411, 55);
             this.txb_UcShowAllMemberMemberId.Name = "txb_UcShowAllMemberMemberId";

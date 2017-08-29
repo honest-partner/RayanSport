@@ -59,6 +59,7 @@ namespace RayanSport.View
                 txb_UcCheckInInfoMemberRemainingSession.BackColor = SystemColors.Window;
                 txb_UcCheckInInfoMembershipEndDate.BackColor = SystemColors.Window;
                 btn_UcCheckInInfoMemberCheck.Enabled = false;
+                btn_UcCheckInInfoMemberCheck.BackColor = Properties.Settings.Default.MediumGrey;
             }
         }
 
@@ -117,7 +118,7 @@ namespace RayanSport.View
                     rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
                     rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
                     int rows1 = membershipTableAdapter.FillBySelectMembersWithStatusAndId(membershipDataTable, Convert.ToInt32(txb_UcCheckInInfoMemberId.Text), "فعال");
-
+                    
                     if (rows1 == 1)
                     {
                         if (membershipDataTable[0].membership_remainingSession > 0)
@@ -128,16 +129,19 @@ namespace RayanSport.View
                             txb_UcCheckInInfoMemberRemainingSession.Text = membershipDataTable[0].membership_remainingSession + "";
                             txb_UcCheckInInfoMembershipEndDate.Text = membershipDataTable[0].membership_endDate;
                             btn_UcCheckInInfoMemberCheck.Enabled = true;
+                            btn_UcCheckInInfoMemberCheck.BackColor = Properties.Settings.Default.Blue;
                         }
                         else
                         {
                             txb_UcCheckInInfoMemberShipType.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMemberRemainingSession.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMembershipEndDate.Text = "قرار داد فعال وجود ندارد";
-                            txb_UcCheckInInfoMemberShipType.BackColor = Color.LightSalmon;
-                            txb_UcCheckInInfoMemberRemainingSession.BackColor = Color.LightSalmon;
-                            txb_UcCheckInInfoMembershipEndDate.BackColor = Color.LightSalmon;
+                            txb_UcCheckInInfoMemberShipType.ForeColor = Properties.Settings.Default.Red;
+                            
+                            txb_UcCheckInInfoMemberRemainingSession.ForeColor = Properties.Settings.Default.Red;
+                            txb_UcCheckInInfoMembershipEndDate.ForeColor = Properties.Settings.Default.Red;
                             btn_UcCheckInInfoMemberCheck.Enabled = false;
+                            btn_UcCheckInInfoMemberCheck.BackColor = Properties.Settings.Default.MediumGrey;
                         }
 
                     }
@@ -146,11 +150,11 @@ namespace RayanSport.View
                         txb_UcCheckInInfoMemberShipType.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMemberRemainingSession.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMembershipEndDate.Text = "قرار داد فعال وجود ندارد";
-                            txb_UcCheckInInfoMemberShipType.BackColor = Color.LightSalmon;
-                            txb_UcCheckInInfoMemberRemainingSession.BackColor = Color.LightSalmon;
-                            txb_UcCheckInInfoMembershipEndDate.BackColor = Color.LightSalmon;
-                            btn_UcCheckInInfoMemberCheck.Enabled = false;
-
+                        txb_UcCheckInInfoMemberShipType.ForeColor = Properties.Settings.Default.Red;
+                            txb_UcCheckInInfoMemberRemainingSession.ForeColor = Properties.Settings.Default.Red;
+                        txb_UcCheckInInfoMembershipEndDate.ForeColor = Properties.Settings.Default.Red;
+                        btn_UcCheckInInfoMemberCheck.Enabled = false;
+                        btn_UcCheckInInfoMemberCheck.BackColor = Properties.Settings.Default.MediumGrey;
                     }
                 }
                 else {
@@ -158,6 +162,14 @@ namespace RayanSport.View
                 }
 
             }
+        }
+
+        private void UC_CheckIn_Info_Load(object sender, EventArgs e)
+        {
+            btn_UcCheckInInfoMemberCheck.Enabled = false;
+            btn_UcCheckInInfoMemberCheck.BackColor = Properties.Settings.Default.MediumGrey;
+            
+            
         }
     }
 }

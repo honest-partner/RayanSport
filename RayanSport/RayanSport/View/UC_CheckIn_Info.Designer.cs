@@ -46,7 +46,13 @@
             this.btn_UcCheckInInfoMemberClear = new System.Windows.Forms.Button();
             this.btn_UcCheckInInfoMemberCheck = new System.Windows.Forms.Button();
             this.llb_UcCheckInInfoShowMemberDetail = new System.Windows.Forms.LinkLabel();
+            this.pcb_UcCheckInInfoMemberShipType = new System.Windows.Forms.PictureBox();
+            this.pcb_UcCheckInInfoMemberRemainingSession = new System.Windows.Forms.PictureBox();
+            this.pcb_UcCheckInInfoMembershipEndDate = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_UcCheckInInfoMemberPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_UcCheckInInfoMemberShipType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_UcCheckInInfoMemberRemainingSession)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_UcCheckInInfoMembershipEndDate)).BeginInit();
             this.SuspendLayout();
             // 
             // pbx_UcCheckInInfoMemberPicture
@@ -203,24 +209,32 @@
             // 
             // btn_UcCheckInInfoMemberClear
             // 
+            this.btn_UcCheckInInfoMemberClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.btn_UcCheckInInfoMemberClear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.btn_UcCheckInInfoMemberClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_UcCheckInInfoMemberClear.Font = new System.Drawing.Font("B Yekan+", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_UcCheckInInfoMemberClear.Location = new System.Drawing.Point(38, 352);
+            this.btn_UcCheckInInfoMemberClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.btn_UcCheckInInfoMemberClear.Location = new System.Drawing.Point(38, 370);
             this.btn_UcCheckInInfoMemberClear.Name = "btn_UcCheckInInfoMemberClear";
-            this.btn_UcCheckInInfoMemberClear.Size = new System.Drawing.Size(166, 62);
+            this.btn_UcCheckInInfoMemberClear.Size = new System.Drawing.Size(223, 44);
             this.btn_UcCheckInInfoMemberClear.TabIndex = 3;
             this.btn_UcCheckInInfoMemberClear.Text = "پاک کردن";
-            this.btn_UcCheckInInfoMemberClear.UseVisualStyleBackColor = true;
+            this.btn_UcCheckInInfoMemberClear.UseVisualStyleBackColor = false;
             this.btn_UcCheckInInfoMemberClear.Click += new System.EventHandler(this.txb_UcCheckInInfoMemberClear_Click);
             // 
             // btn_UcCheckInInfoMemberCheck
             // 
+            this.btn_UcCheckInInfoMemberCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_UcCheckInInfoMemberCheck.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.btn_UcCheckInInfoMemberCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_UcCheckInInfoMemberCheck.Font = new System.Drawing.Font("B Yekan+", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_UcCheckInInfoMemberCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcCheckInInfoMemberCheck.Location = new System.Drawing.Point(38, 420);
             this.btn_UcCheckInInfoMemberCheck.Name = "btn_UcCheckInInfoMemberCheck";
-            this.btn_UcCheckInInfoMemberCheck.Size = new System.Drawing.Size(166, 62);
+            this.btn_UcCheckInInfoMemberCheck.Size = new System.Drawing.Size(223, 44);
             this.btn_UcCheckInInfoMemberCheck.TabIndex = 2;
             this.btn_UcCheckInInfoMemberCheck.Text = "تایید";
-            this.btn_UcCheckInInfoMemberCheck.UseVisualStyleBackColor = true;
+            this.btn_UcCheckInInfoMemberCheck.UseVisualStyleBackColor = false;
             this.btn_UcCheckInInfoMemberCheck.Click += new System.EventHandler(this.btn_UcCheckInInfoMemberCheck_Click);
             // 
             // llb_UcCheckInInfoShowMemberDetail
@@ -234,10 +248,37 @@
             this.llb_UcCheckInInfoShowMemberDetail.TabStop = true;
             this.llb_UcCheckInInfoShowMemberDetail.Text = "نمایش جزئیات";
             // 
+            // pcb_UcCheckInInfoMemberShipType
+            // 
+            this.pcb_UcCheckInInfoMemberShipType.Location = new System.Drawing.Point(310, 179);
+            this.pcb_UcCheckInInfoMemberShipType.Name = "pcb_UcCheckInInfoMemberShipType";
+            this.pcb_UcCheckInInfoMemberShipType.Size = new System.Drawing.Size(41, 37);
+            this.pcb_UcCheckInInfoMemberShipType.TabIndex = 5;
+            this.pcb_UcCheckInInfoMemberShipType.TabStop = false;
+            // 
+            // pcb_UcCheckInInfoMemberRemainingSession
+            // 
+            this.pcb_UcCheckInInfoMemberRemainingSession.Location = new System.Drawing.Point(310, 224);
+            this.pcb_UcCheckInInfoMemberRemainingSession.Name = "pcb_UcCheckInInfoMemberRemainingSession";
+            this.pcb_UcCheckInInfoMemberRemainingSession.Size = new System.Drawing.Size(41, 37);
+            this.pcb_UcCheckInInfoMemberRemainingSession.TabIndex = 6;
+            this.pcb_UcCheckInInfoMemberRemainingSession.TabStop = false;
+            // 
+            // pcb_UcCheckInInfoMembershipEndDate
+            // 
+            this.pcb_UcCheckInInfoMembershipEndDate.Location = new System.Drawing.Point(310, 273);
+            this.pcb_UcCheckInInfoMembershipEndDate.Name = "pcb_UcCheckInInfoMembershipEndDate";
+            this.pcb_UcCheckInInfoMembershipEndDate.Size = new System.Drawing.Size(41, 37);
+            this.pcb_UcCheckInInfoMembershipEndDate.TabIndex = 7;
+            this.pcb_UcCheckInInfoMembershipEndDate.TabStop = false;
+            // 
             // UC_CheckIn_Info
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.Controls.Add(this.pcb_UcCheckInInfoMembershipEndDate);
+            this.Controls.Add(this.pcb_UcCheckInInfoMemberRemainingSession);
+            this.Controls.Add(this.pcb_UcCheckInInfoMemberShipType);
             this.Controls.Add(this.llb_UcCheckInInfoShowMemberDetail);
             this.Controls.Add(this.btn_UcCheckInInfoMemberCheck);
             this.Controls.Add(this.btn_UcCheckInInfoMemberClear);
@@ -257,8 +298,12 @@
             this.Controls.Add(this.txb_UcCheckInInfoMemberId);
             this.Controls.Add(this.pbx_UcCheckInInfoMemberPicture);
             this.Name = "UC_CheckIn_Info";
-            this.Size = new System.Drawing.Size(920, 507);
+            this.Size = new System.Drawing.Size(922, 509);
+            this.Load += new System.EventHandler(this.UC_CheckIn_Info_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_UcCheckInInfoMemberPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_UcCheckInInfoMemberShipType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_UcCheckInInfoMemberRemainingSession)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_UcCheckInInfoMembershipEndDate)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,5 +329,8 @@
         private System.Windows.Forms.Button btn_UcCheckInInfoMemberClear;
         private System.Windows.Forms.Button btn_UcCheckInInfoMemberCheck;
         private System.Windows.Forms.LinkLabel llb_UcCheckInInfoShowMemberDetail;
+        private System.Windows.Forms.PictureBox pcb_UcCheckInInfoMemberShipType;
+        private System.Windows.Forms.PictureBox pcb_UcCheckInInfoMemberRemainingSession;
+        private System.Windows.Forms.PictureBox pcb_UcCheckInInfoMembershipEndDate;
     }
 }

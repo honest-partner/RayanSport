@@ -220,6 +220,9 @@
     <EmbeddedResource Include="View\UC_CheckIn_Info.resx">
       <DependentUpon>UC_CheckIn_Info.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_ShowAllContract.resx">
+      <DependentUpon>UC_ShowAllContract.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UC_ShowMember_ContractInfo.resx">
       <DependentUpon>UC_ShowMember_ContractInfo.cs</DependentUpon>
     </EmbeddedResource>

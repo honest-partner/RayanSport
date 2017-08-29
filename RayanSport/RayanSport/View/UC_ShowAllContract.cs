@@ -210,7 +210,7 @@ namespace RayanSport.View
         {
            endDate1 = dts_UcShowAllContractDateSelectorFrom.Value.Value.ToString("M/d/yyyy");
            endDate1 = getDateShamsi(endDate1);
-            MessageBox.Show(endDate1);
+         
            
         }
 

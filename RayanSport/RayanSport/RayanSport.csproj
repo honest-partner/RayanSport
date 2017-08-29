@@ -143,11 +143,11 @@
     <Compile Include="View\UC_CheckIn_Info.Designer.cs">
       <DependentUpon>UC_CheckIn_Info.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\UC_ChekingLog.cs">
+    <Compile Include="View\UC_CheckInLog.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\UC_ChekingLog.Designer.cs">
-      <DependentUpon>UC_ChekingLog.cs</DependentUpon>
+    <Compile Include="View\UC_CheckInLog.Designer.cs">
+      <DependentUpon>UC_CheckInLog.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UC_Home.cs">
       <SubType>UserControl</SubType>
@@ -215,8 +215,8 @@
     <EmbeddedResource Include="View\UC_CheckIn_Info.resx">
       <DependentUpon>UC_CheckIn_Info.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\UC_ChekingLog.resx">
-      <DependentUpon>UC_ChekingLog.cs</DependentUpon>
+    <EmbeddedResource Include="View\UC_CheckInLog.resx">
+      <DependentUpon>UC_CheckInLog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace RayanSport.View
 {
-    partial class UC_ChekingLog
+    partial class UC_CheckInLog
     {
         /// <summary> 
         /// Required designer variable.
@@ -37,12 +37,12 @@
             this.gpb_UcCheckInLogSeenMember = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.dts_UcCheckInLogDateSelectorFrom = new Atf.UI.DateTimeSelector();
             this.lbl_UcCheckInLogDateFrom = new System.Windows.Forms.Label();
             this.lbl_UcCheckInLogDateUntil = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimeSelector1 = new Atf.UI.DateTimeSelector();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.dts_UcCheckInLogDateSelectorFrom = new Atf.UI.DateTimeSelector();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -52,8 +52,8 @@
             this.gpb_UcCheckInLogSeenMember.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -257,6 +257,29 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(713, 86);
             this.tableLayoutPanel6.TabIndex = 3;
             // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel8.Controls.Add(this.dts_UcCheckInLogDateSelectorFrom, 0, 1);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(358, 3);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 2;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(243, 45);
+            this.tableLayoutPanel8.TabIndex = 3;
+            // 
+            // dts_UcCheckInLogDateSelectorFrom
+            // 
+            this.dts_UcCheckInLogDateSelectorFrom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dts_UcCheckInLogDateSelectorFrom.Location = new System.Drawing.Point(3, 12);
+            this.dts_UcCheckInLogDateSelectorFrom.Name = "dts_UcCheckInLogDateSelectorFrom";
+            this.dts_UcCheckInLogDateSelectorFrom.Size = new System.Drawing.Size(237, 30);
+            this.dts_UcCheckInLogDateSelectorFrom.TabIndex = 1;
+            this.dts_UcCheckInLogDateSelectorFrom.UsePersianFormat = true;
+            // 
             // lbl_UcCheckInLogDateFrom
             // 
             this.lbl_UcCheckInLogDateFrom.AutoSize = true;
@@ -306,29 +329,6 @@
             this.dateTimeSelector1.TabIndex = 1;
             this.dateTimeSelector1.UsePersianFormat = true;
             // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.ColumnCount = 1;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Controls.Add(this.dts_UcCheckInLogDateSelectorFrom, 0, 1);
-            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(358, 3);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 2;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(243, 45);
-            this.tableLayoutPanel8.TabIndex = 3;
-            // 
-            // dts_UcCheckInLogDateSelectorFrom
-            // 
-            this.dts_UcCheckInLogDateSelectorFrom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dts_UcCheckInLogDateSelectorFrom.Location = new System.Drawing.Point(3, 12);
-            this.dts_UcCheckInLogDateSelectorFrom.Name = "dts_UcCheckInLogDateSelectorFrom";
-            this.dts_UcCheckInLogDateSelectorFrom.Size = new System.Drawing.Size(237, 30);
-            this.dts_UcCheckInLogDateSelectorFrom.TabIndex = 1;
-            this.dts_UcCheckInLogDateSelectorFrom.UsePersianFormat = true;
-            // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -340,12 +340,11 @@
             this.button1.Text = "جست و جو";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // UC_ChekingLog
+            // UC_CheckInLog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "UC_ChekingLog";
+            this.Name = "UC_CheckInLog";
             this.Size = new System.Drawing.Size(778, 664);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -356,10 +355,10 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.ResumeLayout(false);
 
         }

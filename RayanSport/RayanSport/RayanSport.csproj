@@ -34,6 +34,19 @@
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="BehComponents, Version=2.2.0.0, Culture=neutral, PublicKeyToken=a36ced8ede3e7af7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BehComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="BPersianCalender, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BPersianCalender.dll</HintPath>
+    </Reference>
+    <Reference Include="DateTimeSelector, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DateTimeSelector.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -198,9 +211,6 @@
     <EmbeddedResource Include="View\UC_CheckIn_Info.resx">
       <DependentUpon>UC_CheckIn_Info.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\UC_ShowAllMember.resx">
-      <DependentUpon>UC_ShowAllMember.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\UC_ShowMember_MemberInfo.resx">
       <DependentUpon>UC_ShowMember_MemberInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,6 +343,12 @@
     <None Include="Resources\exit.png" />
     <None Include="Resources\file%281%291.png" />
     <None Include="Resources\home-button1.png" />
+    <Content Include="Resources\cancel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\checked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

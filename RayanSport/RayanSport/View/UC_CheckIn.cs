@@ -76,5 +76,21 @@ namespace RayanSport.View
             txb_UcCheckInCommode.Clear();
             txb_UcCheckInPrice.Clear();
         }
+
+        private void UC_CheckIn_Load(object sender, EventArgs e)
+        {
+            btn_UcCheckInCheck.Enabled = false;
+            btn_UcCheckInCheck.BackColor = Properties.Settings.Default.MediumGrey;
+        }
+
+        private void txb_UcCheckInPrice_TextChanged(object sender, EventArgs e)
+        {
+            bool has_text = !txb_UcCheckInPrice.Text.Equals("");
+            btn_UcCheckInCheck.Enabled = has_text;
+            if (has_text)
+                btn_UcCheckInCheck.BackColor = Properties.Settings.Default.Blue;
+            else
+                btn_UcCheckInCheck.BackColor = Properties.Settings.Default.MediumGrey;
+        }
     }
 }

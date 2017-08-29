@@ -131,12 +131,6 @@
     <Compile Include="View\Form_ShowMember.Designer.cs">
       <DependentUpon>Form_ShowMember.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\test.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\test.Designer.cs">
-      <DependentUpon>test.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\UC_CheckIn.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -214,9 +208,6 @@
     </Compile>
     <EmbeddedResource Include="View\Form_ShowMember.resx">
       <DependentUpon>Form_ShowMember.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\test.resx">
-      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_CheckIn.resx">
       <DependentUpon>UC_CheckIn.cs</DependentUpon>

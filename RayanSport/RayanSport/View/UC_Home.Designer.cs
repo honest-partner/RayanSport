@@ -51,7 +51,6 @@
             this.lbl_UcHomeExoiredContract = new System.Windows.Forms.Label();
             this.lbl_UcHomeAllMember = new System.Windows.Forms.Label();
             this.lbl_UcHomeDayliMemberNum = new System.Windows.Forms.Label();
-            this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnl_UcHomePanel.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -556,7 +555,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        internal Telerik.WinControls.RadThemeManager radThemeManager1;
         private DevComponents.DotNetBar.Controls.GroupPanel gpb_UcHomeCalender;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private BehComponents.MonthCalendarX clr_UcHomeCalender;

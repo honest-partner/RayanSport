@@ -322,11 +322,6 @@
     <None Include="Resources\juice.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\AC-System %28135-135px%29.png" />
-    <None Include="Resources\AC-Novelty %28123-173px%29.png" />
-    <None Include="Resources\AC-Modern %28135-135px%29.png" />
-    <None Include="Resources\AC-Square %28135-135px%29.png" />
-    <None Include="Resources\AC-Trad %28135-135px%29.png" />
     <Content Include="Resources\Logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

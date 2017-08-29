@@ -37,7 +37,6 @@
             this.clr_UcHomeCalender = new BehComponents.MonthCalendarX();
             this.gpb_UcHomeClock = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.clk_UCHomeClock = new GHNet.Windows.Forms.AnalogueClock();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.gpb_UcHomeInfo = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -58,8 +57,6 @@
             this.gpb_UcHomeCalender.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.gpb_UcHomeClock.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clk_UCHomeClock)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.gpb_UcHomeInfo.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -285,7 +282,6 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel7.Controls.Add(this.clk_UCHomeClock, 1, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -295,17 +291,6 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(326, 164);
             this.tableLayoutPanel7.TabIndex = 2;
-            // 
-            // clk_UCHomeClock
-            // 
-            this.clk_UCHomeClock.BackColor = System.Drawing.Color.Transparent;
-            this.clk_UCHomeClock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clk_UCHomeClock.Location = new System.Drawing.Point(19, 11);
-            this.clk_UCHomeClock.Name = "clk_UCHomeClock";
-            this.clk_UCHomeClock.Size = new System.Drawing.Size(287, 141);
-            this.clk_UCHomeClock.StretchStyleImage = true;
-            this.clk_UCHomeClock.StyleImage = global::RayanSport.Properties.Resources.AC_System__135_135px_;
-            this.clk_UCHomeClock.TabIndex = 1;
             // 
             // tableLayoutPanel4
             // 
@@ -538,8 +523,6 @@
             this.gpb_UcHomeCalender.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.gpb_UcHomeClock.ResumeLayout(false);
-            this.tableLayoutPanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.clk_UCHomeClock)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.gpb_UcHomeInfo.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
@@ -572,6 +555,5 @@
         private System.Windows.Forms.Label lbl_UcHomeDayliMemberNum;
         private DevComponents.DotNetBar.Controls.GroupPanel gpb_UcHomeClock;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private GHNet.Windows.Forms.AnalogueClock clk_UCHomeClock;
     }
 }

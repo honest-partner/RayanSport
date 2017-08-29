@@ -19,42 +19,35 @@ namespace RayanSport.View
 
         #region constructors
 
-        public UC_ShowMember_MemberInfo(Member member2, bool formIsOpen)
-        {
-            if (!formIsOpen)
-            {
-                InitializeComponent();
-            }
-            if (member2.member_name == "" || member2.member_name == null)
-            {
-                pbx_UcShowMemberMemberInfoMemberPicture.SizeMode = PictureBoxSizeMode.Zoom;
-            }
-            else
-            {
-                UC_ShowMember_MemberInfoCon(member2);
-            }
-
-        }
-        public int UC_ShowMember_MemberInfoCon(Member member2)
+        public UC_ShowMember_MemberInfo()
         {
             InitializeComponent();
-            member = member2;
+        }
+        //public UC_ShowMember_MemberInfo(Member member2)
+        //{
+        //    InitializeComponent();
+        //    UC_ShowMember_MemberInfoCon(member2);
+        //}
+        public int UC_ShowMember_MemberInfoCon(Member member2)
+        {
+            if (member2.member_name != null)
+            {
+                member = member2;
+                string path;
+                path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\member_image\";
+                pbx_UcShowMemberMemberInfoMemberPicture.Image = Image.FromFile(path + member.member_id + ".Jpeg");
+                pbx_UcShowMemberMemberInfoMemberPicture.SizeMode = PictureBoxSizeMode.Zoom;
+                btn_UcShowMemberMemberInfoMemberAddPicture.Text = "تغییر عکس";
 
-            string path;
-            path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\member_image\";
-            pbx_UcShowMemberMemberInfoMemberPicture.Image = Image.FromFile(path + member.member_id + ".Jpeg");
-            pbx_UcShowMemberMemberInfoMemberPicture.SizeMode = PictureBoxSizeMode.Zoom;
-            btn_UcShowMemberMemberInfoMemberAddPicture.Text = "تغییر عکس";
-
-            txb_UcShowMemberMemberInfoMemberId.Text = member.member_id.ToString();
-            txb_UcShowMemberMemberInfoMemberName.Text = member.member_name;
-            txb_UcShowMemberMemberInfoMemberNationalCode.Text = member.member_nationalCode;
-            txb_UcShowMemberMemberInfoMemberAddress.Text = member.member_address;
-            txb_UcShowMemberMemberInfoMemberSick.Text = member.member_sick;
-            txb_UcShowMemberMemberInfoMemberTel.Text = member.member_tel;
-            cmb_UcShowMemberMemberInfoMemberGender.Text = member.member_gender;
-            cmb_UcShowMemberMemberInfoMemberBlood.Text = member.member_blood;
-
+                txb_UcShowMemberMemberInfoMemberId.Text = member.member_id.ToString();
+                txb_UcShowMemberMemberInfoMemberName.Text = member.member_name;
+                txb_UcShowMemberMemberInfoMemberNationalCode.Text = member.member_nationalCode;
+                txb_UcShowMemberMemberInfoMemberAddress.Text = member.member_address;
+                txb_UcShowMemberMemberInfoMemberSick.Text = member.member_sick;
+                txb_UcShowMemberMemberInfoMemberTel.Text = member.member_tel;
+                cmb_UcShowMemberMemberInfoMemberGender.Text = member.member_gender;
+                cmb_UcShowMemberMemberInfoMemberBlood.Text = member.member_blood;
+            }
             return 1;
         }
         //public UC_ShowMember_MemberInfoConstructor()

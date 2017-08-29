@@ -54,6 +54,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.uC_ShowAllMember1 = new RayanSport.View.UC_ShowAllMember();
             this.tlp_mainMainLayout.SuspendLayout();
             this.tlp_mainMenuLayout.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -74,7 +75,7 @@
             // 
             // tlp_mainMainLayout
             // 
-            this.tlp_mainMainLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
+            this.tlp_mainMainLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.tlp_mainMainLayout.ColumnCount = 2;
             this.tlp_mainMainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlp_mainMainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
@@ -85,7 +86,7 @@
             this.tlp_mainMainLayout.Name = "tlp_mainMainLayout";
             this.tlp_mainMainLayout.RowCount = 1;
             this.tlp_mainMainLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_mainMainLayout.Size = new System.Drawing.Size(1051, 736);
+            this.tlp_mainMainLayout.Size = new System.Drawing.Size(1051, 733);
             this.tlp_mainMainLayout.TabIndex = 0;
             // 
             // tlp_mainMenuLayout
@@ -100,7 +101,7 @@
             this.tlp_mainMenuLayout.RowCount = 2;
             this.tlp_mainMenuLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
             this.tlp_mainMenuLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_mainMenuLayout.Size = new System.Drawing.Size(244, 730);
+            this.tlp_mainMenuLayout.Size = new System.Drawing.Size(244, 727);
             this.tlp_mainMenuLayout.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -114,7 +115,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(238, 474);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(238, 471);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // pnl_MainMenuOption
@@ -125,7 +126,7 @@
             this.pnl_MainMenuOption.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_MainMenuOption.Location = new System.Drawing.Point(3, 3);
             this.pnl_MainMenuOption.Name = "pnl_MainMenuOption";
-            this.pnl_MainMenuOption.Size = new System.Drawing.Size(232, 468);
+            this.pnl_MainMenuOption.Size = new System.Drawing.Size(232, 465);
             this.pnl_MainMenuOption.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -165,7 +166,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(230, 466);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(230, 463);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // lbl_mainExit
@@ -175,11 +176,11 @@
             // 
             this.lbl_mainExit.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainExit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainExit.Font = new System.Drawing.Font("B Yekan", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.lbl_mainExit.Location = new System.Drawing.Point(3, 411);
             this.lbl_mainExit.Name = "lbl_mainExit";
-            this.lbl_mainExit.Size = new System.Drawing.Size(141, 52);
+            this.lbl_mainExit.Size = new System.Drawing.Size(141, 49);
             this.lbl_mainExit.TabIndex = 18;
             this.lbl_mainExit.Text = "خروج";
             this.lbl_mainExit.TextAlignment = System.Drawing.StringAlignment.Far;
@@ -191,7 +192,7 @@
             // 
             this.lbl_mainAbout.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainAbout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainAbout.Font = new System.Drawing.Font("B Yekan", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.lbl_mainAbout.Location = new System.Drawing.Point(3, 360);
             this.lbl_mainAbout.Name = "lbl_mainAbout";
@@ -207,7 +208,7 @@
             // 
             this.lbl_mainSetting.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainSetting.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainSetting.Font = new System.Drawing.Font("B Yekan", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainSetting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.lbl_mainSetting.Location = new System.Drawing.Point(3, 309);
             this.lbl_mainSetting.Name = "lbl_mainSetting";
@@ -223,7 +224,7 @@
             // 
             this.lbl_mainUser.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainUser.Font = new System.Drawing.Font("B Yekan", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.lbl_mainUser.Location = new System.Drawing.Point(3, 258);
             this.lbl_mainUser.Name = "lbl_mainUser";
@@ -239,7 +240,7 @@
             // 
             this.lbl_mainBuffet.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainBuffet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainBuffet.Font = new System.Drawing.Font("B Yekan", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainBuffet.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainBuffet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.lbl_mainBuffet.Location = new System.Drawing.Point(3, 207);
             this.lbl_mainBuffet.Name = "lbl_mainBuffet";
@@ -255,7 +256,7 @@
             // 
             this.lbl_mainContract.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainContract.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainContract.Font = new System.Drawing.Font("B Yekan", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainContract.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.lbl_mainContract.Location = new System.Drawing.Point(3, 156);
             this.lbl_mainContract.Name = "lbl_mainContract";
@@ -271,7 +272,7 @@
             // 
             this.lbl_mainMember.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainMember.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainMember.Font = new System.Drawing.Font("B Yekan", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainMember.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.lbl_mainMember.Location = new System.Drawing.Point(3, 105);
             this.lbl_mainMember.Name = "lbl_mainMember";
@@ -289,7 +290,7 @@
             // 
             this.lbl_mainHome.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainHome.Font = new System.Drawing.Font("B Yekan", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.lbl_mainHome.Location = new System.Drawing.Point(3, 3);
             this.lbl_mainHome.Name = "lbl_mainHome";
@@ -307,7 +308,7 @@
             // 
             this.lbl_mainEntrance.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainEntrance.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainEntrance.Font = new System.Drawing.Font("B Yekan", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainEntrance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainEntrance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.lbl_mainEntrance.Location = new System.Drawing.Point(3, 54);
             this.lbl_mainEntrance.Name = "lbl_mainEntrance";
@@ -410,7 +411,7 @@
             this.pbx_mainExitIcon.Image = global::RayanSport.Properties.Resources.exit_1_;
             this.pbx_mainExitIcon.Location = new System.Drawing.Point(170, 411);
             this.pbx_mainExitIcon.Name = "pbx_mainExitIcon";
-            this.pbx_mainExitIcon.Size = new System.Drawing.Size(57, 52);
+            this.pbx_mainExitIcon.Size = new System.Drawing.Size(57, 49);
             this.pbx_mainExitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbx_mainExitIcon.TabIndex = 17;
             this.pbx_mainExitIcon.TabStop = false;
@@ -434,13 +435,14 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Controls.Add(this.panelEx1, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.uC_ShowAllMember1, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(795, 730);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(795, 727);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // panelEx1
@@ -449,7 +451,7 @@
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEx1.Location = new System.Drawing.Point(3, 660);
+            this.panelEx1.Location = new System.Drawing.Point(3, 657);
             this.panelEx1.Name = "panelEx1";
             this.panelEx1.Size = new System.Drawing.Size(789, 67);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -462,13 +464,21 @@
             this.panelEx1.TabIndex = 0;
             this.panelEx1.Text = "panelEx1";
             // 
+            // uC_ShowAllMember1
+            // 
+            this.uC_ShowAllMember1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_ShowAllMember1.Location = new System.Drawing.Point(3, 3);
+            this.uC_ShowAllMember1.Name = "uC_ShowAllMember1";
+            this.uC_ShowAllMember1.Size = new System.Drawing.Size(789, 648);
+            this.uC_ShowAllMember1.TabIndex = 1;
+            // 
             // Form_Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1051, 736);
+            this.ClientSize = new System.Drawing.Size(1051, 733);
             this.Controls.Add(this.tlp_mainMainLayout);
             this.DoubleBuffered = true;
-            this.MinimumSize = new System.Drawing.Size(1024, 768);
+            this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "Form_Main";
             this.Text = "Form_Main";
             this.tlp_mainMainLayout.ResumeLayout(false);
@@ -519,5 +529,6 @@
         private System.Windows.Forms.PictureBox pbx_mainEntranceIcon;
         private System.Windows.Forms.PictureBox pbx_mainExitIcon;
         private DevComponents.DotNetBar.LabelX lbl_mainExit;
+        private View.UC_ShowAllMember uC_ShowAllMember1;
     }
 }

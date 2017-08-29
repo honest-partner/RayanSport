@@ -12,10 +12,24 @@ namespace RayanSport.View
 {
     public partial class Form_ShowMember : Form
     {
-       
-        public Form_ShowMember(Member member)
+        public Member Member { get; set; }
+
+        public Form_ShowMember()
         {
-            InitializeComponent(member,true);
+            InitializeComponent();
+        }
+        public int setDataForUcShowMemberInfo(Member member)
+        {
+            foreach(var uc in this.Controls)
+            {
+                if (uc is UC_ShowMember_MemberInfo)
+                {
+                    (uc as UC_ShowMember_MemberInfo).UC_ShowMember_MemberInfoCon(member);
+                }
+            }
+
+           
+            return 1;
         }
     }
 }

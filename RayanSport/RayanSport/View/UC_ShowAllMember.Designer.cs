@@ -30,14 +30,12 @@ namespace RayanSport.View
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-           
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dgv_UcShowAllMemberShowDgv = new Telerik.WinControls.UI.RadGridView();
             this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rayan_sportDataSet = new RayanSport.rayan_sportDataSet();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -54,15 +52,16 @@ namespace RayanSport.View
             this.btn_UcShowAllMemberAddMember = new System.Windows.Forms.Button();
             this.btn_UcShowAllMemberShowMemberInfo = new System.Windows.Forms.Button();
             this.memberTableAdapter = new RayanSport.rayan_sportDataSetTableAdapters.memberTableAdapter();
+            this.dgv_UcShowAllMemberShowDgv = new Telerik.WinControls.UI.RadGridView();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllMemberShowDgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllMemberShowDgv.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.gpb_lbl_UcShowAllMemberSearch.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllMemberShowDgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllMemberShowDgv.MasterTemplate)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -81,72 +80,6 @@ namespace RayanSport.View
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.03937F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(804, 508);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // dgv_UcShowAllMemberShowDgv
-            // 
-            this.dgv_UcShowAllMemberShowDgv.AutoScroll = true;
-            this.dgv_UcShowAllMemberShowDgv.AutoSizeRows = true;
-            this.dgv_UcShowAllMemberShowDgv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_UcShowAllMemberShowDgv.EnableGestures = false;
-            this.dgv_UcShowAllMemberShowDgv.Font = new System.Drawing.Font("B Yekan", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.dgv_UcShowAllMemberShowDgv.Location = new System.Drawing.Point(3, 139);
-            // 
-            // 
-            // 
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowAddNewRow = false;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowColumnChooser = false;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowColumnHeaderContextMenu = false;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowColumnReorder = false;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowDeleteRow = false;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowEditRow = false;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowRowHeaderContextMenu = false;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewDecimalColumn2.DataType = typeof(int);
-            gridViewDecimalColumn2.FieldName = "member_id";
-            gridViewDecimalColumn2.HeaderText = "کد عضویت";
-            gridViewDecimalColumn2.IsAutoGenerated = true;
-            gridViewDecimalColumn2.Name = "member_id";
-            gridViewDecimalColumn2.ReadOnly = true;
-            gridViewDecimalColumn2.Width = 200;
-            gridViewTextBoxColumn4.FieldName = "member_name";
-            gridViewTextBoxColumn4.HeaderText = "نام و نام خانوادگی";
-            gridViewTextBoxColumn4.IsAutoGenerated = true;
-            gridViewTextBoxColumn4.Name = "member_name";
-            gridViewTextBoxColumn4.Width = 200;
-            gridViewTextBoxColumn5.FieldName = "member_gender";
-            gridViewTextBoxColumn5.HeaderText = "جنسیت";
-            gridViewTextBoxColumn5.IsAutoGenerated = true;
-            gridViewTextBoxColumn5.Name = "member_gender";
-            gridViewTextBoxColumn5.Width = 200;
-            gridViewTextBoxColumn6.FieldName = "member_tel";
-            gridViewTextBoxColumn6.HeaderText = "تلفن";
-            gridViewTextBoxColumn6.IsAutoGenerated = true;
-            gridViewTextBoxColumn6.Name = "member_tel";
-            gridViewTextBoxColumn6.Width = 200;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn2,
-            gridViewTextBoxColumn4,
-            gridViewTextBoxColumn5,
-            gridViewTextBoxColumn6});
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.DataSource = this.memberBindingSource;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.EnableGrouping = false;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.EnablePaging = true;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.PageSize = 10;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.ShowRowHeaderColumn = false;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.ViewDefinition = tableViewDefinition2;
-            this.dgv_UcShowAllMemberShowDgv.Name = "dgv_UcShowAllMemberShowDgv";
-            this.dgv_UcShowAllMemberShowDgv.NewRowEnterKeyMode = Telerik.WinControls.UI.RadGridViewNewRowEnterKeyMode.None;
-            this.dgv_UcShowAllMemberShowDgv.PrintStyle.PrintAllPages = true;
-            this.dgv_UcShowAllMemberShowDgv.ReadOnly = true;
-            this.dgv_UcShowAllMemberShowDgv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            // 
-            // 
-            // 
-            this.dgv_UcShowAllMemberShowDgv.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.FitToAvailableSize;
-            this.dgv_UcShowAllMemberShowDgv.Size = new System.Drawing.Size(798, 314);
-            this.dgv_UcShowAllMemberShowDgv.TabIndex = 0;
-            this.dgv_UcShowAllMemberShowDgv.Text = "radGridView1";
-            this.dgv_UcShowAllMemberShowDgv.CellClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.dgv_UcShowAllMemberShowDgv_CellClick);
             // 
             // memberBindingSource
             // 
@@ -319,7 +252,6 @@ namespace RayanSport.View
             // 
             // txb_UcShowAllMemberMemberId
             // 
-
             this.txb_UcShowAllMemberMemberId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txb_UcShowAllMemberMemberId.Location = new System.Drawing.Point(411, 55);
             this.txb_UcShowAllMemberMemberId.Name = "txb_UcShowAllMemberMemberId";
@@ -387,6 +319,72 @@ namespace RayanSport.View
             // 
             this.memberTableAdapter.ClearBeforeFill = true;
             // 
+            // dgv_UcShowAllMemberShowDgv
+            // 
+            this.dgv_UcShowAllMemberShowDgv.AutoScroll = true;
+            this.dgv_UcShowAllMemberShowDgv.AutoSizeRows = true;
+            this.dgv_UcShowAllMemberShowDgv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_UcShowAllMemberShowDgv.EnableGestures = false;
+            this.dgv_UcShowAllMemberShowDgv.Font = new System.Drawing.Font("B Yekan", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.dgv_UcShowAllMemberShowDgv.Location = new System.Drawing.Point(3, 139);
+            // 
+            // 
+            // 
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowAddNewRow = false;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowColumnChooser = false;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowColumnHeaderContextMenu = false;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowColumnReorder = false;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowDeleteRow = false;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowEditRow = false;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowRowHeaderContextMenu = false;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+            gridViewDecimalColumn1.DataType = typeof(int);
+            gridViewDecimalColumn1.FieldName = "member_id";
+            gridViewDecimalColumn1.HeaderText = "کد عضویت";
+            gridViewDecimalColumn1.IsAutoGenerated = true;
+            gridViewDecimalColumn1.Name = "member_id";
+            gridViewDecimalColumn1.ReadOnly = true;
+            gridViewDecimalColumn1.Width = 200;
+            gridViewTextBoxColumn1.FieldName = "member_name";
+            gridViewTextBoxColumn1.HeaderText = "نام و نام خانوادگی";
+            gridViewTextBoxColumn1.IsAutoGenerated = true;
+            gridViewTextBoxColumn1.Name = "member_name";
+            gridViewTextBoxColumn1.Width = 200;
+            gridViewTextBoxColumn2.FieldName = "member_gender";
+            gridViewTextBoxColumn2.HeaderText = "جنسیت";
+            gridViewTextBoxColumn2.IsAutoGenerated = true;
+            gridViewTextBoxColumn2.Name = "member_gender";
+            gridViewTextBoxColumn2.Width = 200;
+            gridViewTextBoxColumn3.FieldName = "member_tel";
+            gridViewTextBoxColumn3.HeaderText = "تلفن";
+            gridViewTextBoxColumn3.IsAutoGenerated = true;
+            gridViewTextBoxColumn3.Name = "member_tel";
+            gridViewTextBoxColumn3.Width = 200;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewDecimalColumn1,
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3});
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.DataSource = this.memberBindingSource;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.EnableGrouping = false;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.EnablePaging = true;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.PageSize = 10;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.ShowRowHeaderColumn = false;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.dgv_UcShowAllMemberShowDgv.Name = "dgv_UcShowAllMemberShowDgv";
+            this.dgv_UcShowAllMemberShowDgv.NewRowEnterKeyMode = Telerik.WinControls.UI.RadGridViewNewRowEnterKeyMode.None;
+            this.dgv_UcShowAllMemberShowDgv.PrintStyle.PrintAllPages = true;
+            this.dgv_UcShowAllMemberShowDgv.ReadOnly = true;
+            this.dgv_UcShowAllMemberShowDgv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            // 
+            // 
+            // 
+            this.dgv_UcShowAllMemberShowDgv.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.FitToAvailableSize;
+            this.dgv_UcShowAllMemberShowDgv.Size = new System.Drawing.Size(798, 314);
+            this.dgv_UcShowAllMemberShowDgv.TabIndex = 0;
+            this.dgv_UcShowAllMemberShowDgv.Text = "radGridView1";
+            this.dgv_UcShowAllMemberShowDgv.CellClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.dgv_UcShowAllMemberShowDgv_CellClick);
+            // 
             // UC_ShowAllMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -396,8 +394,6 @@ namespace RayanSport.View
             this.Name = "UC_ShowAllMember";
             this.Size = new System.Drawing.Size(804, 508);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllMemberShowDgv.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllMemberShowDgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -405,6 +401,8 @@ namespace RayanSport.View
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllMemberShowDgv.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllMemberShowDgv)).EndInit();
             this.ResumeLayout(false);
 
         }

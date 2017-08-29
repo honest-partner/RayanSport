@@ -84,8 +84,8 @@
             this.lbl_mainClock = new DevComponents.DotNetBar.LabelX();
             this.lbl_mainTimeOfDay = new DevComponents.DotNetBar.LabelX();
             this.line2 = new DevComponents.DotNetBar.Controls.Line();
-            this.uC_CheckInLog1 = new RayanSport.View.UC_CheckInLog();
             this.tmr_mainClock = new System.Windows.Forms.Timer(this.components);
+            this.uC_ShowAllMember1 = new RayanSport.View.UC_ShowAllMember();
             this.tlp_mainMainLayout.SuspendLayout();
             this.tlp_mainMenuLayout.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -811,7 +811,7 @@
             this.tlp_mainHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
             this.tlp_mainHeader.Controls.Add(this.gpb_mainHeader, 1, 0);
             this.tlp_mainHeader.Controls.Add(this.tableLayoutPanel4, 1, 2);
-            this.tlp_mainHeader.Controls.Add(this.uC_CheckInLog1, 1, 1);
+            this.tlp_mainHeader.Controls.Add(this.uC_ShowAllMember1, 1, 1);
             this.tlp_mainHeader.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlp_mainHeader.Location = new System.Drawing.Point(3, 3);
             this.tlp_mainHeader.Name = "tlp_mainHeader";
@@ -1043,19 +1043,19 @@
             this.line2.Text = "line2";
             this.line2.VerticalLine = true;
             // 
-            // uC_CheckInLog1
-            // 
-            this.uC_CheckInLog1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_CheckInLog1.Location = new System.Drawing.Point(19, 75);
-            this.uC_CheckInLog1.Name = "uC_CheckInLog1";
-            this.uC_CheckInLog1.Size = new System.Drawing.Size(794, 604);
-            this.uC_CheckInLog1.TabIndex = 4;
-            // 
             // tmr_mainClock
             // 
             this.tmr_mainClock.Enabled = true;
             this.tmr_mainClock.Interval = 1000;
             this.tmr_mainClock.Tick += new System.EventHandler(this.tmr_mainClock_Tick);
+            // 
+            // uC_ShowAllMember1
+            // 
+            this.uC_ShowAllMember1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_ShowAllMember1.Location = new System.Drawing.Point(19, 75);
+            this.uC_ShowAllMember1.Name = "uC_ShowAllMember1";
+            this.uC_ShowAllMember1.Size = new System.Drawing.Size(794, 604);
+            this.uC_ShowAllMember1.TabIndex = 4;
             // 
             // Form_Main
             // 
@@ -1150,6 +1150,6 @@
         private DevComponents.DotNetBar.LabelX lbl_mainTimeOfDay;
         private DevComponents.DotNetBar.LabelX lbl_mainDate;
         private DevComponents.DotNetBar.Controls.Line line2;
-        private View.UC_CheckInLog uC_CheckInLog1;
+        private View.UC_ShowAllMember uC_ShowAllMember1;
     }
 }

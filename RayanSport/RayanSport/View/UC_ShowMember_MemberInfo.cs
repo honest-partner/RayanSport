@@ -39,6 +39,7 @@ namespace RayanSport.View
                 pbx_UcShowMemberMemberInfoMemberPicture.SizeMode = PictureBoxSizeMode.Zoom;
                 btn_UcShowMemberMemberInfoMemberAddPicture.Text = "تغییر عکس";
 
+
                 txb_UcShowMemberMemberInfoMemberId.Text = member.member_id.ToString();
                 txb_UcShowMemberMemberInfoMemberName.Text = member.member_name;
                 txb_UcShowMemberMemberInfoMemberNationalCode.Text = member.member_nationalCode;

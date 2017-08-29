@@ -20,14 +20,8 @@ namespace RayanSport.View
         }
         public int setDataForUcShowMemberInfo(Member member)
         {
-            foreach(var uc in this.Controls)
-            {
-                if (uc is UC_ShowMember_MemberInfo)
-                {
-                    (uc as UC_ShowMember_MemberInfo).UC_ShowMember_MemberInfoCon(member);
-                }
-
-            }
+            uC_ShowMember_MemberInfo1.UC_ShowMember_MemberInfoCon(member);
+           
             return 1;
         }
     }

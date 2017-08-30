@@ -131,9 +131,9 @@ namespace RayanSport.View
                             txb_UcCheckInInfoMemberShipType.Text = membershipDataTable[0].membership_type;
                             txb_UcCheckInInfoMemberRemainingSession.Text = membershipDataTable[0].membership_remainingSession + "";
                             txb_UcCheckInInfoMembershipEndDate.Text = membershipDataTable[0].membership_endDate;
-                            pcb_UcCheckInInfoMemberRemainingSession.BackgroundImage = Properties.Resources._checked;
-                            pcb_UcCheckInInfoMembershipEndDate.BackgroundImage = Properties.Resources._checked;
-                            pcb_UcCheckInInfoMemberShipType.BackgroundImage = Properties.Resources._checked;
+                            //pcb_UcCheckInInfoMemberRemainingSession.BackgroundImage = Properties.Resources._checked;
+                            //pcb_UcCheckInInfoMembershipEndDate.BackgroundImage = Properties.Resources._checked;
+                            //pcb_UcCheckInInfoMemberShipType.BackgroundImage = Properties.Resources._checked;
                             btn_UcCheckInInfoMemberCheck.Enabled = true;
                             btn_UcCheckInInfoMemberCheck.BackColor = Properties.Settings.Default.Blue;
                             llb_UcCheckInInfoShowMemberDetail.Enabled = true;
@@ -144,9 +144,9 @@ namespace RayanSport.View
                             txb_UcCheckInInfoMemberShipType.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMemberRemainingSession.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMembershipEndDate.Text = "قرار داد فعال وجود ندارد";
-                            pcb_UcCheckInInfoMemberRemainingSession.BackgroundImage = Properties.Resources.cancel;
-                            pcb_UcCheckInInfoMembershipEndDate.BackgroundImage = Properties.Resources.cancel;
-                            pcb_UcCheckInInfoMemberShipType.BackgroundImage = Properties.Resources.cancel;
+                            //pcb_UcCheckInInfoMemberRemainingSession.BackgroundImage = Properties.Resources.cancel;
+                            //pcb_UcCheckInInfoMembershipEndDate.BackgroundImage = Properties.Resources.cancel;
+                            //pcb_UcCheckInInfoMemberShipType.BackgroundImage = Properties.Resources.cancel;
 
                             txb_UcCheckInInfoMemberShipType.ForeColor = Properties.Settings.Default.Red;
                             txb_UcCheckInInfoMemberRemainingSession.ForeColor = Properties.Settings.Default.Red;
@@ -164,9 +164,9 @@ namespace RayanSport.View
                             txb_UcCheckInInfoMemberRemainingSession.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMembershipEndDate.Text = "قرار داد فعال وجود ندارد";
 
-                        pcb_UcCheckInInfoMemberRemainingSession.BackgroundImage = Properties.Resources.cancel;
-                        pcb_UcCheckInInfoMembershipEndDate.BackgroundImage = Properties.Resources.cancel;
-                        pcb_UcCheckInInfoMemberShipType.BackgroundImage = Properties.Resources.cancel;
+                        //pcb_UcCheckInInfoMemberRemainingSession.BackgroundImage = Properties.Resources.cancel;
+                        //pcb_UcCheckInInfoMembershipEndDate.BackgroundImage = Properties.Resources.cancel;
+                        //pcb_UcCheckInInfoMemberShipType.BackgroundImage = Properties.Resources.cancel;
                         
 
                         txb_UcCheckInInfoMemberShipType.ForeColor = Properties.Settings.Default.Red;
@@ -199,7 +199,7 @@ namespace RayanSport.View
 
         private void llb_UcCheckInInfoShowMemberDetail_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form_ShowMember show_member = new Form_ShowMember(member);
+            Form_ShowMember show_member = new Form_ShowMember();
             show_member.Show();
         }
     }

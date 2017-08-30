@@ -26,35 +26,31 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent(Member member)
+        private void InitializeComponent()
         {
-            this.uC_ShowMember_ContractInfo1 = new RayanSport.View.UC_ShowMember_ContractInfo();
-            this.uC_ShowMember_ContractInfo1.Member = member;
+            this.uC_ShowMember_MemberInfo1 = new RayanSport.View.UC_ShowMember_MemberInfo();
             this.SuspendLayout();
             // 
-            // uC_ShowMember_ContractInfo1
+            // uC_ShowMember_MemberInfo1
             // 
-            this.uC_ShowMember_ContractInfo1.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uC_ShowMember_ContractInfo1.Location = new System.Drawing.Point(5, -2);
-            this.uC_ShowMember_ContractInfo1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.uC_ShowMember_ContractInfo1.Member = null;
-            this.uC_ShowMember_ContractInfo1.Name = "uC_ShowMember_ContractInfo1";
-            this.uC_ShowMember_ContractInfo1.Size = new System.Drawing.Size(1370, 626);
-            this.uC_ShowMember_ContractInfo1.TabIndex = 0;
+            this.uC_ShowMember_MemberInfo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.uC_ShowMember_MemberInfo1.Location = new System.Drawing.Point(12, 12);
+            this.uC_ShowMember_MemberInfo1.Name = "uC_ShowMember_MemberInfo1";
+            this.uC_ShowMember_MemberInfo1.Size = new System.Drawing.Size(1005, 326);
+            this.uC_ShowMember_MemberInfo1.TabIndex = 0;
             // 
             // Form_ShowMember
             // 
-            this.ClientSize = new System.Drawing.Size(1381, 639);
-            this.Controls.Add(this.uC_ShowMember_ContractInfo1);
+            this.ClientSize = new System.Drawing.Size(1029, 492);
+            this.Controls.Add(this.uC_ShowMember_MemberInfo1);
             this.Name = "Form_ShowMember";
             this.ResumeLayout(false);
 
         }
 
-        private UC_ShowMember_ContractInfo uC_ShowMember_ContractInfo1;
-
-        #endregion
-
-        //private UC_ShowMember_MemberInfo uC_ShowMember_MemberInfo1;
+        private UC_ShowMember_MemberInfo uC_ShowMember_MemberInfo1;
     }
+
+    #endregion
+
 }

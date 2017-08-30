@@ -33,9 +33,8 @@ namespace RayanSport.View
                 {
                     (uc as UC_ShowMember_MemberInfo).UC_ShowMember_MemberInfoCon(member);
                 }
-            }
 
-           
+            }
             return 1;
         }
     }

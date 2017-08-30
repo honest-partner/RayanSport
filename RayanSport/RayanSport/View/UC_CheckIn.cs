@@ -39,7 +39,7 @@ namespace RayanSport.View
                     commode = Convert.ToInt32(txb_UcCheckInPrice.Text);
                     DateTime d = DateTime.Now;
                     PersianCalendar pc = new PersianCalendar();
-                    String date = String.Format("{0}/{1}/{2} {3}:{4}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d), pc.GetHour(d), pc.GetMinute(d));
+                    String date = String.Format("{0}/{1:00}/{2:00} - {3:00}:{4:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d), pc.GetHour(d), pc.GetMinute(d));
 
 
 

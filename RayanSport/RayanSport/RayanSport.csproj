@@ -338,12 +338,9 @@
     <None Include="Resources\exit.png" />
     <None Include="Resources\file%281%291.png" />
     <None Include="Resources\home-button1.png" />
-    <Content Include="Resources\cancel.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\checked.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="Resources\Cancel.bmp" />
+    <None Include="Resources\checked.png" />
+    <None Include="Resources\cancel.png" />
     <Content Include="Resources\Logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -154,7 +154,7 @@
             this.MaximizeBox = false;
             this.Name = "Form_CheckIn";
             this.Padding = new System.Windows.Forms.Padding(20);
-            this.Text = "Form_CheckIn";
+            this.Text = "ورود و خروج";
             this.gpb_UcCheckInMember.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

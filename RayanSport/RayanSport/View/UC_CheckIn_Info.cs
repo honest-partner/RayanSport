@@ -16,6 +16,7 @@ namespace RayanSport.View
         long membershipId;
         String memberGender;
         String memberName;
+        Member member;
         //id for people that are not member but they came gym
         int member_id;
         int remainingSession;
@@ -60,6 +61,7 @@ namespace RayanSport.View
                 txb_UcCheckInInfoMembershipEndDate.BackColor = SystemColors.Window;
                 btn_UcCheckInInfoMemberCheck.Enabled = false;
                 btn_UcCheckInInfoMemberCheck.BackColor = Properties.Settings.Default.MediumGrey;
+                
             }
         }
 
@@ -115,6 +117,7 @@ namespace RayanSport.View
                     member_id = memberDataTable[0].member_id;
                     memberGender = memberDataTable[0].member_gender;
                     memberName = memberDataTable[0].member_name;
+                    member = new Member(memberDataTable[0].member_id, memberDataTable[0].member_name, memberDataTable[0].member_nationalCode, memberDataTable[0].member_tel, memberDataTable[0].member_gender, memberDataTable[0].member_blood, memberDataTable[0].member_sick, memberDataTable[0].member_address, memberDataTable[0].member_charge);
                     rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
                     rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
                     int rows1 = membershipTableAdapter.FillBySelectMembersWithStatusAndId(membershipDataTable, Convert.ToInt32(txb_UcCheckInInfoMemberId.Text), "فعال");
@@ -128,18 +131,28 @@ namespace RayanSport.View
                             txb_UcCheckInInfoMemberShipType.Text = membershipDataTable[0].membership_type;
                             txb_UcCheckInInfoMemberRemainingSession.Text = membershipDataTable[0].membership_remainingSession + "";
                             txb_UcCheckInInfoMembershipEndDate.Text = membershipDataTable[0].membership_endDate;
+                            pcb_UcCheckInInfoMemberRemainingSession.BackgroundImage = Properties.Resources._checked;
+                            pcb_UcCheckInInfoMembershipEndDate.BackgroundImage = Properties.Resources._checked;
+                            pcb_UcCheckInInfoMemberShipType.BackgroundImage = Properties.Resources._checked;
                             btn_UcCheckInInfoMemberCheck.Enabled = true;
                             btn_UcCheckInInfoMemberCheck.BackColor = Properties.Settings.Default.Blue;
+                            llb_UcCheckInInfoShowMemberDetail.Enabled = true;
+                            
                         }
                         else
                         {
                             txb_UcCheckInInfoMemberShipType.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMemberRemainingSession.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMembershipEndDate.Text = "قرار داد فعال وجود ندارد";
+                            pcb_UcCheckInInfoMemberRemainingSession.BackgroundImage = Properties.Resources.cancel;
+                            pcb_UcCheckInInfoMembershipEndDate.BackgroundImage = Properties.Resources.cancel;
+                            pcb_UcCheckInInfoMemberShipType.BackgroundImage = Properties.Resources.cancel;
+
                             txb_UcCheckInInfoMemberShipType.ForeColor = Properties.Settings.Default.Red;
-                            
                             txb_UcCheckInInfoMemberRemainingSession.ForeColor = Properties.Settings.Default.Red;
                             txb_UcCheckInInfoMembershipEndDate.ForeColor = Properties.Settings.Default.Red;
+
+                            llb_UcCheckInInfoShowMemberDetail.Enabled = false;
                             btn_UcCheckInInfoMemberCheck.Enabled = false;
                             btn_UcCheckInInfoMemberCheck.BackColor = Properties.Settings.Default.MediumGrey;
                         }
@@ -150,15 +163,27 @@ namespace RayanSport.View
                         txb_UcCheckInInfoMemberShipType.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMemberRemainingSession.Text = "قرار داد فعال وجود ندارد";
                             txb_UcCheckInInfoMembershipEndDate.Text = "قرار داد فعال وجود ندارد";
+
+                        pcb_UcCheckInInfoMemberRemainingSession.BackgroundImage = Properties.Resources.cancel;
+                        pcb_UcCheckInInfoMembershipEndDate.BackgroundImage = Properties.Resources.cancel;
+                        pcb_UcCheckInInfoMemberShipType.BackgroundImage = Properties.Resources.cancel;
+                        
+
                         txb_UcCheckInInfoMemberShipType.ForeColor = Properties.Settings.Default.Red;
                             txb_UcCheckInInfoMemberRemainingSession.ForeColor = Properties.Settings.Default.Red;
                         txb_UcCheckInInfoMembershipEndDate.ForeColor = Properties.Settings.Default.Red;
+
+                        llb_UcCheckInInfoShowMemberDetail.Enabled = false;
                         btn_UcCheckInInfoMemberCheck.Enabled = false;
                         btn_UcCheckInInfoMemberCheck.BackColor = Properties.Settings.Default.MediumGrey;
                     }
                 }
                 else {
                     ClearTexts();
+                    llb_UcCheckInInfoShowMemberDetail.Enabled = false;
+                    pcb_UcCheckInInfoMemberRemainingSession.BackgroundImage = null;
+                    pcb_UcCheckInInfoMembershipEndDate.BackgroundImage = null;
+                    pcb_UcCheckInInfoMemberShipType.BackgroundImage = null;
                 }
 
             }
@@ -170,6 +195,12 @@ namespace RayanSport.View
             btn_UcCheckInInfoMemberCheck.BackColor = Properties.Settings.Default.MediumGrey;
             
             
+        }
+
+        private void llb_UcCheckInInfoShowMemberDetail_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form_ShowMember show_member = new Form_ShowMember(member);
+            show_member.Show();
         }
     }
 }

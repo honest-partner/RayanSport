@@ -31,6 +31,7 @@ namespace RayanSport.View
             tableAdapter.FillBySelectById(membershipDataTable,100);
             dgv_UcShowMemberContractInfoContracts.DataSource=membershipDataTable;
             btn_UcShowMemberContractInfoDeleteContract.Enabled = false;
+            btn_UcShowMemberContractInfoDeleteContract.BackColor = Properties.Settings.Default.MediumGrey;
             btn_UcShowMemberContractInfoExpireContract.Enabled = false;
             btn_UcShowMemberContractInfoAddContract.Enabled = true;
             tableLayoutPanel3.Enabled = false;

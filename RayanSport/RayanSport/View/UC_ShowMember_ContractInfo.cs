@@ -18,6 +18,7 @@ namespace RayanSport.View
         List<TrainOption> train_list;
         public UC_ShowMember_ContractInfo() {
             InitializeComponent();
+            
         }
         public Member member { get; set; }
         
@@ -26,7 +27,7 @@ namespace RayanSport.View
         rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
         private void UC_ShowMember_ContractInfo_Load(object sender, EventArgs e)
         {
-            setData(member);
+            
             
         }
         public void setData(Member input_member) {

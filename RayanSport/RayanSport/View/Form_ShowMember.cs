@@ -21,7 +21,7 @@ namespace RayanSport.View
             foreach (var item in this.Controls)
             {
                 if (item is UC_ShowMember_ContractInfo)
-                    (item as UC_ShowMember_ContractInfo).member = mem;
+                    (item as UC_ShowMember_ContractInfo).setData(mem);
             }
         }
         public int setDataForUcShowMemberInfo(Member member)

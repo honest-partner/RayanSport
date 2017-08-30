@@ -16,11 +16,11 @@ namespace RayanSport.View
         long currnet_membership_id;
         Member member;
         List<TrainOption> train_list;
-        public UC_ShowMember_ContractInfo(Member member)
-        {
-            this.member = member;
+        public UC_ShowMember_ContractInfo() {
             InitializeComponent();
         }
+        public Member Member { get; set; }
+        
 
         rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
         rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
@@ -66,7 +66,9 @@ namespace RayanSport.View
                 train_names.Add(train.trainOption_name);
             }
             cmb_UcShowMemberContractInfoContractType.DataSource = train_names;
-            dts_UcShowMemberContractInfoStartDate.Value = DateTime.Now;
+            
+            
+            
             cmb_UcShowMemberContractInfoExpireContractPaymentType.SelectedIndex = 0;
         }
 
@@ -122,6 +124,8 @@ namespace RayanSport.View
                 date = getDateHijri(date);
                 string[] dates = new string[3];
                 int year, month, day;
+                string  month1, day1;
+
                 dates = date.Split('/');
                 year = Convert.ToInt32(dates[0]);
                 month = Convert.ToInt32(dates[1]);
@@ -135,7 +139,25 @@ namespace RayanSport.View
                 {
                     month++;
                 }
-                txb_UcShowMemberContractInfoEndDate.Text = year + "/" + month + "/" + day;
+                date = year + "/";
+                if (month < 10)
+                {
+                    date = date +"0" + month;
+                }
+                else {
+                    date = date + month+"/";
+                }
+                if (day < 10)
+                {
+                    date = date + "0"+day;
+                }
+                else {
+                    date = date + day;
+                }
+
+                
+                
+                txb_UcShowMemberContractInfoEndDate.Text = date;
             }
             catch (Exception ex) { }
 
@@ -186,6 +208,7 @@ namespace RayanSport.View
                 try {
                     string startDate = dts_UcShowMemberContractInfoStartDate.Value.Value.ToString("M/d/yyyy");
                     startDate = getDateHijri(startDate);
+                    
                     if (cmb_UcShowMemberContractInfoExpireContractPaymentType.Text.Equals("نقد"))
                         reciptnum = null;
                     else

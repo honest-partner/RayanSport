@@ -15,7 +15,8 @@ namespace RayanSport.View
        
         public Form_ShowMember(Member member)
         {
-            InitializeComponent(member,true);
+            
+            InitializeComponent(member);
         }
     }
 }

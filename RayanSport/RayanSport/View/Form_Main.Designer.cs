@@ -86,6 +86,7 @@
             this.gpb_mainBody = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tlp_mainBody = new System.Windows.Forms.TableLayoutPanel();
             this.tmr_mainClock = new System.Windows.Forms.Timer(this.components);
+            this.uC_Home1 = new RayanSport.View.UC_Home();
             this.tlp_mainMainLayout.SuspendLayout();
             this.tlp_mainMenuLayout.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -108,6 +109,7 @@
             this.gpb_mainFooter.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.gpb_mainBody.SuspendLayout();
+            this.tlp_mainBody.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlp_mainMainLayout
@@ -1079,6 +1081,7 @@
             this.tlp_mainBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlp_mainBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlp_mainBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlp_mainBody.Controls.Add(this.uC_Home1, 0, 0);
             this.tlp_mainBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlp_mainBody.Location = new System.Drawing.Point(0, 0);
             this.tlp_mainBody.Name = "tlp_mainBody";
@@ -1094,6 +1097,14 @@
             this.tmr_mainClock.Enabled = true;
             this.tmr_mainClock.Interval = 1000;
             this.tmr_mainClock.Tick += new System.EventHandler(this.tmr_mainClock_Tick);
+            // 
+            // uC_Home1
+            // 
+            this.uC_Home1.Location = new System.Drawing.Point(4, 4);
+            this.uC_Home1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_Home1.Name = "uC_Home1";
+            this.uC_Home1.Size = new System.Drawing.Size(740, 532);
+            this.uC_Home1.TabIndex = 0;
             // 
             // Form_Main
             // 
@@ -1126,6 +1137,7 @@
             this.gpb_mainFooter.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.gpb_mainBody.ResumeLayout(false);
+            this.tlp_mainBody.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1189,5 +1201,6 @@
         private DevComponents.DotNetBar.LabelX lbl_mainHeaderText;
         private DevComponents.DotNetBar.Controls.GroupPanel gpb_mainBody;
         private System.Windows.Forms.TableLayoutPanel tlp_mainBody;
+        private View.UC_Home uC_Home1;
     }
 }

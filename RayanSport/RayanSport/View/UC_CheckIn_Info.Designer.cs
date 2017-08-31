@@ -269,8 +269,8 @@
             // 
             // pbx_UcCheckInInfoMemberPicture
             // 
-            this.pbx_UcCheckInInfoMemberPicture.BackgroundImage = global::RayanSport.Properties.Resources.no_image;
             this.pbx_UcCheckInInfoMemberPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbx_UcCheckInInfoMemberPicture.Image = global::RayanSport.Properties.Resources.no_image;
             this.pbx_UcCheckInInfoMemberPicture.Location = new System.Drawing.Point(38, 32);
             this.pbx_UcCheckInInfoMemberPicture.Name = "pbx_UcCheckInInfoMemberPicture";
             this.pbx_UcCheckInInfoMemberPicture.Size = new System.Drawing.Size(223, 260);

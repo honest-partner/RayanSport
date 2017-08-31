@@ -242,6 +242,9 @@
             // btn_UcShowMemberContractInfoAddContract
             // 
             this.btn_UcShowMemberContractInfoAddContract.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowMemberContractInfoAddContract.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_UcShowMemberContractInfoAddContract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberContractInfoAddContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcShowMemberContractInfoAddContract.Location = new System.Drawing.Point(1216, 3);
             this.btn_UcShowMemberContractInfoAddContract.Name = "btn_UcShowMemberContractInfoAddContract";
             this.btn_UcShowMemberContractInfoAddContract.Size = new System.Drawing.Size(145, 50);
@@ -254,6 +257,9 @@
             // 
             this.btn_UcShowMemberContractInfoExpireContract.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_UcShowMemberContractInfoExpireContract.Enabled = false;
+            this.btn_UcShowMemberContractInfoExpireContract.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_UcShowMemberContractInfoExpireContract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberContractInfoExpireContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcShowMemberContractInfoExpireContract.Location = new System.Drawing.Point(1065, 3);
             this.btn_UcShowMemberContractInfoExpireContract.Name = "btn_UcShowMemberContractInfoExpireContract";
             this.btn_UcShowMemberContractInfoExpireContract.Size = new System.Drawing.Size(145, 50);
@@ -266,6 +272,9 @@
             // 
             this.btn_UcShowMemberContractInfoDeleteContract.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_UcShowMemberContractInfoDeleteContract.Enabled = false;
+            this.btn_UcShowMemberContractInfoDeleteContract.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_UcShowMemberContractInfoDeleteContract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberContractInfoDeleteContract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcShowMemberContractInfoDeleteContract.Location = new System.Drawing.Point(914, 3);
             this.btn_UcShowMemberContractInfoDeleteContract.Name = "btn_UcShowMemberContractInfoDeleteContract";
             this.btn_UcShowMemberContractInfoDeleteContract.Size = new System.Drawing.Size(145, 50);
@@ -370,6 +379,9 @@
             // btn_UcShowMemberContractInfoClear
             // 
             this.btn_UcShowMemberContractInfoClear.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowMemberContractInfoClear.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_UcShowMemberContractInfoClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberContractInfoClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcShowMemberContractInfoClear.Location = new System.Drawing.Point(913, 234);
             this.btn_UcShowMemberContractInfoClear.Name = "btn_UcShowMemberContractInfoClear";
             this.btn_UcShowMemberContractInfoClear.Size = new System.Drawing.Size(244, 71);
@@ -533,6 +545,9 @@
             // btn_UcShowMemberContractInfoSave
             // 
             this.btn_UcShowMemberContractInfoSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowMemberContractInfoSave.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_UcShowMemberContractInfoSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberContractInfoSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcShowMemberContractInfoSave.Location = new System.Drawing.Point(1163, 234);
             this.btn_UcShowMemberContractInfoSave.Name = "btn_UcShowMemberContractInfoSave";
             this.btn_UcShowMemberContractInfoSave.Size = new System.Drawing.Size(198, 71);

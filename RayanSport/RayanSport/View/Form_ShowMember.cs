@@ -13,13 +13,20 @@ namespace RayanSport.View
     public partial class Form_ShowMember : Form
     {
         public Member Member { get; set; }
-
+        Member mem;
         public Form_ShowMember()
         {
+            mem = new Member(114,"","","","","","","",0);
             InitializeComponent();
+            foreach (var item in this.Controls)
+            {
+                //if (item is UC_ShowMember_ContractInfo)
+                //    (item as UC_ShowMember_ContractInfo).setData(mem);
+            }
         }
         public int setDataForUcShowMemberInfo(Member member)
         {
+
             foreach(var uc in this.Controls)
             {
                 if (uc is UC_ShowMember_MemberInfo)

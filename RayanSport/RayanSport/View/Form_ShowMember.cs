@@ -28,8 +28,6 @@ namespace RayanSport.View
                 }
 
             }
-
-           
             return 1;
         }
     }

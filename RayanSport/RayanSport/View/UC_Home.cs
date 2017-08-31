@@ -52,11 +52,6 @@ namespace RayanSport.View
 
         }
 
-        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void tableLayoutPanel4_Paint_1(object sender, PaintEventArgs e)
         {
 
@@ -70,12 +65,9 @@ namespace RayanSport.View
 
         public string getDateShamsi(string date)
         {
-
-
             DateTime d = DateTime.Parse(date);
             PersianCalendar pc = new PersianCalendar();
             return string.Format("{0}/{1:00}/{2:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));//---> miladi to shamsi*/
-
         }
     }
 }

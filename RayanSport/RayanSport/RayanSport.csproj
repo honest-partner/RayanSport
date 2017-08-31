@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BehComponents">
-      <HintPath>..\..\..\ErtebatBaSanat\ProposalReportingSystem\ProposalReportingSystem\bin\Debug\BehComponents.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\BehComponents.dll</HintPath>
     </Reference>
     <Reference Include="BPersianCalender, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
@@ -43,8 +43,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\DateTimeSelector.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\Desktop\DevComponents.DotNetBar2.dll</HintPath>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.9.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />

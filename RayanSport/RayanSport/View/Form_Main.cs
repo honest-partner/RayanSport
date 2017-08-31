@@ -8,10 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using RayanSport.View;
+using System.Globalization;
+
 namespace RayanSport
 {
     public partial class Form_Main : Form
     {
+        public UC_Home ucHome;
+        public UC_ShowAllMember ucShowAllMember;
+
+
+
         public Form_Main()
         {
             InitializeComponent();
@@ -349,65 +356,88 @@ namespace RayanSport
         #region // mouse click of menu items
         private void pbx_mainHomeIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.homeYellow;
             lbl_mainHeaderText.Text = lbl_mainHome.Text;
+            ucHome = new UC_Home();
+            this.Controls.Add(ucHome);
+            
         }
 
         private void pbx_mainEntranceIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.checklistYellow;
             lbl_mainHeaderText.Text = lbl_mainEntrance.Text;
         }
 
         private void pbx_mainMemberIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.strongYellow;
             lbl_mainHeaderText.Text = lbl_mainMember.Text;
+            ucShowAllMember = new UC_ShowAllMember();
+            this.Controls.Add(ucShowAllMember);
         }
 
         private void pbx_mainContractIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.FileYellow;
             lbl_mainHeaderText.Text = lbl_mainContract.Text;
         }
 
         private void pbx_mainBuffetIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.juiceYellow;
             lbl_mainHeaderText.Text = lbl_mainBuffet.Text;
         }
 
         private void pbx_mainUserIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.userYellow;
             lbl_mainHeaderText.Text = lbl_mainUser.Text;
         }
 
         private void pbx_mainSettingIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.settingYellow;
             lbl_mainHeaderText.Text = lbl_mainSetting.Text;
         }
 
         private void pbx_mainAboutIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.aboutYellow;
             lbl_mainHeaderText.Text = lbl_mainAbout.Text;
         }
 
         #endregion
 
-        #region //main clock timer tick
+        #region //main time and date 
         private void tmr_mainClock_Tick(object sender, EventArgs e)
         {
             lbl_mainClock.Text = DateTime.Now.ToString("h : mm : ss");
 
-            if (DateTime.Now.ToString("hh:mm:ss tt").Contains("PM"))
+            if (DateTime.Now.ToString("hh🇲🇲ss tt").Contains("PM"))
                 lbl_mainTimeOfDay.Text = "بـعد از ظهر";
             else
                 lbl_mainTimeOfDay.Text = "قـبل از ظهر";
+
+            lbl_mainDate.Text = getDateShamsi(DateTime.Now.ToString()) + "    " + getPersianDayOfWeek(DateTime.Now.DayOfWeek.ToString());
+        }
+
+        public string getDateShamsi(string date)
+        {
+            DateTime d = DateTime.Parse(date);
+            PersianCalendar pc = new PersianCalendar();
+            return string.Format("{0}/{1:00}/{2:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));//---> miladi to shamsi*/
+        }
+
+        public string getPersianDayOfWeek(string day)
+        {
+            if (day == "Saturday")
+                return "شنبه";
+            else if (day == "Sunday")
+                return "یکشنبه";
+            else if (day == "Monday")
+                return "دوشنبه";
+            else if (day == "Tuesday")
+                return "سه شنبه";
+            else if (day == "Wednesday")
+                return "چهارشنبه";
+            else if (day == "Thursday")
+                return "پنج شنبه";
+            else
+                return "جمعه";
         }
         #endregion
-
     }
 }

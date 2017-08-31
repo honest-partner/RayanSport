@@ -134,6 +134,12 @@
     <Compile Include="View\Form_ShowMember.Designer.cs">
       <DependentUpon>Form_ShowMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UC_AboutUs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_AboutUs.Designer.cs">
+      <DependentUpon>UC_AboutUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UC_CheckIn.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -163,6 +169,12 @@
     </Compile>
     <Compile Include="View\UC_Log.Designer.cs">
       <DependentUpon>UC_Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_Setting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_Setting.Designer.cs">
+      <DependentUpon>UC_Setting.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UC_ShowAllContract.cs">
       <SubType>UserControl</SubType>
@@ -220,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_CheckIn_Info.resx">
       <DependentUpon>UC_CheckIn_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Home.resx">
+      <DependentUpon>UC_Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_ShowAllContract.resx">
       <DependentUpon>UC_ShowAllContract.cs</DependentUpon>

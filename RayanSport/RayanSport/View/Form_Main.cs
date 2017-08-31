@@ -14,6 +14,11 @@ namespace RayanSport
 {
     public partial class Form_Main : Form
     {
+        public UC_Home ucHome;
+        public UC_ShowAllMember ucShowAllMember;
+
+
+
         public Form_Main()
         {
             InitializeComponent();
@@ -351,49 +356,46 @@ namespace RayanSport
         #region // mouse click of menu items
         private void pbx_mainHomeIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.homeYellow;
             lbl_mainHeaderText.Text = lbl_mainHome.Text;
+            ucHome = new UC_Home();
+            this.Controls.Add(ucHome);
+            
         }
 
         private void pbx_mainEntranceIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.checklistYellow;
             lbl_mainHeaderText.Text = lbl_mainEntrance.Text;
         }
 
         private void pbx_mainMemberIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.strongYellow;
             lbl_mainHeaderText.Text = lbl_mainMember.Text;
+            ucShowAllMember = new UC_ShowAllMember();
+            this.Controls.Add(ucShowAllMember);
         }
 
         private void pbx_mainContractIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.FileYellow;
             lbl_mainHeaderText.Text = lbl_mainContract.Text;
         }
 
         private void pbx_mainBuffetIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.juiceYellow;
             lbl_mainHeaderText.Text = lbl_mainBuffet.Text;
         }
 
         private void pbx_mainUserIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.userYellow;
             lbl_mainHeaderText.Text = lbl_mainUser.Text;
         }
 
         private void pbx_mainSettingIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.settingYellow;
             lbl_mainHeaderText.Text = lbl_mainSetting.Text;
         }
 
         private void pbx_mainAboutIcon_Click(object sender, EventArgs e)
         {
-            pbx_mainHeaderIcon.Image = RayanSport.Properties.Resources.aboutYellow;
             lbl_mainHeaderText.Text = lbl_mainAbout.Text;
         }
 
@@ -437,8 +439,5 @@ namespace RayanSport
                 return "جمعه";
         }
         #endregion
-
-
-
     }
 }

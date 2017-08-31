@@ -98,8 +98,6 @@ namespace RayanSport.View
                 checkInTableAdapter.FillBySelectByDateNotMember(checkInDataTable,endDateFrom,endDateUntil);
                 dgv_UcCheckInLogShowNotMember.DataSource = checkInDataTable;
 
-
-
             }
 
         }

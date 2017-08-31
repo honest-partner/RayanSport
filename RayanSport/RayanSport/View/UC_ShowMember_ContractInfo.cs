@@ -27,14 +27,18 @@ namespace RayanSport.View
         rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
         private void UC_ShowMember_ContractInfo_Load(object sender, EventArgs e)
         {
-            
-            
+            btn_UcShowMemberContractInfoAddContract.Enabled = true;
+            btn_UcShowMemberContractInfoAddContract.BackColor = Properties.Settings.Default.Blue;
+
         }
         public void setData(Member input_member) {
+            this.member = input_member;
             rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
             rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
             tableAdapter.FillBySelectById(membershipDataTable, input_member.member_id);
             dgv_UcShowMemberContractInfoContracts.DataSource = membershipDataTable;
+            dgv_UcShowMemberContractInfoContracts.Columns["membership_memberId"].IsVisible = false;
+            dgv_UcShowMemberContractInfoContracts.Columns["membership_memberName"].IsVisible = false;
             btn_UcShowMemberContractInfoDeleteContract.Enabled = false;
             btn_UcShowMemberContractInfoDeleteContract.BackColor = Properties.Settings.Default.MediumGrey;
             btn_UcShowMemberContractInfoExpireContract.Enabled = false;
@@ -281,27 +285,28 @@ namespace RayanSport.View
             }
         }
 
-
-        private void dgv_UcShowMemberContractInfoContracts_CellClick(object sender, DataGridViewCellEventArgs e)
+        
+        private void dgv_UcShowMemberContractInfoContracts_CellClick(object sender, Telerik.WinControls.UI.GridViewCellEventArgs e)
         {
-            currnet_membership_id = Convert.ToInt64(dgv_UcShowMemberContractInfoContracts.Rows[e.RowIndex].Cells["membership_id"].Value.ToString());
-            btn_UcShowMemberContractInfoDeleteContract.Enabled = true;
-            btn_UcShowMemberContractInfoDeleteContract.BackColor = Properties.Settings.Default.Blue;
-            btn_UcShowMemberContractInfoExpireContract.Enabled = true;
-            btn_UcShowMemberContractInfoExpireContract.BackColor = Properties.Settings.Default.Blue;
-            btn_UcShowMemberContractInfoAddContract.Enabled = true;
-            btn_UcShowMemberContractInfoAddContract.BackColor = Properties.Settings.Default.Blue;
-            foreach (var txb in tableLayoutPanel3.Controls)
+            if (e.RowIndex >= 0)
             {
-                if (txb is TextBox)
-                    (txb as TextBox).Clear();
-                if (txb is ComboBox)
-                    (txb as ComboBox).Text = "";
+                currnet_membership_id = Convert.ToInt64(dgv_UcShowMemberContractInfoContracts.Rows[e.RowIndex].Cells["membership_id"].Value.ToString());
+                btn_UcShowMemberContractInfoDeleteContract.Enabled = true;
+                btn_UcShowMemberContractInfoDeleteContract.BackColor = Properties.Settings.Default.Blue;
+                btn_UcShowMemberContractInfoExpireContract.Enabled = true;
+                btn_UcShowMemberContractInfoExpireContract.BackColor = Properties.Settings.Default.Blue;
+                btn_UcShowMemberContractInfoAddContract.Enabled = true;
+                btn_UcShowMemberContractInfoAddContract.BackColor = Properties.Settings.Default.Blue;
+                foreach (var txb in tableLayoutPanel3.Controls)
+                {
+                    if (txb is TextBox)
+                        (txb as TextBox).Clear();
+                    if (txb is ComboBox)
+                        (txb as ComboBox).Text = "";
+                }
+                dts_UcShowMemberContractInfoStartDate.ResetText();
+                tableLayoutPanel3.Enabled = false;
             }
-            dts_UcShowMemberContractInfoStartDate.ResetText();
-            tableLayoutPanel3.Enabled = false;
-            
-
         }
     }
 }

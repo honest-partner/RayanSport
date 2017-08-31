@@ -306,7 +306,6 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(728, 191);
             this.tableLayoutPanel4.TabIndex = 1;
-            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint_1);
             // 
             // gpb_UcHomeInfo
             // 
@@ -395,7 +394,6 @@
             this.llb_UcHomeAllContractNum.TabStop = true;
             this.llb_UcHomeAllContractNum.Text = "تعداد کل قراردادها";
             this.llb_UcHomeAllContractNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.llb_UcHomeAllContractNum.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_UcHomeAllContractNum_LinkClicked);
             // 
             // llb_UcHomeActiveContract
             // 

@@ -661,7 +661,7 @@
             this.btn_UcShowAllContractFilter.TabIndex = 0;
             this.btn_UcShowAllContractFilter.Text = "فیلتر کردن";
             this.btn_UcShowAllContractFilter.UseVisualStyleBackColor = false;
-            this.btn_UcShowAllContractFilter.Click += new System.EventHandler(this.btn_UcShowAllContractFilter_Click);
+           
             // 
             // gpb_UcShowAllContractByName
             // 

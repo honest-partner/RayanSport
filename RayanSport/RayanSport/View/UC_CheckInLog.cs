@@ -28,7 +28,6 @@ namespace RayanSport.View
 
             rayan_sportDataSetTableAdapters.checkInTableAdapter checkInTableAdapter = new rayan_sportDataSetTableAdapters.checkInTableAdapter();
             int count = (int)checkInTableAdapter.ScalarByNotMemberNum(endDateFrom,endDateUntil);
-            MessageBox.Show(count.ToString());
             lbl_UcCheckInLogNotMemberNum.Text = count.ToString();
 
 

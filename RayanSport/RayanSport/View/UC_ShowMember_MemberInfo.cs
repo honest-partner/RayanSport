@@ -22,6 +22,7 @@ namespace RayanSport.View
         public UC_ShowMember_MemberInfo()
         {
             InitializeComponent();
+            pbx_UcShowMemberMemberInfoMemberPicture.SizeMode = PictureBoxSizeMode.Zoom;
         }
         //public UC_ShowMember_MemberInfo(Member member2)
         //{
@@ -33,11 +34,15 @@ namespace RayanSport.View
             if (member2.member_name != null)
             {
                 member = member2;
+
                 string path;
                 path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\member_image\";
-                pbx_UcShowMemberMemberInfoMemberPicture.Image = Image.FromFile(path + member.member_id + ".Jpeg");
+                if (File.Exists(path + member.member_id + ".Jpeg"))
+                {
+                    pbx_UcShowMemberMemberInfoMemberPicture.Image = Image.FromFile(path + member.member_id + ".Jpeg");  
+                    btn_UcShowMemberMemberInfoMemberAddPicture.Text = "تغییر عکس";
+                }
                 pbx_UcShowMemberMemberInfoMemberPicture.SizeMode = PictureBoxSizeMode.Zoom;
-                btn_UcShowMemberMemberInfoMemberAddPicture.Text = "تغییر عکس";
 
 
                 txb_UcShowMemberMemberInfoMemberId.Text = member.member_id.ToString();
@@ -127,7 +132,10 @@ namespace RayanSport.View
 
                     string path;
                     path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\member_image\";
-                    pbx_UcShowMemberMemberInfoMemberPicture.Image.Save(path + txb_UcShowMemberMemberInfoMemberId.Text + ".Jpeg", ImageFormat.Jpeg);
+                    if (btn_UcShowMemberMemberInfoMemberAddPicture.Text != "افزودن عکس")
+                    {
+                        pbx_UcShowMemberMemberInfoMemberPicture.Image.Save(path + txb_UcShowMemberMemberInfoMemberId.Text + ".Jpeg", ImageFormat.Jpeg);
+                    }
 
                     Alert alert = new Alert("ورزشکار جدید با کد عضویت " + txb_UcShowMemberMemberInfoMemberId.Text + " افزوده شد", "green");
                 }
@@ -167,8 +175,10 @@ namespace RayanSport.View
 
                     string path;
                     path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\member_image\";
-                    pbx_UcShowMemberMemberInfoMemberPicture.Image.Save(path + txb_UcShowMemberMemberInfoMemberId.Text + ".Jpeg", ImageFormat.Jpeg);
-
+                    if (btn_UcShowMemberMemberInfoMemberAddPicture.Text != "افزودن عکس")
+                    {
+                        pbx_UcShowMemberMemberInfoMemberPicture.Image.Save(path + txb_UcShowMemberMemberInfoMemberId.Text + ".Jpeg", ImageFormat.Jpeg);
+                    }
                     Alert alert = new Alert("اطلاعات ورزشکار با کد عضویت " + txb_UcShowMemberMemberInfoMemberId.Text + " تغییر یافت", "green");
                 }
                 catch (Exception)

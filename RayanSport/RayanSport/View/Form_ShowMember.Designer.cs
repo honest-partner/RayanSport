@@ -178,7 +178,7 @@
             this.uC_ShowMember_ContractInfo1.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uC_ShowMember_ContractInfo1.Location = new System.Drawing.Point(5, 6);
             this.uC_ShowMember_ContractInfo1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.uC_ShowMember_ContractInfo1.Member = null;
+            this.uC_ShowMember_ContractInfo1.member = null;
             this.uC_ShowMember_ContractInfo1.Name = "uC_ShowMember_ContractInfo1";
             this.uC_ShowMember_ContractInfo1.Size = new System.Drawing.Size(982, 383);
             this.uC_ShowMember_ContractInfo1.TabIndex = 0;

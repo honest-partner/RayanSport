@@ -56,12 +56,10 @@ namespace RayanSport.View
                 if(frm is Form_ShowMember)
                 {
                     form_MemberIsOpen = true;
-                    int jooo = (frm as Form_ShowMember).setDataForUcShowMemberInfo(member2);
-                   // (frm as Form_ShowMember).WindowState = FormWindowState.Minimized;
+                    (frm as Form_ShowMember).setDataForUcShowMemberInfo(member2);
                     (frm as Form_ShowMember).Hide();
                     (frm as Form_ShowMember).Show();
-                    //(frm as Form_ShowMember).WindowState = FormWindowState.Normal;
-                    //MessageBox.Show(jooo+ "");
+                   
                 }
                 else
                 {
@@ -72,6 +70,7 @@ namespace RayanSport.View
             if (form_MemberIsOpen == false)
             {
                 Form_ShowMember form_showMember = new Form_ShowMember();
+                form_showMember.setDataForUcShowMemberInfo(member2);
                 form_showMember.Show();
             }
             
@@ -79,6 +78,58 @@ namespace RayanSport.View
 
         private void btn_UcShowAllMemberSearch_Click(object sender, EventArgs e)
         {
+            if (txb_UcShowAllMemberMemberName.Text != "" && txb_UcShowAllMemberMemberId.Text != "")
+            {
+                rayan_sportDataSet.memberDataTable memberDataTable = new rayan_sportDataSet.memberDataTable();
+                rayan_sportDataSetTableAdapters.memberTableAdapter memberTableAdapter = new rayan_sportDataSetTableAdapters.memberTableAdapter();
+                memberTableAdapter.FillBySearchQueryWithNameCodeGender(memberDataTable, txb_UcShowAllMemberMemberName.Text, int.Parse(txb_UcShowAllMemberMemberId.Text), swb_UcShowAllMemberMemberGender.ValueObject.ToString());
+                dgv_UcShowAllMemberShowDgv.DataSource = memberDataTable;
+                dgv_UcShowAllMemberShowDgv.Columns["member_blood"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_sick"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_image"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_address"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_nationalCode"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_charge"].IsVisible = false;
+            }
+            else if(txb_UcShowAllMemberMemberName.Text != "")
+            {
+                rayan_sportDataSet.memberDataTable memberDataTable = new rayan_sportDataSet.memberDataTable();
+                rayan_sportDataSetTableAdapters.memberTableAdapter memberTableAdapter = new rayan_sportDataSetTableAdapters.memberTableAdapter();
+                memberTableAdapter.FillBySearchMemberNameGender(memberDataTable, txb_UcShowAllMemberMemberName.Text, swb_UcShowAllMemberMemberGender.ValueObject.ToString());
+                dgv_UcShowAllMemberShowDgv.DataSource = memberDataTable;
+                dgv_UcShowAllMemberShowDgv.Columns["member_blood"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_sick"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_image"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_address"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_nationalCode"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_charge"].IsVisible = false;
+            }
+            else if(txb_UcShowAllMemberMemberId.Text != "")
+            {
+                rayan_sportDataSet.memberDataTable memberDataTable = new rayan_sportDataSet.memberDataTable();
+                rayan_sportDataSetTableAdapters.memberTableAdapter memberTableAdapter = new rayan_sportDataSetTableAdapters.memberTableAdapter();
+                memberTableAdapter.FillBySearchMemberCodeGender(memberDataTable,  int.Parse(txb_UcShowAllMemberMemberId.Text), swb_UcShowAllMemberMemberGender.ValueObject.ToString());
+                dgv_UcShowAllMemberShowDgv.DataSource = memberDataTable;
+                dgv_UcShowAllMemberShowDgv.Columns["member_blood"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_sick"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_image"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_address"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_nationalCode"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_charge"].IsVisible = false;
+            }
+            else
+            {
+                rayan_sportDataSet.memberDataTable memberDataTable = new rayan_sportDataSet.memberDataTable();
+                rayan_sportDataSetTableAdapters.memberTableAdapter memberTableAdapter = new rayan_sportDataSetTableAdapters.memberTableAdapter();
+                memberTableAdapter.FillBySearchMemberGender(memberDataTable, swb_UcShowAllMemberMemberGender.ValueObject.ToString());
+                dgv_UcShowAllMemberShowDgv.DataSource = memberDataTable;
+                dgv_UcShowAllMemberShowDgv.Columns["member_blood"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_sick"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_image"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_address"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_nationalCode"].IsVisible = false;
+                dgv_UcShowAllMemberShowDgv.Columns["member_charge"].IsVisible = false;
+            }
 
         }
 

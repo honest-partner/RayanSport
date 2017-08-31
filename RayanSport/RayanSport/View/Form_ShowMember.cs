@@ -21,6 +21,14 @@ namespace RayanSport.View
         public int setDataForUcShowMemberInfo(Member member)
         {
             uC_ShowMember_MemberInfo1.UC_ShowMember_MemberInfoCon(member);
+            if (member.member_name == "" || member.member_name == null)
+            {
+                uC_ShowMember_ContractInfo1.Enabled = false;
+            }
+            else
+            {
+                uC_ShowMember_ContractInfo1.setData(member);
+            }
            
             return 1;
         }

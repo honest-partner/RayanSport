@@ -60,22 +60,11 @@
             this.lbl_mainMember = new DevComponents.DotNetBar.LabelX();
             this.lbl_mainHome = new DevComponents.DotNetBar.LabelX();
             this.lbl_mainEntrance = new DevComponents.DotNetBar.LabelX();
-            this.pbx_mainHomeIcon = new System.Windows.Forms.PictureBox();
-            this.pbx_mainEntranceIcon = new System.Windows.Forms.PictureBox();
-            this.pbx_mainMemberIcon = new System.Windows.Forms.PictureBox();
-            this.pbx_mainContractIcon = new System.Windows.Forms.PictureBox();
-            this.pbx_mainBuffetIcon = new System.Windows.Forms.PictureBox();
-            this.pbx_mainUserIcon = new System.Windows.Forms.PictureBox();
-            this.pbx_mainSettingIcon = new System.Windows.Forms.PictureBox();
-            this.pbx_mainAboutIcon = new System.Windows.Forms.PictureBox();
-            this.pbx_mainExitIcon = new System.Windows.Forms.PictureBox();
             this.lin_mainExit = new DevComponents.DotNetBar.Controls.Line();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.line1 = new DevComponents.DotNetBar.Controls.Line();
             this.tlp_mainHeader = new System.Windows.Forms.TableLayoutPanel();
             this.gpb_mainHeader = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pbx_mainHeaderIcon = new System.Windows.Forms.PictureBox();
             this.lbl_mainHeaderText = new DevComponents.DotNetBar.LabelX();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.gpb_mainFooter = new DevComponents.DotNetBar.Controls.GroupPanel();
@@ -85,12 +74,29 @@
             this.lbl_mainTimeOfDay = new DevComponents.DotNetBar.LabelX();
             this.line2 = new DevComponents.DotNetBar.Controls.Line();
             this.tmr_mainClock = new System.Windows.Forms.Timer(this.components);
-            this.uC_Home1 = new RayanSport.View.UC_Home();
+            this.pbx_mainHomeIcon = new System.Windows.Forms.PictureBox();
+            this.pbx_mainEntranceIcon = new System.Windows.Forms.PictureBox();
+            this.pbx_mainMemberIcon = new System.Windows.Forms.PictureBox();
+            this.pbx_mainContractIcon = new System.Windows.Forms.PictureBox();
+            this.pbx_mainBuffetIcon = new System.Windows.Forms.PictureBox();
+            this.pbx_mainUserIcon = new System.Windows.Forms.PictureBox();
+            this.pbx_mainSettingIcon = new System.Windows.Forms.PictureBox();
+            this.pbx_mainAboutIcon = new System.Windows.Forms.PictureBox();
+            this.pbx_mainExitIcon = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbx_mainHeaderIcon = new System.Windows.Forms.PictureBox();
+            this.uC_ShowAllContract1 = new RayanSport.View.UC_ShowAllContract();
             this.tlp_mainMainLayout.SuspendLayout();
             this.tlp_mainMenuLayout.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnl_MainMenuOption.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tlp_mainHeader.SuspendLayout();
+            this.gpb_mainHeader.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.gpb_mainFooter.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainHomeIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainEntranceIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainMemberIcon)).BeginInit();
@@ -101,13 +107,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainAboutIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainExitIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tlp_mainHeader.SuspendLayout();
-            this.gpb_mainHeader.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainHeaderIcon)).BeginInit();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.gpb_mainFooter.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlp_mainMainLayout
@@ -633,140 +633,6 @@
             this.lbl_mainEntrance.MouseEnter += new System.EventHandler(this.lbl_mainEntrance_MouseEnter);
             this.lbl_mainEntrance.MouseLeave += new System.EventHandler(this.lbl_mainEntrance_MouseLeave);
             // 
-            // pbx_mainHomeIcon
-            // 
-            this.pbx_mainHomeIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_mainHomeIcon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx_mainHomeIcon.Image = global::RayanSport.Properties.Resources.homeGrey;
-            this.pbx_mainHomeIcon.Location = new System.Drawing.Point(135, 3);
-            this.pbx_mainHomeIcon.Name = "pbx_mainHomeIcon";
-            this.pbx_mainHomeIcon.Size = new System.Drawing.Size(51, 46);
-            this.pbx_mainHomeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_mainHomeIcon.TabIndex = 1;
-            this.pbx_mainHomeIcon.TabStop = false;
-            this.pbx_mainHomeIcon.Click += new System.EventHandler(this.pbx_mainHomeIcon_Click);
-            this.pbx_mainHomeIcon.MouseEnter += new System.EventHandler(this.pbx_mainHomeIcon_MouseEnter);
-            this.pbx_mainHomeIcon.MouseLeave += new System.EventHandler(this.pbx_mainHomeIcon_MouseLeave);
-            // 
-            // pbx_mainEntranceIcon
-            // 
-            this.pbx_mainEntranceIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_mainEntranceIcon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx_mainEntranceIcon.Image = global::RayanSport.Properties.Resources.checklistGrey;
-            this.pbx_mainEntranceIcon.Location = new System.Drawing.Point(135, 59);
-            this.pbx_mainEntranceIcon.Name = "pbx_mainEntranceIcon";
-            this.pbx_mainEntranceIcon.Size = new System.Drawing.Size(51, 46);
-            this.pbx_mainEntranceIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_mainEntranceIcon.TabIndex = 3;
-            this.pbx_mainEntranceIcon.TabStop = false;
-            this.pbx_mainEntranceIcon.Click += new System.EventHandler(this.pbx_mainEntranceIcon_Click);
-            this.pbx_mainEntranceIcon.MouseEnter += new System.EventHandler(this.pbx_mainEntranceIcon_MouseEnter);
-            this.pbx_mainEntranceIcon.MouseLeave += new System.EventHandler(this.pbx_mainEntranceIcon_MouseLeave);
-            // 
-            // pbx_mainMemberIcon
-            // 
-            this.pbx_mainMemberIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_mainMemberIcon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx_mainMemberIcon.Image = global::RayanSport.Properties.Resources.strongGrey;
-            this.pbx_mainMemberIcon.Location = new System.Drawing.Point(135, 115);
-            this.pbx_mainMemberIcon.Name = "pbx_mainMemberIcon";
-            this.pbx_mainMemberIcon.Size = new System.Drawing.Size(51, 46);
-            this.pbx_mainMemberIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_mainMemberIcon.TabIndex = 5;
-            this.pbx_mainMemberIcon.TabStop = false;
-            this.pbx_mainMemberIcon.Click += new System.EventHandler(this.pbx_mainMemberIcon_Click);
-            this.pbx_mainMemberIcon.MouseEnter += new System.EventHandler(this.pbx_mainMemberIcon_MouseEnter);
-            this.pbx_mainMemberIcon.MouseLeave += new System.EventHandler(this.pbx_mainMemberIcon_MouseLeave);
-            // 
-            // pbx_mainContractIcon
-            // 
-            this.pbx_mainContractIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_mainContractIcon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx_mainContractIcon.Image = global::RayanSport.Properties.Resources.FileGrey;
-            this.pbx_mainContractIcon.Location = new System.Drawing.Point(135, 171);
-            this.pbx_mainContractIcon.Name = "pbx_mainContractIcon";
-            this.pbx_mainContractIcon.Size = new System.Drawing.Size(51, 46);
-            this.pbx_mainContractIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_mainContractIcon.TabIndex = 7;
-            this.pbx_mainContractIcon.TabStop = false;
-            this.pbx_mainContractIcon.Click += new System.EventHandler(this.pbx_mainContractIcon_Click);
-            this.pbx_mainContractIcon.MouseEnter += new System.EventHandler(this.pbx_mainContractIcon_MouseEnter);
-            this.pbx_mainContractIcon.MouseLeave += new System.EventHandler(this.pbx_mainContractIcon_MouseLeave);
-            // 
-            // pbx_mainBuffetIcon
-            // 
-            this.pbx_mainBuffetIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_mainBuffetIcon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx_mainBuffetIcon.Image = global::RayanSport.Properties.Resources.juiceGrey;
-            this.pbx_mainBuffetIcon.Location = new System.Drawing.Point(135, 227);
-            this.pbx_mainBuffetIcon.Name = "pbx_mainBuffetIcon";
-            this.pbx_mainBuffetIcon.Size = new System.Drawing.Size(51, 46);
-            this.pbx_mainBuffetIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_mainBuffetIcon.TabIndex = 9;
-            this.pbx_mainBuffetIcon.TabStop = false;
-            this.pbx_mainBuffetIcon.Click += new System.EventHandler(this.pbx_mainBuffetIcon_Click);
-            this.pbx_mainBuffetIcon.MouseEnter += new System.EventHandler(this.pbx_mainBuffetIcon_MouseEnter);
-            this.pbx_mainBuffetIcon.MouseLeave += new System.EventHandler(this.pbx_mainBuffetIcon_MouseLeave);
-            // 
-            // pbx_mainUserIcon
-            // 
-            this.pbx_mainUserIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_mainUserIcon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx_mainUserIcon.Image = global::RayanSport.Properties.Resources.userGrey;
-            this.pbx_mainUserIcon.Location = new System.Drawing.Point(135, 283);
-            this.pbx_mainUserIcon.Name = "pbx_mainUserIcon";
-            this.pbx_mainUserIcon.Size = new System.Drawing.Size(51, 46);
-            this.pbx_mainUserIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_mainUserIcon.TabIndex = 11;
-            this.pbx_mainUserIcon.TabStop = false;
-            this.pbx_mainUserIcon.Click += new System.EventHandler(this.pbx_mainUserIcon_Click);
-            this.pbx_mainUserIcon.MouseEnter += new System.EventHandler(this.pbx_mainUserIcon_MouseEnter);
-            this.pbx_mainUserIcon.MouseLeave += new System.EventHandler(this.pbx_mainUserIcon_MouseLeave);
-            // 
-            // pbx_mainSettingIcon
-            // 
-            this.pbx_mainSettingIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_mainSettingIcon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx_mainSettingIcon.Image = global::RayanSport.Properties.Resources.settingGrey;
-            this.pbx_mainSettingIcon.Location = new System.Drawing.Point(135, 339);
-            this.pbx_mainSettingIcon.Name = "pbx_mainSettingIcon";
-            this.pbx_mainSettingIcon.Size = new System.Drawing.Size(51, 46);
-            this.pbx_mainSettingIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_mainSettingIcon.TabIndex = 13;
-            this.pbx_mainSettingIcon.TabStop = false;
-            this.pbx_mainSettingIcon.Click += new System.EventHandler(this.pbx_mainSettingIcon_Click);
-            this.pbx_mainSettingIcon.MouseEnter += new System.EventHandler(this.pbx_mainSettingIcon_MouseEnter);
-            this.pbx_mainSettingIcon.MouseLeave += new System.EventHandler(this.pbx_mainSettingIcon_MouseLeave);
-            // 
-            // pbx_mainAboutIcon
-            // 
-            this.pbx_mainAboutIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_mainAboutIcon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx_mainAboutIcon.Image = global::RayanSport.Properties.Resources.aboutGrey;
-            this.pbx_mainAboutIcon.Location = new System.Drawing.Point(135, 395);
-            this.pbx_mainAboutIcon.Name = "pbx_mainAboutIcon";
-            this.pbx_mainAboutIcon.Size = new System.Drawing.Size(51, 46);
-            this.pbx_mainAboutIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_mainAboutIcon.TabIndex = 15;
-            this.pbx_mainAboutIcon.TabStop = false;
-            this.pbx_mainAboutIcon.Click += new System.EventHandler(this.pbx_mainAboutIcon_Click);
-            this.pbx_mainAboutIcon.MouseEnter += new System.EventHandler(this.pbx_mainAboutIcon_MouseEnter);
-            this.pbx_mainAboutIcon.MouseLeave += new System.EventHandler(this.pbx_mainAboutIcon_MouseLeave);
-            // 
-            // pbx_mainExitIcon
-            // 
-            this.pbx_mainExitIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_mainExitIcon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx_mainExitIcon.Image = global::RayanSport.Properties.Resources.exitGrey;
-            this.pbx_mainExitIcon.Location = new System.Drawing.Point(135, 451);
-            this.pbx_mainExitIcon.Name = "pbx_mainExitIcon";
-            this.pbx_mainExitIcon.Size = new System.Drawing.Size(51, 46);
-            this.pbx_mainExitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_mainExitIcon.TabIndex = 17;
-            this.pbx_mainExitIcon.TabStop = false;
-            this.pbx_mainExitIcon.MouseEnter += new System.EventHandler(this.pbx_mainExitIcon_MouseEnter);
-            this.pbx_mainExitIcon.MouseLeave += new System.EventHandler(this.pbx_mainExitIcon_MouseLeave);
-            // 
             // lin_mainExit
             // 
             this.lin_mainExit.Dock = System.Windows.Forms.DockStyle.Top;
@@ -777,17 +643,6 @@
             this.lin_mainExit.TabIndex = 38;
             this.lin_mainExit.Text = "line18";
             this.lin_mainExit.Thickness = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::RayanSport.Properties.Resources.businessman;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 187);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // line1
             // 
@@ -811,7 +666,7 @@
             this.tlp_mainHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
             this.tlp_mainHeader.Controls.Add(this.gpb_mainHeader, 1, 0);
             this.tlp_mainHeader.Controls.Add(this.tableLayoutPanel4, 1, 2);
-            this.tlp_mainHeader.Controls.Add(this.uC_Home1, 1, 1);
+            this.tlp_mainHeader.Controls.Add(this.uC_ShowAllContract1, 1, 1);
             this.tlp_mainHeader.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlp_mainHeader.Location = new System.Drawing.Point(3, 3);
             this.tlp_mainHeader.Name = "tlp_mainHeader";
@@ -883,18 +738,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(786, 58);
             this.tableLayoutPanel3.TabIndex = 0;
-            // 
-            // pbx_mainHeaderIcon
-            // 
-            this.pbx_mainHeaderIcon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx_mainHeaderIcon.Image = global::RayanSport.Properties.Resources.homeGrey;
-            this.pbx_mainHeaderIcon.InitialImage = null;
-            this.pbx_mainHeaderIcon.Location = new System.Drawing.Point(442, 3);
-            this.pbx_mainHeaderIcon.Name = "pbx_mainHeaderIcon";
-            this.pbx_mainHeaderIcon.Size = new System.Drawing.Size(56, 52);
-            this.pbx_mainHeaderIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_mainHeaderIcon.TabIndex = 0;
-            this.pbx_mainHeaderIcon.TabStop = false;
             // 
             // lbl_mainHeaderText
             // 
@@ -1049,13 +892,170 @@
             this.tmr_mainClock.Interval = 1000;
             this.tmr_mainClock.Tick += new System.EventHandler(this.tmr_mainClock_Tick);
             // 
-            // uC_Home1
+            // pbx_mainHomeIcon
             // 
-            this.uC_Home1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_Home1.Location = new System.Drawing.Point(19, 75);
-            this.uC_Home1.Name = "uC_Home1";
-            this.uC_Home1.Size = new System.Drawing.Size(794, 604);
-            this.uC_Home1.TabIndex = 4;
+            this.pbx_mainHomeIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_mainHomeIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx_mainHomeIcon.Image = global::RayanSport.Properties.Resources.homeGrey;
+            this.pbx_mainHomeIcon.Location = new System.Drawing.Point(135, 3);
+            this.pbx_mainHomeIcon.Name = "pbx_mainHomeIcon";
+            this.pbx_mainHomeIcon.Size = new System.Drawing.Size(51, 46);
+            this.pbx_mainHomeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_mainHomeIcon.TabIndex = 1;
+            this.pbx_mainHomeIcon.TabStop = false;
+            this.pbx_mainHomeIcon.Click += new System.EventHandler(this.pbx_mainHomeIcon_Click);
+            this.pbx_mainHomeIcon.MouseEnter += new System.EventHandler(this.pbx_mainHomeIcon_MouseEnter);
+            this.pbx_mainHomeIcon.MouseLeave += new System.EventHandler(this.pbx_mainHomeIcon_MouseLeave);
+            // 
+            // pbx_mainEntranceIcon
+            // 
+            this.pbx_mainEntranceIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_mainEntranceIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx_mainEntranceIcon.Image = global::RayanSport.Properties.Resources.checklistGrey;
+            this.pbx_mainEntranceIcon.Location = new System.Drawing.Point(135, 59);
+            this.pbx_mainEntranceIcon.Name = "pbx_mainEntranceIcon";
+            this.pbx_mainEntranceIcon.Size = new System.Drawing.Size(51, 46);
+            this.pbx_mainEntranceIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_mainEntranceIcon.TabIndex = 3;
+            this.pbx_mainEntranceIcon.TabStop = false;
+            this.pbx_mainEntranceIcon.Click += new System.EventHandler(this.pbx_mainEntranceIcon_Click);
+            this.pbx_mainEntranceIcon.MouseEnter += new System.EventHandler(this.pbx_mainEntranceIcon_MouseEnter);
+            this.pbx_mainEntranceIcon.MouseLeave += new System.EventHandler(this.pbx_mainEntranceIcon_MouseLeave);
+            // 
+            // pbx_mainMemberIcon
+            // 
+            this.pbx_mainMemberIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_mainMemberIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx_mainMemberIcon.Image = global::RayanSport.Properties.Resources.strongGrey;
+            this.pbx_mainMemberIcon.Location = new System.Drawing.Point(135, 115);
+            this.pbx_mainMemberIcon.Name = "pbx_mainMemberIcon";
+            this.pbx_mainMemberIcon.Size = new System.Drawing.Size(51, 46);
+            this.pbx_mainMemberIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_mainMemberIcon.TabIndex = 5;
+            this.pbx_mainMemberIcon.TabStop = false;
+            this.pbx_mainMemberIcon.Click += new System.EventHandler(this.pbx_mainMemberIcon_Click);
+            this.pbx_mainMemberIcon.MouseEnter += new System.EventHandler(this.pbx_mainMemberIcon_MouseEnter);
+            this.pbx_mainMemberIcon.MouseLeave += new System.EventHandler(this.pbx_mainMemberIcon_MouseLeave);
+            // 
+            // pbx_mainContractIcon
+            // 
+            this.pbx_mainContractIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_mainContractIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx_mainContractIcon.Image = global::RayanSport.Properties.Resources.FileGrey;
+            this.pbx_mainContractIcon.Location = new System.Drawing.Point(135, 171);
+            this.pbx_mainContractIcon.Name = "pbx_mainContractIcon";
+            this.pbx_mainContractIcon.Size = new System.Drawing.Size(51, 46);
+            this.pbx_mainContractIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_mainContractIcon.TabIndex = 7;
+            this.pbx_mainContractIcon.TabStop = false;
+            this.pbx_mainContractIcon.Click += new System.EventHandler(this.pbx_mainContractIcon_Click);
+            this.pbx_mainContractIcon.MouseEnter += new System.EventHandler(this.pbx_mainContractIcon_MouseEnter);
+            this.pbx_mainContractIcon.MouseLeave += new System.EventHandler(this.pbx_mainContractIcon_MouseLeave);
+            // 
+            // pbx_mainBuffetIcon
+            // 
+            this.pbx_mainBuffetIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_mainBuffetIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx_mainBuffetIcon.Image = global::RayanSport.Properties.Resources.juiceGrey;
+            this.pbx_mainBuffetIcon.Location = new System.Drawing.Point(135, 227);
+            this.pbx_mainBuffetIcon.Name = "pbx_mainBuffetIcon";
+            this.pbx_mainBuffetIcon.Size = new System.Drawing.Size(51, 46);
+            this.pbx_mainBuffetIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_mainBuffetIcon.TabIndex = 9;
+            this.pbx_mainBuffetIcon.TabStop = false;
+            this.pbx_mainBuffetIcon.Click += new System.EventHandler(this.pbx_mainBuffetIcon_Click);
+            this.pbx_mainBuffetIcon.MouseEnter += new System.EventHandler(this.pbx_mainBuffetIcon_MouseEnter);
+            this.pbx_mainBuffetIcon.MouseLeave += new System.EventHandler(this.pbx_mainBuffetIcon_MouseLeave);
+            // 
+            // pbx_mainUserIcon
+            // 
+            this.pbx_mainUserIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_mainUserIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx_mainUserIcon.Image = global::RayanSport.Properties.Resources.userGrey;
+            this.pbx_mainUserIcon.Location = new System.Drawing.Point(135, 283);
+            this.pbx_mainUserIcon.Name = "pbx_mainUserIcon";
+            this.pbx_mainUserIcon.Size = new System.Drawing.Size(51, 46);
+            this.pbx_mainUserIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_mainUserIcon.TabIndex = 11;
+            this.pbx_mainUserIcon.TabStop = false;
+            this.pbx_mainUserIcon.Click += new System.EventHandler(this.pbx_mainUserIcon_Click);
+            this.pbx_mainUserIcon.MouseEnter += new System.EventHandler(this.pbx_mainUserIcon_MouseEnter);
+            this.pbx_mainUserIcon.MouseLeave += new System.EventHandler(this.pbx_mainUserIcon_MouseLeave);
+            // 
+            // pbx_mainSettingIcon
+            // 
+            this.pbx_mainSettingIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_mainSettingIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx_mainSettingIcon.Image = global::RayanSport.Properties.Resources.settingGrey;
+            this.pbx_mainSettingIcon.Location = new System.Drawing.Point(135, 339);
+            this.pbx_mainSettingIcon.Name = "pbx_mainSettingIcon";
+            this.pbx_mainSettingIcon.Size = new System.Drawing.Size(51, 46);
+            this.pbx_mainSettingIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_mainSettingIcon.TabIndex = 13;
+            this.pbx_mainSettingIcon.TabStop = false;
+            this.pbx_mainSettingIcon.Click += new System.EventHandler(this.pbx_mainSettingIcon_Click);
+            this.pbx_mainSettingIcon.MouseEnter += new System.EventHandler(this.pbx_mainSettingIcon_MouseEnter);
+            this.pbx_mainSettingIcon.MouseLeave += new System.EventHandler(this.pbx_mainSettingIcon_MouseLeave);
+            // 
+            // pbx_mainAboutIcon
+            // 
+            this.pbx_mainAboutIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_mainAboutIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx_mainAboutIcon.Image = global::RayanSport.Properties.Resources.aboutGrey;
+            this.pbx_mainAboutIcon.Location = new System.Drawing.Point(135, 395);
+            this.pbx_mainAboutIcon.Name = "pbx_mainAboutIcon";
+            this.pbx_mainAboutIcon.Size = new System.Drawing.Size(51, 46);
+            this.pbx_mainAboutIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_mainAboutIcon.TabIndex = 15;
+            this.pbx_mainAboutIcon.TabStop = false;
+            this.pbx_mainAboutIcon.Click += new System.EventHandler(this.pbx_mainAboutIcon_Click);
+            this.pbx_mainAboutIcon.MouseEnter += new System.EventHandler(this.pbx_mainAboutIcon_MouseEnter);
+            this.pbx_mainAboutIcon.MouseLeave += new System.EventHandler(this.pbx_mainAboutIcon_MouseLeave);
+            // 
+            // pbx_mainExitIcon
+            // 
+            this.pbx_mainExitIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_mainExitIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx_mainExitIcon.Image = global::RayanSport.Properties.Resources.exitGrey;
+            this.pbx_mainExitIcon.Location = new System.Drawing.Point(135, 451);
+            this.pbx_mainExitIcon.Name = "pbx_mainExitIcon";
+            this.pbx_mainExitIcon.Size = new System.Drawing.Size(51, 46);
+            this.pbx_mainExitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_mainExitIcon.TabIndex = 17;
+            this.pbx_mainExitIcon.TabStop = false;
+            this.pbx_mainExitIcon.MouseEnter += new System.EventHandler(this.pbx_mainExitIcon_MouseEnter);
+            this.pbx_mainExitIcon.MouseLeave += new System.EventHandler(this.pbx_mainExitIcon_MouseLeave);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::RayanSport.Properties.Resources.businessman;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(189, 187);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pbx_mainHeaderIcon
+            // 
+            this.pbx_mainHeaderIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx_mainHeaderIcon.Image = global::RayanSport.Properties.Resources.homeGrey;
+            this.pbx_mainHeaderIcon.InitialImage = null;
+            this.pbx_mainHeaderIcon.Location = new System.Drawing.Point(442, 3);
+            this.pbx_mainHeaderIcon.Name = "pbx_mainHeaderIcon";
+            this.pbx_mainHeaderIcon.Size = new System.Drawing.Size(56, 52);
+            this.pbx_mainHeaderIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_mainHeaderIcon.TabIndex = 0;
+            this.pbx_mainHeaderIcon.TabStop = false;
+            // 
+            // uC_ShowAllContract1
+            // 
+            this.uC_ShowAllContract1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_ShowAllContract1.Location = new System.Drawing.Point(19, 75);
+            this.uC_ShowAllContract1.Name = "uC_ShowAllContract1";
+            this.uC_ShowAllContract1.Size = new System.Drawing.Size(794, 604);
+            this.uC_ShowAllContract1.TabIndex = 4;
             // 
             // Form_Main
             // 
@@ -1071,6 +1071,12 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.pnl_MainMenuOption.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tlp_mainHeader.ResumeLayout(false);
+            this.gpb_mainHeader.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.gpb_mainFooter.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainHomeIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainEntranceIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainMemberIcon)).EndInit();
@@ -1081,13 +1087,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainAboutIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainExitIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tlp_mainHeader.ResumeLayout(false);
-            this.gpb_mainHeader.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_mainHeaderIcon)).EndInit();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.gpb_mainFooter.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1150,6 +1150,6 @@
         private DevComponents.DotNetBar.LabelX lbl_mainTimeOfDay;
         private DevComponents.DotNetBar.LabelX lbl_mainDate;
         private DevComponents.DotNetBar.Controls.Line line2;
-        private View.UC_Home uC_Home1;
+        private View.UC_ShowAllContract uC_ShowAllContract1;
     }
 }

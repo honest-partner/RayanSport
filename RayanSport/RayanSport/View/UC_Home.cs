@@ -52,21 +52,7 @@ namespace RayanSport.View
 
         }
 
-        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void tableLayoutPanel4_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void llb_UcHomeAllContractNum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-           
-
-        }
 
         public string getDateShamsi(string date)
         {

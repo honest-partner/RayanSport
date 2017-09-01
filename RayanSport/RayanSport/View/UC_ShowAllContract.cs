@@ -87,24 +87,7 @@ namespace RayanSport.View
             dgv_UcShowAllContractShowContract.DataSource = dataTable;
         }
 
-        private void tableLayoutPanel11_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel10_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel8_Paint(object sender, PaintEventArgs e)
-        {
-        }
+    
 
         private void btn_UcShowAllContractFilter_Click(object sender, EventArgs e)
         {

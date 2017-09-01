@@ -197,11 +197,13 @@ namespace RayanSport.View
             try {
                 rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
                 membershipTableAdapter.UpdateStatusById("غیر فعال", currnet_membership_id, currnet_membership_id);
-                MessageBox.Show("قرارداد با موفقیت غیرفعال شد");
+                //MessageBox.Show("قرارداد با موفقیت غیرفعال شد");
+                Alert alert = new Alert("قرارداد با موفقیت غیرفعال شد ", "green");
                 FillData();
             }
             catch (Exception ex) {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
+                Alert alert = new Alert("قرارداد با موفقیت غیرفعال شد ", "red");
             }
             
         }
@@ -233,7 +235,8 @@ namespace RayanSport.View
             long? reciptnum;
             if (cmb_UcShowMemberContractInfoExpireContractPaymentType.Text.Equals(""))
             {
-                MessageBox.Show("نوع پرداخت را وارد نمایید");
+                //MessageBox.Show("نوع پرداخت را وارد نمایید");
+                Alert alert = new Alert("نوع پرداخت را وارد نمایید ", "green");
                 cmb_UcShowMemberContractInfoExpireContractPaymentType.Focus();
             } else{
                 try {
@@ -252,12 +255,15 @@ namespace RayanSport.View
                         );
                     if (sucsses == 1)
                     {
-                        MessageBox.Show("قرارداد با موفقیت اضافه شد");
+                        //MessageBox.Show("قرارداد با موفقیت اضافه شد");
+                        Alert alert = new Alert("قرارداد با موفقیت اضافه شد", "green");
                         FillData();
                     }
                 }
                 catch (Exception ex) {
-                    MessageBox.Show(ex.Message);
+                    //MessageBox.Show(ex.Message);
+
+                    Alert alert = new Alert("قرارداد با موفقیت اضافه شد", "green");
                     return;
                 }
             }
@@ -280,7 +286,8 @@ namespace RayanSport.View
             rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
             int sucsses = membershipTableAdapter.DeleteById(currnet_membership_id);
             if (sucsses == 1) {
-                MessageBox.Show("حذف با موفقیت انجام شد");
+                //MessageBox.Show("حذف با موفقیت انجام شد");
+                Alert alert = new Alert("حذف با موفقیت انجام شد", "green");
                 FillData();
             }
         }

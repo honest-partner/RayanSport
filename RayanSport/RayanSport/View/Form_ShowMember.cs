@@ -16,12 +16,12 @@ namespace RayanSport.View
         Member mem;
         public Form_ShowMember()
         {
-            mem = new Member(114,"","","","","","","",0);
+            mem = new Member(100,"","","","","","","",0);
             InitializeComponent();
             foreach (var item in this.Controls)
             {
-                //if (item is UC_ShowMember_ContractInfo)
-                //    (item as UC_ShowMember_ContractInfo).setData(mem);
+                if (item is UC_ShowMember_ContractInfo)
+                    (item as UC_ShowMember_ContractInfo).setData(mem);
             }
         }
         public int setDataForUcShowMemberInfo(Member member)

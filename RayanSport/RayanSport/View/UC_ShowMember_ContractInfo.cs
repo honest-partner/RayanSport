@@ -32,10 +32,13 @@ namespace RayanSport.View
 
         }
         public void setData(Member input_member) {
+            this.member = input_member;
             rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
             rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
             tableAdapter.FillBySelectById(membershipDataTable, input_member.member_id);
             dgv_UcShowMemberContractInfoContracts.DataSource = membershipDataTable;
+            dgv_UcShowMemberContractInfoContracts.Columns["membership_memberId"].IsVisible = false;
+            dgv_UcShowMemberContractInfoContracts.Columns["membership_memberName"].IsVisible = false;
             btn_UcShowMemberContractInfoDeleteContract.Enabled = false;
             btn_UcShowMemberContractInfoDeleteContract.BackColor = Properties.Settings.Default.MediumGrey;
             btn_UcShowMemberContractInfoExpireContract.Enabled = false;
@@ -282,8 +285,8 @@ namespace RayanSport.View
             }
         }
 
-
-        private void dgv_UcShowMemberContractInfoContracts_CellClick(object sender, DataGridViewCellEventArgs e)
+        
+        private void dgv_UcShowMemberContractInfoContracts_CellClick(object sender, Telerik.WinControls.UI.GridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
@@ -304,7 +307,6 @@ namespace RayanSport.View
                 dts_UcShowMemberContractInfoStartDate.ResetText();
                 tableLayoutPanel3.Enabled = false;
             }
-
         }
     }
 }

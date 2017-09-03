@@ -236,6 +236,12 @@
     <EmbeddedResource Include="View\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Log.resx">
+      <DependentUpon>UC_Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Setting.resx">
+      <DependentUpon>UC_Setting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UC_ShowAllContract.resx">
       <DependentUpon>UC_ShowAllContract.cs</DependentUpon>
     </EmbeddedResource>
@@ -315,7 +321,6 @@
     <None Include="rayan_sportDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>rayan_sportDataSet.Designer.cs</LastGenOutput>
     </None>
     <None Include="rayan_sportDataSet.xss">
       <DependentUpon>rayan_sportDataSet.xsd</DependentUpon>

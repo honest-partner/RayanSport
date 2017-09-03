@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn13 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn14 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.gpb_UcCheckInMember = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgv_UcShowMemberContractInfoContracts = new Telerik.WinControls.UI.RadGridView();
@@ -68,8 +68,9 @@
             this.gpb_UcCheckInMember.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gpb_UcCheckInMember.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpb_UcCheckInMember.Location = new System.Drawing.Point(0, 0);
+            this.gpb_UcCheckInMember.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gpb_UcCheckInMember.Name = "gpb_UcCheckInMember";
-            this.gpb_UcCheckInMember.Size = new System.Drawing.Size(1322, 745);
+            this.gpb_UcCheckInMember.Size = new System.Drawing.Size(992, 605);
             // 
             // 
             // 
@@ -110,17 +111,19 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1310, 702);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(980, 568);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // dgv_UcShowMemberContractInfoContracts
             // 
             this.dgv_UcShowMemberContractInfoContracts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_UcShowMemberContractInfoContracts.Location = new System.Drawing.Point(3, 73);
+            this.dgv_UcShowMemberContractInfoContracts.Location = new System.Drawing.Point(2, 58);
+            this.dgv_UcShowMemberContractInfoContracts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             // 
             // 
             // 
@@ -134,54 +137,54 @@
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.ClipboardCopyMode = Telerik.WinControls.UI.GridViewClipboardCopyMode.Disable;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.ClipboardCutMode = Telerik.WinControls.UI.GridViewClipboardCutMode.Disable;
-            gridViewDecimalColumn3.DataType = typeof(long);
-            gridViewDecimalColumn3.FieldName = "log_id";
-            gridViewDecimalColumn3.HeaderText = "شماره";
-            gridViewDecimalColumn3.IsAutoGenerated = true;
-            gridViewDecimalColumn3.Name = "log_id";
-            gridViewDecimalColumn3.ReadOnly = true;
-            gridViewDecimalColumn3.Width = 215;
-            gridViewTextBoxColumn11.FieldName = "log_description";
-            gridViewTextBoxColumn11.HeaderText = "توضیحات";
-            gridViewTextBoxColumn11.IsAutoGenerated = true;
-            gridViewTextBoxColumn11.Name = "log_description";
-            gridViewTextBoxColumn11.Width = 215;
-            gridViewTextBoxColumn12.FieldName = "log_targetTable";
-            gridViewTextBoxColumn12.HeaderText = "نام جدول";
-            gridViewTextBoxColumn12.IsAutoGenerated = true;
-            gridViewTextBoxColumn12.Name = "log_targetTable";
-            gridViewTextBoxColumn12.Width = 215;
-            gridViewTextBoxColumn13.FieldName = "log_username";
-            gridViewTextBoxColumn13.HeaderText = "کد کاربری";
-            gridViewTextBoxColumn13.IsAutoGenerated = true;
-            gridViewTextBoxColumn13.Name = "log_username";
-            gridViewTextBoxColumn13.Width = 215;
-            gridViewTextBoxColumn14.FieldName = "log_date";
-            gridViewTextBoxColumn14.HeaderText = "تاریخ";
-            gridViewTextBoxColumn14.IsAutoGenerated = true;
-            gridViewTextBoxColumn14.Name = "log_date";
-            gridViewTextBoxColumn14.Width = 215;
-            gridViewTextBoxColumn15.FieldName = "log_time";
-            gridViewTextBoxColumn15.HeaderText = "ساعت";
-            gridViewTextBoxColumn15.IsAutoGenerated = true;
-            gridViewTextBoxColumn15.Name = "log_time";
-            gridViewTextBoxColumn15.Width = 213;
+            gridViewDecimalColumn1.DataType = typeof(long);
+            gridViewDecimalColumn1.FieldName = "log_id";
+            gridViewDecimalColumn1.HeaderText = "شماره";
+            gridViewDecimalColumn1.IsAutoGenerated = true;
+            gridViewDecimalColumn1.Name = "log_id";
+            gridViewDecimalColumn1.ReadOnly = true;
+            gridViewDecimalColumn1.Width = 161;
+            gridViewTextBoxColumn1.FieldName = "log_description";
+            gridViewTextBoxColumn1.HeaderText = "توضیحات";
+            gridViewTextBoxColumn1.IsAutoGenerated = true;
+            gridViewTextBoxColumn1.Name = "log_description";
+            gridViewTextBoxColumn1.Width = 161;
+            gridViewTextBoxColumn2.FieldName = "log_targetTable";
+            gridViewTextBoxColumn2.HeaderText = "نام جدول";
+            gridViewTextBoxColumn2.IsAutoGenerated = true;
+            gridViewTextBoxColumn2.Name = "log_targetTable";
+            gridViewTextBoxColumn2.Width = 161;
+            gridViewTextBoxColumn3.FieldName = "log_username";
+            gridViewTextBoxColumn3.HeaderText = "کد کاربری";
+            gridViewTextBoxColumn3.IsAutoGenerated = true;
+            gridViewTextBoxColumn3.Name = "log_username";
+            gridViewTextBoxColumn3.Width = 161;
+            gridViewTextBoxColumn4.FieldName = "log_date";
+            gridViewTextBoxColumn4.HeaderText = "تاریخ";
+            gridViewTextBoxColumn4.IsAutoGenerated = true;
+            gridViewTextBoxColumn4.Name = "log_date";
+            gridViewTextBoxColumn4.Width = 161;
+            gridViewTextBoxColumn5.FieldName = "log_time";
+            gridViewTextBoxColumn5.HeaderText = "ساعت";
+            gridViewTextBoxColumn5.IsAutoGenerated = true;
+            gridViewTextBoxColumn5.Name = "log_time";
+            gridViewTextBoxColumn5.Width = 161;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn3,
-            gridViewTextBoxColumn11,
-            gridViewTextBoxColumn12,
-            gridViewTextBoxColumn13,
-            gridViewTextBoxColumn14,
-            gridViewTextBoxColumn15});
+            gridViewDecimalColumn1,
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5});
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.DataSource = this.logBindingSource;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.EnableGrouping = false;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.EnablePaging = true;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.PageSize = 5;
-            this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.ViewDefinition = tableViewDefinition3;
+            this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.dgv_UcShowMemberContractInfoContracts.Name = "dgv_UcShowMemberContractInfoContracts";
             this.dgv_UcShowMemberContractInfoContracts.ReadOnly = true;
             this.dgv_UcShowMemberContractInfoContracts.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dgv_UcShowMemberContractInfoContracts.Size = new System.Drawing.Size(1304, 626);
+            this.dgv_UcShowMemberContractInfoContracts.Size = new System.Drawing.Size(976, 508);
             this.dgv_UcShowMemberContractInfoContracts.TabIndex = 1;
             // 
             // logBindingSource
@@ -209,21 +212,23 @@
             this.tableLayoutPanel2.Controls.Add(this.dts_UcLogEndDate, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.btn_UcLogSearchDate, 4, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1304, 64);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(976, 52);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // lbl_UcLogStartDate
             // 
             this.lbl_UcLogStartDate.AutoSize = true;
             this.lbl_UcLogStartDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_UcLogStartDate.Location = new System.Drawing.Point(1112, 0);
+            this.lbl_UcLogStartDate.Location = new System.Drawing.Point(832, 0);
+            this.lbl_UcLogStartDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_UcLogStartDate.Name = "lbl_UcLogStartDate";
-            this.lbl_UcLogStartDate.Size = new System.Drawing.Size(189, 64);
+            this.lbl_UcLogStartDate.Size = new System.Drawing.Size(142, 52);
             this.lbl_UcLogStartDate.TabIndex = 0;
             this.lbl_UcLogStartDate.Text = "از تاریخ";
             this.lbl_UcLogStartDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,9 +236,10 @@
             // dts_UcLogStartDate
             // 
             this.dts_UcLogStartDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dts_UcLogStartDate.Location = new System.Drawing.Point(852, 3);
+            this.dts_UcLogStartDate.Location = new System.Drawing.Point(637, 2);
+            this.dts_UcLogStartDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dts_UcLogStartDate.Name = "dts_UcLogStartDate";
-            this.dts_UcLogStartDate.Size = new System.Drawing.Size(254, 37);
+            this.dts_UcLogStartDate.Size = new System.Drawing.Size(191, 31);
             this.dts_UcLogStartDate.TabIndex = 1;
             this.dts_UcLogStartDate.UsePersianFormat = true;
             // 
@@ -241,9 +247,10 @@
             // 
             this.lbl_UcLogEndDate.AutoSize = true;
             this.lbl_UcLogEndDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_UcLogEndDate.Location = new System.Drawing.Point(657, 0);
+            this.lbl_UcLogEndDate.Location = new System.Drawing.Point(491, 0);
+            this.lbl_UcLogEndDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_UcLogEndDate.Name = "lbl_UcLogEndDate";
-            this.lbl_UcLogEndDate.Size = new System.Drawing.Size(189, 64);
+            this.lbl_UcLogEndDate.Size = new System.Drawing.Size(142, 52);
             this.lbl_UcLogEndDate.TabIndex = 2;
             this.lbl_UcLogEndDate.Text = "تا تاریخ";
             this.lbl_UcLogEndDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -251,9 +258,10 @@
             // dts_UcLogEndDate
             // 
             this.dts_UcLogEndDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dts_UcLogEndDate.Location = new System.Drawing.Point(397, 3);
+            this.dts_UcLogEndDate.Location = new System.Drawing.Point(296, 2);
+            this.dts_UcLogEndDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dts_UcLogEndDate.Name = "dts_UcLogEndDate";
-            this.dts_UcLogEndDate.Size = new System.Drawing.Size(254, 37);
+            this.dts_UcLogEndDate.Size = new System.Drawing.Size(191, 31);
             this.dts_UcLogEndDate.TabIndex = 3;
             this.dts_UcLogEndDate.UsePersianFormat = true;
             // 
@@ -264,9 +272,10 @@
             this.btn_UcLogSearchDate.FlatAppearance.BorderSize = 0;
             this.btn_UcLogSearchDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_UcLogSearchDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.btn_UcLogSearchDate.Location = new System.Drawing.Point(137, 3);
+            this.btn_UcLogSearchDate.Location = new System.Drawing.Point(101, 2);
+            this.btn_UcLogSearchDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_UcLogSearchDate.Name = "btn_UcLogSearchDate";
-            this.btn_UcLogSearchDate.Size = new System.Drawing.Size(254, 58);
+            this.btn_UcLogSearchDate.Size = new System.Drawing.Size(191, 48);
             this.btn_UcLogSearchDate.TabIndex = 4;
             this.btn_UcLogSearchDate.Text = "جست و جو";
             this.btn_UcLogSearchDate.UseVisualStyleBackColor = false;
@@ -278,11 +287,12 @@
             // 
             // UC_Log
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gpb_UcCheckInMember);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UC_Log";
-            this.Size = new System.Drawing.Size(1322, 745);
+            this.Size = new System.Drawing.Size(992, 605);
             this.gpb_UcCheckInMember.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowMemberContractInfoContracts.MasterTemplate)).EndInit();

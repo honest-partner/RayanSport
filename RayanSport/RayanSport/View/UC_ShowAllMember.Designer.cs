@@ -30,10 +30,6 @@ namespace RayanSport.View
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -68,12 +64,12 @@ namespace RayanSport.View
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.dgv_UcShowAllMemberShowDgv, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.dgv_UcShowAllMemberShowDgv, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.77165F));
@@ -99,11 +95,11 @@ namespace RayanSport.View
             this.tableLayoutPanel2.Controls.Add(this.gpb_lbl_UcShowAllMemberSearch, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 159F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1064, 159);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
@@ -117,7 +113,7 @@ namespace RayanSport.View
             this.gpb_lbl_UcShowAllMemberSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gpb_lbl_UcShowAllMemberSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.gpb_lbl_UcShowAllMemberSearch.Location = new System.Drawing.Point(4, 4);
-            this.gpb_lbl_UcShowAllMemberSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpb_lbl_UcShowAllMemberSearch.Margin = new System.Windows.Forms.Padding(4);
             this.gpb_lbl_UcShowAllMemberSearch.Name = "gpb_lbl_UcShowAllMemberSearch";
             this.gpb_lbl_UcShowAllMemberSearch.Size = new System.Drawing.Size(1056, 151);
             // 
@@ -162,7 +158,7 @@ namespace RayanSport.View
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.tableLayoutPanel3.Controls.Add(this.lbl_UcShowAllMemberMemberGender, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.btn_UcShowAllMemberSearch, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.swb_UcShowAllMemberMemberGender, 1, 0);
@@ -172,7 +168,7 @@ namespace RayanSport.View
             this.tableLayoutPanel3.Controls.Add(this.txb_UcShowAllMemberMemberName, 4, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(0, 12, 0, 0);
             this.tableLayoutPanel3.RowCount = 2;
@@ -204,7 +200,7 @@ namespace RayanSport.View
             this.btn_UcShowAllMemberSearch.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_UcShowAllMemberSearch.ForeColor = System.Drawing.Color.White;
             this.btn_UcShowAllMemberSearch.Location = new System.Drawing.Point(57, 68);
-            this.btn_UcShowAllMemberSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_UcShowAllMemberSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btn_UcShowAllMemberSearch.Name = "btn_UcShowAllMemberSearch";
             this.btn_UcShowAllMemberSearch.Size = new System.Drawing.Size(212, 46);
             this.btn_UcShowAllMemberSearch.TabIndex = 1;
@@ -222,7 +218,7 @@ namespace RayanSport.View
             this.swb_UcShowAllMemberMemberGender.Dock = System.Windows.Forms.DockStyle.Fill;
             this.swb_UcShowAllMemberMemberGender.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.swb_UcShowAllMemberMemberGender.Location = new System.Drawing.Point(57, 16);
-            this.swb_UcShowAllMemberMemberGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.swb_UcShowAllMemberMemberGender.Margin = new System.Windows.Forms.Padding(4);
             this.swb_UcShowAllMemberMemberGender.Name = "swb_UcShowAllMemberMemberGender";
             this.swb_UcShowAllMemberMemberGender.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.swb_UcShowAllMemberMemberGender.OffText = "آقا";
@@ -270,7 +266,7 @@ namespace RayanSport.View
             this.txb_UcShowAllMemberMemberId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txb_UcShowAllMemberMemberId.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_UcShowAllMemberMemberId.Location = new System.Drawing.Point(550, 73);
-            this.txb_UcShowAllMemberMemberId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_UcShowAllMemberMemberId.Margin = new System.Windows.Forms.Padding(4);
             this.txb_UcShowAllMemberMemberId.Name = "txb_UcShowAllMemberMemberId";
             this.txb_UcShowAllMemberMemberId.Size = new System.Drawing.Size(212, 36);
             this.txb_UcShowAllMemberMemberId.TabIndex = 0;
@@ -280,7 +276,7 @@ namespace RayanSport.View
             this.txb_UcShowAllMemberMemberName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txb_UcShowAllMemberMemberName.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_UcShowAllMemberMemberName.Location = new System.Drawing.Point(550, 20);
-            this.txb_UcShowAllMemberMemberName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_UcShowAllMemberMemberName.Margin = new System.Windows.Forms.Padding(4);
             this.txb_UcShowAllMemberMemberName.Name = "txb_UcShowAllMemberMemberName";
             this.txb_UcShowAllMemberMemberName.Size = new System.Drawing.Size(212, 36);
             this.txb_UcShowAllMemberMemberName.TabIndex = 1;
@@ -299,7 +295,7 @@ namespace RayanSport.View
             this.tableLayoutPanel4.Controls.Add(this.btn_UcShowAllMemberShowMemberInfo, 2, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 565);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -316,7 +312,7 @@ namespace RayanSport.View
             this.btn_UcShowAllMemberAddMember.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_UcShowAllMemberAddMember.ForeColor = System.Drawing.Color.White;
             this.btn_UcShowAllMemberAddMember.Location = new System.Drawing.Point(561, 4);
-            this.btn_UcShowAllMemberAddMember.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_UcShowAllMemberAddMember.Margin = new System.Windows.Forms.Padding(4);
             this.btn_UcShowAllMemberAddMember.Name = "btn_UcShowAllMemberAddMember";
             this.btn_UcShowAllMemberAddMember.Size = new System.Drawing.Size(212, 48);
             this.btn_UcShowAllMemberAddMember.TabIndex = 2;
@@ -333,7 +329,7 @@ namespace RayanSport.View
             this.btn_UcShowAllMemberShowMemberInfo.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_UcShowAllMemberShowMemberInfo.ForeColor = System.Drawing.Color.White;
             this.btn_UcShowAllMemberShowMemberInfo.Location = new System.Drawing.Point(288, 4);
-            this.btn_UcShowAllMemberShowMemberInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_UcShowAllMemberShowMemberInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btn_UcShowAllMemberShowMemberInfo.Name = "btn_UcShowAllMemberShowMemberInfo";
             this.btn_UcShowAllMemberShowMemberInfo.Size = new System.Drawing.Size(212, 48);
             this.btn_UcShowAllMemberShowMemberInfo.TabIndex = 1;
@@ -347,16 +343,6 @@ namespace RayanSport.View
             // 
             // dgv_UcShowAllMemberShowDgv
             // 
-            this.dgv_UcShowAllMemberShowDgv.AutoScroll = true;
-            this.dgv_UcShowAllMemberShowDgv.AutoSizeRows = true;
-            this.dgv_UcShowAllMemberShowDgv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_UcShowAllMemberShowDgv.EnableGestures = false;
-            this.dgv_UcShowAllMemberShowDgv.Font = new System.Drawing.Font("B Yekan+", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.dgv_UcShowAllMemberShowDgv.Location = new System.Drawing.Point(4, 171);
-            this.dgv_UcShowAllMemberShowDgv.Margin = new System.Windows.Forms.Padding(4);
-            // 
-            // 
-            // 
             this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowAddNewRow = false;
             this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowColumnChooser = false;
             this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowColumnHeaderContextMenu = false;
@@ -365,33 +351,6 @@ namespace RayanSport.View
             this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowEditRow = false;
             this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AllowRowHeaderContextMenu = false;
             this.dgv_UcShowAllMemberShowDgv.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewDecimalColumn1.DataType = typeof(int);
-            gridViewDecimalColumn1.FieldName = "member_id";
-            gridViewDecimalColumn1.HeaderText = "کد عضویت";
-            gridViewDecimalColumn1.IsAutoGenerated = true;
-            gridViewDecimalColumn1.Name = "member_id";
-            gridViewDecimalColumn1.ReadOnly = true;
-            gridViewDecimalColumn1.Width = 265;
-            gridViewTextBoxColumn1.FieldName = "member_name";
-            gridViewTextBoxColumn1.HeaderText = "نام و نام خانوادگی";
-            gridViewTextBoxColumn1.IsAutoGenerated = true;
-            gridViewTextBoxColumn1.Name = "member_name";
-            gridViewTextBoxColumn1.Width = 265;
-            gridViewTextBoxColumn2.FieldName = "member_gender";
-            gridViewTextBoxColumn2.HeaderText = "جنسیت";
-            gridViewTextBoxColumn2.IsAutoGenerated = true;
-            gridViewTextBoxColumn2.Name = "member_gender";
-            gridViewTextBoxColumn2.Width = 265;
-            gridViewTextBoxColumn3.FieldName = "member_tel";
-            gridViewTextBoxColumn3.HeaderText = "تلفن";
-            gridViewTextBoxColumn3.IsAutoGenerated = true;
-            gridViewTextBoxColumn3.Name = "member_tel";
-            gridViewTextBoxColumn3.Width = 271;
-            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn1,
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3});
             this.dgv_UcShowAllMemberShowDgv.MasterTemplate.DataSource = this.memberBindingSource;
             this.dgv_UcShowAllMemberShowDgv.MasterTemplate.EnableGrouping = false;
             this.dgv_UcShowAllMemberShowDgv.MasterTemplate.EnablePaging = true;
@@ -406,11 +365,11 @@ namespace RayanSport.View
             // 
             // 
             // 
-            this.dgv_UcShowAllMemberShowDgv.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.FitToAvailableSize;
-            this.dgv_UcShowAllMemberShowDgv.Size = new System.Drawing.Size(1064, 386);
-            this.dgv_UcShowAllMemberShowDgv.TabIndex = 0;
+            this.dgv_UcShowAllMemberShowDgv.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.dgv_UcShowAllMemberShowDgv.Name = "dgv_UcShowAllMemberShowDgv";
+            this.dgv_UcShowAllMemberShowDgv.Size = new System.Drawing.Size(1066, 388);
+            this.dgv_UcShowAllMemberShowDgv.TabIndex = 2;
             this.dgv_UcShowAllMemberShowDgv.Text = "radGridView1";
-            this.dgv_UcShowAllMemberShowDgv.CellClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.dgv_UcShowAllMemberShowDgv_CellClick);
             // 
             // UC_ShowAllMember
             // 
@@ -418,7 +377,7 @@ namespace RayanSport.View
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ShowAllMember";
             this.Size = new System.Drawing.Size(1072, 625);
             this.tableLayoutPanel1.ResumeLayout(false);

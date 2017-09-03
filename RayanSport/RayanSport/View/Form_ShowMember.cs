@@ -13,29 +13,30 @@ namespace RayanSport.View
     public partial class Form_ShowMember : Form
     {
         public Member Member { get; set; }
-        Member mem;
-        public Form_ShowMember()
+
+        public Form_ShowMember(string user_name)
         {
-            mem = new Member(114,"","","","","","","",0);
-            InitializeComponent();
-            foreach (var item in this.Controls)
-            {
-                //if (item is UC_ShowMember_ContractInfo)
-                //    (item as UC_ShowMember_ContractInfo).setData(mem);
-            }
+            InitializeComponent(user_name);
+
         }
         public int setDataForUcShowMemberInfo(Member member)
         {
-
-            foreach(var uc in this.Controls)
+            uC_ShowMember_MemberInfo1.UC_ShowMember_MemberInfoCon(member);
+            if (member.member_name == "" || member.member_name == null)
             {
-                if (uc is UC_ShowMember_MemberInfo)
-                {
-                    (uc as UC_ShowMember_MemberInfo).UC_ShowMember_MemberInfoCon(member);
-                }
-
+                uC_ShowMember_ContractInfo1.Enabled = false;
             }
+            else
+            {
+                uC_ShowMember_ContractInfo1.setData(member);
+            }
+           
             return 1;
+        }
+        public void changeContractEnabled(bool en,Member member)
+        {
+            uC_ShowMember_ContractInfo1.Enabled = en;
+            uC_ShowMember_ContractInfo1.setData(member);
         }
     }
 }

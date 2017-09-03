@@ -356,7 +356,7 @@ namespace RayanSport
         #region // mouse click of menu items
         private void pbx_mainHomeIcon_Click(object sender, EventArgs e)
         {
-            
+            lbl_mainHeaderText.Text = lbl_mainHome.Text;
             ucHome = new UC_Home();
             this.Controls.Add(ucHome);
             
@@ -364,39 +364,39 @@ namespace RayanSport
 
         private void pbx_mainEntranceIcon_Click(object sender, EventArgs e)
         {
-           
+            lbl_mainHeaderText.Text = lbl_mainEntrance.Text;
         }
 
         private void pbx_mainMemberIcon_Click(object sender, EventArgs e)
         {
-           
-            ucShowAllMember = new UC_ShowAllMember();
+            lbl_mainHeaderText.Text = lbl_mainMember.Text;
+            ucShowAllMember = new UC_ShowAllMember("1");
             this.Controls.Add(ucShowAllMember);
         }
 
         private void pbx_mainContractIcon_Click(object sender, EventArgs e)
         {
-            
+            lbl_mainHeaderText.Text = lbl_mainContract.Text;
         }
 
         private void pbx_mainBuffetIcon_Click(object sender, EventArgs e)
         {
-           
+            lbl_mainHeaderText.Text = lbl_mainBuffet.Text;
         }
 
         private void pbx_mainUserIcon_Click(object sender, EventArgs e)
         {
-           
+            lbl_mainHeaderText.Text = lbl_mainUser.Text;
         }
 
         private void pbx_mainSettingIcon_Click(object sender, EventArgs e)
         {
-           
+            lbl_mainHeaderText.Text = lbl_mainSetting.Text;
         }
 
         private void pbx_mainAboutIcon_Click(object sender, EventArgs e)
         {
-      
+            lbl_mainHeaderText.Text = lbl_mainAbout.Text;
         }
 
         #endregion

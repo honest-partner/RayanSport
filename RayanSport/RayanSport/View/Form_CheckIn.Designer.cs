@@ -26,12 +26,12 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private void InitializeComponent(string user_name)
         {
             this.gpb_UcCheckInMember = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.uC_CheckIn1 = new RayanSport.View.UC_CheckIn();
-            this.uC_CheckIn_Info = new RayanSport.View.UC_CheckIn_Info();
+            this.uC_CheckIn1 = new RayanSport.View.UC_CheckIn(user_name);
+            this.uC_CheckIn_Info = new RayanSport.View.UC_CheckIn_Info(user_name);
             this.gpb_UcCheckInMember.SuspendLayout();
             this.groupPanel1.SuspendLayout();
             this.SuspendLayout();

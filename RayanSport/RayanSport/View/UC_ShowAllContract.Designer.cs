@@ -29,23 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn11 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn16 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn17 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn18 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn12 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn13 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn19 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn14 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn15 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn20 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn21 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn4 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn5 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnl_UcShowAllContractPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dgv_UcShowAllContractShowContract = new Telerik.WinControls.UI.RadGridView();
+            this.membershipBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rayan_sportDataSet = new RayanSport.rayan_sportDataSet();
             this.gpb_UcShowAllContractByDate = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -60,12 +62,6 @@
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.txb_UcShowAllContractName = new System.Windows.Forms.TextBox();
             this.gpb_UcShowAllContractByContarct = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_UcShowAllContractFilter = new System.Windows.Forms.Button();
-            this.membershipBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rayan_sportDataSet = new RayanSport.rayan_sportDataSet();
-            this.membershipTableAdapter = new RayanSport.rayan_sportDataSetTableAdapters.membershipTableAdapter();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.rdb_UcShowAllContractEnded = new Telerik.WinControls.UI.RadRadioButton();
@@ -79,11 +75,17 @@
             this.rdb_UcShowAllContractActiveContract = new Telerik.WinControls.UI.RadRadioButton();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.rdb_UcShowAllContractTodayExpired = new Telerik.WinControls.UI.RadRadioButton();
+            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_UcShowAllContractFilter = new System.Windows.Forms.Button();
+            this.membershipTableAdapter = new RayanSport.rayan_sportDataSetTableAdapters.membershipTableAdapter();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnl_UcShowAllContractPanel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllContractShowContract)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllContractShowContract.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).BeginInit();
             this.gpb_UcShowAllContractByDate.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -92,10 +94,6 @@
             this.tableLayoutPanel12.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
             this.gpb_UcShowAllContractByContarct.SuspendLayout();
-            this.tableLayoutPanel14.SuspendLayout();
-            this.tableLayoutPanel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdb_UcShowAllContractEnded)).BeginInit();
@@ -108,6 +106,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdb_UcShowAllContractActiveContract)).BeginInit();
             this.tableLayoutPanel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdb_UcShowAllContractTodayExpired)).BeginInit();
+            this.tableLayoutPanel14.SuspendLayout();
+            this.tableLayoutPanel16.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -172,90 +172,90 @@
             this.dgv_UcShowAllContractShowContract.MasterTemplate.AllowDeleteRow = false;
             this.dgv_UcShowAllContractShowContract.MasterTemplate.AllowEditRow = false;
             this.dgv_UcShowAllContractShowContract.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewDecimalColumn11.DataType = typeof(int);
-            gridViewDecimalColumn11.FieldName = "membership_memberId";
-            gridViewDecimalColumn11.HeaderText = "شماره عضویت";
-            gridViewDecimalColumn11.IsAutoGenerated = true;
-            gridViewDecimalColumn11.Name = "membership_memberId";
-            gridViewDecimalColumn11.Width = 65;
-            gridViewTextBoxColumn15.FieldName = "membership_memberName";
-            gridViewTextBoxColumn15.HeaderText = "نام ورزشکار";
-            gridViewTextBoxColumn15.IsAutoGenerated = true;
-            gridViewTextBoxColumn15.Name = "membership_memberName";
-            gridViewTextBoxColumn15.Width = 65;
-            gridViewTextBoxColumn16.FieldName = "membership_startDate";
-            gridViewTextBoxColumn16.HeaderText = "تاریخ شروع";
-            gridViewTextBoxColumn16.IsAutoGenerated = true;
-            gridViewTextBoxColumn16.Name = "membership_startDate";
-            gridViewTextBoxColumn16.Width = 65;
-            gridViewTextBoxColumn17.FieldName = "membership_endDate";
-            gridViewTextBoxColumn17.HeaderText = "تاریخ پایان";
-            gridViewTextBoxColumn17.IsAutoGenerated = true;
-            gridViewTextBoxColumn17.Name = "membership_endDate";
-            gridViewTextBoxColumn17.Width = 65;
-            gridViewTextBoxColumn18.FieldName = "membership_type";
-            gridViewTextBoxColumn18.HeaderText = "نوع قرارداد";
-            gridViewTextBoxColumn18.IsAutoGenerated = true;
-            gridViewTextBoxColumn18.Name = "membership_type";
-            gridViewTextBoxColumn18.Width = 65;
-            gridViewDecimalColumn12.DataType = typeof(int);
-            gridViewDecimalColumn12.FieldName = "membership_remainingSession";
-            gridViewDecimalColumn12.HeaderText = "جلسات باقیمانده";
-            gridViewDecimalColumn12.IsAutoGenerated = true;
-            gridViewDecimalColumn12.Name = "membership_remainingSession";
-            gridViewDecimalColumn12.Width = 65;
-            gridViewDecimalColumn13.DataType = typeof(long);
-            gridViewDecimalColumn13.FieldName = "membership_receiptNumber";
-            gridViewDecimalColumn13.HeaderText = "شماره پیگیری";
-            gridViewDecimalColumn13.IsAutoGenerated = true;
-            gridViewDecimalColumn13.Name = "membership_receiptNumber";
-            gridViewDecimalColumn13.Width = 65;
-            gridViewTextBoxColumn19.FieldName = "membership_paymentType";
-            gridViewTextBoxColumn19.HeaderText = "نوع پرداخت";
-            gridViewTextBoxColumn19.IsAutoGenerated = true;
-            gridViewTextBoxColumn19.Name = "membership_paymentType";
-            gridViewTextBoxColumn19.Width = 65;
-            gridViewDecimalColumn14.DataType = typeof(long);
-            gridViewDecimalColumn14.FieldName = "membership_price";
-            gridViewDecimalColumn14.HeaderText = "هزینه دوره";
-            gridViewDecimalColumn14.IsAutoGenerated = true;
-            gridViewDecimalColumn14.Name = "membership_price";
-            gridViewDecimalColumn14.Width = 65;
-            gridViewDecimalColumn15.DataType = typeof(long);
-            gridViewDecimalColumn15.FieldName = "membership_payment";
-            gridViewDecimalColumn15.HeaderText = "مبلغ پرداختی";
-            gridViewDecimalColumn15.IsAutoGenerated = true;
-            gridViewDecimalColumn15.Name = "membership_payment";
-            gridViewDecimalColumn15.Width = 65;
-            gridViewTextBoxColumn20.FieldName = "membership_description";
-            gridViewTextBoxColumn20.HeaderText = "توضیحات";
-            gridViewTextBoxColumn20.IsAutoGenerated = true;
-            gridViewTextBoxColumn20.Name = "membership_description";
-            gridViewTextBoxColumn20.Width = 65;
-            gridViewTextBoxColumn21.FieldName = "membership_status";
-            gridViewTextBoxColumn21.HeaderText = "وضعیت";
-            gridViewTextBoxColumn21.IsAutoGenerated = true;
-            gridViewTextBoxColumn21.Name = "membership_status";
-            gridViewTextBoxColumn21.Width = 65;
+            gridViewDecimalColumn1.DataType = typeof(int);
+            gridViewDecimalColumn1.FieldName = "membership_memberId";
+            gridViewDecimalColumn1.HeaderText = "شماره عضویت";
+            gridViewDecimalColumn1.IsAutoGenerated = true;
+            gridViewDecimalColumn1.Name = "membership_memberId";
+            gridViewDecimalColumn1.Width = 66;
+            gridViewTextBoxColumn1.FieldName = "membership_memberName";
+            gridViewTextBoxColumn1.HeaderText = "نام ورزشکار";
+            gridViewTextBoxColumn1.IsAutoGenerated = true;
+            gridViewTextBoxColumn1.Name = "membership_memberName";
+            gridViewTextBoxColumn1.Width = 66;
+            gridViewTextBoxColumn2.FieldName = "membership_startDate";
+            gridViewTextBoxColumn2.HeaderText = "تاریخ شروع";
+            gridViewTextBoxColumn2.IsAutoGenerated = true;
+            gridViewTextBoxColumn2.Name = "membership_startDate";
+            gridViewTextBoxColumn2.Width = 66;
+            gridViewTextBoxColumn3.FieldName = "membership_endDate";
+            gridViewTextBoxColumn3.HeaderText = "تاریخ پایان";
+            gridViewTextBoxColumn3.IsAutoGenerated = true;
+            gridViewTextBoxColumn3.Name = "membership_endDate";
+            gridViewTextBoxColumn3.Width = 66;
+            gridViewTextBoxColumn4.FieldName = "membership_type";
+            gridViewTextBoxColumn4.HeaderText = "نوع قرارداد";
+            gridViewTextBoxColumn4.IsAutoGenerated = true;
+            gridViewTextBoxColumn4.Name = "membership_type";
+            gridViewTextBoxColumn4.Width = 66;
+            gridViewDecimalColumn2.DataType = typeof(int);
+            gridViewDecimalColumn2.FieldName = "membership_remainingSession";
+            gridViewDecimalColumn2.HeaderText = "جلسات باقیمانده";
+            gridViewDecimalColumn2.IsAutoGenerated = true;
+            gridViewDecimalColumn2.Name = "membership_remainingSession";
+            gridViewDecimalColumn2.Width = 66;
+            gridViewDecimalColumn3.DataType = typeof(long);
+            gridViewDecimalColumn3.FieldName = "membership_receiptNumber";
+            gridViewDecimalColumn3.HeaderText = "شماره پیگیری";
+            gridViewDecimalColumn3.IsAutoGenerated = true;
+            gridViewDecimalColumn3.Name = "membership_receiptNumber";
+            gridViewDecimalColumn3.Width = 66;
+            gridViewTextBoxColumn5.FieldName = "membership_paymentType";
+            gridViewTextBoxColumn5.HeaderText = "نوع پرداخت";
+            gridViewTextBoxColumn5.IsAutoGenerated = true;
+            gridViewTextBoxColumn5.Name = "membership_paymentType";
+            gridViewTextBoxColumn5.Width = 66;
+            gridViewDecimalColumn4.DataType = typeof(long);
+            gridViewDecimalColumn4.FieldName = "membership_price";
+            gridViewDecimalColumn4.HeaderText = "هزینه دوره";
+            gridViewDecimalColumn4.IsAutoGenerated = true;
+            gridViewDecimalColumn4.Name = "membership_price";
+            gridViewDecimalColumn4.Width = 66;
+            gridViewDecimalColumn5.DataType = typeof(long);
+            gridViewDecimalColumn5.FieldName = "membership_payment";
+            gridViewDecimalColumn5.HeaderText = "مبلغ پرداختی";
+            gridViewDecimalColumn5.IsAutoGenerated = true;
+            gridViewDecimalColumn5.Name = "membership_payment";
+            gridViewDecimalColumn5.Width = 66;
+            gridViewTextBoxColumn6.FieldName = "membership_description";
+            gridViewTextBoxColumn6.HeaderText = "توضیحات";
+            gridViewTextBoxColumn6.IsAutoGenerated = true;
+            gridViewTextBoxColumn6.Name = "membership_description";
+            gridViewTextBoxColumn6.Width = 66;
+            gridViewTextBoxColumn7.FieldName = "membership_status";
+            gridViewTextBoxColumn7.HeaderText = "وضعیت";
+            gridViewTextBoxColumn7.IsAutoGenerated = true;
+            gridViewTextBoxColumn7.Name = "membership_status";
+            gridViewTextBoxColumn7.Width = 66;
             this.dgv_UcShowAllContractShowContract.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn11,
-            gridViewTextBoxColumn15,
-            gridViewTextBoxColumn16,
-            gridViewTextBoxColumn17,
-            gridViewTextBoxColumn18,
-            gridViewDecimalColumn12,
-            gridViewDecimalColumn13,
-            gridViewTextBoxColumn19,
-            gridViewDecimalColumn14,
-            gridViewDecimalColumn15,
-            gridViewTextBoxColumn20,
-            gridViewTextBoxColumn21});
+            gridViewDecimalColumn1,
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4,
+            gridViewDecimalColumn2,
+            gridViewDecimalColumn3,
+            gridViewTextBoxColumn5,
+            gridViewDecimalColumn4,
+            gridViewDecimalColumn5,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7});
             this.dgv_UcShowAllContractShowContract.MasterTemplate.DataSource = this.membershipBindingSource;
             this.dgv_UcShowAllContractShowContract.MasterTemplate.EnableGrouping = false;
             this.dgv_UcShowAllContractShowContract.MasterTemplate.EnablePaging = true;
             this.dgv_UcShowAllContractShowContract.MasterTemplate.PageSize = 10;
             this.dgv_UcShowAllContractShowContract.MasterTemplate.ShowRowHeaderColumn = false;
-            this.dgv_UcShowAllContractShowContract.MasterTemplate.ViewDefinition = tableViewDefinition3;
+            this.dgv_UcShowAllContractShowContract.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.dgv_UcShowAllContractShowContract.Name = "dgv_UcShowAllContractShowContract";
             this.dgv_UcShowAllContractShowContract.ReadOnly = true;
             this.dgv_UcShowAllContractShowContract.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -263,6 +263,16 @@
             this.dgv_UcShowAllContractShowContract.TabIndex = 3;
             this.dgv_UcShowAllContractShowContract.Text = "radGridView1";
             this.dgv_UcShowAllContractShowContract.ThemeName = "ControlDefault";
+            // 
+            // membershipBindingSource
+            // 
+            this.membershipBindingSource.DataMember = "membership";
+            this.membershipBindingSource.DataSource = this.rayan_sportDataSet;
+            // 
+            // rayan_sportDataSet
+            // 
+            this.rayan_sportDataSet.DataSetName = "rayan_sportDataSet";
+            this.rayan_sportDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gpb_UcShowAllContractByDate
             // 
@@ -524,66 +534,6 @@
             this.gpb_UcShowAllContractByContarct.TabIndex = 75;
             this.gpb_UcShowAllContractByContarct.Text = "بر اساس پایان قرارداد";
             // 
-            // tableLayoutPanel14
-            // 
-            this.tableLayoutPanel14.ColumnCount = 2;
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel16, 0, 0);
-            this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(19, 407);
-            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
-            this.tableLayoutPanel14.RowCount = 1;
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(782, 58);
-            this.tableLayoutPanel14.TabIndex = 76;
-            // 
-            // tableLayoutPanel16
-            // 
-            this.tableLayoutPanel16.ColumnCount = 2;
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel16.Controls.Add(this.btn_UcShowAllContractFilter, 0, 0);
-            this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
-            this.tableLayoutPanel16.RowCount = 1;
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(385, 52);
-            this.tableLayoutPanel16.TabIndex = 77;
-            // 
-            // btn_UcShowAllContractFilter
-            // 
-            this.btn_UcShowAllContractFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.btn_UcShowAllContractFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_UcShowAllContractFilter.FlatAppearance.BorderSize = 0;
-            this.btn_UcShowAllContractFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_UcShowAllContractFilter.Font = new System.Drawing.Font("B Yekan+", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btn_UcShowAllContractFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.btn_UcShowAllContractFilter.Location = new System.Drawing.Point(3, 3);
-            this.btn_UcShowAllContractFilter.Name = "btn_UcShowAllContractFilter";
-            this.btn_UcShowAllContractFilter.Size = new System.Drawing.Size(225, 46);
-            this.btn_UcShowAllContractFilter.TabIndex = 0;
-            this.btn_UcShowAllContractFilter.Text = "فیلتر کردن";
-            this.btn_UcShowAllContractFilter.UseVisualStyleBackColor = false;
-            this.btn_UcShowAllContractFilter.Click += new System.EventHandler(this.btn_UcShowAllContractFilter_Click);
-            // 
-            // membershipBindingSource
-            // 
-            this.membershipBindingSource.DataMember = "membership";
-            this.membershipBindingSource.DataSource = this.rayan_sportDataSet;
-            // 
-            // rayan_sportDataSet
-            // 
-            this.rayan_sportDataSet.DataSetName = "rayan_sportDataSet";
-            this.rayan_sportDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // membershipTableAdapter
-            // 
-            this.membershipTableAdapter.ClearBeforeFill = true;
-            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 4;
@@ -747,10 +697,10 @@
             this.rdb_UcShowAllContractActiveContract.AutoSize = false;
             this.rdb_UcShowAllContractActiveContract.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rdb_UcShowAllContractActiveContract.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.rdb_UcShowAllContractActiveContract.Location = new System.Drawing.Point(3, 35);
+            this.rdb_UcShowAllContractActiveContract.Location = new System.Drawing.Point(3, 38);
             this.rdb_UcShowAllContractActiveContract.Name = "rdb_UcShowAllContractActiveContract";
             this.rdb_UcShowAllContractActiveContract.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rdb_UcShowAllContractActiveContract.Size = new System.Drawing.Size(181, 34);
+            this.rdb_UcShowAllContractActiveContract.Size = new System.Drawing.Size(181, 30);
             this.rdb_UcShowAllContractActiveContract.TabIndex = 0;
             this.rdb_UcShowAllContractActiveContract.Text = "قراردادهای فعال";
             this.rdb_UcShowAllContractActiveContract.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.rdb_UcShowAllContractActiveContract_ToggleStateChanged);
@@ -784,6 +734,56 @@
             this.rdb_UcShowAllContractTodayExpired.Text = "منقضی به تاریخ امروز";
             this.rdb_UcShowAllContractTodayExpired.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.rdb_UcShowAllContractTodayExpired_ToggleStateChanged);
             // 
+            // tableLayoutPanel14
+            // 
+            this.tableLayoutPanel14.ColumnCount = 2;
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel16, 0, 0);
+            this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(19, 407);
+            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
+            this.tableLayoutPanel14.RowCount = 1;
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(782, 58);
+            this.tableLayoutPanel14.TabIndex = 76;
+            // 
+            // tableLayoutPanel16
+            // 
+            this.tableLayoutPanel16.ColumnCount = 2;
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel16.Controls.Add(this.btn_UcShowAllContractFilter, 0, 0);
+            this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
+            this.tableLayoutPanel16.RowCount = 1;
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(385, 52);
+            this.tableLayoutPanel16.TabIndex = 77;
+            // 
+            // btn_UcShowAllContractFilter
+            // 
+            this.btn_UcShowAllContractFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.btn_UcShowAllContractFilter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowAllContractFilter.FlatAppearance.BorderSize = 0;
+            this.btn_UcShowAllContractFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowAllContractFilter.Font = new System.Drawing.Font("B Yekan+", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_UcShowAllContractFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.btn_UcShowAllContractFilter.Location = new System.Drawing.Point(3, 3);
+            this.btn_UcShowAllContractFilter.Name = "btn_UcShowAllContractFilter";
+            this.btn_UcShowAllContractFilter.Size = new System.Drawing.Size(225, 46);
+            this.btn_UcShowAllContractFilter.TabIndex = 0;
+            this.btn_UcShowAllContractFilter.Text = "فیلتر کردن";
+            this.btn_UcShowAllContractFilter.UseVisualStyleBackColor = false;
+            this.btn_UcShowAllContractFilter.Click += new System.EventHandler(this.btn_UcShowAllContractFilter_Click);
+            // 
+            // membershipTableAdapter
+            // 
+            this.membershipTableAdapter.ClearBeforeFill = true;
+            // 
             // UC_ShowAllContract
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -796,6 +796,8 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllContractShowContract.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowAllContractShowContract)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).EndInit();
             this.gpb_UcShowAllContractByDate.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
@@ -809,10 +811,6 @@
             this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel13.PerformLayout();
             this.gpb_UcShowAllContractByContarct.ResumeLayout(false);
-            this.tableLayoutPanel14.ResumeLayout(false);
-            this.tableLayoutPanel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rayan_sportDataSet)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rdb_UcShowAllContractEnded)).EndInit();
@@ -825,6 +823,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdb_UcShowAllContractActiveContract)).EndInit();
             this.tableLayoutPanel17.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rdb_UcShowAllContractTodayExpired)).EndInit();
+            this.tableLayoutPanel14.ResumeLayout(false);
+            this.tableLayoutPanel16.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -12,10 +12,11 @@ namespace RayanSport.View
 {
     public partial class Form_CheckIn : Form
     {
-        public Form_CheckIn()
+        public string user_name{ get; set; }
+        public Form_CheckIn(string user_name)
         {
-            InitializeComponent();
-            
+            InitializeComponent(user_name);
+            this.user_name = user_name;
         }
 
        

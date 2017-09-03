@@ -13,6 +13,7 @@ namespace RayanSport.View
 {
     public partial class UC_CheckIn_Info : UserControl
     {
+        public string user_name { get; set; }
         long membershipId;
         String memberGender;
         String memberName;
@@ -20,9 +21,10 @@ namespace RayanSport.View
         //id for people that are not member but they came gym
         int member_id;
         int remainingSession;
-        public UC_CheckIn_Info()
+        public UC_CheckIn_Info(string user_name)
         {
             InitializeComponent();
+            this.user_name = user_name;
         }
 
         private void txb_UcCheckInMemberId_KeyPress(object sender, KeyPressEventArgs e)
@@ -74,7 +76,8 @@ namespace RayanSport.View
         private void enterMember()
         {
             if (txb_UcCheckInInfoMemberId.Text.Equals("")) {
-                MessageBox.Show("کد عضویت ورزشکار را وارد نمایید");
+                //MessageBox.Show("کد عضویت ورزشکار را وارد نمایید");
+                Alert alert = new Alert("کد عضویت ورزشکار را وارد نمایید", "red");
                 txb_UcCheckInInfoMemberId.Focus();
             }
             else{
@@ -87,19 +90,41 @@ namespace RayanSport.View
                 {
                     commode = Convert.ToInt32(txb_UcCheckInInfoCommodeNum.Text);
                 }
-                rayan_sportDataSet.memberCheckInDataTable memberCheckInDataTable = new rayan_sportDataSet.memberCheckInDataTable();
-                rayan_sportDataSetTableAdapters.memberCheckInTableAdapter memberCheckInTableAdapter = new rayan_sportDataSetTableAdapters.memberCheckInTableAdapter();
-                DateTime d = DateTime.Now;
-                PersianCalendar pc = new PersianCalendar();
-                String date = String.Format("{0}/{1:00}/{2:00} - {3:00}:{4:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d), pc.GetHour(d), pc.GetMinute(d));
+                try
+                {
+                    
+                    rayan_sportDataSetTableAdapters.logTableAdapter logTableAdapter = new rayan_sportDataSetTableAdapters.logTableAdapter();
+                    rayan_sportDataSet.memberCheckInDataTable memberCheckInDataTable = new rayan_sportDataSet.memberCheckInDataTable();
+                    rayan_sportDataSetTableAdapters.memberCheckInTableAdapter memberCheckInTableAdapter = new rayan_sportDataSetTableAdapters.memberCheckInTableAdapter();
+                    DateTime d = DateTime.Now;
+                    PersianCalendar pc = new PersianCalendar();
+                    String date = String.Format("{0}/{1:00}/{2:00} - {3:00}:{4:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d), pc.GetHour(d), pc.GetMinute(d));
+                    string date1 = string.Format("{0}/{1:00}/{2:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));
+                    string time1 = string.Format("{0:00}:{1:00}", pc.GetHour(d), pc.GetMinute(d));
+                    
+                    memberCheckInTableAdapter.Insert(membershipId, date, commode);
+                    //MessageBox.Show(memberGender + " " + memberName + " " + "وارد شد.");
+                    Alert alert = new Alert(memberGender + " " + memberName + " " + "وارد شد.", "green");
+                    
+                    
+                    txb_UcCheckInInfoMemberId.Clear();
+                    ClearTexts();
+                    llb_UcCheckInInfoShowMemberDetail.Enabled = false;
+                    pcb_UcCheckInInfoMemberRemainingSession.BackgroundImage = null;
+                    pcb_UcCheckInInfoMembershipEndDate.BackgroundImage = null;
+                    pcb_UcCheckInInfoMemberShipType.BackgroundImage = null;
+                    pbx_UcCheckInInfoMemberPicture.Image = Properties.Resources.no_image;
+                    rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
+                    rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
+                    tableAdapter.IncreaseRemainingSession(remainingSession - 1, member_id, membershipId);
+                    logTableAdapter.Insert("checked in member : "+memberName,"memberCheckIn",user_name,date1,time1);
+                }
+                catch (Exception ex)
+                {
+                    Alert alert = new Alert(ex.Message, "red");
+                    //throw;
+                }
 
-                memberCheckInTableAdapter.Insert(membershipId, date, commode);
-                MessageBox.Show(memberGender + " " + memberName + " " + "وارد شد.");
-                ClearTexts();
-                txb_UcCheckInInfoMemberId.Clear();
-                rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
-                rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
-                tableAdapter.IncreaseRemainingSession(remainingSession - 1, member_id, membershipId);
             }
         }
 
@@ -213,7 +238,7 @@ namespace RayanSport.View
 
         private void llb_UcCheckInInfoShowMemberDetail_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form_ShowMember show_member = new Form_ShowMember();
+            Form_ShowMember show_member = new Form_ShowMember("1");
             show_member.Show();
         }
     }

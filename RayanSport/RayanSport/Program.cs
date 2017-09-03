@@ -16,9 +16,9 @@ namespace RayanSport
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form_ShowMember member = new Form_ShowMember();
-            member.Member = new Member(107, "", "", "", "", "", "", "", 0);
-           // Application.Run(Form_Main());
+            //Form_ShowMember member = new Form_ShowMember();
+            //member.Member = new Member(107, "", "", "", "", "", "", "", 0);
+            //Application.Run(member);
             Application.Run(new Form_Main());
         }
     }

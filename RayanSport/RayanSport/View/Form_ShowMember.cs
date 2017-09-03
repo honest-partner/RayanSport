@@ -17,6 +17,7 @@ namespace RayanSport.View
         public Form_ShowMember()
         {
             InitializeComponent();
+
         }
         public int setDataForUcShowMemberInfo(Member member)
         {
@@ -31,6 +32,11 @@ namespace RayanSport.View
             }
            
             return 1;
+        }
+        public void changeContractEnabled(bool en,Member member)
+        {
+            uC_ShowMember_ContractInfo1.Enabled = en;
+            uC_ShowMember_ContractInfo1.setData(member);
         }
     }
 }

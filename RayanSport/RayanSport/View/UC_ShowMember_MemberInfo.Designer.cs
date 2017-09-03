@@ -49,9 +49,13 @@
             this.cmb_UcShowMemberMemberInfoMemberBlood = new System.Windows.Forms.ComboBox();
             this.btn_UcShowMemberMemberInfoAddMember = new System.Windows.Forms.Button();
             this.btn_UcShowMemberMemberInfoChangeMember = new System.Windows.Forms.Button();
-            this.btn_UcShowMemberMemberInfoDeleteMember = new System.Windows.Forms.Button();
             this.txb_UcShowMemberMemberInfoMemberId = new System.Windows.Forms.TextBox();
             this.cmb_UcShowMemberMemberInfoMemberGender = new System.Windows.Forms.ComboBox();
+            this.btn_UcShowMemberMemberInfoDeleteMember = new System.Windows.Forms.Button();
+            this.btn_UcShowMemberMemberInfoClear = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_UcShowMemberMemberInfoMemberPicture)).BeginInit();
@@ -140,9 +144,13 @@
             this.tableLayoutPanel3.Controls.Add(this.cmb_UcShowMemberMemberInfoMemberBlood, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.btn_UcShowMemberMemberInfoAddMember, 5, 5);
             this.tableLayoutPanel3.Controls.Add(this.btn_UcShowMemberMemberInfoChangeMember, 4, 5);
-            this.tableLayoutPanel3.Controls.Add(this.btn_UcShowMemberMemberInfoDeleteMember, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.txb_UcShowMemberMemberInfoMemberId, 4, 0);
             this.tableLayoutPanel3.Controls.Add(this.cmb_UcShowMemberMemberInfoMemberGender, 4, 2);
+            this.tableLayoutPanel3.Controls.Add(this.btn_UcShowMemberMemberInfoDeleteMember, 2, 5);
+            this.tableLayoutPanel3.Controls.Add(this.btn_UcShowMemberMemberInfoClear, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.label1, 6, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 6, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label3, 6, 2);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(153, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -246,11 +254,11 @@
             this.lbl_UcShowMemberMemberInfoMemberName.Dock = System.Windows.Forms.DockStyle.Right;
             this.lbl_UcShowMemberMemberInfoMemberName.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_UcShowMemberMemberInfoMemberName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.lbl_UcShowMemberMemberInfoMemberName.Location = new System.Drawing.Point(554, 38);
+            this.lbl_UcShowMemberMemberInfoMemberName.Location = new System.Drawing.Point(559, 38);
             this.lbl_UcShowMemberMemberInfoMemberName.Name = "lbl_UcShowMemberMemberInfoMemberName";
-            this.lbl_UcShowMemberMemberInfoMemberName.Size = new System.Drawing.Size(123, 38);
+            this.lbl_UcShowMemberMemberInfoMemberName.Size = new System.Drawing.Size(118, 38);
             this.lbl_UcShowMemberMemberInfoMemberName.TabIndex = 1;
-            this.lbl_UcShowMemberMemberInfoMemberName.Text = "*نام و نام خانوادگی";
+            this.lbl_UcShowMemberMemberInfoMemberName.Text = "نام و نام خانوادگی";
             this.lbl_UcShowMemberMemberInfoMemberName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_UcShowMemberMemberInfoMemberId
@@ -259,11 +267,11 @@
             this.lbl_UcShowMemberMemberInfoMemberId.Dock = System.Windows.Forms.DockStyle.Right;
             this.lbl_UcShowMemberMemberInfoMemberId.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_UcShowMemberMemberInfoMemberId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.lbl_UcShowMemberMemberInfoMemberId.Location = new System.Drawing.Point(598, 0);
+            this.lbl_UcShowMemberMemberInfoMemberId.Location = new System.Drawing.Point(603, 0);
             this.lbl_UcShowMemberMemberInfoMemberId.Name = "lbl_UcShowMemberMemberInfoMemberId";
-            this.lbl_UcShowMemberMemberInfoMemberId.Size = new System.Drawing.Size(79, 38);
+            this.lbl_UcShowMemberMemberInfoMemberId.Size = new System.Drawing.Size(74, 38);
             this.lbl_UcShowMemberMemberInfoMemberId.TabIndex = 0;
-            this.lbl_UcShowMemberMemberInfoMemberId.Text = "*کد عضویت";
+            this.lbl_UcShowMemberMemberInfoMemberId.Text = "کد عضویت";
             this.lbl_UcShowMemberMemberInfoMemberId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txb_UcShowMemberMemberInfoMemberName
@@ -308,18 +316,18 @@
             this.lbl_UcShowMemberMemberInfoMemberGender.Dock = System.Windows.Forms.DockStyle.Right;
             this.lbl_UcShowMemberMemberInfoMemberGender.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_UcShowMemberMemberInfoMemberGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.lbl_UcShowMemberMemberInfoMemberGender.Location = new System.Drawing.Point(618, 76);
+            this.lbl_UcShowMemberMemberInfoMemberGender.Location = new System.Drawing.Point(623, 76);
             this.lbl_UcShowMemberMemberInfoMemberGender.Name = "lbl_UcShowMemberMemberInfoMemberGender";
-            this.lbl_UcShowMemberMemberInfoMemberGender.Size = new System.Drawing.Size(59, 38);
+            this.lbl_UcShowMemberMemberInfoMemberGender.Size = new System.Drawing.Size(54, 38);
             this.lbl_UcShowMemberMemberInfoMemberGender.TabIndex = 4;
-            this.lbl_UcShowMemberMemberInfoMemberGender.Text = "*جنسیت";
+            this.lbl_UcShowMemberMemberInfoMemberGender.Text = "جنسیت";
             this.lbl_UcShowMemberMemberInfoMemberGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmb_UcShowMemberMemberInfoMemberBlood
             // 
             this.cmb_UcShowMemberMemberInfoMemberBlood.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmb_UcShowMemberMemberInfoMemberBlood.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmb_UcShowMemberMemberInfoMemberBlood.BackColor = System.Drawing.SystemColors.Window;
+            this.cmb_UcShowMemberMemberInfoMemberBlood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_UcShowMemberMemberInfoMemberBlood.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.cmb_UcShowMemberMemberInfoMemberBlood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.cmb_UcShowMemberMemberInfoMemberBlood.FormattingEnabled = true;
@@ -340,8 +348,9 @@
             // 
             // btn_UcShowMemberMemberInfoAddMember
             // 
-            this.btn_UcShowMemberMemberInfoAddMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(87)))), ((int)(((byte)(194)))));
+            this.btn_UcShowMemberMemberInfoAddMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
             this.btn_UcShowMemberMemberInfoAddMember.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowMemberMemberInfoAddMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_UcShowMemberMemberInfoAddMember.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_UcShowMemberMemberInfoAddMember.ForeColor = System.Drawing.Color.White;
             this.btn_UcShowMemberMemberInfoAddMember.Location = new System.Drawing.Point(543, 193);
@@ -354,8 +363,9 @@
             // 
             // btn_UcShowMemberMemberInfoChangeMember
             // 
-            this.btn_UcShowMemberMemberInfoChangeMember.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_UcShowMemberMemberInfoChangeMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
             this.btn_UcShowMemberMemberInfoChangeMember.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowMemberMemberInfoChangeMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_UcShowMemberMemberInfoChangeMember.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_UcShowMemberMemberInfoChangeMember.ForeColor = System.Drawing.Color.White;
             this.btn_UcShowMemberMemberInfoChangeMember.Location = new System.Drawing.Point(403, 193);
@@ -365,20 +375,6 @@
             this.btn_UcShowMemberMemberInfoChangeMember.Text = "ذخیره تغییرات";
             this.btn_UcShowMemberMemberInfoChangeMember.UseVisualStyleBackColor = false;
             this.btn_UcShowMemberMemberInfoChangeMember.Click += new System.EventHandler(this.btn_UcShowMemberMemberInfoChangeMember_Click);
-            // 
-            // btn_UcShowMemberMemberInfoDeleteMember
-            // 
-            this.btn_UcShowMemberMemberInfoDeleteMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.btn_UcShowMemberMemberInfoDeleteMember.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_UcShowMemberMemberInfoDeleteMember.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btn_UcShowMemberMemberInfoDeleteMember.ForeColor = System.Drawing.Color.White;
-            this.btn_UcShowMemberMemberInfoDeleteMember.Location = new System.Drawing.Point(23, 193);
-            this.btn_UcShowMemberMemberInfoDeleteMember.Name = "btn_UcShowMemberMemberInfoDeleteMember";
-            this.btn_UcShowMemberMemberInfoDeleteMember.Size = new System.Drawing.Size(134, 48);
-            this.btn_UcShowMemberMemberInfoDeleteMember.TabIndex = 16;
-            this.btn_UcShowMemberMemberInfoDeleteMember.Text = "حذف ورزشکار";
-            this.btn_UcShowMemberMemberInfoDeleteMember.UseVisualStyleBackColor = false;
-            this.btn_UcShowMemberMemberInfoDeleteMember.Click += new System.EventHandler(this.btn_UcShowMemberMemberInfoDeleteMember_Click);
             // 
             // txb_UcShowMemberMemberInfoMemberId
             // 
@@ -394,8 +390,8 @@
             // cmb_UcShowMemberMemberInfoMemberGender
             // 
             this.cmb_UcShowMemberMemberInfoMemberGender.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmb_UcShowMemberMemberInfoMemberGender.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmb_UcShowMemberMemberInfoMemberGender.BackColor = System.Drawing.SystemColors.Window;
+            this.cmb_UcShowMemberMemberInfoMemberGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_UcShowMemberMemberInfoMemberGender.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.cmb_UcShowMemberMemberInfoMemberGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.cmb_UcShowMemberMemberInfoMemberGender.FormattingEnabled = true;
@@ -410,11 +406,81 @@
             this.cmb_UcShowMemberMemberInfoMemberGender.Enter += new System.EventHandler(this.cmb_UcShowMemberMemberInfoMemberGender_Enter);
             this.cmb_UcShowMemberMemberInfoMemberGender.Leave += new System.EventHandler(this.cmb_UcShowMemberMemberInfoMemberGender_Leave);
             // 
+            // btn_UcShowMemberMemberInfoDeleteMember
+            // 
+            this.btn_UcShowMemberMemberInfoDeleteMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.btn_UcShowMemberMemberInfoDeleteMember.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowMemberMemberInfoDeleteMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberMemberInfoDeleteMember.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_UcShowMemberMemberInfoDeleteMember.ForeColor = System.Drawing.Color.White;
+            this.btn_UcShowMemberMemberInfoDeleteMember.Location = new System.Drawing.Point(163, 193);
+            this.btn_UcShowMemberMemberInfoDeleteMember.Name = "btn_UcShowMemberMemberInfoDeleteMember";
+            this.btn_UcShowMemberMemberInfoDeleteMember.Size = new System.Drawing.Size(134, 48);
+            this.btn_UcShowMemberMemberInfoDeleteMember.TabIndex = 16;
+            this.btn_UcShowMemberMemberInfoDeleteMember.Text = "حذف ورزشکار";
+            this.btn_UcShowMemberMemberInfoDeleteMember.UseVisualStyleBackColor = false;
+            this.btn_UcShowMemberMemberInfoDeleteMember.Click += new System.EventHandler(this.btn_UcShowMemberMemberInfoDeleteMember_Click);
+            // 
+            // btn_UcShowMemberMemberInfoClear
+            // 
+            this.btn_UcShowMemberMemberInfoClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.btn_UcShowMemberMemberInfoClear.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcShowMemberMemberInfoClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UcShowMemberMemberInfoClear.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_UcShowMemberMemberInfoClear.ForeColor = System.Drawing.Color.White;
+            this.btn_UcShowMemberMemberInfoClear.Location = new System.Drawing.Point(23, 193);
+            this.btn_UcShowMemberMemberInfoClear.Name = "btn_UcShowMemberMemberInfoClear";
+            this.btn_UcShowMemberMemberInfoClear.Size = new System.Drawing.Size(134, 48);
+            this.btn_UcShowMemberMemberInfoClear.TabIndex = 22;
+            this.btn_UcShowMemberMemberInfoClear.Text = "پاک کردن";
+            this.btn_UcShowMemberMemberInfoClear.UseVisualStyleBackColor = false;
+            this.btn_UcShowMemberMemberInfoClear.Click += new System.EventHandler(this.btn_UcShowMemberMemberInfoClear_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(683, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 38);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "*";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(683, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(14, 38);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "*";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label3.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(683, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(14, 38);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "*";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // UC_ShowMember_MemberInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.Controls.Add(this.tableLayoutPanel1);
+            this.DoubleBuffered = true;
             this.Name = "UC_ShowMember_MemberInfo";
             this.Size = new System.Drawing.Size(856, 250);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -449,8 +515,12 @@
         private System.Windows.Forms.MaskedTextBox txb_UcShowMemberMemberInfoMemberSick;
         private System.Windows.Forms.Button btn_UcShowMemberMemberInfoDeleteMember;
         private System.Windows.Forms.Button btn_UcShowMemberMemberInfoChangeMember;
-        private System.Windows.Forms.Button btn_UcShowMemberMemberInfoAddMember;
         private System.Windows.Forms.ComboBox cmb_UcShowMemberMemberInfoMemberGender;
         private System.Windows.Forms.ComboBox cmb_UcShowMemberMemberInfoMemberBlood;
+        private System.Windows.Forms.Button btn_UcShowMemberMemberInfoClear;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Button btn_UcShowMemberMemberInfoAddMember;
     }
 }

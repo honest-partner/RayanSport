@@ -48,6 +48,8 @@ namespace RayanSport.View
             int notMember = (int)checkInTableAdapter.ScalarCountByNotMember(todeyDate1);
             lbl_UcHomeDayliMemberNum.Text = notMember.ToString();
 
+            Iam = 0;
+
 
 
         }
@@ -62,6 +64,33 @@ namespace RayanSport.View
             PersianCalendar pc = new PersianCalendar();
             return string.Format("{0}/{1:00}/{2:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));//---> miladi to shamsi*/
 
+        }
+
+        
+
+        private void llb_UcHomeAllContractNum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Iam = 1;
+        }
+
+        private void llb_UcHomeAllMember_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Iam = 2;
+        }
+
+        private void llb_UcHomeActiveContract_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Iam = 3;
+        }
+
+        private void llb_UcHomeDayliMemberNum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Iam = 4;
+        }
+
+        private void llb_UcHomeExoiredContract_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Iam = 5;
         }
     }
 }

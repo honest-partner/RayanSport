@@ -29,6 +29,10 @@ namespace RayanSport.View
             dgv_UcShowAllMemberShowDgv.Columns["member_address"].IsVisible = false;
             dgv_UcShowAllMemberShowDgv.Columns["member_nationalCode"].IsVisible = false;
             dgv_UcShowAllMemberShowDgv.Columns["member_charge"].IsVisible = false;
+            dgv_UcShowAllMemberShowDgv.Columns["member_name"].HeaderText = "نام و نام خانوادگی";
+            dgv_UcShowAllMemberShowDgv.Columns["member_id"].HeaderText = "کد عضویت";
+            dgv_UcShowAllMemberShowDgv.Columns["member_gender"].HeaderText = "جنسیت";
+            dgv_UcShowAllMemberShowDgv.Columns["member_tel"].HeaderText = "تلفن";
 
         }
 

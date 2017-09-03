@@ -130,6 +130,7 @@
             this.gpb_UcHomeCalender.Controls.Add(this.tableLayoutPanel6);
             this.gpb_UcHomeCalender.DisabledBackColor = System.Drawing.Color.Empty;
             this.gpb_UcHomeCalender.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gpb_UcHomeCalender.Font = new System.Drawing.Font("B Bardiya", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.gpb_UcHomeCalender.Location = new System.Drawing.Point(372, 13);
             this.gpb_UcHomeCalender.Margin = new System.Windows.Forms.Padding(2);
             this.gpb_UcHomeCalender.Name = "gpb_UcHomeCalender";
@@ -241,6 +242,7 @@
             this.gpb_UcHomeClock.Controls.Add(this.tableLayoutPanel7);
             this.gpb_UcHomeClock.DisabledBackColor = System.Drawing.Color.Empty;
             this.gpb_UcHomeClock.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gpb_UcHomeClock.Font = new System.Drawing.Font("B Bardiya", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.gpb_UcHomeClock.Location = new System.Drawing.Point(16, 13);
             this.gpb_UcHomeClock.Margin = new System.Windows.Forms.Padding(2);
             this.gpb_UcHomeClock.Name = "gpb_UcHomeClock";
@@ -315,7 +317,7 @@
             this.gpb_UcHomeInfo.Controls.Add(this.tableLayoutPanel5);
             this.gpb_UcHomeInfo.DisabledBackColor = System.Drawing.Color.Empty;
             this.gpb_UcHomeInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gpb_UcHomeInfo.Font = new System.Drawing.Font("B Nazanin+ Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.gpb_UcHomeInfo.Font = new System.Drawing.Font("B Bardiya", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.gpb_UcHomeInfo.Location = new System.Drawing.Point(16, 2);
             this.gpb_UcHomeInfo.Margin = new System.Windows.Forms.Padding(2);
             this.gpb_UcHomeInfo.Name = "gpb_UcHomeInfo";
@@ -394,6 +396,7 @@
             this.llb_UcHomeAllContractNum.TabStop = true;
             this.llb_UcHomeAllContractNum.Text = "تعداد کل قراردادها";
             this.llb_UcHomeAllContractNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.llb_UcHomeAllContractNum.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_UcHomeAllContractNum_LinkClicked);
             // 
             // llb_UcHomeActiveContract
             // 
@@ -407,6 +410,7 @@
             this.llb_UcHomeActiveContract.TabStop = true;
             this.llb_UcHomeActiveContract.Text = "تعداد قرارداد های فعال";
             this.llb_UcHomeActiveContract.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.llb_UcHomeActiveContract.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_UcHomeActiveContract_LinkClicked);
             // 
             // llb_UcHomeExoiredContract
             // 
@@ -420,6 +424,7 @@
             this.llb_UcHomeExoiredContract.TabStop = true;
             this.llb_UcHomeExoiredContract.Text = "تعداد قراردادهای منقضی به تاریخ امروز";
             this.llb_UcHomeExoiredContract.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.llb_UcHomeExoiredContract.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_UcHomeExoiredContract_LinkClicked);
             // 
             // llb_UcHomeAllMember
             // 
@@ -433,6 +438,7 @@
             this.llb_UcHomeAllMember.TabStop = true;
             this.llb_UcHomeAllMember.Text = "تعداد کل اعضا";
             this.llb_UcHomeAllMember.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.llb_UcHomeAllMember.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_UcHomeAllMember_LinkClicked);
             // 
             // llb_UcHomeDayliMemberNum
             // 
@@ -446,6 +452,7 @@
             this.llb_UcHomeDayliMemberNum.TabStop = true;
             this.llb_UcHomeDayliMemberNum.Text = "تعداد اعضای روزانه امروز";
             this.llb_UcHomeDayliMemberNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.llb_UcHomeDayliMemberNum.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_UcHomeDayliMemberNum_LinkClicked);
             // 
             // lbl_UcHomeAllContractNum
             // 

@@ -417,6 +417,8 @@
             // 
             this.btn_UcCheckInLogSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
             this.btn_UcCheckInLogSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_UcCheckInLogSearch.FlatAppearance.BorderSize = 0;
+            this.btn_UcCheckInLogSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_UcCheckInLogSearch.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_UcCheckInLogSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_UcCheckInLogSearch.Location = new System.Drawing.Point(3, 3);

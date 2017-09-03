@@ -239,7 +239,7 @@
             // 
             this.lbl_UcSettingOldPass.AutoSize = true;
             this.lbl_UcSettingOldPass.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_UcSettingOldPass.Font = new System.Drawing.Font("B Nazanin+ Bold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_UcSettingOldPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_UcSettingOldPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.lbl_UcSettingOldPass.Location = new System.Drawing.Point(167, 0);
             this.lbl_UcSettingOldPass.Name = "lbl_UcSettingOldPass";
@@ -252,7 +252,7 @@
             // 
             this.lbl_UcSettingnewPass.AutoSize = true;
             this.lbl_UcSettingnewPass.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_UcSettingnewPass.Font = new System.Drawing.Font("B Nazanin+ Bold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_UcSettingnewPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_UcSettingnewPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.lbl_UcSettingnewPass.Location = new System.Drawing.Point(167, 79);
             this.lbl_UcSettingnewPass.Name = "lbl_UcSettingnewPass";
@@ -265,7 +265,7 @@
             // 
             this.lbl_UcSettingrepeatPass.AutoSize = true;
             this.lbl_UcSettingrepeatPass.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_UcSettingrepeatPass.Font = new System.Drawing.Font("B Nazanin+ Bold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_UcSettingrepeatPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_UcSettingrepeatPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.lbl_UcSettingrepeatPass.Location = new System.Drawing.Point(167, 158);
             this.lbl_UcSettingrepeatPass.Name = "lbl_UcSettingrepeatPass";
@@ -359,7 +359,7 @@
             this.btn_UcSettingClear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_UcSettingClear.FlatAppearance.BorderSize = 0;
             this.btn_UcSettingClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_UcSettingClear.Font = new System.Drawing.Font("B Nazanin+ Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_UcSettingClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_UcSettingClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcSettingClear.Location = new System.Drawing.Point(3, 3);
             this.btn_UcSettingClear.Name = "btn_UcSettingClear";
@@ -375,7 +375,7 @@
             this.btn_UcSettingConfirm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_UcSettingConfirm.FlatAppearance.BorderSize = 0;
             this.btn_UcSettingConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_UcSettingConfirm.Font = new System.Drawing.Font("B Nazanin+ Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_UcSettingConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_UcSettingConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcSettingConfirm.Location = new System.Drawing.Point(121, 3);
             this.btn_UcSettingConfirm.Name = "btn_UcSettingConfirm";

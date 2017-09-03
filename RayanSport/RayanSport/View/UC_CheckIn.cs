@@ -25,7 +25,8 @@ namespace RayanSport.View
             int? commode;
             if (txb_UcCheckInPrice.Text.Equals(""))
             {
-                MessageBox.Show("لطفا قیمت جلسه را وارد نمایید");
+                //MessageBox.Show("لطفا قیمت جلسه را وارد نمایید");
+                Alert alert = new Alert("لطفا قیمت جلسه را وارد نمایید", "red");
                 txb_UcCheckInPrice.Focus();
             }
             else
@@ -48,12 +49,14 @@ namespace RayanSport.View
                     try
                     {
                         checkInTableAdapter.Insert(Convert.ToInt64(txb_UcCheckInPrice.Text), date, commode);
-                        MessageBox.Show("ورود با موفقیت انجام شد");
+                        //MessageBox.Show("ورود با موفقیت انجام شد");
+                        Alert alert = new Alert("ورود با موفقیت انجام شد", "green");
                         ClearTexts();
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        //MessageBox.Show(ex.Message);
+                        Alert alert = new Alert(ex.Message, "red");
                     }
 
                 }

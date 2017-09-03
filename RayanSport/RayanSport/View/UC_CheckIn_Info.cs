@@ -74,7 +74,8 @@ namespace RayanSport.View
         private void enterMember()
         {
             if (txb_UcCheckInInfoMemberId.Text.Equals("")) {
-                MessageBox.Show("کد عضویت ورزشکار را وارد نمایید");
+                //MessageBox.Show("کد عضویت ورزشکار را وارد نمایید");
+                Alert alert = new Alert("کد عضویت ورزشکار را وارد نمایید", "red");
                 txb_UcCheckInInfoMemberId.Focus();
             }
             else{
@@ -94,7 +95,8 @@ namespace RayanSport.View
                 String date = String.Format("{0}/{1:00}/{2:00} - {3:00}:{4:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d), pc.GetHour(d), pc.GetMinute(d));
 
                 memberCheckInTableAdapter.Insert(membershipId, date, commode);
-                MessageBox.Show(memberGender + " " + memberName + " " + "وارد شد.");
+                //MessageBox.Show(memberGender + " " + memberName + " " + "وارد شد.");
+                Alert alert = new Alert(memberGender + " " + memberName + " " + "وارد شد.", "green");
                 ClearTexts();
                 txb_UcCheckInInfoMemberId.Clear();
                 rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();

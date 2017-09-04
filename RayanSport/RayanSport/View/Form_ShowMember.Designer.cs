@@ -28,29 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.uC_ShowMember_ContractInfo1 = new RayanSport.View.UC_ShowMember_ContractInfo();
+            this.uC_Log1 = new RayanSport.View.UC_Log();
             this.SuspendLayout();
             // 
-            // uC_ShowMember_ContractInfo1
+            // uC_Log1
             // 
-            this.uC_ShowMember_ContractInfo1.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uC_ShowMember_ContractInfo1.Location = new System.Drawing.Point(-1, 5);
-            this.uC_ShowMember_ContractInfo1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            
-            this.uC_ShowMember_ContractInfo1.Name = "uC_ShowMember_ContractInfo1";
-            this.uC_ShowMember_ContractInfo1.Size = new System.Drawing.Size(1273, 713);
-            this.uC_ShowMember_ContractInfo1.TabIndex = 0;
+            this.uC_Log1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Log1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Log1.Name = "uC_Log1";
+            this.uC_Log1.Size = new System.Drawing.Size(1280, 719);
+            this.uC_Log1.TabIndex = 0;
             // 
             // Form_ShowMember
             // 
             this.ClientSize = new System.Drawing.Size(1280, 719);
-            this.Controls.Add(this.uC_ShowMember_ContractInfo1);
+            this.Controls.Add(this.uC_Log1);
             this.Name = "Form_ShowMember";
             this.ResumeLayout(false);
 
         }
 
-        private UC_ShowMember_ContractInfo uC_ShowMember_ContractInfo1;
+        private UC_Log uC_Log1;
     }
 
     #endregion

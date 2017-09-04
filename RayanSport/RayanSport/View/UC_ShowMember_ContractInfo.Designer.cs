@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn7 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn8 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn9 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn10 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn11 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn12 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn13 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn14 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn4 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn5 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn6 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.dgv_UcShowMemberContractInfoContracts = new Telerik.WinControls.UI.RadGridView();
             this.membershipBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.rayan_sportDataSet = new RayanSport.rayan_sportDataSet();
@@ -87,8 +87,8 @@
             this.membershipTableAdapter = new RayanSport.rayan_sportDataSetTableAdapters.membershipTableAdapter();
             this.membershipBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.membershipBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.fKmemberCheckInmembershipBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.memberCheckInTableAdapter = new RayanSport.rayan_sportDataSetTableAdapters.memberCheckInTableAdapter();
+            this.fKmemberCheckInmembershipBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowMemberContractInfoContracts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UcShowMemberContractInfoContracts.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource3)).BeginInit();
@@ -119,99 +119,99 @@
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.ClipboardCopyMode = Telerik.WinControls.UI.GridViewClipboardCopyMode.Disable;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.ClipboardCutMode = Telerik.WinControls.UI.GridViewClipboardCutMode.Disable;
-            gridViewDecimalColumn7.DataType = typeof(long);
-            gridViewDecimalColumn7.FieldName = "membership_id";
-            gridViewDecimalColumn7.HeaderText = "شماره قرارداد";
-            gridViewDecimalColumn7.IsAutoGenerated = true;
-            gridViewDecimalColumn7.Name = "membership_id";
-            gridViewDecimalColumn7.ReadOnly = true;
-            gridViewDecimalColumn7.Width = 123;
-            gridViewDecimalColumn8.DataType = typeof(int);
-            gridViewDecimalColumn8.FieldName = "membership_memberId";
-            gridViewDecimalColumn8.HeaderText = "membership_memberId";
-            gridViewDecimalColumn8.IsAutoGenerated = true;
-            gridViewDecimalColumn8.IsVisible = false;
-            gridViewDecimalColumn8.Name = "membership_memberId";
-            gridViewDecimalColumn8.Width = 104;
-            gridViewTextBoxColumn8.FieldName = "membership_memberName";
-            gridViewTextBoxColumn8.HeaderText = "membership_memberName";
-            gridViewTextBoxColumn8.IsAutoGenerated = true;
-            gridViewTextBoxColumn8.IsVisible = false;
-            gridViewTextBoxColumn8.Name = "membership_memberName";
-            gridViewTextBoxColumn8.Width = 113;
-            gridViewTextBoxColumn9.FieldName = "membership_startDate";
-            gridViewTextBoxColumn9.HeaderText = "تاریخ شروع";
-            gridViewTextBoxColumn9.IsAutoGenerated = true;
-            gridViewTextBoxColumn9.Name = "membership_startDate";
-            gridViewTextBoxColumn9.Width = 123;
-            gridViewTextBoxColumn10.FieldName = "membership_endDate";
-            gridViewTextBoxColumn10.HeaderText = "تاریخ پایان";
-            gridViewTextBoxColumn10.IsAutoGenerated = true;
-            gridViewTextBoxColumn10.Name = "membership_endDate";
-            gridViewTextBoxColumn10.Width = 123;
-            gridViewTextBoxColumn11.FieldName = "membership_type";
-            gridViewTextBoxColumn11.HeaderText = "نوع";
-            gridViewTextBoxColumn11.IsAutoGenerated = true;
-            gridViewTextBoxColumn11.Name = "membership_type";
-            gridViewTextBoxColumn11.Width = 123;
-            gridViewDecimalColumn9.DataType = typeof(int);
-            gridViewDecimalColumn9.FieldName = "membership_remainingSession";
-            gridViewDecimalColumn9.HeaderText = "جلسات باقی مانده";
-            gridViewDecimalColumn9.IsAutoGenerated = true;
-            gridViewDecimalColumn9.Name = "membership_remainingSession";
-            gridViewDecimalColumn9.Width = 123;
-            gridViewDecimalColumn10.DataType = typeof(long);
-            gridViewDecimalColumn10.FieldName = "membership_receiptNumber";
-            gridViewDecimalColumn10.HeaderText = "کد رهگیری";
-            gridViewDecimalColumn10.IsAutoGenerated = true;
-            gridViewDecimalColumn10.Name = "membership_receiptNumber";
-            gridViewDecimalColumn10.Width = 123;
-            gridViewTextBoxColumn12.FieldName = "membership_paymentType";
-            gridViewTextBoxColumn12.HeaderText = "نوع پرداخت";
-            gridViewTextBoxColumn12.IsAutoGenerated = true;
-            gridViewTextBoxColumn12.Name = "membership_paymentType";
-            gridViewTextBoxColumn12.Width = 123;
-            gridViewDecimalColumn11.DataType = typeof(long);
-            gridViewDecimalColumn11.FieldName = "membership_price";
-            gridViewDecimalColumn11.HeaderText = "هزینه قرارداد";
-            gridViewDecimalColumn11.IsAutoGenerated = true;
-            gridViewDecimalColumn11.Name = "membership_price";
-            gridViewDecimalColumn11.Width = 123;
-            gridViewDecimalColumn12.DataType = typeof(long);
-            gridViewDecimalColumn12.FieldName = "membership_payment";
-            gridViewDecimalColumn12.HeaderText = "مبلغ پرداخت شده";
-            gridViewDecimalColumn12.IsAutoGenerated = true;
-            gridViewDecimalColumn12.Name = "membership_payment";
-            gridViewDecimalColumn12.Width = 123;
-            gridViewTextBoxColumn13.FieldName = "membership_description";
-            gridViewTextBoxColumn13.HeaderText = "توضیحات";
-            gridViewTextBoxColumn13.IsAutoGenerated = true;
-            gridViewTextBoxColumn13.Name = "membership_description";
-            gridViewTextBoxColumn13.Width = 123;
-            gridViewTextBoxColumn14.FieldName = "membership_status";
-            gridViewTextBoxColumn14.HeaderText = "وضعیت";
-            gridViewTextBoxColumn14.IsAutoGenerated = true;
-            gridViewTextBoxColumn14.Name = "membership_status";
-            gridViewTextBoxColumn14.Width = 123;
+            gridViewDecimalColumn1.DataType = typeof(long);
+            gridViewDecimalColumn1.FieldName = "membership_id";
+            gridViewDecimalColumn1.HeaderText = "شماره قرارداد";
+            gridViewDecimalColumn1.IsAutoGenerated = true;
+            gridViewDecimalColumn1.Name = "membership_id";
+            gridViewDecimalColumn1.ReadOnly = true;
+            gridViewDecimalColumn1.Width = 122;
+            gridViewDecimalColumn2.DataType = typeof(int);
+            gridViewDecimalColumn2.FieldName = "membership_memberId";
+            gridViewDecimalColumn2.HeaderText = "membership_memberId";
+            gridViewDecimalColumn2.IsAutoGenerated = true;
+            gridViewDecimalColumn2.IsVisible = false;
+            gridViewDecimalColumn2.Name = "membership_memberId";
+            gridViewDecimalColumn2.Width = 104;
+            gridViewTextBoxColumn1.FieldName = "membership_memberName";
+            gridViewTextBoxColumn1.HeaderText = "membership_memberName";
+            gridViewTextBoxColumn1.IsAutoGenerated = true;
+            gridViewTextBoxColumn1.IsVisible = false;
+            gridViewTextBoxColumn1.Name = "membership_memberName";
+            gridViewTextBoxColumn1.Width = 113;
+            gridViewTextBoxColumn2.FieldName = "membership_startDate";
+            gridViewTextBoxColumn2.HeaderText = "تاریخ شروع";
+            gridViewTextBoxColumn2.IsAutoGenerated = true;
+            gridViewTextBoxColumn2.Name = "membership_startDate";
+            gridViewTextBoxColumn2.Width = 122;
+            gridViewTextBoxColumn3.FieldName = "membership_endDate";
+            gridViewTextBoxColumn3.HeaderText = "تاریخ پایان";
+            gridViewTextBoxColumn3.IsAutoGenerated = true;
+            gridViewTextBoxColumn3.Name = "membership_endDate";
+            gridViewTextBoxColumn3.Width = 122;
+            gridViewTextBoxColumn4.FieldName = "membership_type";
+            gridViewTextBoxColumn4.HeaderText = "نوع";
+            gridViewTextBoxColumn4.IsAutoGenerated = true;
+            gridViewTextBoxColumn4.Name = "membership_type";
+            gridViewTextBoxColumn4.Width = 122;
+            gridViewDecimalColumn3.DataType = typeof(int);
+            gridViewDecimalColumn3.FieldName = "membership_remainingSession";
+            gridViewDecimalColumn3.HeaderText = "جلسات باقی مانده";
+            gridViewDecimalColumn3.IsAutoGenerated = true;
+            gridViewDecimalColumn3.Name = "membership_remainingSession";
+            gridViewDecimalColumn3.Width = 122;
+            gridViewDecimalColumn4.DataType = typeof(long);
+            gridViewDecimalColumn4.FieldName = "membership_receiptNumber";
+            gridViewDecimalColumn4.HeaderText = "کد رهگیری";
+            gridViewDecimalColumn4.IsAutoGenerated = true;
+            gridViewDecimalColumn4.Name = "membership_receiptNumber";
+            gridViewDecimalColumn4.Width = 122;
+            gridViewTextBoxColumn5.FieldName = "membership_paymentType";
+            gridViewTextBoxColumn5.HeaderText = "نوع پرداخت";
+            gridViewTextBoxColumn5.IsAutoGenerated = true;
+            gridViewTextBoxColumn5.Name = "membership_paymentType";
+            gridViewTextBoxColumn5.Width = 122;
+            gridViewDecimalColumn5.DataType = typeof(long);
+            gridViewDecimalColumn5.FieldName = "membership_price";
+            gridViewDecimalColumn5.HeaderText = "هزینه قرارداد";
+            gridViewDecimalColumn5.IsAutoGenerated = true;
+            gridViewDecimalColumn5.Name = "membership_price";
+            gridViewDecimalColumn5.Width = 122;
+            gridViewDecimalColumn6.DataType = typeof(long);
+            gridViewDecimalColumn6.FieldName = "membership_payment";
+            gridViewDecimalColumn6.HeaderText = "مبلغ پرداخت شده";
+            gridViewDecimalColumn6.IsAutoGenerated = true;
+            gridViewDecimalColumn6.Name = "membership_payment";
+            gridViewDecimalColumn6.Width = 122;
+            gridViewTextBoxColumn6.FieldName = "membership_description";
+            gridViewTextBoxColumn6.HeaderText = "توضیحات";
+            gridViewTextBoxColumn6.IsAutoGenerated = true;
+            gridViewTextBoxColumn6.Name = "membership_description";
+            gridViewTextBoxColumn6.Width = 122;
+            gridViewTextBoxColumn7.FieldName = "membership_status";
+            gridViewTextBoxColumn7.HeaderText = "وضعیت";
+            gridViewTextBoxColumn7.IsAutoGenerated = true;
+            gridViewTextBoxColumn7.Name = "membership_status";
+            gridViewTextBoxColumn7.Width = 122;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn7,
-            gridViewDecimalColumn8,
-            gridViewTextBoxColumn8,
-            gridViewTextBoxColumn9,
-            gridViewTextBoxColumn10,
-            gridViewTextBoxColumn11,
-            gridViewDecimalColumn9,
-            gridViewDecimalColumn10,
-            gridViewTextBoxColumn12,
-            gridViewDecimalColumn11,
-            gridViewDecimalColumn12,
-            gridViewTextBoxColumn13,
-            gridViewTextBoxColumn14});
+            gridViewDecimalColumn1,
+            gridViewDecimalColumn2,
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4,
+            gridViewDecimalColumn3,
+            gridViewDecimalColumn4,
+            gridViewTextBoxColumn5,
+            gridViewDecimalColumn5,
+            gridViewDecimalColumn6,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7});
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.DataSource = this.membershipBindingSource3;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.EnableGrouping = false;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.EnablePaging = true;
             this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.PageSize = 5;
-            this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            this.dgv_UcShowMemberContractInfoContracts.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.dgv_UcShowMemberContractInfoContracts.Name = "dgv_UcShowMemberContractInfoContracts";
             this.dgv_UcShowMemberContractInfoContracts.ReadOnly = true;
             this.dgv_UcShowMemberContractInfoContracts.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -672,14 +672,14 @@
             this.membershipBindingSource2.DataMember = "membership";
             this.membershipBindingSource2.DataSource = this.rayan_sportDataSet;
             // 
+            // memberCheckInTableAdapter
+            // 
+            this.memberCheckInTableAdapter.ClearBeforeFill = true;
+            // 
             // fKmemberCheckInmembershipBindingSource
             // 
             this.fKmemberCheckInmembershipBindingSource.DataMember = "FK_memberCheckIn_membership";
             this.fKmemberCheckInmembershipBindingSource.DataSource = this.membershipBindingSource2;
-            // 
-            // memberCheckInTableAdapter
-            // 
-            this.memberCheckInTableAdapter.ClearBeforeFill = true;
             // 
             // UC_ShowMember_ContractInfo
             // 

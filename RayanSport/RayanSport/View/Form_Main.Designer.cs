@@ -85,8 +85,8 @@
             this.line2 = new DevComponents.DotNetBar.Controls.Line();
             this.gpb_mainBody = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tlp_mainBody = new System.Windows.Forms.TableLayoutPanel();
-            this.tmr_mainClock = new System.Windows.Forms.Timer(this.components);
             this.uC_Home1 = new RayanSport.View.UC_Home();
+            this.tmr_mainClock = new System.Windows.Forms.Timer(this.components);
             this.tlp_mainMainLayout.SuspendLayout();
             this.tlp_mainMenuLayout.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -464,7 +464,7 @@
             this.lbl_mainExit.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_mainExit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainExit.Font = new System.Drawing.Font("B Bardiya", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainExit.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_mainExit.Location = new System.Drawing.Point(3, 419);
             this.lbl_mainExit.Name = "lbl_mainExit";
@@ -483,7 +483,7 @@
             this.lbl_mainAbout.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainAbout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_mainAbout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainAbout.Font = new System.Drawing.Font("B Bardiya", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainAbout.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_mainAbout.Location = new System.Drawing.Point(3, 367);
             this.lbl_mainAbout.Name = "lbl_mainAbout";
@@ -503,7 +503,7 @@
             this.lbl_mainSetting.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainSetting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_mainSetting.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainSetting.Font = new System.Drawing.Font("B Bardiya", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainSetting.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_mainSetting.Location = new System.Drawing.Point(3, 315);
             this.lbl_mainSetting.Name = "lbl_mainSetting";
@@ -524,7 +524,7 @@
             this.lbl_mainUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_mainUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_mainUser.Enabled = false;
-            this.lbl_mainUser.Font = new System.Drawing.Font("B Bardiya", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainUser.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_mainUser.Location = new System.Drawing.Point(3, 263);
             this.lbl_mainUser.Name = "lbl_mainUser";
@@ -545,7 +545,7 @@
             this.lbl_mainBuffet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_mainBuffet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_mainBuffet.Enabled = false;
-            this.lbl_mainBuffet.Font = new System.Drawing.Font("B Bardiya", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainBuffet.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainBuffet.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_mainBuffet.Location = new System.Drawing.Point(3, 211);
             this.lbl_mainBuffet.Name = "lbl_mainBuffet";
@@ -565,7 +565,7 @@
             this.lbl_mainContract.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainContract.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_mainContract.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainContract.Font = new System.Drawing.Font("B Bardiya", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainContract.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainContract.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_mainContract.Location = new System.Drawing.Point(3, 159);
             this.lbl_mainContract.Name = "lbl_mainContract";
@@ -585,7 +585,7 @@
             this.lbl_mainMember.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainMember.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_mainMember.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainMember.Font = new System.Drawing.Font("B Bardiya", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainMember.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainMember.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_mainMember.Location = new System.Drawing.Point(3, 107);
             this.lbl_mainMember.Name = "lbl_mainMember";
@@ -605,7 +605,7 @@
             this.lbl_mainHome.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_mainHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainHome.Font = new System.Drawing.Font("B Bardiya", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainHome.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_mainHome.Location = new System.Drawing.Point(3, 3);
             this.lbl_mainHome.Name = "lbl_mainHome";
@@ -625,7 +625,7 @@
             this.lbl_mainEntrance.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainEntrance.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_mainEntrance.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainEntrance.Font = new System.Drawing.Font("B Bardiya", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainEntrance.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainEntrance.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_mainEntrance.Location = new System.Drawing.Point(3, 55);
             this.lbl_mainEntrance.Name = "lbl_mainEntrance";
@@ -893,7 +893,7 @@
             // 
             this.lbl_mainHeaderText.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_mainHeaderText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mainHeaderText.Font = new System.Drawing.Font("B Bardiya", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mainHeaderText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_mainHeaderText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lbl_mainHeaderText.Location = new System.Drawing.Point(294, 3);
             this.lbl_mainHeaderText.Name = "lbl_mainHeaderText";
@@ -1092,12 +1092,6 @@
             this.tlp_mainBody.Size = new System.Drawing.Size(748, 540);
             this.tlp_mainBody.TabIndex = 0;
             // 
-            // tmr_mainClock
-            // 
-            this.tmr_mainClock.Enabled = true;
-            this.tmr_mainClock.Interval = 1000;
-            this.tmr_mainClock.Tick += new System.EventHandler(this.tmr_mainClock_Tick);
-            // 
             // uC_Home1
             // 
             this.uC_Home1.Location = new System.Drawing.Point(4, 4);
@@ -1105,6 +1099,12 @@
             this.uC_Home1.Name = "uC_Home1";
             this.uC_Home1.Size = new System.Drawing.Size(740, 532);
             this.uC_Home1.TabIndex = 0;
+            // 
+            // tmr_mainClock
+            // 
+            this.tmr_mainClock.Enabled = true;
+            this.tmr_mainClock.Interval = 1000;
+            this.tmr_mainClock.Tick += new System.EventHandler(this.tmr_mainClock_Tick);
             // 
             // Form_Main
             // 

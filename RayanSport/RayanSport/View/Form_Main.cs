@@ -370,7 +370,7 @@ namespace RayanSport
         private void pbx_mainMemberIcon_Click(object sender, EventArgs e)
         {
             lbl_mainHeaderText.Text = lbl_mainMember.Text;
-            ucShowAllMember = new UC_ShowAllMember();
+            ucShowAllMember = new UC_ShowAllMember("1");
             this.Controls.Add(ucShowAllMember);
         }
 

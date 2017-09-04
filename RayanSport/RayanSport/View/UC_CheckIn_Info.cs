@@ -238,7 +238,7 @@ namespace RayanSport.View
 
         private void llb_UcCheckInInfoShowMemberDetail_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form_ShowMember show_member = new Form_ShowMember();
+            Form_ShowMember show_member = new Form_ShowMember("1");
             show_member.Show();
         }
     }

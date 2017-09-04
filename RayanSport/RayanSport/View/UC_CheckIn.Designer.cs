@@ -39,30 +39,30 @@
             // lbl_UcCheckInCommode
             // 
             this.lbl_UcCheckInCommode.AutoSize = true;
-            this.lbl_UcCheckInCommode.Font = new System.Drawing.Font("B Yekan+", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_UcCheckInCommode.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_UcCheckInCommode.Location = new System.Drawing.Point(767, 107);
             this.lbl_UcCheckInCommode.Name = "lbl_UcCheckInCommode";
-            this.lbl_UcCheckInCommode.Size = new System.Drawing.Size(107, 34);
+            this.lbl_UcCheckInCommode.Size = new System.Drawing.Size(89, 28);
             this.lbl_UcCheckInCommode.TabIndex = 4;
             this.lbl_UcCheckInCommode.Text = "شماره کمد";
             // 
             // txb_UcCheckInCommode
             // 
-            this.txb_UcCheckInCommode.Font = new System.Drawing.Font("B Yekan+", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_UcCheckInCommode.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_UcCheckInCommode.Location = new System.Drawing.Point(382, 104);
             this.txb_UcCheckInCommode.Name = "txb_UcCheckInCommode";
             this.txb_UcCheckInCommode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txb_UcCheckInCommode.Size = new System.Drawing.Size(247, 40);
+            this.txb_UcCheckInCommode.Size = new System.Drawing.Size(247, 36);
             this.txb_UcCheckInCommode.TabIndex = 3;
             this.txb_UcCheckInCommode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcCheckInPrice_KeyPress);
             // 
             // txb_UcCheckInPrice
             // 
-            this.txb_UcCheckInPrice.Font = new System.Drawing.Font("B Yekan+", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_UcCheckInPrice.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_UcCheckInPrice.Location = new System.Drawing.Point(382, 54);
             this.txb_UcCheckInPrice.Name = "txb_UcCheckInPrice";
             this.txb_UcCheckInPrice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txb_UcCheckInPrice.Size = new System.Drawing.Size(247, 40);
+            this.txb_UcCheckInPrice.Size = new System.Drawing.Size(247, 36);
             this.txb_UcCheckInPrice.TabIndex = 3;
             this.txb_UcCheckInPrice.TextChanged += new System.EventHandler(this.txb_UcCheckInPrice_TextChanged);
             this.txb_UcCheckInPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcCheckInPrice_KeyPress);
@@ -70,10 +70,10 @@
             // lbl_UcCheckInPrice
             // 
             this.lbl_UcCheckInPrice.AutoSize = true;
-            this.lbl_UcCheckInPrice.Font = new System.Drawing.Font("B Yekan+", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_UcCheckInPrice.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_UcCheckInPrice.Location = new System.Drawing.Point(809, 57);
             this.lbl_UcCheckInPrice.Name = "lbl_UcCheckInPrice";
-            this.lbl_UcCheckInPrice.Size = new System.Drawing.Size(65, 34);
+            this.lbl_UcCheckInPrice.Size = new System.Drawing.Size(54, 28);
             this.lbl_UcCheckInPrice.TabIndex = 4;
             this.lbl_UcCheckInPrice.Text = "قیمت";
             // 
@@ -82,7 +82,7 @@
             this.btn_UcCheckInCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
             this.btn_UcCheckInCheck.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcCheckInCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_UcCheckInCheck.Font = new System.Drawing.Font("B Yekan+", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_UcCheckInCheck.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_UcCheckInCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcCheckInCheck.Location = new System.Drawing.Point(37, 100);
             this.btn_UcCheckInCheck.Name = "btn_UcCheckInCheck";
@@ -97,7 +97,7 @@
             this.btn_UcCheckInClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
             this.btn_UcCheckInClear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcCheckInClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_UcCheckInClear.Font = new System.Drawing.Font("B Yekan+", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_UcCheckInClear.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_UcCheckInClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.btn_UcCheckInClear.Location = new System.Drawing.Point(37, 50);
             this.btn_UcCheckInClear.Name = "btn_UcCheckInClear";
@@ -116,6 +116,7 @@
             this.Controls.Add(this.lbl_UcCheckInCommode);
             this.Controls.Add(this.txb_UcCheckInPrice);
             this.Controls.Add(this.txb_UcCheckInCommode);
+            this.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "UC_CheckIn";
             this.Size = new System.Drawing.Size(910, 174);
             this.Load += new System.EventHandler(this.UC_CheckIn_Load);

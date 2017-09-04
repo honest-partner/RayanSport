@@ -13,9 +13,11 @@ namespace RayanSport.View
 {
     public partial class UC_CheckIn : UserControl
     {
-        public UC_CheckIn()
+        public string user_name{ get; set; }
+        public UC_CheckIn(string user_name)
         {
             InitializeComponent();
+            this.user_name = user_name;
         }
 
        
@@ -25,6 +27,7 @@ namespace RayanSport.View
             int? commode;
             if (txb_UcCheckInPrice.Text.Equals(""))
             {
+                
                 //MessageBox.Show("لطفا قیمت جلسه را وارد نمایید");
                 Alert alert = new Alert("لطفا قیمت جلسه را وارد نمایید", "red");
                 txb_UcCheckInPrice.Focus();
@@ -37,18 +40,23 @@ namespace RayanSport.View
                 }
                 else
                 {
+                    
                     commode = Convert.ToInt32(txb_UcCheckInPrice.Text);
                     DateTime d = DateTime.Now;
                     PersianCalendar pc = new PersianCalendar();
                     String date = String.Format("{0}/{1:00}/{2:00} - {3:00}:{4:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d), pc.GetHour(d), pc.GetMinute(d));
+                    string date1 = string.Format("{0}/{1:00}/{2:00}" ,pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));
+                    string time1 = string.Format("{0:00}:{1:00}", pc.GetHour(d), pc.GetMinute(d));
 
-
-
+                    //rayan_sportDataSet.logDataTable logeDataTable = new rayan_sportDataSet.logDataTable();
+                    rayan_sportDataSetTableAdapters.logTableAdapter logTableAdapter = new rayan_sportDataSetTableAdapters.logTableAdapter();
+                                        
                     rayan_sportDataSet.checkInDataTable checkInDataTabele = new rayan_sportDataSet.checkInDataTable();
                     rayan_sportDataSetTableAdapters.checkInTableAdapter checkInTableAdapter = new rayan_sportDataSetTableAdapters.checkInTableAdapter();
                     try
                     {
                         checkInTableAdapter.Insert(Convert.ToInt64(txb_UcCheckInPrice.Text), date, commode);
+                        logTableAdapter.Insert("checked in one person","checkIn",user_name,date1,time1);
                         //MessageBox.Show("ورود با موفقیت انجام شد");
                         Alert alert = new Alert("ورود با موفقیت انجام شد", "green");
                         ClearTexts();

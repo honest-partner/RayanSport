@@ -14,11 +14,11 @@ namespace RayanSport.View
     public partial class UC_ShowMember_ContractInfo : UserControl
     {
         long currnet_membership_id;
-        
+        public string user_name { get; set; }
         List<TrainOption> train_list;
-        public UC_ShowMember_ContractInfo() {
+        public UC_ShowMember_ContractInfo(string user_name) {
             InitializeComponent();
-            
+            user_name = user_name;
         }
         public Member member { get; set; }
         
@@ -195,15 +195,21 @@ namespace RayanSport.View
         private void btn_UcShowMemberContractInfoExpireContract_Click(object sender, EventArgs e)
         {
             try {
+                DateTime d = DateTime.Now;
+                PersianCalendar pc = new PersianCalendar();
+                string date1 = string.Format("{0}/{1:00}/{2:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));
+                string time1 = string.Format("{0:00}:{1:00}", pc.GetHour(d), pc.GetMinute(d));
+                rayan_sportDataSetTableAdapters.logTableAdapter logTableAdapter = new rayan_sportDataSetTableAdapters.logTableAdapter();
                 rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
                 membershipTableAdapter.UpdateStatusById("غیر فعال", currnet_membership_id, currnet_membership_id);
                 //MessageBox.Show("قرارداد با موفقیت غیرفعال شد");
+                logTableAdapter.Insert("deactived membership number"+currnet_membership_id,"membership",user_name,date1,time1);
                 Alert alert = new Alert("قرارداد با موفقیت غیرفعال شد ", "green");
                 FillData();
             }
             catch (Exception ex) {
                 //MessageBox.Show(ex.Message);
-                Alert alert = new Alert("قرارداد با موفقیت غیرفعال شد ", "red");
+                Alert alert = new Alert(ex.Message, "red");
             }
             
         }
@@ -255,6 +261,12 @@ namespace RayanSport.View
                         );
                     if (sucsses == 1)
                     {
+                        DateTime d = DateTime.Now;
+                        PersianCalendar pc = new PersianCalendar();
+                        string date1 = string.Format("{0}/{1:00}/{2:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));
+                        string time1 = string.Format("{0:00}:{1:00}", pc.GetHour(d), pc.GetMinute(d));
+                        rayan_sportDataSetTableAdapters.logTableAdapter logTableAdapter = new rayan_sportDataSetTableAdapters.logTableAdapter();
+                        logTableAdapter.Insert("added membership for : "+ member.member_name,"membership",user_name,date1,time1); 
                         //MessageBox.Show("قرارداد با موفقیت اضافه شد");
                         Alert alert = new Alert("قرارداد با موفقیت اضافه شد", "green");
                         FillData();
@@ -286,6 +298,12 @@ namespace RayanSport.View
             rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
             int sucsses = membershipTableAdapter.DeleteById(currnet_membership_id);
             if (sucsses == 1) {
+                DateTime d = DateTime.Now;
+                PersianCalendar pc = new PersianCalendar();
+                string date1 = string.Format("{0}/{1:00}/{2:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));
+                string time1 = string.Format("{0:00}:{1:00}", pc.GetHour(d), pc.GetMinute(d));
+                rayan_sportDataSetTableAdapters.logTableAdapter logTableAdapter = new rayan_sportDataSetTableAdapters.logTableAdapter();
+                logTableAdapter.Insert("deleted membership number : "+ currnet_membership_id,"membership",user_name , date1,time1);
                 //MessageBox.Show("حذف با موفقیت انجام شد");
                 Alert alert = new Alert("حذف با موفقیت انجام شد", "green");
                 FillData();

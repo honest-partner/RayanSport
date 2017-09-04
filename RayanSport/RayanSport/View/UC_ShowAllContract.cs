@@ -13,7 +13,7 @@ namespace RayanSport.View
 {
     public partial class UC_ShowAllContract : UserControl
     {
-        public int WhoIsIt;
+        public int whoIsIt;
         public String endDate1;
         public String endDate2;
         public String Name;
@@ -21,9 +21,12 @@ namespace RayanSport.View
         public String status="فعال";
 
     
-        public UC_ShowAllContract()
+        public UC_ShowAllContract(int caller)
         {
             InitializeComponent();
+
+            whoIsIt = caller;
+
            // dts_UcShowAllContractDateSelectorFrom.Value = DateTime.Now;
            // dts_UcShowAllContractDateSelectorUntil.Value = DateTime.Now;
             rdb_UcShowAllContractAllContarct.Enabled = false;
@@ -39,7 +42,7 @@ namespace RayanSport.View
             txb_UcShowAllContractName.Enabled = true;
 
             ////////come from home to see allContracts//////////
-            if(WhoIsIt == 1)
+            if(whoIsIt == 1)
             {
                 rdb_UcShowAllContractEnded.IsChecked = false;
                 rdb_UcShowAllContractEnding.IsChecked = false;
@@ -66,10 +69,9 @@ namespace RayanSport.View
 
             }
 
-            else if (WhoIsIt == 3)
+            else if (whoIsIt == 3)
             {
                 status = "فعال";
-
 
                 rdb_UcShowAllContractEnded.IsChecked = false;
                 rdb_UcShowAllContractEnding.IsChecked = false;
@@ -93,7 +95,7 @@ namespace RayanSport.View
                 membershipTableAdapter.FillBySelectByActiveStatus(membershipDataTable, status);
                 dgv_UcShowAllContractShowContract.DataSource = membershipDataTable;
             }
-            else if(WhoIsIt == 5)
+            else if(whoIsIt == 5)
             {
                 rdb_UcShowAllContractEnded.IsChecked = false;
                 rdb_UcShowAllContractEnding.IsChecked = false;
@@ -134,6 +136,8 @@ namespace RayanSport.View
                 rdb_UcShowAllContractEnding.IsChecked = false;
                 rdb_UcShowAllContractTodayExpired.IsChecked = false;
                 rdb_UcShowAllContractActiveContract.IsChecked = false;
+
+                btn_UcShowAllContractFilter.PerformClick();
             }
         }
 
@@ -147,6 +151,8 @@ namespace RayanSport.View
                 rdb_UcShowAllContractAllContarct.IsChecked = false;
                 rdb_UcShowAllContractTodayExpired.IsChecked = false;
                 rdb_UcShowAllContractActiveContract.IsChecked = false;
+
+                btn_UcShowAllContractFilter.PerformClick();
             }
         }
 
@@ -158,6 +164,8 @@ namespace RayanSport.View
                 rdb_UcShowAllContractAllContarct.IsChecked = false;
                 rdb_UcShowAllContractTodayExpired.IsChecked = false;
                 rdb_UcShowAllContractActiveContract.IsChecked = false;
+
+                btn_UcShowAllContractFilter.PerformClick();
             }
         }
 
@@ -169,12 +177,14 @@ namespace RayanSport.View
                 rdb_UcShowAllContractAllContarct.IsChecked = false;
                 rdb_UcShowAllContractEnded.IsChecked = false;
                 rdb_UcShowAllContractActiveContract.IsChecked = false;
+
+                btn_UcShowAllContractFilter.PerformClick();
             }
         }
 
         private void UC_ShowAllContractcs_Load(object sender, EventArgs e)
         {
-            WhoIsIt = 0;
+            whoIsIt = 0;
             rayan_sportDataSet.membershipDataTable dataTable = new rayan_sportDataSet.membershipDataTable();
             rayan_sportDataSetTableAdapters.membershipTableAdapter adapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
             adapter.Fill(dataTable);
@@ -186,8 +196,8 @@ namespace RayanSport.View
         private void btn_UcShowAllContractFilter_Click(object sender, EventArgs e)
         {
 
-            WhoIsIt = 0;
-            if(WhoIsIt ==0)
+            whoIsIt = 0;
+            if(whoIsIt ==0)
             {
 
             
@@ -373,6 +383,8 @@ namespace RayanSport.View
                 rdb_UcShowAllContractEnding.IsChecked = false;
                 rdb_UcShowAllContractTodayExpired.IsChecked = false;
                 rdb_UcShowAllContractAllContarct.IsChecked = false;
+
+                btn_UcShowAllContractFilter.PerformClick();
             }
         }
     }

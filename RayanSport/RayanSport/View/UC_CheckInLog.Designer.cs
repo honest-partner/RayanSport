@@ -207,7 +207,7 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(719, 197);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(719, 193);
             this.tableLayoutPanel9.TabIndex = 0;
             // 
             // dgv_UcCheckInLogShowNotMember
@@ -253,7 +253,7 @@
             this.dgv_UcCheckInLogShowNotMember.Name = "dgv_UcCheckInLogShowNotMember";
             this.dgv_UcCheckInLogShowNotMember.ReadOnly = true;
             this.dgv_UcCheckInLogShowNotMember.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dgv_UcCheckInLogShowNotMember.Size = new System.Drawing.Size(713, 181);
+            this.dgv_UcCheckInLogShowNotMember.Size = new System.Drawing.Size(713, 177);
             this.dgv_UcCheckInLogShowNotMember.TabIndex = 4;
             this.dgv_UcCheckInLogShowNotMember.Text = "radGridView1";
             // 
@@ -323,7 +323,7 @@
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(719, 106);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(719, 99);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // tableLayoutPanel10
@@ -343,7 +343,7 @@
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(713, 47);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(713, 43);
             this.tableLayoutPanel10.TabIndex = 0;
             // 
             // dts_UcCheckInLogDateUntil
@@ -351,7 +351,7 @@
             this.dts_UcCheckInLogDateUntil.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dts_UcCheckInLogDateUntil.Location = new System.Drawing.Point(3, 3);
             this.dts_UcCheckInLogDateUntil.Name = "dts_UcCheckInLogDateUntil";
-            this.dts_UcCheckInLogDateUntil.Size = new System.Drawing.Size(243, 37);
+            this.dts_UcCheckInLogDateUntil.Size = new System.Drawing.Size(243, 44);
             this.dts_UcCheckInLogDateUntil.TabIndex = 6;
             this.dts_UcCheckInLogDateUntil.UsePersianFormat = true;
             this.dts_UcCheckInLogDateUntil.ValueChanged += new System.EventHandler(this.dts_UcCheckInLogDateUntil_ValueChanged);
@@ -364,7 +364,7 @@
             this.lbl_UcCheckInLogDateFrom.Location = new System.Drawing.Point(607, 0);
             this.lbl_UcCheckInLogDateFrom.Name = "lbl_UcCheckInLogDateFrom";
             this.lbl_UcCheckInLogDateFrom.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_UcCheckInLogDateFrom.Size = new System.Drawing.Size(103, 47);
+            this.lbl_UcCheckInLogDateFrom.Size = new System.Drawing.Size(103, 43);
             this.lbl_UcCheckInLogDateFrom.TabIndex = 2;
             this.lbl_UcCheckInLogDateFrom.Text = "    تا تاریخ:";
             this.lbl_UcCheckInLogDateFrom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -374,7 +374,7 @@
             this.dts_UcCheckInLogDateFrom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dts_UcCheckInLogDateFrom.Location = new System.Drawing.Point(358, 3);
             this.dts_UcCheckInLogDateFrom.Name = "dts_UcCheckInLogDateFrom";
-            this.dts_UcCheckInLogDateFrom.Size = new System.Drawing.Size(243, 37);
+            this.dts_UcCheckInLogDateFrom.Size = new System.Drawing.Size(243, 44);
             this.dts_UcCheckInLogDateFrom.TabIndex = 4;
             this.dts_UcCheckInLogDateFrom.UsePersianFormat = true;
             this.dts_UcCheckInLogDateFrom.ValueChanged += new System.EventHandler(this.dts_UcCheckInLogDateFrom_ValueChanged);
@@ -387,7 +387,7 @@
             this.lbl_UcCheckInLogDateUntil.Location = new System.Drawing.Point(252, 0);
             this.lbl_UcCheckInLogDateUntil.Name = "lbl_UcCheckInLogDateUntil";
             this.lbl_UcCheckInLogDateUntil.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_UcCheckInLogDateUntil.Size = new System.Drawing.Size(100, 47);
+            this.lbl_UcCheckInLogDateUntil.Size = new System.Drawing.Size(100, 43);
             this.lbl_UcCheckInLogDateUntil.TabIndex = 5;
             this.lbl_UcCheckInLogDateUntil.Text = "   از تاریخ:";
             this.lbl_UcCheckInLogDateUntil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -406,11 +406,11 @@
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel6, 3, 0);
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel8, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 56);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 52);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(713, 47);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(713, 44);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // btn_UcCheckInLogSearch
@@ -423,7 +423,7 @@
             this.btn_UcCheckInLogSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_UcCheckInLogSearch.Location = new System.Drawing.Point(3, 3);
             this.btn_UcCheckInLogSearch.Name = "btn_UcCheckInLogSearch";
-            this.btn_UcCheckInLogSearch.Size = new System.Drawing.Size(136, 41);
+            this.btn_UcCheckInLogSearch.Size = new System.Drawing.Size(136, 38);
             this.btn_UcCheckInLogSearch.TabIndex = 5;
             this.btn_UcCheckInLogSearch.Text = "جست و جو";
             this.btn_UcCheckInLogSearch.UseVisualStyleBackColor = false;
@@ -434,10 +434,10 @@
             this.lnb_UcCheckInLogNotMemberNum.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lnb_UcCheckInLogNotMemberNum.AutoSize = true;
             this.lnb_UcCheckInLogNotMemberNum.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lnb_UcCheckInLogNotMemberNum.Location = new System.Drawing.Point(239, 8);
+            this.lnb_UcCheckInLogNotMemberNum.Location = new System.Drawing.Point(228, 0);
             this.lnb_UcCheckInLogNotMemberNum.Name = "lnb_UcCheckInLogNotMemberNum";
             this.lnb_UcCheckInLogNotMemberNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lnb_UcCheckInLogNotMemberNum.Size = new System.Drawing.Size(184, 30);
+            this.lnb_UcCheckInLogNotMemberNum.Size = new System.Drawing.Size(195, 44);
             this.lnb_UcCheckInLogNotMemberNum.TabIndex = 7;
             this.lnb_UcCheckInLogNotMemberNum.TabStop = true;
             this.lnb_UcCheckInLogNotMemberNum.Text = "تعداد ورزشکاران غیر عضو";
@@ -448,10 +448,10 @@
             this.lnb_UcCheckInLogMemberNum.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lnb_UcCheckInLogMemberNum.AutoSize = true;
             this.lnb_UcCheckInLogMemberNum.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lnb_UcCheckInLogMemberNum.Location = new System.Drawing.Point(554, 8);
+            this.lnb_UcCheckInLogMemberNum.Location = new System.Drawing.Point(512, 3);
             this.lnb_UcCheckInLogMemberNum.Name = "lnb_UcCheckInLogMemberNum";
             this.lnb_UcCheckInLogMemberNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lnb_UcCheckInLogMemberNum.Size = new System.Drawing.Size(156, 30);
+            this.lnb_UcCheckInLogMemberNum.Size = new System.Drawing.Size(198, 38);
             this.lnb_UcCheckInLogMemberNum.TabIndex = 6;
             this.lnb_UcCheckInLogMemberNum.TabStop = true;
             this.lnb_UcCheckInLogMemberNum.Text = "تعداد ورزشکاران عضو";
@@ -467,7 +467,7 @@
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(65, 41);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(65, 38);
             this.tableLayoutPanel6.TabIndex = 10;
             // 
             // lbl_UcCheckInLogMemberNum
@@ -477,7 +477,7 @@
             this.lbl_UcCheckInLogMemberNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_UcCheckInLogMemberNum.Location = new System.Drawing.Point(35, 0);
             this.lbl_UcCheckInLogMemberNum.Name = "lbl_UcCheckInLogMemberNum";
-            this.lbl_UcCheckInLogMemberNum.Size = new System.Drawing.Size(27, 41);
+            this.lbl_UcCheckInLogMemberNum.Size = new System.Drawing.Size(27, 38);
             this.lbl_UcCheckInLogMemberNum.TabIndex = 9;
             this.lbl_UcCheckInLogMemberNum.Text = "0";
             // 
@@ -493,7 +493,7 @@
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(65, 41);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(65, 38);
             this.tableLayoutPanel8.TabIndex = 11;
             // 
             // lbl_UcCheckInLogNotMemberNum
@@ -502,7 +502,7 @@
             this.lbl_UcCheckInLogNotMemberNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_UcCheckInLogNotMemberNum.Location = new System.Drawing.Point(35, 0);
             this.lbl_UcCheckInLogNotMemberNum.Name = "lbl_UcCheckInLogNotMemberNum";
-            this.lbl_UcCheckInLogNotMemberNum.Size = new System.Drawing.Size(27, 29);
+            this.lbl_UcCheckInLogNotMemberNum.Size = new System.Drawing.Size(27, 36);
             this.lbl_UcCheckInLogNotMemberNum.TabIndex = 11;
             this.lbl_UcCheckInLogNotMemberNum.Text = "0";
             // 
@@ -562,7 +562,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(719, 182);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(719, 175);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // dgv_UcCheckInLogShowMember
@@ -608,7 +608,7 @@
             this.dgv_UcCheckInLogShowMember.Name = "dgv_UcCheckInLogShowMember";
             this.dgv_UcCheckInLogShowMember.ReadOnly = true;
             this.dgv_UcCheckInLogShowMember.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dgv_UcCheckInLogShowMember.Size = new System.Drawing.Size(713, 166);
+            this.dgv_UcCheckInLogShowMember.Size = new System.Drawing.Size(713, 160);
             this.dgv_UcCheckInLogShowMember.TabIndex = 4;
             this.dgv_UcCheckInLogShowMember.Text = "radGridView1";
             // 

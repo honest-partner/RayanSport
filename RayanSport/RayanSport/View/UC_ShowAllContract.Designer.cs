@@ -332,7 +332,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(772, 152);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(772, 146);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // tableLayoutPanel5
@@ -351,7 +351,7 @@
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(736, 70);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(736, 67);
             this.tableLayoutPanel5.TabIndex = 5;
             // 
             // tableLayoutPanel7
@@ -367,16 +367,16 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(214, 64);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(214, 61);
             this.tableLayoutPanel7.TabIndex = 3;
             // 
             // dts_UcShowAllContractDateSelectorUntil
             // 
             this.dts_UcShowAllContractDateSelectorUntil.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dts_UcShowAllContractDateSelectorUntil.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.dts_UcShowAllContractDateSelectorUntil.Location = new System.Drawing.Point(3, 24);
+            this.dts_UcShowAllContractDateSelectorUntil.Location = new System.Drawing.Point(3, 23);
             this.dts_UcShowAllContractDateSelectorUntil.Name = "dts_UcShowAllContractDateSelectorUntil";
-            this.dts_UcShowAllContractDateSelectorUntil.Size = new System.Drawing.Size(208, 28);
+            this.dts_UcShowAllContractDateSelectorUntil.Size = new System.Drawing.Size(208, 33);
             this.dts_UcShowAllContractDateSelectorUntil.TabIndex = 0;
             this.dts_UcShowAllContractDateSelectorUntil.UsePersianFormat = true;
             this.dts_UcShowAllContractDateSelectorUntil.ValueChanged += new System.EventHandler(this.dts_UcShowAllContractDateSelectorUntil_ValueChanged);
@@ -389,7 +389,7 @@
             this.lbl_UcShowAllContractDateFrom.Location = new System.Drawing.Point(590, 0);
             this.lbl_UcShowAllContractDateFrom.Name = "lbl_UcShowAllContractDateFrom";
             this.lbl_UcShowAllContractDateFrom.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_UcShowAllContractDateFrom.Size = new System.Drawing.Size(143, 70);
+            this.lbl_UcShowAllContractDateFrom.Size = new System.Drawing.Size(143, 67);
             this.lbl_UcShowAllContractDateFrom.TabIndex = 0;
             this.lbl_UcShowAllContractDateFrom.Text = "از تاریخ:";
             this.lbl_UcShowAllContractDateFrom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -402,7 +402,7 @@
             this.lbl_UcShowAllContractDateUntil.Location = new System.Drawing.Point(223, 0);
             this.lbl_UcShowAllContractDateUntil.Name = "lbl_UcShowAllContractDateUntil";
             this.lbl_UcShowAllContractDateUntil.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_UcShowAllContractDateUntil.Size = new System.Drawing.Size(141, 70);
+            this.lbl_UcShowAllContractDateUntil.Size = new System.Drawing.Size(141, 67);
             this.lbl_UcShowAllContractDateUntil.TabIndex = 1;
             this.lbl_UcShowAllContractDateUntil.Text = "    تا تاریخ:";
             this.lbl_UcShowAllContractDateUntil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -420,16 +420,16 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(214, 64);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(214, 61);
             this.tableLayoutPanel6.TabIndex = 2;
             // 
             // dts_UcShowAllContractDateSelectorFrom
             // 
             this.dts_UcShowAllContractDateSelectorFrom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dts_UcShowAllContractDateSelectorFrom.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.dts_UcShowAllContractDateSelectorFrom.Location = new System.Drawing.Point(3, 24);
+            this.dts_UcShowAllContractDateSelectorFrom.Location = new System.Drawing.Point(3, 23);
             this.dts_UcShowAllContractDateSelectorFrom.Name = "dts_UcShowAllContractDateSelectorFrom";
-            this.dts_UcShowAllContractDateSelectorFrom.Size = new System.Drawing.Size(208, 28);
+            this.dts_UcShowAllContractDateSelectorFrom.Size = new System.Drawing.Size(208, 33);
             this.dts_UcShowAllContractDateSelectorFrom.TabIndex = 0;
             this.dts_UcShowAllContractDateSelectorFrom.UsePersianFormat = true;
             this.dts_UcShowAllContractDateSelectorFrom.ValueChanged += new System.EventHandler(this.dts_UcShowAllContractDateSelectorFrom_ValueChanged);
@@ -443,11 +443,11 @@
             this.tableLayoutPanel12.Controls.Add(this.lbl_UcShowAllContractName, 2, 0);
             this.tableLayoutPanel12.Controls.Add(this.tableLayoutPanel13, 1, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(33, 79);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(33, 76);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(736, 70);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(736, 67);
             this.tableLayoutPanel12.TabIndex = 6;
             // 
             // lbl_UcShowAllContractName
@@ -458,7 +458,7 @@
             this.lbl_UcShowAllContractName.Location = new System.Drawing.Point(591, 0);
             this.lbl_UcShowAllContractName.Name = "lbl_UcShowAllContractName";
             this.lbl_UcShowAllContractName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_UcShowAllContractName.Size = new System.Drawing.Size(142, 70);
+            this.lbl_UcShowAllContractName.Size = new System.Drawing.Size(142, 67);
             this.lbl_UcShowAllContractName.TabIndex = 8;
             this.lbl_UcShowAllContractName.Text = "نام و نام خانوادگی";
             this.lbl_UcShowAllContractName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -476,16 +476,16 @@
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(214, 64);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(214, 61);
             this.tableLayoutPanel13.TabIndex = 9;
             // 
             // txb_UcShowAllContractName
             // 
             this.txb_UcShowAllContractName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txb_UcShowAllContractName.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txb_UcShowAllContractName.Location = new System.Drawing.Point(3, 24);
+            this.txb_UcShowAllContractName.Location = new System.Drawing.Point(3, 23);
             this.txb_UcShowAllContractName.Name = "txb_UcShowAllContractName";
-            this.txb_UcShowAllContractName.Size = new System.Drawing.Size(208, 27);
+            this.txb_UcShowAllContractName.Size = new System.Drawing.Size(208, 32);
             this.txb_UcShowAllContractName.TabIndex = 1;
             this.txb_UcShowAllContractName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txb_UcShowAllContractName.TextChanged += new System.EventHandler(this.txb_UcShowAllContractName_TextChanged);
@@ -552,7 +552,7 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(772, 155);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(772, 149);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
             // tableLayoutPanel11
@@ -567,7 +567,7 @@
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(187, 71);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(187, 68);
             this.tableLayoutPanel11.TabIndex = 8;
             // 
             // rdb_UcShowAllContractEnded
@@ -575,10 +575,10 @@
             this.rdb_UcShowAllContractEnded.AutoSize = false;
             this.rdb_UcShowAllContractEnded.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rdb_UcShowAllContractEnded.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.rdb_UcShowAllContractEnded.Location = new System.Drawing.Point(3, 38);
+            this.rdb_UcShowAllContractEnded.Location = new System.Drawing.Point(3, 37);
             this.rdb_UcShowAllContractEnded.Name = "rdb_UcShowAllContractEnded";
             this.rdb_UcShowAllContractEnded.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rdb_UcShowAllContractEnded.Size = new System.Drawing.Size(181, 30);
+            this.rdb_UcShowAllContractEnded.Size = new System.Drawing.Size(181, 28);
             this.rdb_UcShowAllContractEnded.TabIndex = 0;
             this.rdb_UcShowAllContractEnded.Text = "خاتمه یافته";
             this.rdb_UcShowAllContractEnded.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.rdb_UcShowAllContractEnded_ToggleStateChanged);
@@ -597,7 +597,7 @@
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(187, 71);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(187, 68);
             this.tableLayoutPanel10.TabIndex = 5;
             // 
             // rdb_UcShowAllContractAllContarct
@@ -605,10 +605,10 @@
             this.rdb_UcShowAllContractAllContarct.AutoSize = false;
             this.rdb_UcShowAllContractAllContarct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rdb_UcShowAllContractAllContarct.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.rdb_UcShowAllContractAllContarct.Location = new System.Drawing.Point(3, 38);
+            this.rdb_UcShowAllContractAllContarct.Location = new System.Drawing.Point(3, 37);
             this.rdb_UcShowAllContractAllContarct.Name = "rdb_UcShowAllContractAllContarct";
             this.rdb_UcShowAllContractAllContarct.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rdb_UcShowAllContractAllContarct.Size = new System.Drawing.Size(162, 30);
+            this.rdb_UcShowAllContractAllContarct.Size = new System.Drawing.Size(162, 28);
             this.rdb_UcShowAllContractAllContarct.TabIndex = 10;
             this.rdb_UcShowAllContractAllContarct.Text = "همه قرار دادها";
             this.rdb_UcShowAllContractAllContarct.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.rdb_UcShowAllContractAllContarct_ToggleStateChanged);
@@ -626,7 +626,7 @@
             this.tableLayoutPanel15.RowCount = 1;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(162, 29);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(162, 28);
             this.tableLayoutPanel15.TabIndex = 1;
             // 
             // swb_UcShowAllContractByContractEnable
@@ -645,7 +645,7 @@
             this.swb_UcShowAllContractByContractEnable.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.swb_UcShowAllContractByContractEnable.OnText = "فعال";
             this.swb_UcShowAllContractByContractEnable.OnTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.swb_UcShowAllContractByContractEnable.Size = new System.Drawing.Size(75, 23);
+            this.swb_UcShowAllContractByContractEnable.Size = new System.Drawing.Size(75, 22);
             this.swb_UcShowAllContractByContractEnable.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.swb_UcShowAllContractByContractEnable.TabIndex = 1;
             this.swb_UcShowAllContractByContractEnable.ValueChanged += new System.EventHandler(this.swb_UcShowAllContractByContractEnable_ValueChanged);
@@ -662,7 +662,7 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(187, 71);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(187, 68);
             this.tableLayoutPanel9.TabIndex = 4;
             // 
             // rdb_UcShowAllContractEnding
@@ -670,10 +670,10 @@
             this.rdb_UcShowAllContractEnding.AutoSize = false;
             this.rdb_UcShowAllContractEnding.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rdb_UcShowAllContractEnding.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.rdb_UcShowAllContractEnding.Location = new System.Drawing.Point(3, 38);
+            this.rdb_UcShowAllContractEnding.Location = new System.Drawing.Point(3, 37);
             this.rdb_UcShowAllContractEnding.Name = "rdb_UcShowAllContractEnding";
             this.rdb_UcShowAllContractEnding.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rdb_UcShowAllContractEnding.Size = new System.Drawing.Size(181, 30);
+            this.rdb_UcShowAllContractEnding.Size = new System.Drawing.Size(181, 28);
             this.rdb_UcShowAllContractEnding.TabIndex = 0;
             this.rdb_UcShowAllContractEnding.Text = "در حال اتمام";
             this.rdb_UcShowAllContractEnding.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.rdb_UcShowAllContractEnding_ToggleStateChanged);
@@ -689,7 +689,7 @@
             this.tableLayoutPanel8.RowCount = 2;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(187, 71);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(187, 68);
             this.tableLayoutPanel8.TabIndex = 3;
             // 
             // rdb_UcShowAllContractActiveContract
@@ -697,10 +697,10 @@
             this.rdb_UcShowAllContractActiveContract.AutoSize = false;
             this.rdb_UcShowAllContractActiveContract.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rdb_UcShowAllContractActiveContract.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.rdb_UcShowAllContractActiveContract.Location = new System.Drawing.Point(3, 38);
+            this.rdb_UcShowAllContractActiveContract.Location = new System.Drawing.Point(3, 37);
             this.rdb_UcShowAllContractActiveContract.Name = "rdb_UcShowAllContractActiveContract";
             this.rdb_UcShowAllContractActiveContract.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rdb_UcShowAllContractActiveContract.Size = new System.Drawing.Size(181, 30);
+            this.rdb_UcShowAllContractActiveContract.Size = new System.Drawing.Size(181, 28);
             this.rdb_UcShowAllContractActiveContract.TabIndex = 0;
             this.rdb_UcShowAllContractActiveContract.Text = "قراردادهای فعال";
             this.rdb_UcShowAllContractActiveContract.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.rdb_UcShowAllContractActiveContract_ToggleStateChanged);
@@ -712,13 +712,13 @@
             this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel17.Controls.Add(this.rdb_UcShowAllContractTodayExpired, 0, 1);
             this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(582, 80);
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(582, 77);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             this.tableLayoutPanel17.RowCount = 3;
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(187, 72);
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(187, 69);
             this.tableLayoutPanel17.TabIndex = 9;
             // 
             // rdb_UcShowAllContractTodayExpired
@@ -726,10 +726,10 @@
             this.rdb_UcShowAllContractTodayExpired.AutoSize = false;
             this.rdb_UcShowAllContractTodayExpired.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rdb_UcShowAllContractTodayExpired.Font = new System.Drawing.Font("B Yekan+", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.rdb_UcShowAllContractTodayExpired.Location = new System.Drawing.Point(3, 24);
+            this.rdb_UcShowAllContractTodayExpired.Location = new System.Drawing.Point(3, 23);
             this.rdb_UcShowAllContractTodayExpired.Name = "rdb_UcShowAllContractTodayExpired";
             this.rdb_UcShowAllContractTodayExpired.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rdb_UcShowAllContractTodayExpired.Size = new System.Drawing.Size(162, 37);
+            this.rdb_UcShowAllContractTodayExpired.Size = new System.Drawing.Size(162, 35);
             this.rdb_UcShowAllContractTodayExpired.TabIndex = 0;
             this.rdb_UcShowAllContractTodayExpired.Text = "منقضی به تاریخ امروز";
             this.rdb_UcShowAllContractTodayExpired.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.rdb_UcShowAllContractTodayExpired_ToggleStateChanged);

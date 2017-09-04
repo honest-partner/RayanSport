@@ -128,7 +128,7 @@ namespace RayanSport.View
         {
             User user = new User("","","",false,"");
             user = controller_login.authenticator(txb_loginUsername.Text, txb_loginPassword.Text);
-            Form_Main form_main = new Form_Main();
+            Form_Main form_main = new Form_Main(txb_loginUsername.Text.ToString());
             this.Hide();
             form_main.Show();
         }

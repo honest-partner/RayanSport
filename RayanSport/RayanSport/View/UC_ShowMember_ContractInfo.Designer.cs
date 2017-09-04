@@ -463,7 +463,7 @@
             "کارت"});
             this.cmb_UcShowMemberContractInfoExpireContractPaymentType.Location = new System.Drawing.Point(3, 3);
             this.cmb_UcShowMemberContractInfoExpireContractPaymentType.Name = "cmb_UcShowMemberContractInfoExpireContractPaymentType";
-            this.cmb_UcShowMemberContractInfoExpireContractPaymentType.Size = new System.Drawing.Size(223, 31);
+            this.cmb_UcShowMemberContractInfoExpireContractPaymentType.Size = new System.Drawing.Size(223, 36);
             this.cmb_UcShowMemberContractInfoExpireContractPaymentType.TabIndex = 11;
             this.cmb_UcShowMemberContractInfoExpireContractPaymentType.SelectedIndexChanged += new System.EventHandler(this.cmb_UcShowMemberContractInfoExpireContractPaymentType_SelectedIndexChanged);
             // 
@@ -509,7 +509,7 @@
             this.cmb_UcShowMemberContractInfoContractType.FormattingEnabled = true;
             this.cmb_UcShowMemberContractInfoContractType.Location = new System.Drawing.Point(913, 3);
             this.cmb_UcShowMemberContractInfoContractType.Name = "cmb_UcShowMemberContractInfoContractType";
-            this.cmb_UcShowMemberContractInfoContractType.Size = new System.Drawing.Size(221, 31);
+            this.cmb_UcShowMemberContractInfoContractType.Size = new System.Drawing.Size(221, 36);
             this.cmb_UcShowMemberContractInfoContractType.TabIndex = 1;
             this.cmb_UcShowMemberContractInfoContractType.SelectedValueChanged += new System.EventHandler(this.cmb_UcShowMemberContractInfoContractType_SelectedValueChanged);
             // 
@@ -518,7 +518,7 @@
             this.txb_UcShowMemberContractInfoExpireContractPrice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txb_UcShowMemberContractInfoExpireContractPrice.Location = new System.Drawing.Point(459, 3);
             this.txb_UcShowMemberContractInfoExpireContractPrice.Name = "txb_UcShowMemberContractInfoExpireContractPrice";
-            this.txb_UcShowMemberContractInfoExpireContractPrice.Size = new System.Drawing.Size(221, 30);
+            this.txb_UcShowMemberContractInfoExpireContractPrice.Size = new System.Drawing.Size(221, 36);
             this.txb_UcShowMemberContractInfoExpireContractPrice.TabIndex = 3;
             this.txb_UcShowMemberContractInfoExpireContractPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcShowMemberContractInfoExpireContractPrice_KeyPress);
             // 
@@ -549,7 +549,7 @@
             this.txb_UcShowMemberContractInfoPayment.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txb_UcShowMemberContractInfoPayment.Location = new System.Drawing.Point(913, 73);
             this.txb_UcShowMemberContractInfoPayment.Name = "txb_UcShowMemberContractInfoPayment";
-            this.txb_UcShowMemberContractInfoPayment.Size = new System.Drawing.Size(221, 30);
+            this.txb_UcShowMemberContractInfoPayment.Size = new System.Drawing.Size(221, 36);
             this.txb_UcShowMemberContractInfoPayment.TabIndex = 7;
             this.txb_UcShowMemberContractInfoPayment.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcShowMemberContractInfoExpireContractPrice_KeyPress);
             // 
@@ -569,7 +569,7 @@
             this.txb_UcShowMemberContractInfoReciptNum.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txb_UcShowMemberContractInfoReciptNum.Location = new System.Drawing.Point(459, 73);
             this.txb_UcShowMemberContractInfoReciptNum.Name = "txb_UcShowMemberContractInfoReciptNum";
-            this.txb_UcShowMemberContractInfoReciptNum.Size = new System.Drawing.Size(221, 30);
+            this.txb_UcShowMemberContractInfoReciptNum.Size = new System.Drawing.Size(221, 36);
             this.txb_UcShowMemberContractInfoReciptNum.TabIndex = 12;
             this.txb_UcShowMemberContractInfoReciptNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcShowMemberContractInfoExpireContractPrice_KeyPress);
             // 
@@ -589,7 +589,7 @@
             this.txb_UcShowMemberContractInfoRemainingSession.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txb_UcShowMemberContractInfoRemainingSession.Location = new System.Drawing.Point(3, 73);
             this.txb_UcShowMemberContractInfoRemainingSession.Name = "txb_UcShowMemberContractInfoRemainingSession";
-            this.txb_UcShowMemberContractInfoRemainingSession.Size = new System.Drawing.Size(223, 30);
+            this.txb_UcShowMemberContractInfoRemainingSession.Size = new System.Drawing.Size(223, 36);
             this.txb_UcShowMemberContractInfoRemainingSession.TabIndex = 14;
             this.txb_UcShowMemberContractInfoRemainingSession.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_UcShowMemberContractInfoExpireContractPrice_KeyPress);
             // 
@@ -610,7 +610,7 @@
             this.dts_UcShowMemberContractInfoStartDate.Location = new System.Drawing.Point(913, 143);
             this.dts_UcShowMemberContractInfoStartDate.Name = "dts_UcShowMemberContractInfoStartDate";
             this.dts_UcShowMemberContractInfoStartDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dts_UcShowMemberContractInfoStartDate.Size = new System.Drawing.Size(221, 31);
+            this.dts_UcShowMemberContractInfoStartDate.Size = new System.Drawing.Size(221, 37);
             this.dts_UcShowMemberContractInfoStartDate.TabIndex = 16;
             this.dts_UcShowMemberContractInfoStartDate.UsePersianFormat = true;
             this.dts_UcShowMemberContractInfoStartDate.ValueChanged += new System.EventHandler(this.dts_UcShowMemberContractInfoStartDate_ValueChanged);
@@ -632,7 +632,7 @@
             this.txb_UcShowMemberContractInfoEndDate.Enabled = false;
             this.txb_UcShowMemberContractInfoEndDate.Location = new System.Drawing.Point(459, 143);
             this.txb_UcShowMemberContractInfoEndDate.Name = "txb_UcShowMemberContractInfoEndDate";
-            this.txb_UcShowMemberContractInfoEndDate.Size = new System.Drawing.Size(221, 30);
+            this.txb_UcShowMemberContractInfoEndDate.Size = new System.Drawing.Size(221, 36);
             this.txb_UcShowMemberContractInfoEndDate.TabIndex = 18;
             // 
             // txb_UcShowMemberContractInfoDes

@@ -19,7 +19,7 @@ namespace RayanSport
             //Form_ShowMember member = new Form_ShowMember();
             //member.Member = new Member(107, "", "", "", "", "", "", "", 0);
             //Application.Run(member);
-            Application.Run(new Form_Main());
+            Application.Run(new Form_Main("999999999"));
         }
     }
 }

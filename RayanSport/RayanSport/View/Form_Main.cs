@@ -14,16 +14,84 @@ namespace RayanSport
 {
     public partial class Form_Main : Form
     {
-        public UC_Home ucHome;
-        public UC_ShowAllMember ucShowAllMember;
+        public bool isHomeActive, isCheckInLogActive, isMemberActive, isContractActive, isBuffetActive, isUserActive, isSettingActive, isAboutUsActive, isLogActive;
+        public bool isCheckInFormOpen = false;
+        public Form_CheckIn formCheckIn;
+
+        public UC_Home ucHome = new UC_Home();
+        //public UC_ShowAllMember ucShowAllMember = new UC_ShowAllMember("usernameShouldBeHere");
+        public UC_ShowAllContract ucShowAllContract = new UC_ShowAllContract(0);
+        public UC_Setting ucSetting = new UC_Setting();
+        public UC_AboutUs ucAboutUs = new UC_AboutUs();
+        public UC_Log ucLog = new UC_Log();
+        public UC_CheckInLog ucCheckInLog = new UC_CheckInLog();
 
 
+       
 
-        public Form_Main()
+        public Form_Main(string username)
         {
             InitializeComponent();
 
+            if(username!="999999999")
+            {
+                btn_mainLog.Visible = false;
+                btn_mainLog.Enabled = false;
+            }
+
             lbl_mainClock.Text = DateTime.Now.ToString("h : mm : ss");// Initialize of digital Clock
+
+            #region //Initializing UserControls to speed up MainForm
+
+            tlp_mainHeader.Controls.Clear();
+            deactiveAll();
+            tlp_mainHeader.Controls.Add(ucHome, 1, 1);
+            ucHome.Dock = DockStyle.Fill;
+            isHomeActive = true;
+
+
+            /*tlp_mainHeader.Controls.Clear();
+                deactiveAll();
+                tlp_mainHeader.Controls.Add(ucShowAllMember, 1, 1);
+                ucShowAllMember.Dock = DockStyle.Fill;
+                isMemberActive = true;*/
+
+
+            tlp_mainHeader.Controls.Clear();
+            deactiveAll();
+            tlp_mainHeader.Controls.Add(ucShowAllContract, 1, 1);
+            ucShowAllContract.Dock = DockStyle.Fill;
+            isContractActive = true;
+
+
+            //BUFFET's USER CONTROL OR FORM SHOULD IMPLEMENT HERE
+
+
+            //USER's USER CONTROL OR FORM SHOULD IMPLEMENT HERE
+
+            tlp_mainHeader.Controls.Clear();
+            deactiveAll();
+            tlp_mainHeader.Controls.Add(ucSetting, 1, 1);
+            ucSetting.Dock = DockStyle.Fill;
+            isSettingActive = true;
+
+
+            tlp_mainHeader.Controls.Clear();
+            deactiveAll();
+            tlp_mainHeader.Controls.Add(ucAboutUs, 1, 1);
+            ucAboutUs.Dock = DockStyle.Fill;
+            isAboutUsActive = true;
+
+
+
+            #endregion
+
+
+            deactiveAll();
+            ucHome = new UC_Home();
+            tlp_mainHeader.Controls.Add(ucHome, 1, 1);
+            ucHome.Dock = DockStyle.Fill;
+            isHomeActive = true;
         }
 
         #region  // mouse Enter and leave of menu items
@@ -356,47 +424,118 @@ namespace RayanSport
         #region // mouse click of menu items
         private void pbx_mainHomeIcon_Click(object sender, EventArgs e)
         {
-            lbl_mainHeaderText.Text = lbl_mainHome.Text;
-            ucHome = new UC_Home();
-            this.Controls.Add(ucHome);
-            
+            if(!isHomeActive)
+            {
+                tlp_mainHeader.Controls.Clear();
+                deactiveAll();
+                tlp_mainHeader.Controls.Add(ucHome, 1, 1);
+                ucHome.Dock = DockStyle.Fill;
+                isHomeActive = true;
+            }
         }
 
         private void pbx_mainEntranceIcon_Click(object sender, EventArgs e)
         {
-            lbl_mainHeaderText.Text = lbl_mainEntrance.Text;
+            isCheckInFormOpen = false;
+            foreach (var item in Application.OpenForms)
+            {
+                if (item is Form_CheckIn)
+                {
+                    (item as Form_CheckIn).TopMost = true;
+                    (item as Form_CheckIn).TopMost = false;
+                    isCheckInFormOpen = true;
+                }
+            }
+            if (!isCheckInFormOpen)
+            {
+                formCheckIn = new Form_CheckIn("usernameShouldBeHere");
+                formCheckIn.Show();
+                isCheckInFormOpen = true;
+            }
+
+            if (!isCheckInLogActive)
+            {
+                tlp_mainHeader.Controls.Clear();
+                deactiveAll();
+                tlp_mainHeader.Controls.Add(ucCheckInLog, 1, 1);
+                ucCheckInLog.Dock = DockStyle.Fill;
+                isCheckInLogActive = true;
+            }
         }
 
         private void pbx_mainMemberIcon_Click(object sender, EventArgs e)
         {
-            lbl_mainHeaderText.Text = lbl_mainMember.Text;
-            ucShowAllMember = new UC_ShowAllMember("1");
-            this.Controls.Add(ucShowAllMember);
+            if(!isMemberActive)
+            {
+                /*tlp_mainHeader.Controls.Clear();
+                deactiveAll();
+                tlp_mainHeader.Controls.Add(ucShowAllMember, 1, 1);
+                ucShowAllMember.Dock = DockStyle.Fill;
+                isMemberActive = true;*/
+            }
         }
 
         private void pbx_mainContractIcon_Click(object sender, EventArgs e)
         {
-            lbl_mainHeaderText.Text = lbl_mainContract.Text;
+            if (!isContractActive)
+            {
+                tlp_mainHeader.Controls.Clear();
+                deactiveAll();
+                tlp_mainHeader.Controls.Add(ucShowAllContract, 1, 1);
+                ucShowAllContract.Dock = DockStyle.Fill;
+                isContractActive = true;
+            }
         }
 
         private void pbx_mainBuffetIcon_Click(object sender, EventArgs e)
         {
-            lbl_mainHeaderText.Text = lbl_mainBuffet.Text;
+            //BUFFET's USER CONTROL OR FORM SHOULD IMPLEMENT HERE
         }
 
         private void pbx_mainUserIcon_Click(object sender, EventArgs e)
         {
-            lbl_mainHeaderText.Text = lbl_mainUser.Text;
+            //USER's USER CONTROL OR FORM SHOULD IMPLEMENT HERE
         }
 
         private void pbx_mainSettingIcon_Click(object sender, EventArgs e)
         {
-            lbl_mainHeaderText.Text = lbl_mainSetting.Text;
+            if (!isSettingActive)
+            {
+                tlp_mainHeader.Controls.Clear();
+                deactiveAll();
+                tlp_mainHeader.Controls.Add(ucSetting, 1, 1);
+                ucSetting.Dock = DockStyle.Fill;
+                isSettingActive = true;
+            }
+        }
+
+        private void lbl_mainExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_mainLog_Click(object sender, EventArgs e)
+        {
+            if (!isLogActive)
+            {
+                tlp_mainHeader.Controls.Clear();
+                deactiveAll();
+                tlp_mainHeader.Controls.Add(ucLog, 1, 1);
+                ucLog.Dock = DockStyle.Fill;
+                isLogActive = true;
+            }
         }
 
         private void pbx_mainAboutIcon_Click(object sender, EventArgs e)
         {
-            lbl_mainHeaderText.Text = lbl_mainAbout.Text;
+            if (!isAboutUsActive)
+            {
+                tlp_mainHeader.Controls.Clear();
+                deactiveAll();
+                tlp_mainHeader.Controls.Add(ucAboutUs, 1, 1);
+                ucAboutUs.Dock = DockStyle.Fill;
+                isAboutUsActive = true;
+            }
         }
 
         #endregion
@@ -439,5 +578,31 @@ namespace RayanSport
                 return "جمعه";
         }
         #endregion
+
+
+
+        public void deactiveAll()
+        {
+            isHomeActive = false;
+            isCheckInLogActive = false;
+            isMemberActive = false;
+            isContractActive = false;
+            isBuffetActive = false;
+            isUserActive = false;
+            isSettingActive = false;
+            isAboutUsActive = false;
+            isLogActive = false;
+        }
+
+
+
+        public void setUC(UserControl uc)
+        {
+            tlp_mainHeader.Controls.Clear();
+            deactiveAll();
+            tlp_mainHeader.Controls.Add(uc, 1, 1);
+            uc.Dock = DockStyle.Fill;
+            isContractActive = true;
+        }
     }
 }

@@ -19,9 +19,9 @@ namespace RayanSport.View
         public UC_Home()
         {
             InitializeComponent();
-            rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
+            /*rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
             int count = (int)membershipTableAdapter.ScalarCountOfContract();
-            lbl_UcHomeAllContractNum.Text = count.ToString();
+            lbl_UcHomeAllContractNum.Text = count.ToString();*/
 
             activeContract = "فعال";
             rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter1 = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
@@ -58,8 +58,6 @@ namespace RayanSport.View
 
         public string getDateShamsi(string date)
         {
-
-
             DateTime d = DateTime.Parse(date);
             PersianCalendar pc = new PersianCalendar();
             return string.Format("{0}/{1:00}/{2:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));//---> miladi to shamsi*/
@@ -71,26 +69,70 @@ namespace RayanSport.View
         private void llb_UcHomeAllContractNum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Iam = 1;
+            foreach (var item in Application.OpenForms)
+            {
+                if (item is Form_Main)
+                {
+                    UC_ShowAllContract ucShowAllContract = new UC_ShowAllContract(Iam);
+                    (item as Form_Main).setUC(ucShowAllContract);
+                }
+            }
         }
 
         private void llb_UcHomeAllMember_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Iam = 2;
+
+            //foreach (var item in Application.OpenForms)
+            //{
+            //    if (item is Form_Main)
+            //    {
+            //        UC_ShowAllContract ucShowAllContract = new UC_ShowAllContract(Iam);
+            //        (item as Form_Main).setUC(ucShowAllContract);
+            //    }
+            //}
         }
 
         private void llb_UcHomeActiveContract_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Iam = 3;
+
+            foreach (var item in Application.OpenForms)
+            {
+                if (item is Form_Main)
+                {
+                    UC_ShowAllContract ucShowAllContract = new UC_ShowAllContract(Iam);
+                    (item as Form_Main).setUC(ucShowAllContract);
+                }
+            }
         }
 
         private void llb_UcHomeDayliMemberNum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Iam = 4;
+
+            //foreach (var item in Application.OpenForms)
+            //{
+            //    if (item is Form_Main)
+            //    {
+            //        UC_ShowAllContract ucShowAllContract = new UC_ShowAllContract(Iam);
+            //        (item as Form_Main).setUC(ucShowAllContract);
+            //    }
+            //}
         }
 
         private void llb_UcHomeExoiredContract_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Iam = 5;
+
+            foreach (var item in Application.OpenForms)
+            {
+                if (item is Form_Main)
+                {
+                    UC_ShowAllContract ucShowAllContract = new UC_ShowAllContract(Iam);
+                    (item as Form_Main).setUC(ucShowAllContract);
+                }
+            }
         }
     }
 }

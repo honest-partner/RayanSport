@@ -58,29 +58,5 @@ namespace RayanSport.View
             return string.Format("{0}/{1:00}/{2:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));
             
         }
-
-        private void InitializeComponent()
-        {
-            this.SuspendLayout();
-            // 
-            // UC_Log
-            // 
-            this.Name = "UC_Log";
-            this.Size = new System.Drawing.Size(670, 380);
-            this.ResumeLayout(false);
-
-        }
-
-        //private void InitializeComponent()
-        //{
-        //    this.SuspendLayout();
-        //    // 
-        //    // UC_Log
-        //    // 
-        //    this.Name = "UC_Log";
-        //    this.Size = new System.Drawing.Size(270, 208);
-        //    this.ResumeLayout(false);
-
-        //}
     }
 }

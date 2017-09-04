@@ -23,7 +23,7 @@ namespace RayanSport.View
         {
             InitializeComponent();
 
-            dts_UcCheckInLogDateFrom.Value = DateTime.Now;
+           /* dts_UcCheckInLogDateFrom.Value = DateTime.Now;
             dts_UcCheckInLogDateUntil.Value = DateTime.Now;
 
             rayan_sportDataSetTableAdapters.checkInTableAdapter checkInTableAdapter = new rayan_sportDataSetTableAdapters.checkInTableAdapter();
@@ -34,7 +34,7 @@ namespace RayanSport.View
 
             rayan_sportDataSetTableAdapters.memberCheckInTableAdapter memberCheckInTableAdapter = new rayan_sportDataSetTableAdapters.memberCheckInTableAdapter();
             int count2 = (int)memberCheckInTableAdapter.ScalarCountByMemberNum(endDateFrom, endDateUntil);
-            lbl_UcCheckInLogMemberNum.Text = count2.ToString();
+            lbl_UcCheckInLogMemberNum.Text = count2.ToString();*/
 
 
 
@@ -42,7 +42,7 @@ namespace RayanSport.View
 
         private void UC_CheckInLog_Load(object sender, EventArgs e)
         {
-            //////////////fill DataGridView of Show Member///////////
+           /* //////////////fill DataGridView of Show Member///////////
             rayan_sportDataSet.memberCheckInDataTable dataTable = new rayan_sportDataSet.memberCheckInDataTable();
             rayan_sportDataSetTableAdapters.memberCheckInTableAdapter adapter = new rayan_sportDataSetTableAdapters.memberCheckInTableAdapter();
             adapter.Fill(dataTable);
@@ -53,7 +53,7 @@ namespace RayanSport.View
             rayan_sportDataSet.checkInDataTable dataTable2 = new rayan_sportDataSet.checkInDataTable();
             rayan_sportDataSetTableAdapters.checkInTableAdapter adapter2 = new rayan_sportDataSetTableAdapters.checkInTableAdapter();
             adapter2.Fill(dataTable2);
-            dgv_UcCheckInLogShowNotMember.DataSource = dataTable2;
+            dgv_UcCheckInLogShowNotMember.DataSource = dataTable2;*/
 
         }
 
@@ -71,21 +71,21 @@ namespace RayanSport.View
 
         private void dts_UcCheckInLogDateFrom_ValueChanged(object sender, EventArgs e)
         {
-            endDateFrom = dts_UcCheckInLogDateUntil.Value.Value.ToString("M/d/yyyy");
-            endDateFrom = "00:00"+ "-" + getDateShamsi(endDateFrom);
+           /* endDateFrom = dts_UcCheckInLogDateUntil.Value.Value.ToString("M/d/yyyy");
+            endDateFrom = "00:00"+ "-" + getDateShamsi(endDateFrom);*/
             
         }
 
         private void dts_UcCheckInLogDateUntil_ValueChanged(object sender, EventArgs e)
         {
-            endDateUntil = dts_UcCheckInLogDateFrom.Value.Value.ToString("M/d/yyyy");
-            endDateUntil = "23:59" + "-" + getDateShamsi(endDateUntil);
+            /*endDateUntil = dts_UcCheckInLogDateFrom.Value.Value.ToString("M/d/yyyy");
+            endDateUntil = "23:59" + "-" + getDateShamsi(endDateUntil);*/
             
         }
 
         private void btn_UcCheckInLogSearch_Click(object sender, EventArgs e)
         {
-            if (endDateFrom != "" && endDateUntil != "")
+            /*if (endDateFrom != "" && endDateUntil != "")
             {
                 rayan_sportDataSet.memberCheckInDataTable memberCheckInDataTable = new rayan_sportDataSet.memberCheckInDataTable();
                 rayan_sportDataSetTableAdapters.memberCheckInTableAdapter memberCheckInTableAdapter = new rayan_sportDataSetTableAdapters.memberCheckInTableAdapter();
@@ -98,7 +98,7 @@ namespace RayanSport.View
                 checkInTableAdapter.FillBySelectByDateNotMember(checkInDataTable,endDateFrom,endDateUntil);
                 dgv_UcCheckInLogShowNotMember.DataSource = checkInDataTable;
 
-            }
+            }*/
 
         }
 

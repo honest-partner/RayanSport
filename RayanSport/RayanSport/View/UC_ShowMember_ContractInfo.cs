@@ -14,25 +14,35 @@ namespace RayanSport.View
     public partial class UC_ShowMember_ContractInfo : UserControl
     {
         long currnet_membership_id;
-        public string user_name { get; set; }
+        private String user_name;
+        public void setUser_name(string user_name) {
+            this.user_name = user_name;
+        }
+        public String getUser_name() {
+            return this.user_name;
+        }
+        
         List<TrainOption> train_list;
-        public UC_ShowMember_ContractInfo(string user_name) {
+        public UC_ShowMember_ContractInfo(String user_name) {
             InitializeComponent();
-            user_name = user_name;
+            setUser_name(user_name);
+            
         }
         public Member member { get; set; }
-        
+        //Member member;
 
         rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
         rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
         private void UC_ShowMember_ContractInfo_Load(object sender, EventArgs e)
         {
+            FillData();
             btn_UcShowMemberContractInfoAddContract.Enabled = true;
             btn_UcShowMemberContractInfoAddContract.BackColor = Properties.Settings.Default.Blue;
 
         }
         public void setData(Member input_member) {
             this.member = input_member;
+            member = input_member;
             rayan_sportDataSet.membershipDataTable membershipDataTable = new rayan_sportDataSet.membershipDataTable();
             rayan_sportDataSetTableAdapters.membershipTableAdapter tableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
             tableAdapter.FillBySelectById(membershipDataTable, input_member.member_id);
@@ -168,7 +178,7 @@ namespace RayanSport.View
                 date = year + "/";
                 if (month < 10)
                 {
-                    date = date +"0" + month;
+                    date = date +"0" + month + "/";
                 }
                 else {
                     date = date + month+"/";
@@ -203,7 +213,7 @@ namespace RayanSport.View
                 rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
                 membershipTableAdapter.UpdateStatusById("غیر فعال", currnet_membership_id, currnet_membership_id);
                 //MessageBox.Show("قرارداد با موفقیت غیرفعال شد");
-                logTableAdapter.Insert("deactived membership number"+currnet_membership_id,"membership",user_name,date1,time1);
+                logTableAdapter.Insert("deactived membership number"+currnet_membership_id,"membership",getUser_name(),date1,time1);
                 Alert alert = new Alert("قرارداد با موفقیت غیرفعال شد ", "green");
                 FillData();
             }
@@ -266,10 +276,29 @@ namespace RayanSport.View
                         string date1 = string.Format("{0}/{1:00}/{2:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));
                         string time1 = string.Format("{0:00}:{1:00}", pc.GetHour(d), pc.GetMinute(d));
                         rayan_sportDataSetTableAdapters.logTableAdapter logTableAdapter = new rayan_sportDataSetTableAdapters.logTableAdapter();
-                        logTableAdapter.Insert("added membership for : "+ member.member_name,"membership",user_name,date1,time1); 
+                        logTableAdapter.Insert("added membership for : "+ member.member_name,"membership",getUser_name(),date1,time1);
                         //MessageBox.Show("قرارداد با موفقیت اضافه شد");
+                        
                         Alert alert = new Alert("قرارداد با موفقیت اضافه شد", "green");
                         FillData();
+                        btn_UcShowMemberContractInfoDeleteContract.Enabled = false;
+                        btn_UcShowMemberContractInfoDeleteContract.BackColor = Properties.Settings.Default.MediumGrey;
+                        btn_UcShowMemberContractInfoExpireContract.Enabled = false;
+                        btn_UcShowMemberContractInfoExpireContract.BackColor = Properties.Settings.Default.MediumGrey;
+                        btn_UcShowMemberContractInfoAddContract.Enabled = true;
+                        btn_UcShowMemberContractInfoAddContract.BackColor = Properties.Settings.Default.Blue;
+                        foreach (var txb in tableLayoutPanel3.Controls)
+                        {
+                            if (txb is TextBox)
+                                (txb as TextBox).Clear();
+                            if (txb is ComboBox)
+                                (txb as ComboBox).Text = "";
+                        }
+                        dts_UcShowMemberContractInfoStartDate.ResetText();
+
+                        tableLayoutPanel3.Enabled = false;
+                        btn_UcShowMemberContractInfoClear.BackColor = Properties.Settings.Default.MediumGrey;
+                        btn_UcShowMemberContractInfoSave.BackColor = Properties.Settings.Default.MediumGrey;
                     }
                 }
                 catch (Exception ex) {
@@ -287,6 +316,7 @@ namespace RayanSport.View
 
         private void FillData()
         {
+            //MessageBox.Show(member.member_id+"");
             rayan_sportDataSet.membershipDataTable membershipDatatable = new rayan_sportDataSet.membershipDataTable();
             rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
             membershipTableAdapter.FillBySelectById(membershipDatatable,member.member_id);
@@ -295,6 +325,8 @@ namespace RayanSport.View
 
         private void btn_UcShowMemberContractInfoDeleteContract_Click(object sender, EventArgs e)
         {
+            
+            
             rayan_sportDataSetTableAdapters.membershipTableAdapter membershipTableAdapter = new rayan_sportDataSetTableAdapters.membershipTableAdapter();
             int sucsses = membershipTableAdapter.DeleteById(currnet_membership_id);
             if (sucsses == 1) {
@@ -303,7 +335,8 @@ namespace RayanSport.View
                 string date1 = string.Format("{0}/{1:00}/{2:00}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d));
                 string time1 = string.Format("{0:00}:{1:00}", pc.GetHour(d), pc.GetMinute(d));
                 rayan_sportDataSetTableAdapters.logTableAdapter logTableAdapter = new rayan_sportDataSetTableAdapters.logTableAdapter();
-                logTableAdapter.Insert("deleted membership number : "+ currnet_membership_id,"membership",user_name , date1,time1);
+                
+                logTableAdapter.Insert("deleted membership num : "+ currnet_membership_id,"membership",getUser_name() , date1,time1);
                 //MessageBox.Show("حذف با موفقیت انجام شد");
                 Alert alert = new Alert("حذف با موفقیت انجام شد", "green");
                 FillData();
@@ -331,6 +364,7 @@ namespace RayanSport.View
                 }
                 dts_UcShowMemberContractInfoStartDate.ResetText();
                 tableLayoutPanel3.Enabled = false;
+                
             }
         }
     }

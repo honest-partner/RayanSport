@@ -35,10 +35,6 @@
     <Reference Include="BehComponents">
       <HintPath>..\..\..\..\..\Desktop\BehComponents.dll</HintPath>
     </Reference>
-    <Reference Include="BPersianCalender, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Desktop\BPersianCalender.dll</HintPath>
-    </Reference>
     <Reference Include="DateTimeSelector, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\DateTimeSelector.dll</HintPath>
@@ -104,7 +100,7 @@
     <Compile Include="View\Form_CheckIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form_CheckIn.Designer.cs">
+    <Compile Include="View\Form_CheckIn.designer.cs">
       <DependentUpon>Form_CheckIn.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Form_Login.cs">
@@ -167,7 +163,9 @@
     <Compile Include="View\UC_Log.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\UC_Log.Designer.cs" />
+    <Compile Include="View\UC_Log.designer.cs">
+      <DependentUpon>UC_Log.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UC_Setting.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -189,7 +187,7 @@
     <Compile Include="View\UC_ShowMember_ContractInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\UC_ShowMember_ContractInfo.Designer.cs">
+    <Compile Include="View\UC_ShowMember_ContractInfo.designer.cs">
       <DependentUpon>UC_ShowMember_ContractInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UC_ShowMember_MemberInfo.cs">
@@ -234,7 +232,9 @@
     <EmbeddedResource Include="View\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\UC_Log.resx" />
+    <EmbeddedResource Include="View\UC_Log.resx">
+      <DependentUpon>UC_Log.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UC_Setting.resx">
       <DependentUpon>UC_Setting.cs</DependentUpon>
     </EmbeddedResource>
